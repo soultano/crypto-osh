@@ -29,7 +29,7 @@ export function VideoCard({
             title={title}
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; fullscreen"
             referrerPolicy="strict-origin-when-cross-origin"
-            sandbox="allow-scripts allow-same-origin allow-presentation allow-popups"
+            sandbox="allow-scripts allow-same-origin allow-presentation allow-popups allow-popups-to-escape-sandbox"
             allowFullScreen
           />
         ) : (
