@@ -1,6 +1,5 @@
-// Public site settings. Contacts are intentionally empty until the team
-// confirms them: empty values hide the matching buttons instead of linking
-// to a guessed account.
+// Public site settings. Env vars override the defaults; an empty phone
+// hides the call button.
 // Accept only https links to known hosts, so a mistyped or malicious env
 // value can never become a javascript: or phishing link.
 function safeUrl(value: string | undefined, hosts: string[]): string {
@@ -14,11 +13,11 @@ function safeUrl(value: string | undefined, hosts: string[]): string {
 }
 
 export const site = {
-  url: (process.env.NEXT_PUBLIC_SITE_URL || "https://crypto-osh.vercel.app").replace(/\/$/, ""),
+  url: (process.env.NEXT_PUBLIC_SITE_URL || "https://cryptoosh.uz").replace(/\/$/, ""),
   name: "Crypto Osh",
   contacts: {
-    telegram: safeUrl(process.env.NEXT_PUBLIC_TELEGRAM_URL, ["t.me"]), // e.g. https://t.me/cryptoosh
-    instagram: safeUrl(process.env.NEXT_PUBLIC_INSTAGRAM_URL, ["instagram.com", "www.instagram.com"]),
+    telegram: safeUrl(process.env.NEXT_PUBLIC_TELEGRAM_URL || "https://t.me/Soultanov", ["t.me"]),
+    instagram: safeUrl(process.env.NEXT_PUBLIC_INSTAGRAM_URL || "https://www.instagram.com/uzsoul/", ["instagram.com", "www.instagram.com"]),
     phone: process.env.NEXT_PUBLIC_PHONE || "", // e.g. +998901234567
   },
 };

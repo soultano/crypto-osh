@@ -34,22 +34,22 @@ npm run build && npm start
 
 | Переменная | Пример |
 | --- | --- |
-| `NEXT_PUBLIC_SITE_URL` | `https://cryptoosh.uz` |
-| `NEXT_PUBLIC_TELEGRAM_URL` | `https://t.me/your_channel` |
-| `NEXT_PUBLIC_INSTAGRAM_URL` | `https://instagram.com/your_account` |
+| `NEXT_PUBLIC_SITE_URL` | `https://cryptoosh.uz` (по умолчанию) |
+| `NEXT_PUBLIC_TELEGRAM_URL` | `https://t.me/Soultanov` (по умолчанию) |
+| `NEXT_PUBLIC_INSTAGRAM_URL` | `https://www.instagram.com/uzsoul/` (по умолчанию) |
 | `NEXT_PUBLIC_PHONE` | `+998901234567` |
 
-Пустые контакты просто скрывают кнопки. Секретов в проекте нет и быть не должно.
+Значения по умолчанию уже прописаны в `lib/site.ts`, переменные нужны только чтобы их поменять. Пустой телефон скрывает кнопку звонка. Секретов в проекте нет и быть не должно.
 
 ## Деплой на Vercel
 
 1. vercel.com → **Add New → Project** → импортировать репозиторий `soultano/crypto-osh`.
-2. Framework определится сам (Next.js). Добавить переменные окружения выше → **Deploy**.
-3. **Settings → Domains** → добавить домен (например `cryptoosh.uz` и `www.cryptoosh.uz`).
+2. Framework определится сам (Next.js). Переменные окружения можно не добавлять → **Deploy**.
+3. **Settings → Domains** → добавить `cryptoosh.uz` и `www.cryptoosh.uz` (www настроить как редирект на `cryptoosh.uz`).
 
 ## DNS у регистратора (billur.com)
 
-В панели домена → управление DNS-записями:
+billur.com → домен `cryptoosh.uz` → управление DNS. Удалить старые A/CNAME для `@` и `www` (если есть парковка регистратора) и добавить:
 
 | Тип | Имя | Значение |
 | --- | --- | --- |
