@@ -14,7 +14,8 @@ type PersonText = {
   metaDescription: string;
   bio: string[];
   directions: string[];
-  why: string;
+  // Optional "why in this section" paragraph; the block is hidden when absent.
+  why?: string;
 };
 
 export type Person = {
@@ -123,6 +124,110 @@ export const people: Person[] = [
           "Tech entrepreneurship",
         ],
         why: "Shakhruz represents the technical and entrepreneurial side of the blockchain ecosystem. His profile combines software product development, exploring TON and Web3, popularizing blockchain technology, and finding practical uses for decentralized solutions in business.",
+      },
+    },
+  },
+  {
+    slug: "sarvar-rasulev",
+    photo: "/people/sarvar-rasulev.webp",
+    ogImage: "/people/sarvar-rasulev-og.jpg",
+    cardTags: [1, 5, 3, 0],
+    links: [
+      { label: "LinkedIn", url: "https://www.linkedin.com/in/sarvarrasulev" },
+      { label: "Instagram", url: "https://instagram.com/sarvar.rasulev" },
+      { label: "Telegram", url: "https://t.me/mr_bitcoin_game" },
+      { label: "YouTube", url: "https://youtube.com/@sarvarcrypto" },
+    ],
+    text: {
+      ru: {
+        name: "Sarvar Rasulev",
+        role: "Предприниматель и инвестор в сфере финансов, blockchain, AI и технологических продуктов",
+        metaDescription: "Sarvar Rasulev — предприниматель и инвестор: более 15 лет в финансах и инвестициях, около 8 лет в blockchain. AI, fintech и технологическое предпринимательство.",
+        short:
+          "Sarvar Rasulev — предприниматель и инвестор с более чем 15-летним опытом в финансах, инвестициях и развитии бизнеса. Около 8 лет работает с blockchain и цифровыми активами. Сегодня его основные интересы находятся на пересечении финансов, AI, fintech, blockchain и технологического предпринимательства.",
+        bio: [
+          "Sarvar Rasulev — предприниматель, инвестор и специалист в области финансовых рынков, blockchain, цифровых активов и новых технологий.",
+          "Имеет более 15 лет профессионального опыта в инвестициях, финансовом анализе, рынках капитала, управлении портфелями, развитии бизнеса и руководстве компаниями. Последние около 8 лет активно работает с криптовалютами и blockchain-индустрией.",
+          "Его опыт объединяет традиционные финансы и новые технологии: инвестиции, digital assets, fintech, blockchain, AI, data-driven продукты и технологическое предпринимательство. Занимается созданием и развитием новых бизнесов, инвестиционным анализом, стратегическими партнерствами и развитием продуктов.",
+          "Отдельное направление его деятельности — развитие международных партнерств и связей между глобальными технологическими компаниями и рынком Узбекистана и Центральной Азии.",
+          "Sarvar также имеет значительный опыт в медиа и развитии digital-аудиторий. Это позволяет ему совмещать создание технологических и финансовых продуктов с их продвижением, построением сообществ, развитием партнерской сети и выходом на массовую аудиторию.",
+          "В настоящее время особое внимание уделяет направлениям на пересечении AI × Finance × Blockchain, а также инвестициям, venture ecosystem и развитию технологического предпринимательства в Узбекистане.",
+        ],
+        directions: [
+          "Investments & Capital Markets",
+          "Blockchain & Web3",
+          "Digital Assets",
+          "FinTech",
+          "Artificial Intelligence",
+          "AI × Finance",
+          "Technology Entrepreneurship",
+          "Venture & Startups",
+          "Trading & Financial Markets",
+          "Business Development",
+          "Strategic Partnerships",
+          "Digital Media & Community Building",
+          "Uzbekistan & Central Asia Tech Ecosystem",
+        ],
+      },
+      uz: {
+        name: "Sarvar Rasulev",
+        role: "Moliya, blokcheyn, AI va texnologik mahsulotlar sohasidagi tadbirkor va investor",
+        metaDescription: "Sarvar Rasulev — tadbirkor va investor: moliya va investitsiyalarda 15 yildan ortiq, blokcheynda qariyb 8 yil tajriba. AI, fintech va texnologik tadbirkorlik.",
+        short:
+          "Sarvar Rasulev — moliya, investitsiyalar va biznesni rivojlantirish sohasida 15 yildan ortiq tajribaga ega tadbirkor va investor. Qariyb 8 yildan beri blokcheyn va raqamli aktivlar bilan ishlaydi. Bugungi kunda uning asosiy qiziqishlari moliya, AI, fintech, blokcheyn va texnologik tadbirkorlik kesishmasida.",
+        bio: [
+          "Sarvar Rasulev — tadbirkor, investor hamda moliya bozorlari, blokcheyn, raqamli aktivlar va yangi texnologiyalar sohasidagi mutaxassis.",
+          "U investitsiyalar, moliyaviy tahlil, kapital bozorlari, portfellarni boshqarish, biznesni rivojlantirish va kompaniyalarga rahbarlik qilish bo'yicha 15 yildan ortiq kasbiy tajribaga ega. So'nggi qariyb 8 yil davomida kriptovalyutalar va blokcheyn sanoati bilan faol ishlaydi.",
+          "Uning tajribasi an'anaviy moliya va yangi texnologiyalarni birlashtiradi: investitsiyalar, raqamli aktivlar, fintech, blokcheyn, AI, ma'lumotlarga asoslangan (data-driven) mahsulotlar va texnologik tadbirkorlik. Yangi bizneslarni yaratish va rivojlantirish, investitsion tahlil, strategik hamkorliklar va mahsulotlarni rivojlantirish bilan shug'ullanadi.",
+          "Faoliyatining alohida yo'nalishi — xalqaro hamkorliklarni hamda global texnologik kompaniyalar bilan O'zbekiston va Markaziy Osiyo bozori o'rtasidagi aloqalarni rivojlantirish.",
+          "Sarvar media va raqamli auditoriyalarni rivojlantirishda ham katta tajribaga ega. Bu unga texnologik va moliyaviy mahsulotlar yaratishni ularni ilgari surish, hamjamiyatlar qurish, hamkorlar tarmog'ini kengaytirish va keng auditoriyaga chiqish bilan uyg'unlashtirish imkonini beradi.",
+          "Hozirgi vaqtda AI × Finance × Blockchain kesishmasidagi yo'nalishlarga, shuningdek investitsiyalar, venchur ekotizimi va O'zbekistonda texnologik tadbirkorlikni rivojlantirishga alohida e'tibor qaratmoqda.",
+        ],
+        directions: [
+          "Investments & Capital Markets",
+          "Blockchain & Web3",
+          "Digital Assets",
+          "FinTech",
+          "Artificial Intelligence",
+          "AI × Finance",
+          "Technology Entrepreneurship",
+          "Venture & Startups",
+          "Trading & Financial Markets",
+          "Business Development",
+          "Strategic Partnerships",
+          "Digital Media & Community Building",
+          "Uzbekistan & Central Asia Tech Ecosystem",
+        ],
+      },
+      en: {
+        name: "Sarvar Rasulev",
+        role: "Entrepreneur and investor in finance, blockchain, AI and technology products",
+        metaDescription: "Sarvar Rasulev is an entrepreneur and investor with 15+ years in finance and investment and about 8 years in blockchain, focused on AI, fintech and tech ventures.",
+        short:
+          "Sarvar Rasulev is an entrepreneur and investor with more than 15 years of experience in finance, investment and business development. He has worked with blockchain and digital assets for about 8 years. Today his main interests lie at the intersection of finance, AI, fintech, blockchain and tech entrepreneurship.",
+        bio: [
+          "Sarvar Rasulev is an entrepreneur, investor and specialist in financial markets, blockchain, digital assets and emerging technologies.",
+          "He has more than 15 years of professional experience in investment, financial analysis, capital markets, portfolio management, business development and company leadership. For roughly the past 8 years he has been actively working with cryptocurrencies and the blockchain industry.",
+          "His experience bridges traditional finance and new technology: investment, digital assets, fintech, blockchain, AI, data-driven products and tech entrepreneurship. He builds and grows new businesses and works on investment analysis, strategic partnerships and product development.",
+          "A separate focus of his work is building international partnerships and connections between global technology companies and the markets of Uzbekistan and Central Asia.",
+          "Sarvar also has extensive experience in media and growing digital audiences. This lets him combine building technology and financial products with promoting them, building communities, growing a partner network and reaching a mass audience.",
+          "He currently gives particular attention to the intersection of AI × Finance × Blockchain, as well as investment, the venture ecosystem and the development of tech entrepreneurship in Uzbekistan.",
+        ],
+        directions: [
+          "Investments & Capital Markets",
+          "Blockchain & Web3",
+          "Digital Assets",
+          "FinTech",
+          "Artificial Intelligence",
+          "AI × Finance",
+          "Technology Entrepreneurship",
+          "Venture & Startups",
+          "Trading & Financial Markets",
+          "Business Development",
+          "Strategic Partnerships",
+          "Digital Media & Community Building",
+          "Uzbekistan & Central Asia Tech Ecosystem",
+        ],
       },
     },
   },
