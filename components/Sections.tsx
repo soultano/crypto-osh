@@ -147,6 +147,7 @@ export function Footer({ t, locale }: { t: Dictionary; locale: Locale }) {
         <nav className="footer-nav" aria-label="Footer">
           <Link href={`/${locale}/about`}>{t.nav.about}</Link>
           <Link href={`/${locale}/business`}>{t.nav.business}</Link>
+          <Link href={`/${locale}/people`}>{t.nav.people}</Link>
           <Link href={`/${locale}/videos`}>{t.nav.videos}</Link>
           <Link href={`/${locale}#contact`}>{t.nav.contact}</Link>
         </nav>

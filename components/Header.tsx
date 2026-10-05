@@ -14,6 +14,7 @@ export function Header({ locale, nav }: { locale: Locale; nav: Dictionary["nav"]
     { href: `/${locale}`, label: nav.home },
     { href: `/${locale}/about`, label: nav.about },
     { href: `/${locale}/business`, label: nav.business },
+    { href: `/${locale}/people`, label: nav.people },
     { href: `/${locale}/videos`, label: nav.videos },
   ];
 
@@ -32,7 +33,7 @@ export function Header({ locale, nav }: { locale: Locale; nav: Dictionary["nav"]
             <Link
               key={l.href}
               href={l.href}
-              aria-current={pathname === l.href ? "page" : undefined}
+              aria-current={pathname === l.href ? "page" : l.href !== `/${locale}` && pathname.startsWith(`${l.href}/`) ? "true" : undefined}
               onClick={() => setOpen(false)}
             >
               {l.label}
