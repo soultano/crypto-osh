@@ -91,8 +91,12 @@ export default async function PersonPage({ params }: { params: Params }) {
             {p.bio.map((para) => (
               <p key={para}>{para}</p>
             ))}
-            <h2>{t.people.why}</h2>
-            <p>{p.why}</p>
+            {p.why && (
+              <>
+                <h2>{t.people.why}</h2>
+                <p>{p.why}</p>
+              </>
+            )}
           </div>
           <aside className="profile-aside">
             <div className="card-plain">
