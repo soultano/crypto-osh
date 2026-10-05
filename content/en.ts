@@ -6,7 +6,7 @@ export const en: typeof ru = {
     description:
       "An open community and association of traders, web3 developers, KOLs and creators in Uzbekistan. Offline meetups over plov, networking and turnkey events for brands.",
   },
-  nav: { home: "Home", about: "About", business: "For business", videos: "Videos", contact: "Contact", menu: "Menu" },
+  nav: { home: "Home", about: "About", business: "For business", people: "Blockchain People", videos: "Videos", contact: "Contact", menu: "Menu" },
   hero: {
     eyebrow: "Uzbekistan's crypto association",
     tagline: "Crypto, blockchain and plov at one dasturkhan",
@@ -122,6 +122,20 @@ export const en: typeof ru = {
     ],
     ctaTitle: "Let us set the dasturkhan for your brand",
     ctaButton: "Discuss an event",
+  },
+  people: {
+    kicker: "Blockchain experts in Uzbekistan",
+    title: "Blockchain People",
+    intro: "Specialists, developers and entrepreneurs building blockchain and Web3 in Uzbekistan.",
+    metaDescription: "Blockchain experts in Uzbekistan: specialists, developers and entrepreneurs building blockchain and Web3. Profiles of ecosystem members on the Crypto Osh website.",
+    open: "View profile",
+    back: "All Blockchain People",
+    photoAlt: "Portrait of {name}",
+    about: "About the specialist",
+    directions: "Key areas",
+    why: "Why this profile is in Blockchain People",
+    links: "Links",
+    disclaimer: "This profile is for information only and is not investment advice.",
   },
   videos: {
     kicker: "Videos",

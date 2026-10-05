@@ -1,8 +1,9 @@
 import type { MetadataRoute } from "next";
 import { htmlLang, locales } from "@/lib/i18n";
+import { people } from "@/lib/people";
 import { site } from "@/lib/site";
 
-const pages = ["", "/about", "/business", "/videos"];
+const pages = ["", "/about", "/business", "/videos", "/people", ...people.map((p) => `/people/${p.slug}`)];
 
 export default function sitemap(): MetadataRoute.Sitemap {
   return pages.flatMap((p) =>

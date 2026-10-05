@@ -6,7 +6,7 @@ export const uz: typeof ru = {
     description:
       "O'zbekistondagi treyderlar, web3 dasturchilar, KOL va blogerlarning ochiq hamjamiyati va assotsiatsiyasi. Osh atrofidagi oflayn uchrashuvlar, networking va biznes uchun tayyor tadbirlar.",
   },
-  nav: { home: "Bosh sahifa", about: "Biz haqimizda", business: "Biznesga", videos: "Videolar", contact: "Bog'lanish", menu: "Menyu" },
+  nav: { home: "Bosh sahifa", about: "Biz haqimizda", business: "Biznesga", people: "Blokcheyn odamlari", videos: "Videolar", contact: "Bog'lanish", menu: "Menyu" },
   hero: {
     eyebrow: "O'zbekiston kriptanlari assotsiatsiyasi",
     tagline: "Kripto, blokcheyn va osh — bir dasturxon atrofida",
@@ -122,6 +122,20 @@ export const uz: typeof ru = {
     ],
     ctaTitle: "Brendingiz uchun dasturxon yozamiz",
     ctaButton: "Tadbirni muhokama qilish",
+  },
+  people: {
+    kicker: "O'zbekiston blokcheyn ekspertlari",
+    title: "Blokcheyn odamlari",
+    intro: "O'zbekistonda blokcheyn va Web3'ni rivojlantirayotgan mutaxassislar, dasturchilar va tadbirkorlar.",
+    metaDescription: "O'zbekiston blokcheyn ekspertlari: blokcheyn va Web3'ni rivojlantirayotgan mutaxassislar, dasturchilar va tadbirkorlar. Kripto Osh saytida ekotizim ishtirokchilari profillari.",
+    open: "Profilni ochish",
+    back: "Barcha blokcheyn odamlari",
+    photoAlt: "Portret: {name}",
+    about: "Mutaxassis haqida",
+    directions: "Asosiy yo'nalishlar",
+    why: "Nega «Blokcheyn odamlari» bo'limida",
+    links: "Havolalar",
+    disclaimer: "Profil axborot xarakteriga ega va investitsiya tavsiyasi emas.",
   },
   videos: {
     kicker: "Videolar",
