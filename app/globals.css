@@ -843,6 +843,26 @@ p {
   color: var(--saffron);
 }
 
+.price-tag em {
+  font-style: normal;
+  font-weight: 600;
+}
+
+.includes-group + .includes-group {
+  margin-top: 36px;
+}
+
+.includes-group h3 {
+  margin: 0 0 16px;
+  color: var(--saffron);
+}
+
+.includes-note {
+  margin: 28px 0 0;
+  color: var(--muted);
+  font-weight: 600;
+}
+
 .includes {
   list-style: none;
   padding: 0;

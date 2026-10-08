@@ -1,5 +1,5 @@
 import type { MetadataRoute } from "next";
-import { htmlLang, locales } from "@/lib/i18n";
+import { defaultLocale, htmlLang, locales } from "@/lib/i18n";
 import { people } from "@/lib/people";
 import { site } from "@/lib/site";
 
@@ -10,8 +10,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     locales.map((l) => ({
       url: `${site.url}/${l}${p}`,
       changeFrequency: "monthly" as const,
-      priority: p === "" ? 1 : 0.8,
-      alternates: { languages: Object.fromEntries(locales.map((x) => [htmlLang[x], `${site.url}/${x}${p}`])) },
+      priority: p === "" ? 1 : p === "/business" ? 0.9 : 0.8,
+      alternates: {
+        languages: {
+          ...Object.fromEntries(locales.map((x) => [htmlLang[x], `${site.url}/${x}${p}`])),
+          "x-default": `${site.url}/${defaultLocale}${p}`,
+        },
+      },
     })),
   );
 }
