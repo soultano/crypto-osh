@@ -2,7 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { notFound } from "next/navigation";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Sections";
-import { getDictionary, htmlLang, isLocale, locales, ogLocale } from "@/lib/i18n";
+import { defaultLocale, getDictionary, htmlLang, isLocale, locales, ogLocale } from "@/lib/i18n";
 import { site, photos } from "@/lib/site";
 import "../globals.css";
 
@@ -28,7 +28,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     description: t.meta.description,
     alternates: {
       canonical: `/${locale}`,
-      languages: Object.fromEntries(locales.map((l) => [htmlLang[l], `/${l}`])),
+      languages: { ...Object.fromEntries(locales.map((l) => [htmlLang[l], `/${l}`])), "x-default": `/${defaultLocale}` },
     },
     openGraph: {
       type: "website",
@@ -40,6 +40,10 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     },
     twitter: { card: "summary_large_image", title: t.meta.title, description: t.meta.description },
     icons: { icon: "/icon.svg" },
+    verification: {
+      ...(site.verification.google ? { google: site.verification.google } : {}),
+      ...(site.verification.yandex ? { yandex: site.verification.yandex } : {}),
+    },
   };
 }
 

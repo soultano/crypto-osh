@@ -1,13 +1,16 @@
 import type { Metadata } from "next";
-import { getDictionary, htmlLang, isLocale, locales, ogLocale } from "./i18n";
+import { defaultLocale, getDictionary, htmlLang, isLocale, locales, ogLocale } from "./i18n";
 import { photos } from "./site";
 
-type Page = "" | "about" | "business" | "videos";
+type Page = "" | "about" | "videos";
 
 function alternates(locale: string, suffix: string): Metadata["alternates"] {
   return {
     canonical: `/${locale}${suffix}`,
-    languages: Object.fromEntries(locales.map((l) => [htmlLang[l], `/${l}${suffix}`])),
+    languages: {
+      ...Object.fromEntries(locales.map((l) => [htmlLang[l], `/${l}${suffix}`])),
+      "x-default": `/${defaultLocale}${suffix}`,
+    },
   };
 }
 
@@ -19,7 +22,6 @@ export async function pageMetadata(params: Promise<{ locale: string }>, page: Pa
   const titles: Record<Page, string | undefined> = {
     "": undefined,
     about: t.nav.about,
-    business: t.business.title,
     videos: t.videos.title,
   };
   const title = titles[page];

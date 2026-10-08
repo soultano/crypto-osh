@@ -12,6 +12,11 @@ function safeUrl(value: string | undefined, hosts: string[]): string {
   }
 }
 
+// Search console verification codes are short tokens; anything else is dropped.
+function token(value: string | undefined): string {
+  return value && /^[A-Za-z0-9_-]{1,100}$/.test(value) ? value : "";
+}
+
 export const site = {
   url: (process.env.NEXT_PUBLIC_SITE_URL || "https://cryptoosh.uz").replace(/\/$/, ""),
   name: "Crypto Osh",
@@ -19,6 +24,11 @@ export const site = {
     telegram: safeUrl(process.env.NEXT_PUBLIC_TELEGRAM_URL || "https://t.me/Soultanov", ["t.me"]),
     instagram: safeUrl(process.env.NEXT_PUBLIC_INSTAGRAM_URL || "https://www.instagram.com/uzsoul/", ["instagram.com", "www.instagram.com"]),
     phone: process.env.NEXT_PUBLIC_PHONE || "", // e.g. +998901234567
+  },
+  // Google Search Console / Yandex Webmaster "meta tag" verification codes.
+  verification: {
+    google: token(process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION),
+    yandex: token(process.env.NEXT_PUBLIC_YANDEX_VERIFICATION),
   },
 };
 
