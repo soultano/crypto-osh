@@ -37,12 +37,23 @@ npm run build && npm start
 | --- | --- |
 | `NEXT_PUBLIC_SITE_URL` | `https://cryptoosh.uz` (по умолчанию) |
 | `NEXT_PUBLIC_TELEGRAM_URL` | `https://t.me/Soultanov` (по умолчанию) |
+| `NEXT_PUBLIC_TELEGRAM_GROUP_URL` | `https://t.me/cryptoosh`: публичная группа, кнопка «Вступить в группу» (пусто = кнопки нет) |
 | `NEXT_PUBLIC_INSTAGRAM_URL` | `https://www.instagram.com/uzsoul/` (по умолчанию) |
 | `NEXT_PUBLIC_PHONE` | `+998901234567` |
 | `NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION` | код из Google Search Console (только сам код из `content="…"`) |
 | `NEXT_PUBLIC_YANDEX_VERIFICATION` | код из Яндекс Вебмастера (только сам код из `content="…"`) |
 
-Значения по умолчанию уже прописаны в `lib/site.ts`, переменные нужны только чтобы их поменять. Пустой телефон скрывает кнопку звонка. Секретов в проекте нет и быть не должно.
+Значения по умолчанию уже прописаны в `lib/site.ts`, переменные нужны только чтобы их поменять. Пустой телефон скрывает кнопку звонка. Секретов в репозитории нет и быть не должно: токен бота хранится только в переменных Vercel.
+
+## Бот группы: вступление через представление
+
+`app/api/telegram/route.ts`. Человек нажимает «Подать заявку» в группе, бот пишет ему в личку и просит рассказать о себе. После ответа (не короче 40 символов) бот одобряет заявку и публикует представление в группе.
+
+1. В Telegram у **@BotFather**: `/newbot` → имя и username бота → скопировать токен. Никому его не пересылать.
+2. В группе: **Тип группы → Публичная**, задать адрес (например `cryptoosh`), включить **«Заявки на вступление»**.
+3. **Администраторы → Добавить** бота, оставить право «Добавление участников».
+4. Vercel → Settings → Environment Variables: `TELEGRAM_BOT_TOKEN` (токен), `TELEGRAM_GROUP_ID` (`@cryptoosh`), `TELEGRAM_WEBHOOK_SECRET` (случайная строка из латинских букв и цифр, 20+ символов), `NEXT_PUBLIC_TELEGRAM_GROUP_URL` (`https://t.me/cryptoosh`) → Redeploy.
+5. Один раз открыть `https://cryptoosh.uz/api/telegram?setup=<TELEGRAM_WEBHOOK_SECRET>`: должно быть «Готово: бот подключён».
 
 ## Поиск: Google и Яндекс
 

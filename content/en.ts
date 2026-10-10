@@ -170,6 +170,7 @@ export const en: typeof ru = {
   contact: {
     title: "Get in touch",
     text: "Want to join the next Osh, speak at one, or host an event for your brand? Write to us.",
+    group: "Join the Telegram group",
     telegram: "Message on Telegram",
     instagram: "Instagram",
     phone: "Call",

@@ -170,6 +170,7 @@ export const uz: typeof ru = {
   contact: {
     title: "Biz bilan bog'lanish",
     text: "Keyingi Oshga kelmoqchimisiz, spiker bo'lmoqchimisiz yoki brendingiz uchun tadbir o'tkazmoqchimisiz? Bizga yozing.",
+    group: "Telegram guruhiga qo'shilish",
     telegram: "Telegram'da yozish",
     instagram: "Instagram",
     phone: "Qo'ng'iroq qilish",
