@@ -12,16 +12,19 @@
 //
 // Settings (Vercel → Settings → Environment Variables, never in the repo):
 //   TELEGRAM_BOT_TOKEN       token from @BotFather
-//   TELEGRAM_WEBHOOK_SECRET  any random string, 20+ letters and digits
 //   TELEGRAM_GROUP_ID        numeric id like -1001234567890 (or "@username"
 //                            for a public group)
-// After deploy, open /api/telegram?setup=<TELEGRAM_WEBHOOK_SECRET> once to
-// point the bot at this URL. Then add the bot to the group as an admin: while
-// TELEGRAM_GROUP_ID is empty, the bot posts the group's id there.
+// After deploy, open /api/telegram?setup once to point the bot at this site.
+// While TELEGRAM_GROUP_ID is empty, adding the bot to a group as an admin
+// makes it post that group's id there.
 
+import { createHash } from "node:crypto";
 import { site } from "@/lib/site";
 
 export const dynamic = "force-dynamic";
+
+// Crypto osh group. Not a secret; empty until the bot reports it (see above).
+const GROUP_ID = "";
 
 const MIN_INTRO = 40; // characters
 const MAX_INTRO = 1500;
@@ -34,11 +37,16 @@ type Update = {
   chat_join_request?: { chat: Chat; from: User; user_chat_id: number };
 };
 
-const env = () => ({
-  token: process.env.TELEGRAM_BOT_TOKEN || "",
-  group: process.env.TELEGRAM_GROUP_ID || "",
-  secret: process.env.TELEGRAM_WEBHOOK_SECRET || "",
-});
+const env = () => {
+  const token = process.env.TELEGRAM_BOT_TOKEN || "";
+  return {
+    token,
+    group: process.env.TELEGRAM_GROUP_ID || GROUP_ID,
+    // Telegram echoes this in a header on every webhook call, proving the call
+    // came from Telegram. Derived from the token so there is one less setting.
+    secret: token ? createHash("sha256").update(`webhook:${token}`).digest("hex") : "",
+  };
+};
 
 async function tg(method: string, body: Record<string, unknown>) {
   const res = await fetch(`https://api.telegram.org/bot${env().token}/${method}`, {
@@ -128,17 +136,16 @@ export async function POST(request: Request) {
   return Response.json({ ok: true });
 }
 
-// One-time setup: /api/telegram?setup=<TELEGRAM_WEBHOOK_SECRET>
+// One-time setup: /api/telegram?setup. Safe to open by anyone: it can only
+// point the bot at this site's own webhook.
 export async function GET(request: Request) {
   const { token, secret } = env();
-  if (!token || !secret) return new Response("Не заданы TELEGRAM_BOT_TOKEN или TELEGRAM_WEBHOOK_SECRET", { status: 503 });
-  const url = new URL(request.url);
-  if (url.searchParams.get("setup") !== secret) return new Response("forbidden", { status: 403 });
+  if (!token) return new Response("Не задан TELEGRAM_BOT_TOKEN", { status: 503 });
+  if (!new URL(request.url).searchParams.has("setup")) return new Response("not found", { status: 404 });
   const res = await tg("setWebhook", {
-    url: `${url.origin}/api/telegram`,
+    url: `${site.url}/api/telegram`,
     secret_token: secret,
     allowed_updates: ["message", "chat_join_request", "my_chat_member"],
-    drop_pending_updates: true,
   });
   return new Response(res.ok ? "Готово: бот подключён." : `Ошибка: ${res.description}`, {
     status: res.ok ? 200 : 502,
