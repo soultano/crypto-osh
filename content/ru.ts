@@ -168,6 +168,7 @@ export const ru = {
   contact: {
     title: "Связаться с нами",
     text: "Хотите прийти на следующий Ош, выступить спикером или провести мероприятие для своего бренда? Напишите нам.",
+    group: "Вступить в группу в Telegram",
     telegram: "Написать в Telegram",
     instagram: "Instagram",
     phone: "Позвонить",
