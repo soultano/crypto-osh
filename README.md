@@ -37,7 +37,7 @@ npm run build && npm start
 | --- | --- |
 | `NEXT_PUBLIC_SITE_URL` | `https://cryptoosh.uz` (по умолчанию) |
 | `NEXT_PUBLIC_TELEGRAM_URL` | `https://t.me/Soultanov` (по умолчанию) |
-| `NEXT_PUBLIC_TELEGRAM_GROUP_URL` | `https://t.me/cryptoosh`: публичная группа, кнопка «Вступить в группу» (пусто = кнопки нет) |
+| `NEXT_PUBLIC_TELEGRAM_GROUP_URL` | `https://t.me/+3LQvpeGh5hNlMjVi` (по умолчанию): ссылка с заявками на вступление, кнопка «Вступить в группу» |
 | `NEXT_PUBLIC_INSTAGRAM_URL` | `https://www.instagram.com/uzsoul/` (по умолчанию) |
 | `NEXT_PUBLIC_PHONE` | `+998901234567` |
 | `NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION` | код из Google Search Console (только сам код из `content="…"`) |
@@ -50,10 +50,10 @@ npm run build && npm start
 `app/api/telegram/route.ts`. Человек нажимает «Подать заявку» в группе, бот пишет ему в личку и просит рассказать о себе. После ответа (не короче 40 символов) бот одобряет заявку и публикует представление в группе.
 
 1. В Telegram у **@BotFather**: `/newbot` → имя и username бота → скопировать токен. Никому его не пересылать.
-2. В группе: **Тип группы → Публичная**, задать адрес (например `cryptoosh`), включить **«Заявки на вступление»**.
-3. **Администраторы → Добавить** бота, оставить право «Добавление участников».
-4. Vercel → Settings → Environment Variables: `TELEGRAM_BOT_TOKEN` (токен), `TELEGRAM_GROUP_ID` (`@cryptoosh`), `TELEGRAM_WEBHOOK_SECRET` (случайная строка из латинских букв и цифр, 20+ символов), `NEXT_PUBLIC_TELEGRAM_GROUP_URL` (`https://t.me/cryptoosh`) → Redeploy.
-5. Один раз открыть `https://cryptoosh.uz/api/telegram?setup=<TELEGRAM_WEBHOOK_SECRET>`: должно быть «Готово: бот подключён».
+2. Vercel → Settings → Environment Variables: `TELEGRAM_BOT_TOKEN` (токен) и `TELEGRAM_WEBHOOK_SECRET` (случайная строка из латинских букв и цифр, 20+ символов) → Redeploy.
+3. Один раз открыть `https://cryptoosh.uz/api/telegram?setup=<TELEGRAM_WEBHOOK_SECRET>`: должно быть «Готово: бот подключён».
+4. В группе: **Администраторы → Добавить** бота с правом «Добавление участников». Бот напишет в группу её ID: вписать его в `TELEGRAM_GROUP_ID` на Vercel → Redeploy. Сообщение бота можно удалить.
+5. В группе: **Пригласительные ссылки** → у ссылки, которая стоит на сайте, включить **«Заявки на вступление»** (или создать новую с этой галочкой и поставить её в `NEXT_PUBLIC_TELEGRAM_GROUP_URL`). Группа может оставаться частной.
 
 ## Поиск: Google и Яндекс
 

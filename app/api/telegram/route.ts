@@ -1,7 +1,8 @@
 // Telegram bot that lets people into the community group only after they
 // introduce themselves.
 //
-// Flow (the group has "join requests" on and the bot is an admin there):
+// Flow (the group's invite link has "join requests" on and the bot is an
+// admin there):
 // 1. Someone taps "Request to join" → Telegram sends us chat_join_request and
 //    the bot writes to them privately asking for a short introduction.
 // 2. They answer the bot → we approve the pending request and post the
@@ -11,10 +12,12 @@
 //
 // Settings (Vercel → Settings → Environment Variables, never in the repo):
 //   TELEGRAM_BOT_TOKEN       token from @BotFather
-//   TELEGRAM_GROUP_ID        "@groupusername" or numeric id like -1001234567890
 //   TELEGRAM_WEBHOOK_SECRET  any random string, 20+ letters and digits
+//   TELEGRAM_GROUP_ID        numeric id like -1001234567890 (or "@username"
+//                            for a public group)
 // After deploy, open /api/telegram?setup=<TELEGRAM_WEBHOOK_SECRET> once to
-// point the bot at this URL.
+// point the bot at this URL. Then add the bot to the group as an admin: while
+// TELEGRAM_GROUP_ID is empty, the bot posts the group's id there.
 
 import { site } from "@/lib/site";
 
@@ -26,6 +29,7 @@ const MAX_INTRO = 1500;
 type User = { id: number; first_name: string; last_name?: string; username?: string; is_bot?: boolean };
 type Chat = { id: number; type: string; username?: string };
 type Update = {
+  my_chat_member?: { chat: Chat; new_chat_member: { status: string } };
   message?: { chat: Chat; from?: User; text?: string };
   chat_join_request?: { chat: Chat; from: User; user_chat_id: number };
 };
@@ -73,6 +77,15 @@ const NO_REQUEST = () =>
 const WELCOME = "Rahmat! Siz guruhga qabul qilindingiz 🎉\n\nСпасибо! Вы приняты в группу 🎉";
 
 async function handle(u: Update) {
+  // Setup helper: tell the owner the group's id, which Telegram apps hide.
+  const added = u.my_chat_member;
+  if (added) {
+    if (!env().group && added.new_chat_member.status === "administrator" && added.chat.type !== "private")
+      await say(added.chat.id, `TELEGRAM_GROUP_ID = ${added.chat.id}\n\nВпишите это в Vercel → Settings → Environment Variables и сделайте Redeploy.`);
+    return;
+  }
+  if (!env().group) return;
+
   const req = u.chat_join_request;
   if (req) {
     if (isOurGroup(req.chat) && !req.from.is_bot) await say(req.user_chat_id, ASK);
@@ -103,8 +116,8 @@ async function handle(u: Update) {
 }
 
 export async function POST(request: Request) {
-  const { token, group, secret } = env();
-  if (!token || !group || !secret) return new Response("not configured", { status: 503 });
+  const { token, secret } = env();
+  if (!token || !secret) return new Response("not configured", { status: 503 });
   if (request.headers.get("x-telegram-bot-api-secret-token") !== secret) return new Response("forbidden", { status: 403 });
   try {
     await handle((await request.json()) as Update);
@@ -117,14 +130,14 @@ export async function POST(request: Request) {
 
 // One-time setup: /api/telegram?setup=<TELEGRAM_WEBHOOK_SECRET>
 export async function GET(request: Request) {
-  const { token, group, secret } = env();
-  if (!token || !group || !secret) return new Response("Не заданы TELEGRAM_BOT_TOKEN, TELEGRAM_GROUP_ID или TELEGRAM_WEBHOOK_SECRET", { status: 503 });
+  const { token, secret } = env();
+  if (!token || !secret) return new Response("Не заданы TELEGRAM_BOT_TOKEN или TELEGRAM_WEBHOOK_SECRET", { status: 503 });
   const url = new URL(request.url);
   if (url.searchParams.get("setup") !== secret) return new Response("forbidden", { status: 403 });
   const res = await tg("setWebhook", {
     url: `${url.origin}/api/telegram`,
     secret_token: secret,
-    allowed_updates: ["message", "chat_join_request"],
+    allowed_updates: ["message", "chat_join_request", "my_chat_member"],
     drop_pending_updates: true,
   });
   return new Response(res.ok ? "Готово: бот подключён." : `Ошибка: ${res.description}`, {

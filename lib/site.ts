@@ -22,9 +22,9 @@ export const site = {
   name: "Crypto Osh",
   contacts: {
     telegram: safeUrl(process.env.NEXT_PUBLIC_TELEGRAM_URL || "https://t.me/Soultanov", ["t.me"]),
-    // Public community group. TODO: put the group's public link here once it
-    // has a @username (e.g. "https://t.me/cryptoosh"); empty hides the button.
-    group: safeUrl(process.env.NEXT_PUBLIC_TELEGRAM_GROUP_URL || "", ["t.me"]),
+    // Community group: an invite link with join requests on, so the bot can
+    // ask each newcomer to introduce themselves. Empty hides the button.
+    group: safeUrl(process.env.NEXT_PUBLIC_TELEGRAM_GROUP_URL || "https://t.me/+3LQvpeGh5hNlMjVi", ["t.me"]),
     instagram: safeUrl(process.env.NEXT_PUBLIC_INSTAGRAM_URL || "https://www.instagram.com/uzsoul/", ["instagram.com", "www.instagram.com"]),
     phone: process.env.NEXT_PUBLIC_PHONE || "", // e.g. +998901234567
   },
