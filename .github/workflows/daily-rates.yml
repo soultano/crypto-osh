@@ -1,0 +1,47 @@
+# Refreshes the USDT/UZS rates table every morning (08:00 Tashkent) from each
+# exchanger's own public API, commits content/usdt-rates.json to main so
+# Vercel redeploys the home page, then posts the table to Telegram.
+# Secrets (repo → Settings → Secrets and variables → Actions):
+#   TELEGRAM_BOT_TOKEN      optional, for posting to the channel
+#   TELEGRAM_NEWS_CHAT_ID   optional, e.g. @cryptoosh or -100…
+name: Daily USDT rates
+
+on:
+  schedule:
+    - cron: "0 3 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: daily-rates
+  cancel-in-progress: false
+
+jobs:
+  rates:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+
+      - name: Fetch today's rates
+        run: node scripts/rates/update.mts
+
+      - name: Commit and push
+        run: |
+          git add content/usdt-rates.json
+          git config user.name "Crypto Osh Rates"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "USDT rates for $(TZ=Asia/Tashkent date +%F)"
+          git pull --rebase origin main
+          git push
+
+      - name: Post to Telegram
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_NEWS_CHAT_ID: ${{ secrets.TELEGRAM_NEWS_CHAT_ID }}
+        run: node scripts/rates/telegram.mts

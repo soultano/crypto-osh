@@ -1,0 +1,31 @@
+[
+  {
+    "id": "binance",
+    "name": "Binance",
+    "note": "CoinPay",
+    "url": "https://www.binanceuz.co/referral/earn-together/refer2earn-usdc/claim?hl=ru&ref=GRO_28502_T4GZ2&utm_source=referral_entrance",
+    "mark": "B",
+    "bg": "#1e2026",
+    "fg": "#f0b90b"
+  },
+  { "id": "voluto", "name": "Voluto", "url": "https://voluto.uz/ru", "mark": "V", "bg": "#111111", "fg": "#ffffff" },
+  { "id": "asterium", "name": "Asterium", "url": "https://asterium.uz", "mark": "A", "bg": "#2b2b3a", "fg": "#ffffff" },
+  {
+    "id": "tcrypto",
+    "name": "tcrypto",
+    "url": "https://tcrypto.uz/ref?ref_code=BXTO3QLJN8PMXI4YNXMPLVAW4BWHJ8JV",
+    "mark": "T",
+    "bg": "#1e7bf2",
+    "fg": "#ffffff"
+  },
+  {
+    "id": "walt",
+    "name": "Walt",
+    "note": "ex. Wallet",
+    "url": "https://telegram.me/walt/start?startapp=ref-7-T1sPnYul5RY",
+    "mark": "W",
+    "bg": "#2a8bf2",
+    "fg": "#ffffff"
+  },
+  { "id": "unexpay", "name": "Unexpay", "url": "https://unexpay.uz/", "mark": "U", "bg": "#d8262f", "fg": "#ffffff" }
+]

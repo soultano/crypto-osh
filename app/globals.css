@@ -1694,3 +1694,336 @@ p {
     display: none;
   }
 }
+
+/* ---------- USDT / UZS rates (home page, top) ---------- */
+
+.usdt {
+  --u-bg: #fffdf8;
+  --u-ink: #14213d;
+  --u-muted: #626b7f;
+  --u-line: #ece4d3;
+  --u-in: #1b3170;
+  --u-out: #c8402f;
+  --u-cash: #2b7de9;
+  /* Ikat lozenges: lapis, saffron and pomegranate on cotton cream */
+  --ikat-tile: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' fill='%23f6efe2'/%3E%3Cpath d='M8 0l6 8-6 8-6-8z' fill='%232453b8'/%3E%3Cpath d='M8 3l3.6 5L8 13 4.4 8z' fill='%23f2b230'/%3E%3Cpath d='M8 6l1.4 2L8 10 6.6 8z' fill='%23c8402f'/%3E%3Cpath d='M0 0h2L0 3zM16 0h-2l2 3zM0 16h2l-2-3zM16 16h-2l2-3z' fill='%23c8402f'/%3E%3Cpath d='M1 7.2v1.6M15 7.2v1.6' stroke='%231fb5b0' stroke-width='1.4'/%3E%3C/svg%3E");
+  padding: 20px 0 8px;
+}
+
+.usdt-card {
+  background: var(--u-bg);
+  color: var(--u-ink);
+  border-radius: var(--radius);
+  padding: 22px 22px 18px;
+  box-shadow: var(--shadow);
+  position: relative;
+  overflow: hidden;
+}
+
+.usdt-card::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto;
+  height: 6px;
+  background: var(--ikat-tile) 0 0 / 12px 12px;
+}
+
+.usdt-head {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin: 4px 0 14px;
+}
+
+.usdt-coin {
+  width: 52px;
+  height: 52px;
+  flex: none;
+}
+
+.usdt-head h2 {
+  font-size: clamp(1.7rem, 4.6vw, 2.6rem);
+  margin: 0;
+  letter-spacing: -0.03em;
+  color: var(--u-ink);
+}
+
+.usdt-head p {
+  margin: 0;
+  color: var(--u-muted);
+  font-weight: 600;
+}
+
+.usdt-date {
+  margin-left: auto;
+  text-align: right;
+  font-size: 0.78rem;
+  color: var(--u-muted);
+  line-height: 1.35;
+}
+
+.usdt-date time {
+  color: var(--u-ink);
+  font-weight: 700;
+}
+
+.usdt-table-wrap {
+  overflow-x: auto;
+  margin: 0 -6px;
+}
+
+.usdt-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-variant-numeric: tabular-nums;
+}
+
+.usdt-table thead th {
+  text-align: center;
+  font-size: 0.78rem;
+  font-weight: 700;
+  line-height: 1.25;
+  color: var(--u-ink);
+  padding: 6px 6px 12px;
+  vertical-align: bottom;
+}
+
+.usdt-table thead th:first-child {
+  text-align: left;
+  font-size: 1.05rem;
+}
+
+.usdt-table thead small {
+  display: block;
+  font-weight: 500;
+  color: var(--u-muted);
+}
+
+.usdt-ico {
+  display: block;
+  width: 26px;
+  height: 26px;
+  margin: 0 auto 6px;
+  border-radius: 8px;
+  font-weight: 800;
+  line-height: 26px;
+  color: #fff;
+}
+
+.usdt-ico-in {
+  background: var(--u-in);
+}
+
+.usdt-ico-out {
+  background: var(--u-out);
+}
+
+.usdt-ico-cash {
+  background: var(--u-cash);
+  border-radius: 50%;
+}
+
+.usdt-table tbody th,
+.usdt-table td {
+  border-top: 1px solid var(--u-line);
+  padding: 10px 6px;
+}
+
+.usdt-table td {
+  text-align: center;
+  font-weight: 800;
+  font-size: 1.15rem;
+  white-space: nowrap;
+}
+
+.usdt-provider {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--u-ink);
+  text-align: left;
+  font-weight: 400;
+}
+
+.usdt-provider strong {
+  display: block;
+  font-size: 1.02rem;
+  line-height: 1.2;
+}
+
+.usdt-provider small,
+.usdt-best-row small {
+  display: block;
+  color: var(--u-muted);
+  font-size: 0.72rem;
+}
+
+.usdt-provider:hover strong {
+  text-decoration: underline;
+}
+
+.usdt-badge {
+  flex: none;
+  display: inline-grid;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  font-weight: 800;
+  font-size: 0.95rem;
+}
+
+.usdt-dash {
+  color: #9aa1af;
+  font-weight: 700;
+}
+
+.usdt-dash small {
+  display: block;
+  font-size: 0.66rem;
+  font-weight: 500;
+  white-space: normal;
+  line-height: 1.2;
+  max-width: 11ch;
+  margin: 2px auto 0;
+}
+
+.usdt-fee,
+.usdt-provider .usdt-fee-mobile {
+  color: var(--u-cash);
+  font-weight: 700;
+}
+
+.usdt-fee-mobile {
+  display: none !important;
+}
+
+/* The best offer sits inside an ikat-patterned frame */
+.ikat-frame {
+  display: inline-block;
+  padding: 5px;
+  border-radius: 12px;
+  background: var(--ikat-tile) 0 0 / 18px 18px;
+  box-shadow: 0 6px 16px rgba(36, 83, 184, 0.18);
+}
+
+.ikat-frame-in {
+  display: block;
+  background: #fff;
+  border-radius: 8px;
+  padding: 4px 10px 3px;
+}
+
+.usdt-best-tag {
+  display: block;
+  font-size: 0.6rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--pomegranate);
+}
+
+.usdt-bests {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 14px;
+  margin-top: 16px;
+}
+
+.usdt-best {
+  display: block;
+  color: var(--u-ink);
+}
+
+.usdt-best .ikat-frame-in {
+  padding: 12px 14px;
+  height: 100%;
+}
+
+.usdt-best-label {
+  display: block;
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--u-muted);
+  margin-bottom: 6px;
+}
+
+.usdt-best-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.usdt-best-row strong {
+  font-size: 1.35rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.usdt-note {
+  margin: 14px 0 0;
+  font-size: 0.76rem;
+  line-height: 1.5;
+  color: var(--u-muted);
+}
+
+.usdt-note a {
+  color: var(--majolica);
+  font-weight: 700;
+}
+
+@media (max-width: 640px) {
+  .usdt-card {
+    padding: 18px 12px 14px;
+  }
+  .usdt-coin {
+    width: 42px;
+    height: 42px;
+  }
+  .usdt-date {
+    font-size: 0.68rem;
+  }
+  .usdt-table thead th {
+    font-size: 0.64rem;
+    padding: 4px 3px 10px;
+  }
+  .usdt-table thead th:first-child {
+    font-size: 0.9rem;
+  }
+  .usdt-ico {
+    width: 22px;
+    height: 22px;
+    line-height: 22px;
+    font-size: 0.8rem;
+  }
+  .usdt-table tbody th,
+  .usdt-table td {
+    padding: 9px 3px;
+  }
+  .usdt-table td {
+    font-size: 0.92rem;
+  }
+  .usdt-provider {
+    gap: 7px;
+  }
+  .usdt-provider strong {
+    font-size: 0.86rem;
+  }
+  .usdt-badge {
+    width: 28px;
+    height: 28px;
+    font-size: 0.8rem;
+  }
+  .ikat-frame {
+    padding: 4px;
+    background-size: 14px 14px;
+  }
+  .ikat-frame-in {
+    padding: 3px 7px 2px;
+  }
+  .usdt-col-fee {
+    display: none;
+  }
+  .usdt-fee-mobile {
+    display: block !important;
+  }
+}
