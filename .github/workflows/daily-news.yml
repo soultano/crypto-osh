@@ -1,0 +1,59 @@
+# Writes 3–5 crypto news stories every morning (08:30 Tashkent), commits
+# them to main so Vercel redeploys the site, then posts them to Telegram.
+# Secrets (repo → Settings → Secrets and variables → Actions):
+#   ANTHROPIC_API_KEY       required
+#   TELEGRAM_BOT_TOKEN      optional, for posting to the channel
+#   TELEGRAM_NEWS_CHAT_ID   optional, e.g. @cryptoosh or -100…
+name: Daily news
+
+on:
+  schedule:
+    - cron: "30 3 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: daily-news
+  cancel-in-progress: false
+
+jobs:
+  news:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci --no-audit --no-fund
+
+      - name: Write today's news
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: node scripts/news/generate.mts
+
+      - name: Commit and push
+        id: push
+        run: |
+          git add content/articles
+          if git diff --cached --quiet; then
+            echo "No new articles."
+            echo "pushed=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          git config user.name "Crypto Osh News"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "News for $(TZ=Asia/Tashkent date +%F)"
+          git pull --rebase origin main
+          git push
+          echo "pushed=true" >> "$GITHUB_OUTPUT"
+
+      - name: Post to Telegram
+        if: steps.push.outputs.pushed == 'true'
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_NEWS_CHAT_ID: ${{ secrets.TELEGRAM_NEWS_CHAT_ID }}
+        run: node scripts/news/telegram.mts

@@ -1,0 +1,38 @@
+{
+  "slug": "2026-10-14-bitcoin-etfs-inflows-ether-etfs-end-outflows",
+  "date": "2026-10-14T19:00:00+05:00",
+  "tags": ["etf", "bitcoin", "ethereum"],
+  "sources": [
+    { "name": "U.Today", "url": "https://u.today/banking-giant-rolls-out-bitcoin-and-ether-desks-after-xrp-pivot-top-crypto-news-this-morning" }
+  ],
+  "uz": {
+    "title": "Bitcoin ETF'larga bir kunda 175 mln dollar kirdi, Ethereum ETF'lardan chiqim to'xtadi",
+    "summary": "13-oktabr kuni AQShdagi spot bitcoin ETF'larga 175,6 mln dollar kirdi. Ethereum ETF'lar esa 10 kunlik chiqimdan keyin birinchi marta 24,8 mln dollar oldi.",
+    "body": [
+      "SoSoValue ma'lumotiga ko'ra, 13-oktabr kuni spot bitcoin ETF'larga sof 175,62 mln dollar kirgan. Eng ko'p pulni Fidelity'ning FBTC fondi (103 mln dollar) va BlackRock'ning IBIT fondi (66 mln dollar) oldi.",
+      "Ethereum ETF'lar ketma-ket 10 kunlik chiqimni to'xtatib, 24,8 mln dollar kiritdi.",
+      "Shunga qaramay, oktabr boshidagi besh kunlik umumiy oqim hali ham manfiy, taxminan 600 mln dollar chiqim."
+    ],
+    "take": "ETF — bu Amerikadagi yirik investorlar va pensiya fondlarining kriptoga kirish yo'li. Ular qaytib kela boshlasa, bu bozorga ishonch belgisi, lekin bir kunlik raqam hali trend emas. Bizga, O'zbekistondagi oddiy investorga, xulosa shu: kim pul olib kirayotgani va kim chiqarayotganini kuzatish ijtimoiy tarmoqdagi «ertaga 100 ming» degan gaplardan foydaliroq."
+  },
+  "ru": {
+    "title": "В биткоин-ETF за день зашло 175 млн долларов, отток из эфирных ETF прекратился",
+    "summary": "13 октября в спотовые биткоин-ETF в США пришло 175,6 млн долларов. Эфирные ETF впервые после 10 дней оттока получили 24,8 млн долларов.",
+    "body": [
+      "По данным SoSoValue, 13 октября чистый приток в спотовые биткоин-ETF составил 175,62 млн долларов. Больше всего получили фонд Fidelity FBTC (103 млн долларов) и BlackRock IBIT (66 млн долларов).",
+      "Эфирные ETF прервали десятидневную серию оттоков и получили 24,8 млн долларов.",
+      "При этом суммарный поток за пять дней в начале октября всё ещё отрицательный: около 600 млн долларов оттока."
+    ],
+    "take": "ETF — это дорога в крипту для крупных американских инвесторов и пенсионных фондов. Если они возвращаются, это знак доверия к рынку, но цифра за один день ещё не тренд. Для нас, обычных инвесторов в Узбекистане, вывод такой: следить, кто заводит и кто выводит деньги, полезнее, чем слушать в соцсетях «завтра будет 100 тысяч»."
+  },
+  "en": {
+    "title": "Bitcoin ETFs take in $175 million in a day as ether ETF outflows stop",
+    "summary": "US spot bitcoin ETFs drew $175.6 million on October 13. Ether ETFs took in $24.8 million, their first inflow after ten days of outflows.",
+    "body": [
+      "According to SoSoValue, spot bitcoin ETFs saw net inflows of $175.62 million on October 13, led by Fidelity's FBTC ($103 million) and BlackRock's IBIT ($66 million).",
+      "Ether ETFs broke a ten-day outflow streak with $24.8 million of inflows.",
+      "Even so, the five-day net flow at the start of October is still negative, at about $600 million of outflows."
+    ],
+    "take": "ETFs are how big US investors and pension funds get into crypto. When they come back it signals confidence, but one day is not a trend. For ordinary investors in Uzbekistan the lesson is simple: watching who brings money in and who takes it out is more useful than social media promises of \"100k tomorrow\"."
+  }
+}

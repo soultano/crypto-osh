@@ -1498,3 +1498,199 @@ p {
     grid-template-columns: 1fr;
   }
 }
+
+/* ---------- news ---------- */
+
+.news-grid {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 32px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 340px), 1fr));
+  gap: 20px;
+}
+
+.news-card {
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.015));
+  transition: border-color 0.2s, transform 0.2s;
+}
+
+.news-card:hover,
+.news-card:focus-within {
+  border-color: var(--saffron);
+  transform: translateY(-2px);
+}
+
+.news-card h3 {
+  font-size: 1.2rem;
+}
+
+.news-card .link-arrow {
+  margin-top: auto;
+}
+
+.news-link {
+  color: var(--text);
+}
+
+/* The whole card is the link target. */
+.news-link::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: var(--radius);
+}
+
+.news-link:focus-visible {
+  outline: none;
+}
+
+.news-card:has(.news-link:focus-visible) {
+  outline: 2px solid var(--saffron);
+  outline-offset: 3px;
+}
+
+.news-meta {
+  color: var(--turquoise);
+  font-size: 0.85rem;
+  font-weight: 700;
+  margin-bottom: 0.6em;
+}
+
+.news-summary {
+  color: var(--muted);
+  font-size: 0.97rem;
+}
+
+.news-legal {
+  margin-top: 32px;
+}
+
+.article-title {
+  font-size: clamp(1.9rem, 4vw, 2.8rem);
+}
+
+.article p {
+  font-size: 1.05rem;
+}
+
+.take {
+  margin: 28px 0;
+  padding: 22px 24px;
+  border-radius: var(--radius);
+  border: 2px solid var(--saffron);
+  background: linear-gradient(180deg, rgba(242, 178, 48, 0.1), transparent 80%), var(--lapis-700);
+}
+
+.take h2 {
+  font-size: 1.2rem;
+  color: var(--saffron);
+  margin-bottom: 0.5em;
+}
+
+.take p:last-child {
+  margin-bottom: 0;
+}
+
+.news-sources {
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+/* ---------- crypto rates ---------- */
+
+.prices tbody th {
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--text);
+  text-transform: none;
+  letter-spacing: 0;
+  white-space: nowrap;
+}
+
+.prices td {
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+.prices .up {
+  color: var(--turquoise);
+}
+
+.prices .down {
+  color: #ff7a66;
+}
+
+.converter {
+  margin-top: 28px;
+  padding: 24px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.converter-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.converter label {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 0.85rem;
+  color: var(--muted);
+  font-weight: 700;
+}
+
+.converter input,
+.converter select {
+  font: inherit;
+  font-size: 1.05rem;
+  color: var(--text);
+  background: var(--lapis-900);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 10px 14px;
+  min-width: 140px;
+}
+
+.converter-result {
+  margin: 18px 0 0;
+  font-size: 1.1rem;
+}
+
+.converter-result strong {
+  color: var(--saffron);
+}
+
+.faq-title {
+  margin-top: 56px;
+}
+
+@media (max-width: 640px) {
+  .prices th:nth-child(3),
+  .prices td:nth-child(3) {
+    display: none;
+  }
+  .prices th,
+  .prices td {
+    padding: 12px 8px;
+    font-size: 0.88rem;
+  }
+  .prices thead th {
+    font-size: 0.68rem;
+    letter-spacing: 0.04em;
+  }
+  .prices tbody th .muted {
+    display: none;
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "slug": "2026-10-14-bitcoin-falls-after-hotter-us-inflation",
+  "date": "2026-10-14T19:30:00+05:00",
+  "tags": ["bitcoin", "inflation", "market"],
+  "sources": [
+    { "name": "U.Today", "url": "https://u.today/banking-giant-rolls-out-bitcoin-and-ether-desks-after-xrp-pivot-top-crypto-news-this-morning" },
+    { "name": "KuCoin", "url": "https://www.kucoin.com/news/articles/crypto-daily-market-report-october-14-2026" }
+  ],
+  "uz": {
+    "title": "AQShda inflyatsiya kutilganidan yuqori chiqdi, bitcoin 83 ming dollardan pastga tushdi",
+    "summary": "AQShda sentyabr oyidagi inflyatsiya 3,7% bo'ldi, kutilgani esa 3,6% edi. Shu xabardan keyin bitcoin bir necha daqiqada 1000 dollardan ko'proq arzonlashdi.",
+    "body": [
+      "14-oktabr kuni AQSh sentyabr oyi uchun iste'mol narxlari indeksini (CPI) e'lon qildi: yillik inflyatsiya 3,7%, tahlilchilar esa 3,6% kutgan edi. Asosiy inflyatsiya 2,6% bo'ldi.",
+      "Raqamlar chiqqanidan keyin bitcoin taxminan 83 800 dollardan 82 856 dollargacha tushdi, Ethereum esa 2 500 dollardan pastga, 2 484 dollarga tushib qoldi. AQSh obligatsiyalari daromadliligi oshdi, oltin 1,1% arzonladi.",
+      "CoinGlass ma'lumotiga ko'ra, bir kunda 162 mln dollarlik fyuchers pozitsiyalari likvidatsiya qilindi, ularning 65% narx o'sishiga tikkan treyderlarga to'g'ri keldi. Tahlilchilar 82 000 dollarni yaqin qo'llab-quvvatlash darajasi deb hisoblamoqda."
+    ],
+    "take": "AQShda inflyatsiya qancha yuqori bo'lsa, FRS stavkani pasaytirishga shoshilmaydi, dollar esa kuchliroq bo'ladi. Bunday kunlarda kripto ham, so'mga nisbatan dollar kursi ham tebranadi. Kreditli plecho bilan savdo qilayotganlar uchun bu eslatma: bir raqam sabab bir kunda 162 mln dollar kuydi. Oddiy jamg'aruvchi uchun esa vahimaga tushmaslik va plechodan uzoq turish eng to'g'ri yo'l."
+  },
+  "ru": {
+    "title": "Инфляция в США оказалась выше ожиданий, биткоин опустился ниже 83 тысяч долларов",
+    "summary": "Инфляция в США за сентябрь составила 3,7% при ожиданиях 3,6%. После этой новости биткоин за несколько минут подешевел больше чем на 1000 долларов.",
+    "body": [
+      "14 октября США опубликовали индекс потребительских цен (CPI) за сентябрь: годовая инфляция 3,7%, а аналитики ждали 3,6%. Базовая инфляция составила 2,6%.",
+      "После выхода цифр биткоин опустился примерно с 83 800 до 82 856 долларов, а эфир ушёл ниже 2 500 долларов, до 2 484. Доходность американских облигаций выросла, золото подешевело на 1,1%.",
+      "По данным CoinGlass, за сутки ликвидировали фьючерсные позиции на 162 млн долларов, 65% из них пришлись на трейдеров, ставивших на рост. Ближайшей поддержкой аналитики называют 82 000 долларов."
+    ],
+    "take": "Чем выше инфляция в США, тем меньше ФРС торопится снижать ставку и тем сильнее доллар. В такие дни качает и крипту, и курс доллара к суму. Для тех, кто торгует с плечом, это напоминание: из-за одной цифры за день сгорело 162 млн долларов. Обычному держателю лучше не паниковать и держаться подальше от плеча."
+  },
+  "en": {
+    "title": "US inflation comes in hotter than expected, bitcoin slips below $83,000",
+    "summary": "US inflation for September came in at 3.7% against the 3.6% expected. Bitcoin lost more than $1,000 within minutes of the release.",
+    "body": [
+      "On October 14 the US published the September consumer price index (CPI): annual inflation of 3.7%, while analysts expected 3.6%. Core inflation was 2.6%.",
+      "After the release bitcoin dropped from about $83,800 to $82,856, and ether fell below $2,500 to $2,484. US Treasury yields rose and gold lost 1.1%.",
+      "According to CoinGlass, $162 million of futures positions were liquidated over the day, 65% of them bets on a rise. Analysts see $82,000 as the nearest support."
+    ],
+    "take": "The hotter US inflation runs, the less hurry the Fed is in to cut rates, and the stronger the dollar. Days like this shake both crypto and the dollar-to-som rate. For anyone trading with leverage it is a reminder: one number wiped out $162 million in a day. For ordinary holders the best move is not to panic and to stay away from leverage."
+  }
+}
