@@ -1,0 +1,40 @@
+{
+  "slug": "2026-10-14-ledger-confirms-tampered-wallets-cryptobilis",
+  "date": "2026-10-14T19:20:00+05:00",
+  "tags": ["security", "ledger", "wallets"],
+  "sources": [
+    { "name": "Crowdfund Insider", "url": "https://www.crowdfundinsider.com/?p=317458" },
+    { "name": "BleepingComputer", "url": "https://bleepingcomputer.com/news/security/ledger-confirms-hardware-wallet-spy-implant-behind-crypto-thefts" },
+    { "name": "KuCoin", "url": "https://www.kucoin.com/news/articles/crypto-daily-market-report-october-14-2026" }
+  ],
+  "uz": {
+    "title": "Ledger qayta sotuvchi orqali sotilgan hamyonlarda «josus» chip borligini tasdiqladi",
+    "summary": "Malayziyalik distribyutor CryptoBilis sotgan Ledger hamyonlarining bir qismiga yashirin qurilma o'rnatilgan. Tadqiqotchilar o'g'irlangan mablag'ni 70–93 mln dollar deb baholamoqda.",
+    "body": [
+      "Ledger Janubi-Sharqiy Osiyodagi foydalanuvchilarning pul yo'qotishini tekshirib, CryptoBilis orqali sotilgan kamida bitta qurilmada ruxsatsiz apparat implanti borligini tasdiqladi. Bu qurilma zavoddan keyin, yetkazib berish yo'lida o'zgartirilganini bildiradi. Ledger o'zi to'g'ridan-to'g'ri sotgan qurilmalar zarar ko'rmaganini aytmoqda.",
+      "Blokcheyn tadqiqotchilari (Specter, MistTrack) zararni 70 mln dollardan 93 mln dollargacha deb baholamoqda. Pullar Bitcoin, Ethereum va Tron tarmoqlaridagi yuzlab manzillardan olib ketilgan, jabrlanganlar asosan Indoneziya, Malayziya va Filippinda.",
+      "Ledger CryptoBilis'dan sotuvni to'xtatishni so'radi. So'nggi uch oyda shu sotuvchidan olingan qurilmani ishga tushirmaslik, ishga tushirgan bo'lsangiz esa pulni yangi seed-iborali yangi qurilmaga o'tkazish tavsiya qilinadi."
+    ],
+    "take": "Bizda ham apparat hamyonlarni ko'pincha Telegram'dagi sotuvchilardan yoki e'lonlar orqali «arzonroq» olishadi. Bu yangilik shuni ko'rsatadi: hamyonni faqat ishlab chiqaruvchining rasmiy saytidan yoki uning rasmiy ro'yxatidagi sotuvchidan oling. Qutisi ochilgan, oldindan yozilgan seed-iborasi bor yoki «sozlab berilgan» hamyonni hech qachon ishlatmang. Seed-iborani faqat o'zingiz yaratasiz va hech kimga ko'rsatmaysiz."
+  },
+  "ru": {
+    "title": "Ledger подтвердил «шпионский» чип в кошельках, проданных через реселлера",
+    "summary": "Часть кошельков Ledger, проданных малайзийским дистрибьютором CryptoBilis, оказалась со скрытым устройством. Исследователи оценивают украденное в 70–93 млн долларов.",
+    "body": [
+      "Ledger расследовал жалобы пользователей из Юго-Восточной Азии на пропажу средств и подтвердил, что как минимум в одном устройстве, проданном через CryptoBilis, стоит несанкционированный аппаратный имплант. Это значит, что устройство подменили где-то на пути от завода до покупателя. По словам Ledger, устройства, которые компания продаёт напрямую, не затронуты.",
+      "Блокчейн-исследователи (Specter, MistTrack) оценивают ущерб от 70 до 93 млн долларов. Деньги вывели с сотен адресов в сетях Bitcoin, Ethereum и Tron, пострадавшие в основном из Индонезии, Малайзии и Филиппин.",
+      "Ledger попросил CryptoBilis приостановить продажи. Устройство, купленное у этого продавца за последние три месяца, советуют не включать, а если уже настроили, перевести средства на новое устройство с новой сид-фразой."
+    ],
+    "take": "У нас аппаратные кошельки тоже часто берут «подешевле» у продавцов в Telegram или по объявлениям. Эта история показывает: кошелёк покупайте только на официальном сайте производителя или у продавца из его официального списка. Никогда не пользуйтесь кошельком со вскрытой коробкой, с заранее написанной сид-фразой или «уже настроенным». Сид-фразу создаёте только вы и никому её не показываете."
+  },
+  "en": {
+    "title": "Ledger confirms a spy implant in wallets sold through a reseller",
+    "summary": "Some Ledger wallets sold by Malaysian distributor CryptoBilis carried a hidden device. Researchers estimate losses at $70–93 million.",
+    "body": [
+      "Ledger investigated reports of lost funds from users in Southeast Asia and confirmed that at least one device sold through CryptoBilis contained an unauthorized hardware implant, meaning it was tampered with somewhere between the factory and the buyer. Ledger says devices it sells directly are not affected.",
+      "On-chain researchers (Specter, MistTrack) put the losses between $70 million and $93 million, drained from hundreds of addresses on Bitcoin, Ethereum and Tron. Most victims are in Indonesia, Malaysia and the Philippines.",
+      "Ledger asked CryptoBilis to pause sales. Anyone who bought a device from this seller in the past three months should not set it up, and anyone who already did should move funds to a new device with a new recovery phrase."
+    ],
+    "take": "In Uzbekistan people often buy hardware wallets \"cheaper\" from Telegram sellers or classifieds too. This case shows why you should buy only from the maker's official site or a seller on its official list. Never use a wallet with an opened box, a pre-written recovery phrase or one that comes \"already set up\". You create the recovery phrase yourself and never show it to anyone."
+  }
+}

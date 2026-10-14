@@ -40,13 +40,15 @@ export function customPageMetadata({
   description,
   image = { url: photos.poster, width: 1024, height: 1024 },
   type = "website",
+  publishedTime,
 }: {
   locale: string;
   path: string;
   title: string;
   description: string;
   image?: { url: string; width: number; height: number; alt?: string };
-  type?: "website" | "profile";
+  type?: "website" | "profile" | "article";
+  publishedTime?: string;
 }): Metadata {
   if (!isLocale(locale)) return {};
   return {
@@ -61,6 +63,7 @@ export function customPageMetadata({
       url: `/${locale}${path}`,
       locale: ogLocale[locale],
       images: [image],
+      ...(type === "article" && publishedTime ? { publishedTime } : {}),
     },
     twitter: { card: "summary_large_image", title: `${title} · Crypto Osh`, description, images: [image.url] },
   };

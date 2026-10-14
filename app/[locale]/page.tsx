@@ -1,9 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Audience, Contact, Gallery, Mission, SectionHead, VideoGrid } from "@/components/Sections";
+import { NewsList } from "@/components/News";
 import { IkatBand, Rosette } from "@/components/Ornament";
+import { newsText } from "@/content/news";
 import { getDictionary, type Locale } from "@/lib/i18n";
 import { pageMetadata } from "@/lib/meta";
+import { allNews } from "@/lib/news";
 import { photos } from "@/lib/site";
 
 export const generateMetadata = ({ params }: { params: Promise<{ locale: string }> }) => pageMetadata(params, "");
@@ -11,6 +14,8 @@ export const generateMetadata = ({ params }: { params: Promise<{ locale: string 
 export default async function Home({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = (await params) as { locale: Locale };
   const t = getDictionary(locale);
+  const n = newsText[locale];
+  const latest = allNews().slice(0, 3);
 
   return (
     <>
@@ -50,6 +55,20 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
           ))}
         </div>
       </section>
+
+      {latest.length > 0 && (
+        <section className="section">
+          <div className="container">
+            <SectionHead kicker={n.kicker} title={n.latest} />
+            <NewsList items={latest} locale={locale} />
+            <div className="center">
+              <Link className="btn btn-ghost" href={`/${locale}/news`}>
+                {n.all} →
+              </Link>
+            </div>
+          </div>
+        </section>
+      )}
 
       <section className="section">
         <div className="container split">

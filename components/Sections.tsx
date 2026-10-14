@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import type { Dictionary, Locale } from "@/lib/i18n";
 import { auctionText } from "@/content/auction";
+import { newsText } from "@/content/news";
 import { photos, site, videos } from "@/lib/site";
 import { Divider, IkatBand, Rosette } from "./Ornament";
 import { VideoCard } from "./VideoCard";
@@ -151,6 +152,8 @@ export function Footer({ t, locale }: { t: Dictionary; locale: Locale }) {
           <p className="muted">{t.footer.tagline}</p>
         </div>
         <nav className="footer-nav" aria-label="Footer">
+          <Link href={`/${locale}/news`}>{newsText[locale].nav}</Link>
+          <Link href={`/${locale}/kurs`}>{newsText[locale].pricesNav}</Link>
           <Link href={`/${locale}/about`}>{t.nav.about}</Link>
           <Link href={`/${locale}/business`}>{t.nav.business}</Link>
           <Link href={`/${locale}/auction`}>{auctionText[locale].nav}</Link>

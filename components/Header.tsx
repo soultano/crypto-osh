@@ -4,6 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { auctionText } from "@/content/auction";
+import { newsText } from "@/content/news";
 import { locales, localeLabels, type Locale, type Dictionary } from "@/lib/i18n";
 
 export function Header({ locale, nav }: { locale: Locale; nav: Dictionary["nav"] }) {
@@ -12,7 +13,8 @@ export function Header({ locale, nav }: { locale: Locale; nav: Dictionary["nav"]
   const rest = pathname.split("/").slice(2).join("/");
 
   const links = [
-    { href: `/${locale}`, label: nav.home },
+    { href: `/${locale}/news`, label: newsText[locale].nav },
+    { href: `/${locale}/kurs`, label: newsText[locale].pricesNav },
     { href: `/${locale}/about`, label: nav.about },
     { href: `/${locale}/business`, label: nav.business },
     { href: `/${locale}/auction`, label: auctionText[locale].nav },
@@ -54,6 +56,10 @@ export function Header({ locale, nav }: { locale: Locale; nav: Dictionary["nav"]
                 href={`/${l}${rest ? `/${rest}` : ""}`}
                 hrefLang={l}
                 aria-current={l === locale ? "true" : undefined}
+                // Remembered for a year so the bare domain opens in this language.
+                onClick={() => {
+                  document.cookie = `lang=${l}; path=/; max-age=31536000; samesite=lax`;
+                }}
               >
                 {localeLabels[l]}
               </Link>

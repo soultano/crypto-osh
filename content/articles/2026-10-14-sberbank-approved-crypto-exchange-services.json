@@ -1,0 +1,39 @@
+{
+  "slug": "2026-10-14-sberbank-approved-crypto-exchange-services",
+  "date": "2026-10-14T19:10:00+05:00",
+  "tags": ["regulation", "russia", "banks"],
+  "sources": [
+    { "name": "CoinGape", "url": "https://coingape.com/russias-central-bank-approves-sberbank-for-crypto-exchange-services/" },
+    { "name": "KuCoin", "url": "https://www.kucoin.com/news/articles/crypto-daily-market-report-october-14-2026" }
+  ],
+  "uz": {
+    "title": "Rossiyaning eng yirik banki Sberbank kriptovalyuta ayirboshlashga ruxsat oldi",
+    "summary": "Rossiya Markaziy banki Sberbank'ni kriptovalyuta ayirboshlash xizmatlari reyestriga kiritdi. Bank birinchi kripto-mahsulotlarni 1-dekabrda ishga tushirishni rejalashtirmoqda.",
+    "body": [
+      "Rossiya Markaziy banki 12-oktabr kuni Sberbank'ni kripto-ayirboshlash xizmatlari ko'rsatuvchi tashkilotlar reyestriga qo'shdi. Undan oldin bank raqamli depozitariy va kriptovalyuta saqlash xizmati uchun ham ruxsat olgan edi.",
+      "Sberbank xizmatni mijozlarga tanish bo'lgan mavjud ilovalari orqali taklif qiladi, ishga tushirish 1-dekabrga rejalashtirilgan. Reyestrda Sberbank'dan tashqari VTB va T-Invest Lab kabi yana sakkiz tashkilot bor.",
+      "Bularning barchasi 1-sentyabrdan kuchga kirgan raqamli aktivlar haqidagi yangi qonun asosida bo'lmoqda: endi Rossiyada litsenziyali birjalar, brokerlar va depozitariylar kriptovalyuta bilan ishlashi mumkin."
+    ],
+    "take": "Qo'shnilar kriptoni oddiy bank ilovasiga olib kirmoqda. O'zbekistonda bu yo'l boshqacha: kripto bilan faqat NAPP litsenziyasiga ega birja va do'konlar ishlaydi, banklar esa hozircha chetda. Rossiya tajribasi bizdagi banklar va regulyatorni ham shunga yaqinlashtirishi mumkin. Rossiyada qarindoshi yoki biznesi borlar uchun esa u yerdagi qoidalar endi aniqroq bo'ladi."
+  },
+  "ru": {
+    "title": "Крупнейший банк России Сбербанк получил разрешение на обмен криптовалют",
+    "summary": "Банк России включил Сбербанк в реестр организаций, оказывающих услуги криптообмена. Первые криптопродукты банк планирует запустить 1 декабря.",
+    "body": [
+      "12 октября Банк России добавил Сбербанк в реестр организаций, которые оказывают услуги обмена криптовалют. До этого банк уже получил статус цифрового депозитария и разрешение на хранение криптовалюты.",
+      "Сбербанк будет предлагать услугу через свои существующие приложения, знакомые клиентам, запуск запланирован на 1 декабря. Кроме Сбербанка в реестре ещё восемь организаций, в том числе ВТБ и T-Invest Lab.",
+      "Всё это происходит по новому закону о цифровых активах, который вступил в силу 1 сентября: теперь в России с криптой могут работать лицензированные биржи, брокеры и депозитарии."
+    ],
+    "take": "Соседи заводят крипту прямо в обычное банковское приложение. В Узбекистане путь другой: с криптой работают только биржи и магазины с лицензией НАПП, а банки пока в стороне. Опыт России может подтолкнуть в эту сторону и наших банкиров с регулятором. А тем, у кого в России родственники или бизнес, правила там станут понятнее."
+  },
+  "en": {
+    "title": "Russia's largest bank Sberbank gets approval to offer crypto exchange",
+    "summary": "The Bank of Russia added Sberbank to its register of crypto exchange service providers. The bank plans to launch its first crypto products on December 1.",
+    "body": [
+      "On October 12 the Bank of Russia added Sberbank to its register of crypto exchange service providers. The bank had earlier been registered as a digital depository and approved for crypto custody.",
+      "Sberbank will offer the service through its existing apps that customers already use, with launch planned for December 1. Eight other firms are on the register, including VTB and T-Invest Lab.",
+      "It all follows Russia's new digital asset law, in force since September 1, which lets licensed exchanges, brokers and depositories handle crypto."
+    ],
+    "take": "Our neighbours are bringing crypto straight into everyday banking apps. Uzbekistan took a different path: only NAPP-licensed exchanges and shops can work with crypto, and banks stay on the sidelines for now. Russia's example may nudge our banks and regulator in the same direction. For anyone with family or business in Russia, the rules there are about to get clearer."
+  }
+}
