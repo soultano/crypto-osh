@@ -3,7 +3,7 @@ import Link from "next/link";
 import { Audience, Contact, Gallery, Mission, SectionHead, VideoGrid } from "@/components/Sections";
 import { NewsList } from "@/components/News";
 import { IkatBand, Rosette } from "@/components/Ornament";
-import { UsdtRates } from "@/components/UsdtRates";
+import { UsdtDisclaimer, UsdtRates } from "@/components/UsdtRates";
 import { CoinPrices } from "@/components/CoinPrices";
 import { newsText, pricesText } from "@/content/news";
 import { getDictionary, type Locale } from "@/lib/i18n";
@@ -149,6 +149,7 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
       </section>
 
       <Contact t={t} />
+      <UsdtDisclaimer locale={locale} />
     </>
   );
 }

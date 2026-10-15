@@ -105,7 +105,9 @@ const sources: Record<string, Source> = {
   async asterium() {
     const res = await fetch("https://asterium.uz/ru/crypto-exchange", { headers: { "user-agent": UA }, signal: AbortSignal.timeout(15000) });
     if (!res.ok) throw new Error(`asterium: HTTP ${res.status}`);
-    const m = (await res.text()).match(/комисси[а-я]+\s+(\d+(?:,\d+)?)\s*%/);
+    // "Комиссия за обмен 0,6%", possibly split across tags.
+    const text = (await res.text()).replace(/<[^>]+>/g, " ").replace(/&nbsp;|\s+/g, " ");
+    const m = text.match(/комисси[а-я]*[^0-9%]{0,40}?(\d+(?:[.,]\d+)?)\s*%/i);
     if (!m) throw new Error("asterium: fee not found on the page");
     return { buy: null, sell: null, fee: Number(m[1].replace(",", ".")), source: "asterium.uz/ru/crypto-exchange" };
   },

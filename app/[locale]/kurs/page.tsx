@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { CoinPrices } from "@/components/CoinPrices";
 import { Converter } from "@/components/Converter";
-import { UsdtRates } from "@/components/UsdtRates";
+import { UsdtDisclaimer, UsdtRates } from "@/components/UsdtRates";
 import { pricesText } from "@/content/news";
 import type { Locale } from "@/lib/i18n";
 import { customPageMetadata } from "@/lib/meta";
@@ -88,6 +88,7 @@ export default async function Kurs({ params }: { params: Promise<{ locale: strin
           </p>
         </div>
       </section>
+      <UsdtDisclaimer locale={locale} />
       <script
         type="application/ld+json"
         // Built from our own texts and numbers.

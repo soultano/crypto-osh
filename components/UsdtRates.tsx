@@ -27,13 +27,40 @@ function Badge({ row }: { row: Row }) {
   );
 }
 
-function Provider({ row, fee }: { row: Row; fee: string | null }) {
+// Offline shops: the offices in Tashkent, each linked to the map.
+function Offices({ row, locale, t }: { row: Row; locale: Locale; t: (typeof usdtText)[Locale] }) {
+  if (!row.offline?.length) return <span className="usdt-online">{t.onlineOnly}</span>;
+  // The service's own published rate is its office rate (Voluto: "по курсу дня").
+  const q = row.fresh ? row.quote : null;
+  return (
+    <span className="usdt-offices">
+      {q?.buy != null && q.sell != null && (
+        <span className="usdt-office-rates">
+          <strong>
+            {fmtSom(q.buy)} / {fmtSom(q.sell)}
+          </strong>
+          <small>{t.officeRateLabel}</small>
+        </span>
+      )}
+      {row.offline.map((o) => (
+        <a key={o.map} href={`https://yandex.uz/maps/?text=${encodeURIComponent(o.map)}`} target="_blank" rel="noopener">
+          <span aria-hidden="true">📍</span> {o[locale]}
+          <small>{o.hours[locale]}</small>
+        </a>
+      ))}
+      {q?.buy == null && <small className="usdt-office-rate">{t.rateInOffice}</small>}
+    </span>
+  );
+}
+
+function Provider({ row, fee, office }: { row: Row; fee: string | null; office: string | null }) {
   return (
     <a className="usdt-provider" href={row.url} target="_blank" rel="sponsored noopener">
       <Badge row={row} />
       <span>
         <strong>{row.name}</strong>
         {row.note && <small>{row.note}</small>}
+        {office && <small className="usdt-office-mobile">📍 {office}</small>}
         {fee && <small className="usdt-fee-mobile">{fee}</small>}
       </span>
     </a>
@@ -137,6 +164,10 @@ export function UsdtRates({ locale }: { locale: Locale }) {
                     <span className="usdt-ico usdt-ico-out" aria-hidden="true">↑</span>
                     {t.sell} <small>{t.uzs}</small>
                   </th>
+                  <th scope="col" className="usdt-col-offline">
+                    <span className="usdt-ico usdt-ico-shop" aria-hidden="true">⌂</span>
+                    {t.offline} <small>{t.offlineSub}</small>
+                  </th>
                   <th scope="col" className="usdt-col-fee">
                     <span className="usdt-ico usdt-ico-cash" aria-hidden="true">$</span>
                     {t.cash} <small>{t.fee}</small>
@@ -147,10 +178,17 @@ export function UsdtRates({ locale }: { locale: Locale }) {
                 {rows.map((row) => (
                   <tr key={row.id}>
                     <th scope="row">
-                      <Provider row={row} fee={feeText(row) && `${t.cashShort}: ${feeText(row)}`} />
+                      <Provider
+                        row={row}
+                        fee={feeText(row) && `${t.cashShort}: ${feeText(row)}`}
+                        office={row.offline?.length ? `${t.office}: ${row.offline.map((o) => o[locale]).join("; ")}` : null}
+                      />
                     </th>
                     <td>{cell(row, "buy")}</td>
                     <td>{cell(row, "sell")}</td>
+                    <td className="usdt-col-offline">
+                      <Offices row={row} locale={locale} t={t} />
+                    </td>
                     <td className="usdt-col-fee">{fee(row)}</td>
                   </tr>
                 ))}
@@ -177,6 +215,20 @@ export function UsdtRates({ locale }: { locale: Locale }) {
             labels={{ share: t.share, copy: t.copy, copied: t.copied, instagramHint: t.instagramHint }}
           />
         </div>
+      </div>
+    </section>
+  );
+}
+
+// At the very bottom of the pages that show rates.
+export function UsdtDisclaimer({ locale }: { locale: Locale }) {
+  const t = usdtText[locale];
+  return (
+    <section className="usdt-disclaimer" aria-label={t.disclaimerTitle}>
+      <div className="container">
+        <p className="legal">
+          <strong>{t.disclaimerTitle}.</strong> {t.disclaimer}
+        </p>
       </div>
     </section>
   );

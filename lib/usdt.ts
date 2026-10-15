@@ -11,7 +11,10 @@ export type ProviderId = "binance" | "voluto" | "asterium" | "tcrypto" | "walt" 
 
 // Shared with the morning script and the Telegram post. Badges are a letter
 // on the exchanger's colour, not its logo.
-export type Provider = { id: ProviderId; name: string; note?: string; url: string; mark: string; bg: string; fg: string };
+// An office in Tashkent where the exchange is done in person, with cash.
+export type Office = { ru: string; uz: string; en: string; map: string; hours: { ru: string; uz: string; en: string } };
+
+export type Provider = { id: ProviderId; name: string; note?: string; url: string; mark: string; bg: string; fg: string; offline?: Office[] };
 
 export const providers = providerList as Provider[];
 

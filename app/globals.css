@@ -1905,6 +1905,78 @@ p {
   display: none !important;
 }
 
+.usdt-ico-shop {
+  background: #2f8f6b;
+}
+
+.usdt-table td.usdt-col-offline {
+  white-space: normal;
+  text-align: left;
+  font-size: 0.78rem;
+  font-weight: 600;
+  min-width: 15ch;
+}
+
+.usdt-offices {
+  display: grid;
+  gap: 6px;
+}
+
+.usdt-office-rates strong {
+  display: block;
+  font-size: 1.05rem;
+  font-weight: 800;
+  color: var(--u-ink);
+}
+
+.usdt-office-rates small {
+  display: block;
+  color: var(--u-muted);
+  font-weight: 500;
+  font-size: 0.7rem;
+}
+
+.usdt-offices a {
+  color: var(--u-ink);
+  line-height: 1.25;
+}
+
+.usdt-offices a:hover {
+  color: var(--majolica);
+  text-decoration: underline;
+}
+
+.usdt-offices small {
+  display: block;
+  color: var(--u-muted);
+  font-weight: 500;
+  font-size: 0.7rem;
+}
+
+.usdt-offices .usdt-office-rate {
+  color: #2f8f6b;
+  font-weight: 700;
+}
+
+.usdt-online {
+  color: #9aa1af;
+  font-weight: 600;
+}
+
+.usdt-office-mobile {
+  display: none !important;
+}
+
+.usdt-disclaimer {
+  padding: 8px 0 32px;
+}
+
+.usdt-disclaimer .legal {
+  margin: 0;
+  font-size: 0.85rem;
+  line-height: 1.55;
+}
+
 /* The best offer sits inside an ikat-patterned frame */
 .ikat-frame {
   display: inline-block;
@@ -2043,10 +2115,12 @@ p {
   .ikat-frame-in {
     padding: 3px 7px 2px;
   }
-  .usdt-col-fee {
+  .usdt-col-fee,
+  .usdt-col-offline {
     display: none;
   }
-  .usdt-fee-mobile {
+  .usdt-fee-mobile,
+  .usdt-office-mobile {
     display: block !important;
   }
 }
