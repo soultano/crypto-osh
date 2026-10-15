@@ -1,4 +1,5 @@
-# Writes 3–5 crypto news stories every morning (08:30 Tashkent), commits
+# Writes 3–4 crypto news stories every morning (07:00 Tashkent; GitHub
+# can start scheduled runs late, so this leaves room), commits
 # them to main so Vercel redeploys the site, then posts them to Telegram.
 # Secrets (repo → Settings → Secrets and variables → Actions):
 #   ANTHROPIC_API_KEY       required
@@ -8,7 +9,7 @@ name: Daily news
 
 on:
   schedule:
-    - cron: "30 3 * * *"
+    - cron: "0 2 * * *"
   workflow_dispatch:
 
 permissions:

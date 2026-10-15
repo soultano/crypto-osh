@@ -1,17 +1,19 @@
 // Daily crypto news for the «Yangiliklar» tab.
 //
-// 1. Reads RSS feeds of the biggest international crypto outlets.
+// 1. Reads RSS feeds of the biggest international crypto outlets, plus
+//    Uzbek news sites filtered down to crypto stories.
 // 2. Groups stories that several outlets covered: the more outlets wrote
 //    about it in the last day and a half, the more popular we consider it
 //    (feeds don't publish view counts, so coverage is the proxy).
-// 3. Asks Claude to pick the 3–5 most important ones and write them in
+// 3. Asks Claude to pick the 3–4 most important ones (at least one about
+//    Uzbekistan when there is real local news) and write them in
 //    Uzbek, Russian and English in our tone of voice (scripts/news/tone.md),
 //    each with "what it means for Uzbekistan".
 // 4. Writes content/articles/<slug>.json and lists the new slugs in
 //    news-new.json for the Telegram step.
 //
 // Run: ANTHROPIC_API_KEY=... node scripts/news/generate.mts
-// Env: NEWS_MIN (default 3), NEWS_MAX (default 5), NEWS_DRY_RUN=1 to only
+// Env: NEWS_MIN (default 3), NEWS_MAX (default 4), NEWS_DRY_RUN=1 to only
 // print the ranked candidates without calling Claude.
 
 import Anthropic from "@anthropic-ai/sdk";
@@ -24,7 +26,7 @@ const tonePath = path.join(root, "scripts", "news", "tone.md");
 const outList = path.join(root, "news-new.json");
 
 const MIN = clampInt(process.env.NEWS_MIN, 3, 1, 10);
-const MAX = clampInt(process.env.NEWS_MAX, 5, MIN, 10);
+const MAX = clampInt(process.env.NEWS_MAX, 4, MIN, 10);
 const WINDOW_HOURS = 36;
 const MODEL = "claude-opus-5-5";
 
@@ -42,6 +44,20 @@ const feeds: { name: string; url: string }[] = [
   { name: "Bitcoin.com News", url: "https://news.bitcoin.com/feed/" },
   { name: "U.Today", url: "https://u.today/rss" },
 ];
+
+// Uzbek news sites: everything they publish, so only crypto stories are kept.
+const localFeeds: { name: string; url: string }[] = [
+  { name: "Kun.uz", url: "https://kun.uz/news/rss" },
+  { name: "Kun.uz (RU)", url: "https://kun.uz/ru/news/rss" },
+  { name: "Gazeta.uz", url: "https://www.gazeta.uz/ru/rss/" },
+  { name: "Daryo", url: "https://daryo.uz/feed/" },
+  { name: "Spot.uz", url: "https://www.spot.uz/ru/rss/" },
+  { name: "Podrobno.uz", url: "https://podrobno.uz/rss/" },
+  { name: "UzDaily", url: "https://www.uzdaily.uz/ru/rss/" },
+];
+
+const cryptoWords =
+  /kripto|крипт|crypto|bitcoin|биткоин|bitkoin|blokche[iy]n|блокчейн|blockchain|napp|напп|perspektiv loyihalar|перспективных проектов|майнинг|mayning|mining|stablecoin|стейблкоин|usdt|tether|web3|токен|token|nft|цифров[а-я]* актив|raqamli aktiv/i;
 
 type FeedItem = { source: string; title: string; link: string; date: number; text: string };
 type Cluster = { id: number; items: FeedItem[]; sources: Set<string>; latest: number; score: number };
@@ -164,6 +180,10 @@ function cluster(items: FeedItem[]): Cluster[] {
   return clusters.sort((a, b) => b.score - a.score);
 }
 
+function isCrypto(it: FeedItem): boolean {
+  return cryptoWords.test(`${it.title} ${it.text.slice(0, 400)}`);
+}
+
 // ---------- existing articles ----------
 
 type Article = {
@@ -236,9 +256,8 @@ function validText(t: Text | undefined): t is Text {
   return !!t && typeof t.title === "string" && t.title.length > 5 && typeof t.summary === "string" && Array.isArray(t.body) && t.body.length > 0 && typeof t.take === "string" && t.take.length > 10;
 }
 
-async function write(candidates: Cluster[], recentTitles: string[], tone: string): Promise<Out> {
-  const client = new Anthropic();
-  const list = candidates
+function describe(candidates: Cluster[]): string {
+  return candidates
     .map((c) => {
       const lines = c.items
         .slice(0, 4)
@@ -247,19 +266,30 @@ async function write(candidates: Cluster[], recentTitles: string[], tone: string
       return `#${c.id} · outlets: ${c.sources.size} (${[...c.sources].join(", ")})\n${lines}`;
     })
     .join("\n\n");
+}
+
+async function write(world: Cluster[], local: Cluster[], recentTitles: string[], tone: string): Promise<Out> {
+  const client = new Anthropic();
 
   const system = `You write the daily crypto news for Crypto Osh (cryptoosh.uz), a community of crypto people in Uzbekistan. Follow this tone of voice guide exactly; it is written in Russian by the founder:\n\n${tone}`;
 
-  const user = `Today is ${new Date().toISOString().slice(0, 10)}. Below are today's candidate stories from international crypto media, grouped by story. "outlets" is how many different outlets covered it: that is our measure of popularity.
+  const user = `Today is ${new Date().toISOString().slice(0, 10)}. Below are today's candidate stories, grouped by story, in two lists: world crypto media, and Uzbek news sites (crypto stories only, in Uzbek or Russian). "outlets" is how many different outlets covered it: that is our measure of popularity.
 
-Pick the ${MIN}–${MAX} most important and most talked-about stories about crypto, blockchain or web3 (prefer stories with more outlets; skip pure price-prediction pieces, paid press releases and minor token promos). Write each one in Uzbek (Latin script), Russian and English, using only facts from the candidate texts.
+Pick ${MIN}–${MAX} stories that together tell readers what happened in crypto, blockchain and web3 in Uzbekistan and in the world today:
+- If the Uzbekistan list has a real, newsworthy crypto story (regulation, NAPP, licences, exchanges, mining, scams, big local deals), include at least one of them. Skip local items that only mention crypto in passing, ads and repeats.
+- Fill the rest with the most important and most talked-about world stories (prefer more outlets; skip pure price-prediction pieces, paid press releases and minor token promos).
+Write each one in Uzbek (Latin script), Russian and English, using only facts from the candidate texts.
 
 Do not repeat these stories we already published recently:
 ${recentTitles.map((t) => `- ${t}`).join("\n") || "- (none)"}
 
-Candidates:
+Uzbekistan candidates:
 
-${list}`;
+${describe(local) || "(none today)"}
+
+World candidates:
+
+${describe(world)}`;
 
   const stream = client.beta.messages.stream({
     model: MODEL,
@@ -306,22 +336,30 @@ async function main() {
     .map((a) => a.en.title);
 
   const since = Date.now() - WINDOW_HOURS * 3.6e6;
-  const items = (await Promise.all(feeds.map(readFeed))).flat().filter((it) => it.date >= since && it.date <= Date.now() + 3.6e6 && !usedLinks.has(it.link));
+  const fresh = (it: FeedItem) => it.date >= since && it.date <= Date.now() + 3.6e6 && !usedLinks.has(it.link);
+  const items = (await Promise.all(feeds.map(readFeed))).flat().filter(fresh);
+  const localItems = (await Promise.all(localFeeds.map(readFeed))).flat().filter((it) => fresh(it) && isCrypto(it));
   const ranked = cluster(items).slice(0, 25);
+  // Local stories get their own ids so they never collide with world ones.
+  const local = cluster(localItems)
+    .slice(0, 10)
+    .map((c) => ({ ...c, id: c.id + 1000 }));
+  console.log(`\nUzbekistan: ${localItems.length} crypto items`);
+  for (const c of local) console.log(`  #${c.id} [${c.sources.size} outlets] ${c.items[0].title}`);
   console.log(`\n${items.length} fresh items, top stories:`);
   for (const c of ranked.slice(0, 10)) console.log(`  #${c.id} [${c.sources.size} outlets] ${c.items[0].title}`);
   if (ranked.length < MIN) throw new Error("Too few fresh stories in the feeds; nothing published.");
   if (process.env.NEWS_DRY_RUN === "1") return;
 
   const tone = fs.readFileSync(tonePath, "utf8");
-  const out = await write(ranked, recentTitles, tone);
+  const out = await write(ranked, local, recentTitles, tone);
   const { day, iso } = tashkentDate();
   fs.mkdirSync(articlesDir, { recursive: true });
   const taken = new Set(old.map((a) => a.slug));
   const created: string[] = [];
 
   for (const a of out.articles.slice(0, MAX)) {
-    const c = ranked.find((x) => x.id === a.cluster_id);
+    const c = [...ranked, ...local].find((x) => x.id === a.cluster_id);
     if (!c || !validText(a.uz) || !validText(a.ru) || !validText(a.en)) {
       console.warn(`skipped malformed article for #${a.cluster_id}`);
       continue;
