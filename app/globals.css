@@ -1878,14 +1878,21 @@ p {
   font-weight: 700;
 }
 
-.usdt-dash small {
-  display: block;
-  font-size: 0.66rem;
-  font-weight: 500;
+.usdt-check {
+  display: inline-block;
+  max-width: 13ch;
   white-space: normal;
-  line-height: 1.2;
-  max-width: 11ch;
-  margin: 2px auto 0;
+  font-size: 0.74rem;
+  font-weight: 700;
+  line-height: 1.25;
+  color: var(--majolica);
+  background: rgba(36, 83, 184, 0.08);
+  border-radius: 8px;
+  padding: 5px 8px;
+}
+
+.usdt-check:hover {
+  background: rgba(36, 83, 184, 0.16);
 }
 
 .usdt-fee,
@@ -2001,6 +2008,22 @@ p {
   }
   .usdt-table td {
     font-size: 0.92rem;
+  }
+  .usdt-check {
+    font-size: 0.66rem;
+    padding: 4px 6px;
+  }
+  .usdt-bests {
+    gap: 10px;
+  }
+  .usdt-best .ikat-frame-in {
+    padding: 8px 12px;
+  }
+  .usdt-best-label {
+    margin-bottom: 2px;
+  }
+  .usdt-best-row strong {
+    font-size: 1.15rem;
   }
   .usdt-provider {
     gap: 7px;

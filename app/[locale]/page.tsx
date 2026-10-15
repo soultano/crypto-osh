@@ -4,15 +4,17 @@ import { Audience, Contact, Gallery, Mission, SectionHead, VideoGrid } from "@/c
 import { NewsList } from "@/components/News";
 import { IkatBand, Rosette } from "@/components/Ornament";
 import { UsdtRates } from "@/components/UsdtRates";
-import { newsText } from "@/content/news";
+import { CoinPrices } from "@/components/CoinPrices";
+import { newsText, pricesText } from "@/content/news";
 import { getDictionary, type Locale } from "@/lib/i18n";
 import { pageMetadata } from "@/lib/meta";
 import { allNews } from "@/lib/news";
+import { getPrices } from "@/lib/prices";
 import { photos } from "@/lib/site";
 
-// Re-rendered hourly so a rate older than a day turns into a dash even if
-// the morning update stops.
-export const revalidate = 3600;
+// Re-rendered every 10 minutes for the crypto prices (lib/prices); this also
+// retires a USDT rate older than a day even if the morning update stops.
+export const revalidate = 600;
 
 export const generateMetadata = ({ params }: { params: Promise<{ locale: string }> }) => pageMetadata(params, "");
 
@@ -21,6 +23,8 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
   const t = getDictionary(locale);
   const n = newsText[locale];
   const latest = allNews().slice(0, 3);
+  const prices = await getPrices();
+  const pt = pricesText[locale];
 
   return (
     <>
@@ -51,6 +55,20 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
         </div>
         <IkatBand />
       </section>
+
+      {prices && (
+        <section className="section">
+          <div className="container">
+            <SectionHead kicker={pt.kicker} title={pt.title} />
+            <CoinPrices prices={prices} locale={locale} limit={6} />
+            <div className="center">
+              <Link className="btn btn-ghost" href={`/${locale}/kurs`}>
+                {pt.allPrices} →
+              </Link>
+            </div>
+          </div>
+        </section>
+      )}
 
       <section className="stats">
         <div className="container stats-grid">

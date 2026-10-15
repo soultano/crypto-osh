@@ -1,6 +1,7 @@
 // Posts this morning's USDT/UZS rates to the Telegram channel, in Uzbek,
 // with the best buy and sell offers marked and partner links to each service.
-// Only rates verified by today's run are posted; the rest show a dash.
+// Only rates verified by today's run are posted; for the rest the post says
+// to check the rate on the service's site.
 //
 // Env: TELEGRAM_BOT_TOKEN, TELEGRAM_NEWS_CHAT_ID (e.g. @cryptoosh or -100…),
 // SITE_URL (default https://cryptoosh.uz). Without the token or chat id the
@@ -50,7 +51,9 @@ export function buildPost(providers: Provider[], file: { updatedAt: string | nul
     ...rows.map(({ p, q }) => {
       const mark = (key: "buy" | "sell", best: typeof bestBuy) => (best?.p.id === p.id ? `<b>${som(q?.[key])}</b> 🏆` : som(q?.[key]));
       const fee = q?.fee != null ? ` · $ naqd ${String(q.fee).replace(".", ",")}%` : "";
-      return `<a href="${esc(p.url)}">${esc(p.name)}</a>: ${mark("buy", bestBuy)} / ${mark("sell", bestSell)}${fee}`;
+      const link = `<a href="${esc(p.url)}">${esc(p.name)}</a>`;
+      if (q?.buy == null && q?.sell == null) return `${link}: kursni saytda tekshiring${fee}`;
+      return `${link}: ${mark("buy", bestBuy)} / ${mark("sell", bestSell)}${fee}`;
     }),
     "",
   ];
@@ -58,7 +61,7 @@ export function buildPost(providers: Provider[], file: { updatedAt: string | nul
   if (bestSell) lines.push(`🏆 Sotishda eng yaxshi kurs: <b>${som(bestSell.q!.sell)} so'm</b> — ${esc(bestSell.p.name)}`);
   lines.push(
     "",
-    "«—» — bugun ochiq manbada tasdiqlanmagan kurs. Kurslar xizmatlarning rasmiy saytlaridan olindi; ma'lumot uchun, investitsiya tavsiyasi emas.",
+    "Kurslar xizmatlarning rasmiy saytlaridan olindi; ma'lumot uchun, investitsiya tavsiyasi emas.",
     `👉 <a href="${site}/uz">Jadval saytda</a>`,
   );
   return lines.join("\n");

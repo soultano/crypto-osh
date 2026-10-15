@@ -1,8 +1,8 @@
 // USDT/UZS rates at licensed exchangers in Uzbekistan. The numbers live in
 // content/usdt-rates.json, written every morning by scripts/rates/update.mts
 // from each exchanger's own public API or page. A rate that could not be
-// verified today is never guessed: the table shows a dash and the time of
-// the last verified value.
+// verified today is never guessed: the table links to the exchanger's site
+// to check it there.
 
 import providerList from "@/content/usdt-providers.json";
 import data from "@/content/usdt-rates.json";
@@ -22,7 +22,7 @@ export type RatesFile = { updatedAt: string | null; quotes: Partial<Record<Provi
 export const rates = data as RatesFile;
 
 // A quote counts as today's for 26 hours after it was verified: one day plus
-// a margin for a late morning run. After that its row shows a dash.
+// a margin for a late morning run. After that its cell links to the site.
 const FRESH_MS = 26 * 3600_000;
 
 export type Row = Provider & { quote: Quote | null; fresh: boolean };
@@ -37,12 +37,13 @@ export function rateRows(file: RatesFile = rates, now = Date.now()): Row[] {
 // Best buy: the lowest price to pay. Best sell: the highest price received.
 // Only among today's quotes, and only when there are at least two to compare.
 export function best(rows: Row[]) {
-  const pick = (key: "buy" | "sell", better: (a: number, b: number) => boolean) => {
+  const pick = (key: "buy" | "sell" | "fee", better: (a: number, b: number) => boolean) => {
     const live = rows.filter((r) => r.fresh && r.quote?.[key] != null);
     if (live.length < 2) return null;
     return live.reduce((acc, r) => (better(r.quote![key]!, acc.quote![key]!) ? r : acc));
   };
-  return { buy: pick("buy", (a, b) => a < b), sell: pick("sell", (a, b) => a > b) };
+  // fee: the lowest commission for buying USDT with cash dollars.
+  return { buy: pick("buy", (a, b) => a < b), sell: pick("sell", (a, b) => a > b), fee: pick("fee", (a, b) => a < b) };
 }
 
 // 12 066 or 11 942,90 — the way the reference table writes som.
