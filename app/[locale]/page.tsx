@@ -3,11 +3,16 @@ import Link from "next/link";
 import { Audience, Contact, Gallery, Mission, SectionHead, VideoGrid } from "@/components/Sections";
 import { NewsList } from "@/components/News";
 import { IkatBand, Rosette } from "@/components/Ornament";
+import { UsdtRates } from "@/components/UsdtRates";
 import { newsText } from "@/content/news";
 import { getDictionary, type Locale } from "@/lib/i18n";
 import { pageMetadata } from "@/lib/meta";
 import { allNews } from "@/lib/news";
 import { photos } from "@/lib/site";
+
+// Re-rendered hourly so a rate older than a day turns into a dash even if
+// the morning update stops.
+export const revalidate = 3600;
 
 export const generateMetadata = ({ params }: { params: Promise<{ locale: string }> }) => pageMetadata(params, "");
 
@@ -19,6 +24,8 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
 
   return (
     <>
+      <UsdtRates locale={locale} />
+
       <section className="hero">
         <div className="hero-pattern" aria-hidden="true" />
         <div className="container hero-inner">
