@@ -1,7 +1,9 @@
 import Link from "next/link";
 import { usdtText } from "@/content/usdt";
 import type { Locale } from "@/lib/i18n";
-import { best, fmtSom, fmtTime, rateRows, rates, type Row } from "@/lib/usdt";
+import { site } from "@/lib/site";
+import { ShareBar } from "./ShareBar";
+import { best, fmtDay, fmtSom, fmtTime, rateRows, rates, type Row } from "@/lib/usdt";
 
 // USDT/UZS rates at Uzbek exchangers, light card with the best offers in an
 // ikat-patterned frame. Server-rendered from content/usdt-rates.json.
@@ -94,6 +96,15 @@ export function UsdtRates({ locale }: { locale: Locale }) {
     );
   };
 
+  // What the share buttons post: the date and today's best offers.
+  const shareText = [
+    rates.updatedAt ? `${t.shareTitle}, ${fmtDay(rates.updatedAt, locale)}` : t.shareTitle,
+    top.buy && `${t.bestBuy}: ${fmtSom(top.buy.quote!.buy!)} ${t.som} (${top.buy.name})`,
+    top.sell && `${t.bestSell}: ${fmtSom(top.sell.quote!.sell!)} ${t.som} (${top.sell.name})`,
+  ]
+    .filter(Boolean)
+    .join("\n");
+
   return (
     <section className="usdt" aria-labelledby="usdt-title">
       <div className="container">
@@ -159,6 +170,12 @@ export function UsdtRates({ locale }: { locale: Locale }) {
             {t.note} {t.partner}{" "}
             <Link href={`/${locale}/kurs`}>{t.more} →</Link>
           </p>
+
+          <ShareBar
+            text={shareText}
+            url={`${site.url}/${locale}`}
+            labels={{ share: t.share, copy: t.copy, copied: t.copied, instagramHint: t.instagramHint }}
+          />
         </div>
       </div>
     </section>

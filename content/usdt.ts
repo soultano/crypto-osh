@@ -22,6 +22,11 @@ const uz = {
   note: "Kurslar har kuni ertalab xizmatlarning o'z rasmiy saytlari va API'laridan olinadi. Sotib olish — 1 USDT uchun to'laysiz, sotish — 1 USDT uchun olasiz. Kursni avtomatik olib bo'lmaydigan joyda — xizmat saytiga havola. Ma'lumot uchun, investitsiya tavsiyasi emas.",
   partner: "Ba'zi havolalar hamkorlik havolalari.",
   more: "Barcha kripto kurslari",
+  share: "Ulashish:",
+  copy: "Matnni nusxalash",
+  copied: "Nusxalandi",
+  instagramHint: "Matn nusxalandi: Instagram'da joylang",
+  shareTitle: "USDT/UZS kurslari",
 };
 
 const ru: typeof uz = {
@@ -46,6 +51,11 @@ const ru: typeof uz = {
   note: "Курсы каждое утро берутся с официальных сайтов и API самих сервисов. Покупка — сколько вы платите за 1 USDT, продажа — сколько получаете за 1 USDT. Где курс нельзя получить автоматически — ссылка, чтобы проверить его на сайте сервиса. Для информации, не инвестиционная рекомендация.",
   partner: "Некоторые ссылки партнёрские.",
   more: "Все курсы криптовалют",
+  share: "Поделиться:",
+  copy: "Скопировать текст",
+  copied: "Скопировано",
+  instagramHint: "Текст скопирован: вставьте его в Instagram",
+  shareTitle: "Курс USDT/UZS",
 };
 
 const en: typeof uz = {
@@ -70,6 +80,11 @@ const en: typeof uz = {
   note: "Rates are taken every morning from each service's own official website and API. Buy is what you pay for 1 USDT, sell is what you get for 1 USDT. Where a rate can't be read automatically, the link takes you to check it on the service's site. For information only, not investment advice.",
   partner: "Some links are partner links.",
   more: "All crypto rates",
+  share: "Share:",
+  copy: "Copy text",
+  copied: "Copied",
+  instagramHint: "Text copied: paste it on Instagram",
+  shareTitle: "USDT/UZS rates",
 };
 
 export const usdtText = { uz, ru, en };

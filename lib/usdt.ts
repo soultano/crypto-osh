@@ -62,3 +62,7 @@ export function fmtTime(iso: string, locale: string, withDate = true): string {
     timeZone: "Asia/Tashkent",
   }).format(new Date(iso));
 }
+
+export function fmtDay(iso: string, locale: string): string {
+  return new Intl.DateTimeFormat(locale === "uz" ? "uz-Latn" : locale, { day: "numeric", month: "long", timeZone: "Asia/Tashkent" }).format(new Date(iso));
+}
