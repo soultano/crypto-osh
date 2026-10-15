@@ -30,15 +30,25 @@ function Badge({ row }: { row: Row }) {
 // Offline shops: the offices in Tashkent, each linked to the map.
 function Offices({ row, locale, t }: { row: Row; locale: Locale; t: (typeof usdtText)[Locale] }) {
   if (!row.offline?.length) return <span className="usdt-online">{t.onlineOnly}</span>;
+  // The service's own published rate is its office rate (Voluto: "по курсу дня").
+  const q = row.fresh ? row.quote : null;
   return (
     <span className="usdt-offices">
+      {q?.buy != null && q.sell != null && (
+        <span className="usdt-office-rates">
+          <strong>
+            {fmtSom(q.buy)} / {fmtSom(q.sell)}
+          </strong>
+          <small>{t.officeRateLabel}</small>
+        </span>
+      )}
       {row.offline.map((o) => (
         <a key={o.map} href={`https://yandex.uz/maps/?text=${encodeURIComponent(o.map)}`} target="_blank" rel="noopener">
           <span aria-hidden="true">📍</span> {o[locale]}
           <small>{o.hours[locale]}</small>
         </a>
       ))}
-      {row.id === "asterium" && <small className="usdt-office-rate">{t.rateInOffice}</small>}
+      {q?.buy == null && <small className="usdt-office-rate">{t.rateInOffice}</small>}
     </span>
   );
 }

@@ -1922,6 +1922,20 @@ p {
   gap: 6px;
 }
 
+.usdt-office-rates strong {
+  display: block;
+  font-size: 1.05rem;
+  font-weight: 800;
+  color: var(--u-ink);
+}
+
+.usdt-office-rates small {
+  display: block;
+  color: var(--u-muted);
+  font-weight: 500;
+  font-size: 0.7rem;
+}
+
 .usdt-offices a {
   color: var(--u-ink);
   line-height: 1.25;
