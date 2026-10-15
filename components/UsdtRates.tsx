@@ -59,13 +59,11 @@ export function UsdtRates({ locale }: { locale: Locale }) {
         value
       );
     }
-    // Nothing verified today: a dash, and when the value is old, its time.
-    const stale = v != null && row.quote;
+    // Not verified today: never a guess, a link to check it at the source.
     return (
-      <span className="usdt-dash">
-        —
-        <small>{stale ? `${t.lastVerified}: ${fmtTime(row.quote!.at, locale)}` : t.noPublicRate[row.id]}</small>
-      </span>
+      <a className="usdt-check" href={row.url} target="_blank" rel="sponsored noopener">
+        {row.id === "asterium" ? t.checkOfficial : t.check} ↗
+      </a>
     );
   };
 
@@ -76,9 +74,10 @@ export function UsdtRates({ locale }: { locale: Locale }) {
     return f ? <span className="usdt-fee">{f}</span> : <span className="usdt-dash">—</span>;
   };
 
-  const summary = (key: "buy" | "sell", label: string) => {
+  const summary = (key: "buy" | "sell" | "fee", label: string) => {
     const row = top[key];
     if (!row) return null;
+    const value = key === "fee" ? feeText(row) : `${fmtSom(row.quote![key]!)} ${t.som}`;
     return (
       <a className="ikat-frame usdt-best" href={row.url} target="_blank" rel="sponsored noopener">
         <span className="ikat-frame-in">
@@ -86,9 +85,7 @@ export function UsdtRates({ locale }: { locale: Locale }) {
           <span className="usdt-best-row">
             <Badge row={row} />
             <span>
-              <strong>
-                {fmtSom(row.quote![key]!)} {t.som}
-              </strong>
+              <strong>{value}</strong>
               <small>{row.name}</small>
             </span>
           </span>
@@ -150,10 +147,11 @@ export function UsdtRates({ locale }: { locale: Locale }) {
             </table>
           </div>
 
-          {(top.buy || top.sell) && (
+          {(top.buy || top.sell || top.fee) && (
             <div className="usdt-bests">
               {summary("buy", t.bestBuy)}
               {summary("sell", t.bestSell)}
+              {summary("fee", t.bestCash)}
             </div>
           )}
 

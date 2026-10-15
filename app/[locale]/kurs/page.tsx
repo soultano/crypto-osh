@@ -1,9 +1,11 @@
 import Link from "next/link";
+import { CoinPrices } from "@/components/CoinPrices";
 import { Converter } from "@/components/Converter";
+import { UsdtRates } from "@/components/UsdtRates";
 import { pricesText } from "@/content/news";
 import type { Locale } from "@/lib/i18n";
 import { customPageMetadata } from "@/lib/meta";
-import { fmtUsd, fmtUzs, getPrices } from "@/lib/prices";
+import { fmtUzs, getPrices } from "@/lib/prices";
 
 // Rebuilt in the background at most every 10 minutes (matches lib/prices).
 export const revalidate = 600;
@@ -48,6 +50,8 @@ export default async function Kurs({ params }: { params: Promise<{ locale: strin
         </div>
       </section>
 
+      <UsdtRates locale={locale} />
+
       <section className="section">
         <div className="container">
           {prices ? (
@@ -55,32 +59,7 @@ export default async function Kurs({ params }: { params: Promise<{ locale: strin
               <p className="muted small">
                 {p.updated}: {updated} · {p.usdRate} {fmtUzs(prices.usdUzs)} {p.currency}
               </p>
-              <div className="bids prices">
-                <table>
-                  <thead>
-                    <tr>
-                      <th scope="col">{p.coin}</th>
-                      <th scope="col">{p.priceUzs}</th>
-                      <th scope="col">{p.priceUsd}</th>
-                      <th scope="col">{p.change}</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    {prices.coins.map((c) => (
-                      <tr key={c.symbol}>
-                        <th scope="row">
-                          <strong>{c.symbol}</strong> <span className="muted">{c.name}</span>
-                        </th>
-                        <td>{fmtUzs(c.uzs)}</td>
-                        <td>{fmtUsd(c.usd)}</td>
-                        <td className={c.change24h === null ? "" : c.change24h >= 0 ? "up" : "down"}>
-                          {c.change24h === null ? "—" : `${c.change24h >= 0 ? "+" : ""}${c.change24h.toFixed(2)}%`}
-                        </td>
-                      </tr>
-                    ))}
-                  </tbody>
-                </table>
-              </div>
+              <CoinPrices prices={prices} locale={locale} />
               <Converter
                 coins={prices.coins.map((c) => ({ symbol: c.symbol, uzs: c.uzs, usd: c.usd }))}
                 labels={{ calc: p.calc, amount: p.amount, result: p.result, coin: p.coin, currency: p.currency }}

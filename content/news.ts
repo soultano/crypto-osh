@@ -93,6 +93,7 @@ const pricesUz = {
   ],
   source: "Manba: CoinGecko (dollar narxi) va O'zbekiston Markaziy banki (dollar kursi). Ma'lumot uchun, investitsiya tavsiyasi emas.",
   newsLink: "Bugungi kripto yangiliklar",
+  allPrices: "Barcha kurslar va kalkulyator",
 };
 
 const pricesRu: typeof pricesUz = {
@@ -124,6 +125,7 @@ const pricesRu: typeof pricesUz = {
   ],
   source: "Источник: CoinGecko (цена в долларах) и ЦБ Узбекистана (курс доллара). Для информации, не инвестиционная рекомендация.",
   newsLink: "Крипто-новости сегодня",
+  allPrices: "Все курсы и калькулятор",
 };
 
 const pricesEn: typeof pricesUz = {
@@ -155,6 +157,7 @@ const pricesEn: typeof pricesUz = {
   ],
   source: "Source: CoinGecko (dollar price) and the Central Bank of Uzbekistan (dollar rate). For information only, not investment advice.",
   newsLink: "Today's crypto news",
+  allPrices: "All rates and calculator",
 };
 
 export const pricesText = { uz: pricesUz, ru: pricesRu, en: pricesEn };
