@@ -8,8 +8,59 @@
     "bg": "#1e2026",
     "fg": "#f0b90b"
   },
-  { "id": "voluto", "name": "Voluto", "url": "https://voluto.uz/ru", "mark": "V", "bg": "#111111", "fg": "#ffffff" },
-  { "id": "asterium", "name": "Asterium", "url": "https://asterium.uz", "mark": "A", "bg": "#2b2b3a", "fg": "#ffffff" },
+  {
+    "id": "voluto",
+    "name": "Voluto",
+    "url": "https://voluto.uz/ru",
+    "mark": "V",
+    "bg": "#111111",
+    "fg": "#ffffff",
+    "offline": [
+      {
+        "ru": "ул. Лабзак, 2А",
+        "uz": "Labzak ko'chasi, 2A",
+        "en": "2A Labzak St",
+        "map": "Ташкент, улица Лабзак, 2А",
+        "hours": {
+          "ru": "ежедневно 12:00–23:30",
+          "uz": "har kuni 12:00–23:30",
+          "en": "daily 12:00–23:30"
+        }
+      }
+    ]
+  },
+  {
+    "id": "asterium",
+    "name": "Asterium",
+    "url": "https://asterium.uz",
+    "mark": "A",
+    "bg": "#2b2b3a",
+    "fg": "#ffffff",
+    "offline": [
+      {
+        "ru": "ул. Саида Барака, 12А",
+        "uz": "Said Baraka ko'chasi, 12A",
+        "en": "12A Said Baraka St",
+        "map": "Ташкент, улица Саида Барака, 12А",
+        "hours": {
+          "ru": "пн–пт 09–18, сб 10–18, вс 10–20",
+          "uz": "du–ju 09–18, sh 10–18, ya 10–20",
+          "en": "Mon–Fri 9–18, Sat 10–18, Sun 10–20"
+        }
+      },
+      {
+        "ru": "ул. Заргар, 3",
+        "uz": "Zargar ko'chasi, 3",
+        "en": "3 Zargar St",
+        "map": "Ташкент, улица Заргар, 3",
+        "hours": {
+          "ru": "пн–сб 10–23, вс 10–19",
+          "uz": "du–sh 10–23, ya 10–19",
+          "en": "Mon–Sat 10–23, Sun 10–19"
+        }
+      }
+    ]
+  },
   {
     "id": "tcrypto",
     "name": "tcrypto",
@@ -27,5 +78,12 @@
     "bg": "#2a8bf2",
     "fg": "#ffffff"
   },
-  { "id": "unexpay", "name": "Unexpay", "url": "https://unexpay.uz/", "mark": "U", "bg": "#d8262f", "fg": "#ffffff" }
+  {
+    "id": "unexpay",
+    "name": "Unexpay",
+    "url": "https://unexpay.uz/",
+    "mark": "U",
+    "bg": "#d8262f",
+    "fg": "#ffffff"
+  }
 ]
