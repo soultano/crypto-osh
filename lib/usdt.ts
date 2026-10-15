@@ -25,12 +25,21 @@ export const rates = data as RatesFile;
 // a margin for a late morning run. After that its cell links to the site.
 const FRESH_MS = 26 * 3600_000;
 
+// A rate entered by hand (scripts/rates/manual.mts) holds for the Tashkent
+// day it was entered on: the next morning someone has to check it again.
+const day = (t: number) => new Intl.DateTimeFormat("en-CA", { timeZone: "Asia/Tashkent" }).format(t);
+
+export function isFresh(quote: Quote, now = Date.now()): boolean {
+  const at = Date.parse(quote.at);
+  return quote.source === "manual" ? day(at) === day(now) : now - at < FRESH_MS;
+}
+
 export type Row = Provider & { quote: Quote | null; fresh: boolean };
 
 export function rateRows(file: RatesFile = rates, now = Date.now()): Row[] {
   return providers.map((p) => {
     const quote = file.quotes[p.id] ?? null;
-    return { ...p, quote, fresh: !!quote && now - Date.parse(quote.at) < FRESH_MS };
+    return { ...p, quote, fresh: !!quote && isFresh(quote, now) };
   });
 }
 

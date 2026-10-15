@@ -10,7 +10,9 @@
 //   Unexpay  api.unexpay.uz make-calc     (quote for 100 USDT; its flat 10 000
 //            placeholder is rejected by the Central Bank sanity band)
 //   Asterium no public rate (shown in the office); only the published 0.6% fee
-//   Binance, Walt: no public rate API reachable; rows show a dash
+//   Binance, Walt: no public rate API reachable; rows link to the site
+//
+// Rates for those are entered by hand: scripts/rates/manual.mts.
 //
 // Run: node scripts/rates/update.mts   (RATES_DRY_RUN=1 prints, writes nothing)
 
@@ -140,7 +142,10 @@ async function main() {
         for (const k of ["buy", "sell"] as const) {
           if (q[k] !== null && !plausible(q[k])) throw new Error(`${id}: implausible ${k} ${q[k]}`);
         }
-        next.quotes[id] = { ...q, at: now };
+        const was = prev.quotes[id];
+        // A fee-only source (Asterium) must not wipe a rate entered by hand.
+        if (q.buy === null && q.sell === null && was?.source === "manual") next.quotes[id] = { ...was, fee: q.fee };
+        else next.quotes[id] = { ...q, at: now };
         console.log(`${id}: buy ${q.buy ?? "—"} · sell ${q.sell ?? "—"} · fee ${q.fee ?? "—"}`);
       } catch (e) {
         failed.push(id);

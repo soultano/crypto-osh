@@ -10,7 +10,7 @@
 import fs from "node:fs";
 import path from "node:path";
 
-type Quote = { buy: number | null; sell: number | null; fee: number | null; at: string };
+type Quote = { buy: number | null; sell: number | null; fee: number | null; at: string; source?: string };
 type Provider = { id: string; name: string; url: string };
 
 const token = process.env.TELEGRAM_BOT_TOKEN;
@@ -32,8 +32,10 @@ function som(n: number | null | undefined): string {
 
 export function buildPost(providers: Provider[], file: { updatedAt: string | null; quotes: Record<string, Quote> }): string | null {
   if (!file.updatedAt) return null;
-  // Today's run only: a quote kept from an earlier day is not posted.
-  const today = (q?: Quote) => (q && q.at === file.updatedAt ? q : undefined);
+  // Today's quotes only: from this run, or checked earlier the same Tashkent
+  // day (rates entered by hand). A quote kept from an earlier day is not posted.
+  const day = (iso: string) => new Intl.DateTimeFormat("en-CA", { timeZone: "Asia/Tashkent" }).format(new Date(iso));
+  const today = (q?: Quote) => (q && (q.at === file.updatedAt || (q.source === "manual" && day(q.at) === day(file.updatedAt!))) ? q : undefined);
   const rows = providers.map((p) => ({ p, q: today(file.quotes[p.id]) }));
   const pick = (key: "buy" | "sell", better: (a: number, b: number) => boolean) => {
     const live = rows.filter((r) => r.q?.[key] != null);
@@ -61,7 +63,7 @@ export function buildPost(providers: Provider[], file: { updatedAt: string | nul
   if (bestSell) lines.push(`🏆 Sotishda eng yaxshi kurs: <b>${som(bestSell.q!.sell)} so'm</b> — ${esc(bestSell.p.name)}`);
   lines.push(
     "",
-    "Kurslar xizmatlarning rasmiy saytlaridan olindi; ma'lumot uchun, investitsiya tavsiyasi emas.",
+    "Kurslar xizmatlarning rasmiy saytlari va ilovalaridan olindi; ma'lumot uchun, investitsiya tavsiyasi emas.",
     `👉 <a href="${site}/uz">Jadval saytda</a>`,
   );
   return lines.join("\n");

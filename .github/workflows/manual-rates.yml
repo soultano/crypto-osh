@@ -1,0 +1,66 @@
+# For services whose rate can't be read automatically (Binance UZ, Walt,
+# Unexpay, Asterium): check the rate in the app or the office and enter it
+# here. Actions → "USDT rates: enter by hand" → Run workflow. Works from the
+# GitHub phone app too. Leave a field blank to skip that service.
+name: "USDT rates: enter by hand"
+
+on:
+  workflow_dispatch:
+    inputs:
+      binance:
+        description: "Binance (CoinPay): buy/sell, e.g. 12150/11980"
+        required: false
+      walt:
+        description: "Walt: buy/sell"
+        required: false
+      unexpay:
+        description: "Unexpay: buy/sell"
+        required: false
+      asterium:
+        description: "Asterium: buy/sell"
+        required: false
+      post:
+        description: "Post the updated table to the Telegram channel"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: daily-rates
+  cancel-in-progress: false
+
+jobs:
+  rates:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+
+      - name: Check and save the rates
+        env:
+          RATE_BINANCE: ${{ inputs.binance }}
+          RATE_WALT: ${{ inputs.walt }}
+          RATE_UNEXPAY: ${{ inputs.unexpay }}
+          RATE_ASTERIUM: ${{ inputs.asterium }}
+        run: node scripts/rates/manual.mts
+
+      - name: Commit and push
+        run: |
+          git add content/usdt-rates.json
+          git config user.name "Crypto Osh Rates"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "USDT rates entered by hand, $(TZ=Asia/Tashkent date '+%F %H:%M')"
+          git pull --rebase origin main
+          git push
+
+      - name: Post to Telegram
+        if: inputs.post
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_NEWS_CHAT_ID: ${{ secrets.TELEGRAM_NEWS_CHAT_ID }}
+        run: node scripts/rates/telegram.mts
