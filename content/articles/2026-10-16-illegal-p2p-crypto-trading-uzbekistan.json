@@ -1,0 +1,66 @@
+{
+  "slug": "2026-10-16-illegal-p2p-crypto-trading-uzbekistan",
+  "date": "2026-10-16T12:00:00+05:00",
+  "tags": ["uzbekistan", "p2p", "regulation"],
+  "sources": [
+    { "name": "Lex.uz (O'RQ-899)", "url": "https://www.lex.uz/docs/6763849" },
+    { "name": "UzDaily", "url": "https://www.uzdaily.uz/ru/v-uzbekistane-zaderzhali-podrostka-za-nezakonnyi-oborot-kriptovaliuty/" }
+  ],
+  "uz": {
+    "title": "Noqonuniy P2P-savdo O'zbekistonda: tahdidlar, tekshiruvlar va sud jarayoni",
+    "summary": "Nega litsenziyasiz kriptoaktivlar oldi-sottisi ma'muriy qamoq va texnika musodarasiga olib kelmoqda? Ichki ishlar organlari P2P-treyderlarni qanday aniqlaydi va qonunbuzarlarni nimalar kutadi?",
+    "body": [
+      "Qonunchilikdagi katta o'zgarish. 2024-yil 19-aprelda kuchga kirgan O'zbekiston Respublikasi Qonuni (O'RQ-899) bilan kriptovalyuta savdosi faqat litsenziyaga ega milliy provayderlar, ya'ni kripto-birjalar va kripto-do'konlar orqali amalga oshirilishi mumkin. Boshqa usulda kriptovalyuta oldi-sotdi qilish taqiqlanadi.",
+      "Telegram orqali yoki xorijiy platformalarning (Binance, Bybit kabi) P2P bo'limlarida USDT'ni «qo'ldan» sotish yoki sotib olish Ma'muriy javobgarlik to'g'risidagi kodeksning (MJtK) 155-4-moddasida belgilangan huquqbuzarlik hisoblanadi va buning uchun ma'muriy javobgarlik kelib chiqadi.",
+      "Huquq-tartibot organlari P2P-treyderlarni qanday aniqlaydi? Amaliyotda IIV Kiberxavfsizlik markazi, DXX va Bosh prokuratura asosan uchta usuldan foydalanadi.",
+      "1. Nazorat xaridi («operativ eksperiment»). Xodimlar Telegram yoki P2P-platformalardagi e'lonlar orqali mijoz sifatida murojaat qiladi. Karta rekvizitlari olingach yoki naqd pul topshirish uchun uchrashuv belgilangach, jarayon ashyoviy dalillar bilan rasmiylashtiriladi.",
+      "2. Bank kartalari monitoringi (Uzcard / Humo). Qisqa vaqt ichida turli jismoniy shaxslardan o'nlab bir xil to'lovlar kelib tushishi shubhali operatsiya sifatida belgilanadi, hisoblar bloklanadi va ma'lumotlar surishtiruv organlariga yuboriladi.",
+      "3. Kriptobirjalar va «iflos» tranzaksiyalar tahlili. Firibgarlik yo'li bilan jalb qilingan yoki o'g'irlangan mablag'lar zanjiri tekshirilganda, P2P orqali shu mablag'ni qabul qilgan treyderlar ham sherik sifatida javobgarlikka tortiladi.",
+      "Geografiya va hajm: 50 dollardan millionlargacha. Toshkent shahrining tuman sudlaridan (Chilonzor, Mirzo Ulug'bek, Yunusobod) boshlangan amaliyot butun respublikaga — Buxoro, Samarqand, Navoiy va Farg'ona vodiysiga kengaydi.",
+      "Ommaviy segment: jarayonga jalb qilinganlarning asosiy qismini 18–26 yoshdagi talabalar va yoshlar tashkil etadi. Ularning ko'pchiligida operatsiya summalari 50–500 AQSh dollari (bir necha million so'm) atrofida bo'lgan.",
+      "Yirik operatsiyalar: katta aylanmaga ega ayirboshlovchilar ham nazoratga olingan. Xususan, Buxoro viloyatida voyaga yetmagan shaxsning xorijiy birjadagi jami P2P aylanmasi 2,6 mln dollardan (34 mlrd so'm) oshgani aniqlangan. Bu holat bo'yicha Jinoyat kodeksining 278-8-moddasi 3-qismi bilan jinoyat ishi qo'zg'atilgan va jamoatchilikda katta rezonans bo'lgan.",
+      "Qo'lga olingandan so'ng nima bo'ladi? Ma'muriy qamoq: MJtK 155-4-moddasi bo'yicha sudlar ko'pincha jarima bilan cheklanmasdan, 15 sutkagacha (amaliyotda odatda 3 sutkadan 15 sutkagacha) ma'muriy qamoq tayinlaydi.",
+      "Texnika va hisoblarni musodara qilish: huquqbuzarlik quroli sifatida telefon (iPhone, Samsung va h.k.) davlat foydasiga musodara qilinadi. Kriptoaktivlar va bank kartalari ham musodara qilinadi.",
+      "Jinoiy javobgarlik xavfi: ma'muriy jazodan keyin bir yil ichida huquqbuzarlik takrorlansa, ish Jinoyat kodeksining 278-8-moddasi bo'yicha ko'riladi. Yirik miqdorda yoki guruh bo'lib qilingan savdo uchun birinchi marta ham jinoiy javobgarlik — 3 yilgacha ozodlikdan mahrum qilish, alohida yirik miqdorda yoki uyushgan guruh tomonidan qilinganda esa 3 yildan 5 yilgacha ozodlikdan mahrum qilish nazarda tutilgan."
+    ],
+    "take": "Qisqasi: USDT'ni Telegram'da yoki Binance/Bybit P2P'da «qo'ldan» sotib olish va sotish — bu endi «hamma qiladi» degan narsa emas, balki qamoq, telefoningizni yo'qotish va hatto jinoyat ishi. Kriptoni faqat NAPP litsenziyasiga ega birja va do'konlar orqali oling va soting. Kartangizni hech kimga «aylantirish» uchun bermang, notanish odamlardan kelgan pullarni o'tkazib bermang: «bilmagan edim» degan gap jazodan ozod qilmaydi."
+  },
+  "ru": {
+    "title": "Незаконный P2P в Узбекистане: риски, проверки и суды",
+    "summary": "Почему покупка и продажа криптоактивов без лицензии заканчивается административным арестом и конфискацией техники? Как правоохранительные органы находят P2P-трейдеров и что ждёт нарушителей?",
+    "body": [
+      "Главное изменение в законе. С 19 апреля 2024 года по Закону Республики Узбекистан ЗРУ-899 торговать криптовалютой можно только через национальных провайдеров с лицензией, то есть криптобиржи и криптомагазины. Любая другая купля-продажа криптовалюты запрещена.",
+      "Продажа или покупка USDT «с рук» через Telegram или в P2P-разделах зарубежных платформ (Binance, Bybit и других) — это правонарушение по статье 155-4 Кодекса об административной ответственности (КоАО), за него наступает административная ответственность.",
+      "Как правоохранительные органы находят P2P-трейдеров? На практике Центр кибербезопасности МВД, СГБ и Генеральная прокуратура в основном используют три способа.",
+      "1. Контрольная закупка («оперативный эксперимент»). Сотрудники обращаются по объявлениям в Telegram или на P2P-площадках как обычные клиенты. Когда получены реквизиты карты или назначена встреча для передачи наличных, всё оформляется с вещественными доказательствами.",
+      "2. Мониторинг банковских карт (Uzcard / Humo). Десятки одинаковых платежей от разных людей за короткое время помечаются как подозрительные операции, счета блокируются, а данные передаются органам дознания.",
+      "3. Анализ криптобирж и «грязных» транзакций. Когда проверяют цепочку украденных или полученных мошенничеством денег, трейдеров, которые приняли эти средства через P2P, привлекают к ответственности как соучастников.",
+      "География и объёмы: от 50 долларов до миллионов. Практика началась с районных судов Ташкента (Чиланзар, Мирзо-Улугбек, Юнусабад) и распространилась на всю республику: Бухару, Самарканд, Навои и Ферганскую долину.",
+      "Массовый сегмент: большинство задержанных — студенты и молодёжь 18–26 лет. У многих из них суммы операций были около 50–500 долларов (несколько миллионов сумов).",
+      "Крупные операции: под контроль попали и обменники с большим оборотом. В Бухарской области выявили несовершеннолетнего, чей общий P2P-оборот на зарубежной бирже превысил 2,6 млн долларов (34 млрд сумов). По этому случаю возбуждено уголовное дело по части 3 статьи 278-8 Уголовного кодекса, история вызвала большой резонанс.",
+      "Что бывает после задержания? Административный арест: по статье 155-4 КоАО суды часто не ограничиваются штрафом и назначают административный арест до 15 суток (на практике обычно от 3 до 15 суток).",
+      "Конфискация техники и счетов: телефон (iPhone, Samsung и т. д.) как орудие правонарушения конфискуется в доход государства. Криптоактивы и банковские карты тоже конфискуются.",
+      "Риск уголовной ответственности: если в течение года после административного наказания нарушение повторится, дело рассматривается по статье 278-8 Уголовного кодекса. За торговлю в крупном размере или группой уголовная ответственность наступает и в первый раз — лишение свободы до 3 лет, а в особо крупном размере или организованной группой — от 3 до 5 лет."
+    ],
+    "take": "Коротко: купить или продать USDT «с рук» в Telegram или на P2P Binance/Bybit — это уже не «все так делают», а арест, потеря телефона и даже уголовное дело. Покупайте и продавайте крипту только через биржи и магазины с лицензией НАПП. Никому не давайте свою карту «прогнать деньги» и не переводите деньги незнакомцев: «я не знал» от наказания не освобождает."
+  },
+  "en": {
+    "title": "Illegal P2P crypto trading in Uzbekistan: risks, checks and court cases",
+    "summary": "Why does buying and selling crypto without a licence end in administrative arrest and confiscated phones? How do the authorities find P2P traders, and what happens to offenders?",
+    "body": [
+      "The big change in the law. Since 19 April 2024, under Law of the Republic of Uzbekistan ZRU-899, crypto can be traded only through licensed national providers, meaning crypto exchanges and crypto shops. Any other buying or selling of crypto is banned.",
+      "Selling or buying USDT person-to-person via Telegram or in the P2P sections of foreign platforms such as Binance or Bybit is an offence under Article 155-4 of the Code of Administrative Responsibility and carries administrative liability.",
+      "How do the authorities find P2P traders? In practice the Interior Ministry's Cybersecurity Centre, the State Security Service and the Prosecutor General's Office mainly use three methods.",
+      "1. Test purchases (\"operational experiments\"). Officers answer ads on Telegram or P2P platforms posing as customers. Once they get card details or arrange a cash handover, the deal is documented with physical evidence.",
+      "2. Bank card monitoring (Uzcard / Humo). Dozens of identical payments from different people in a short time are flagged as suspicious, the accounts are frozen and the data goes to investigators.",
+      "3. Analysis of exchanges and \"dirty\" transactions. When the trail of stolen or scam money is traced, traders who received it through P2P are held liable as accomplices.",
+      "Geography and scale: from $50 to millions. The practice started in Tashkent district courts (Chilanzar, Mirzo Ulugbek, Yunusabad) and spread across the country: Bukhara, Samarkand, Navoi and the Fergana Valley.",
+      "The mass segment: most of those caught are students and young people aged 18–26. For many of them the amounts were around $50–500 (a few million som).",
+      "Large operations: high-turnover exchangers are also being caught. In Bukhara region, a minor's total P2P turnover on a foreign exchange was found to exceed $2.6 million (34 billion som). A criminal case was opened under Part 3 of Article 278-8 of the Criminal Code, and the case drew wide public attention.",
+      "What happens after arrest? Administrative detention: under Article 155-4, courts often go beyond a fine and order up to 15 days of administrative arrest (in practice usually 3 to 15 days).",
+      "Confiscation of devices and accounts: the phone (iPhone, Samsung, etc.) is confiscated as the instrument of the offence. Crypto assets and bank cards are confiscated too.",
+      "Risk of criminal charges: a repeat offence within a year of an administrative penalty is tried under Article 278-8 of the Criminal Code. Trading on a large scale or as a group is a crime even the first time, with up to 3 years in prison, and on an especially large scale or by an organised group, 3 to 5 years."
+    ],
+    "take": "In short: buying or selling USDT person-to-person on Telegram or Binance/Bybit P2P is no longer \"what everyone does\". It means arrest, losing your phone and possibly a criminal case. Buy and sell crypto only through NAPP-licensed exchanges and shops. Never lend your card to \"pass money through\" and never forward money from strangers: \"I didn't know\" does not get you off."
+  }
+}
