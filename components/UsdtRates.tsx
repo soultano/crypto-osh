@@ -6,7 +6,7 @@ import { ShareBar } from "./ShareBar";
 import { best, fmtDay, fmtSom, fmtTime, rateRows, rates, type Row } from "@/lib/usdt";
 
 // USDT/UZS rates at Uzbek exchangers, light card with the best offers in an
-// ikat-patterned frame. Server-rendered from content/usdt-rates.json.
+// highlighted cell. Server-rendered from content/usdt-rates.json.
 
 function Tether() {
   return (
@@ -76,16 +76,12 @@ export function UsdtRates({ locale }: { locale: Locale }) {
     const v = row.quote?.[key];
     const isBest = top[key]?.id === row.id;
     if (row.fresh && v != null) {
-      const value = <span className="usdt-num">{fmtSom(v)}</span>;
-      return isBest ? (
-        <span className="ikat-frame" title={t.best}>
-          <span className="ikat-frame-in">
-            {value}
-            <small className="usdt-best-tag">{t.bestShort}</small>
-          </span>
+      // Every number sits in the same box, so best and plain values line up.
+      return (
+        <span className={isBest ? "usdt-val is-best" : "usdt-val"} title={isBest ? t.best : undefined}>
+          {fmtSom(v)}
+          {isBest && <small className="usdt-best-tag">{t.bestShort}</small>}
         </span>
-      ) : (
-        value
       );
     }
     // Not verified today: never a guess, a link to check it at the source.
@@ -97,7 +93,7 @@ export function UsdtRates({ locale }: { locale: Locale }) {
   };
 
   const feeText = (row: Row) =>
-    row.fresh && row.quote?.fee != null ? `${row.quote.fee.toLocaleString(locale === "en" ? "en-US" : "ru-RU")}%` : null;
+    row.fee != null ? `${row.fee.toLocaleString(locale === "en" ? "en-US" : "ru-RU")}%` : null;
   const fee = (row: Row) => {
     const f = feeText(row);
     return f ? <span className="usdt-fee">{f}</span> : <span className="usdt-dash">—</span>;
@@ -108,15 +104,13 @@ export function UsdtRates({ locale }: { locale: Locale }) {
     if (!row) return null;
     const value = key === "fee" ? feeText(row) : `${fmtSom(row.quote![key]!)} ${t.som}`;
     return (
-      <a className="ikat-frame usdt-best" href={row.url} target="_blank" rel="sponsored noopener">
-        <span className="ikat-frame-in">
-          <span className="usdt-best-label">{label}</span>
-          <span className="usdt-best-row">
-            <Badge row={row} />
-            <span>
-              <strong>{value}</strong>
-              <small>{row.name}</small>
-            </span>
+      <a className="usdt-best" href={row.url} target="_blank" rel="sponsored noopener">
+        <span className="usdt-best-label">{label}</span>
+        <span className="usdt-best-row">
+          <Badge row={row} />
+          <span>
+            <strong>{value}</strong>
+            <small>{row.name}</small>
           </span>
         </span>
       </a>
@@ -155,12 +149,12 @@ export function UsdtRates({ locale }: { locale: Locale }) {
             <table className="usdt-table">
               <thead>
                 <tr>
-                  <th scope="col">{t.service}</th>
-                  <th scope="col">
+                  <th scope="col" className="usdt-col-service">{t.service}</th>
+                  <th scope="col" className="usdt-col-rate">
                     <span className="usdt-ico usdt-ico-in" aria-hidden="true">↓</span>
                     {t.buy} <small>{t.uzs}</small>
                   </th>
-                  <th scope="col">
+                  <th scope="col" className="usdt-col-rate">
                     <span className="usdt-ico usdt-ico-out" aria-hidden="true">↑</span>
                     {t.sell} <small>{t.uzs}</small>
                   </th>

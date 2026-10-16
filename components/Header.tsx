@@ -3,7 +3,6 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
-import { auctionText } from "@/content/auction";
 import { newsText } from "@/content/news";
 import { locales, localeLabels, type Locale, type Dictionary } from "@/lib/i18n";
 
@@ -17,7 +16,6 @@ export function Header({ locale, nav }: { locale: Locale; nav: Dictionary["nav"]
     { href: `/${locale}/kurs`, label: newsText[locale].pricesNav },
     { href: `/${locale}/about`, label: nav.about },
     { href: `/${locale}/business`, label: nav.business },
-    { href: `/${locale}/auction`, label: auctionText[locale].nav },
     { href: `/${locale}/people`, label: nav.people },
     { href: `/${locale}/videos`, label: nav.videos },
   ];

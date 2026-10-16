@@ -14,7 +14,8 @@ export type ProviderId = "binance" | "voluto" | "asterium" | "tcrypto" | "walt" 
 // An office in Tashkent where the exchange is done in person, with cash.
 export type Office = { ru: string; uz: string; en: string; map: string; hours: { ru: string; uz: string; en: string } };
 
-export type Provider = { id: ProviderId; name: string; note?: string; url: string; mark: string; bg: string; fg: string; offline?: Office[] };
+// fee: a published cash-dollar fee (%) to show when the morning run could not read it.
+export type Provider = { id: ProviderId; name: string; note?: string; url: string; mark: string; bg: string; fg: string; offline?: Office[]; fee?: number };
 
 export const providers = providerList as Provider[];
 
@@ -37,12 +38,13 @@ export function isFresh(quote: Quote, now = Date.now()): boolean {
   return quote.source === "manual" ? day(at) === day(now) : now - at < FRESH_MS;
 }
 
-export type Row = Provider & { quote: Quote | null; fresh: boolean };
+export type Row = Omit<Provider, "fee"> & { quote: Quote | null; fresh: boolean; fee: number | null };
 
 export function rateRows(file: RatesFile = rates, now = Date.now()): Row[] {
   return providers.map((p) => {
     const quote = file.quotes[p.id] ?? null;
-    return { ...p, quote, fresh: !!quote && isFresh(quote, now) };
+    const fresh = !!quote && isFresh(quote, now);
+    return { ...p, quote, fresh, fee: fresh && quote?.fee != null ? quote.fee : (p.fee ?? null) };
   });
 }
 
@@ -50,9 +52,10 @@ export function rateRows(file: RatesFile = rates, now = Date.now()): Row[] {
 // Only among today's quotes, and only when there are at least two to compare.
 export function best(rows: Row[]) {
   const pick = (key: "buy" | "sell" | "fee", better: (a: number, b: number) => boolean) => {
-    const live = rows.filter((r) => r.fresh && r.quote?.[key] != null);
+    const val = (r: Row) => (key === "fee" ? r.fee : r.fresh ? (r.quote?.[key] ?? null) : null);
+    const live = rows.filter((r) => val(r) != null);
     if (live.length < 2) return null;
-    return live.reduce((acc, r) => (better(r.quote![key]!, acc.quote![key]!) ? r : acc));
+    return live.reduce((acc, r) => (better(val(r)!, val(acc)!) ? r : acc));
   };
   // fee: the lowest commission for buying USDT with cash dollars.
   return { buy: pick("buy", (a, b) => a < b), sell: pick("sell", (a, b) => a > b), fee: pick("fee", (a, b) => a < b) };

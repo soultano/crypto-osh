@@ -39,6 +39,10 @@ const nextConfig: NextConfig = {
     formats: ["image/avif", "image/webp"],
     remotePatterns: [],
   },
+  // The auction page was removed; old links go to the home page.
+  async redirects() {
+    return [{ source: "/:locale(uz|ru|en)/auction", destination: "/:locale", permanent: true }];
+  },
   async headers() {
     return [{ source: "/:path*", headers: securityHeaders }];
   },
