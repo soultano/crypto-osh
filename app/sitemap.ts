@@ -4,7 +4,7 @@ import { allNews } from "@/lib/news";
 import { people } from "@/lib/people";
 import { site } from "@/lib/site";
 
-const pages = ["", "/news", "/kurs", "/about", "/business", "/auction", "/videos", "/people", ...people.map((p) => `/people/${p.slug}`)];
+const pages = ["", "/news", "/kurs", "/about", "/business", "/videos", "/people", ...people.map((p) => `/people/${p.slug}`)];
 const daily = new Set(["", "/news", "/kurs"]);
 
 export default function sitemap(): MetadataRoute.Sitemap {

@@ -6,7 +6,7 @@ import { fmtUsd, fmtUzs, type Prices } from "@/lib/prices";
 export function CoinPrices({ prices, locale, limit }: { prices: Prices; locale: Locale; limit?: number }) {
   const p = pricesText[locale];
   return (
-    <div className="bids prices">
+    <div className="table-card prices">
       <table>
         <thead>
           <tr>
