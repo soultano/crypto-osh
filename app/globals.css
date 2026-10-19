@@ -1798,8 +1798,7 @@ p {
   line-height: 1.2;
 }
 
-.usdt-provider small,
-.usdt-best-row small {
+.usdt-provider small {
   display: block;
   color: var(--u-muted);
   font-size: 0.72rem;
@@ -1934,72 +1933,39 @@ p {
   line-height: 1.55;
 }
 
-/* Every rate sits in the same box; the best one gets a green outline */
+/* Every rate sits in the same box, so the columns line up */
 .usdt-val {
   display: inline-block;
   min-width: 7.2em;
   padding: 6px 10px;
-  border: 2px solid transparent;
-  border-radius: 10px;
   line-height: 1.2;
 }
 
-.usdt-val.is-best {
-  border-color: var(--u-best);
+/* The partner row: first in the table, in a green frame */
+.usdt-table tr.usdt-featured > * {
   background: var(--u-best-bg);
-  box-shadow: 0 4px 12px rgba(31, 138, 98, 0.15);
+  box-shadow: inset 0 2px 0 var(--u-best), inset 0 -2px 0 var(--u-best);
 }
 
-.usdt-best-tag {
-  display: block;
-  font-size: 0.6rem;
+.usdt-table tr.usdt-featured > :first-child {
+  box-shadow: inset 2px 2px 0 var(--u-best), inset 0 -2px 0 var(--u-best);
+}
+
+.usdt-table tr.usdt-featured > :last-child {
+  box-shadow: inset -2px 2px 0 var(--u-best), inset 0 -2px 0 var(--u-best);
+}
+
+.usdt-provider .usdt-sponsor {
+  display: inline-block;
+  margin: 2px 0 1px;
+  padding: 1px 7px;
+  border-radius: 999px;
+  background: var(--u-best);
+  color: #fff;
+  font-size: 0.62rem;
   font-weight: 800;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  color: var(--u-best);
-}
-
-.usdt-bests {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 14px;
-  margin-top: 16px;
-}
-
-.usdt-best {
-  display: block;
-  color: var(--u-ink);
-  padding: 12px 14px 12px 16px;
-  background: #fff;
-  border: 1px solid var(--u-line);
-  border-left: 4px solid var(--u-best);
-  border-radius: 12px;
-  box-shadow: 0 4px 14px rgba(20, 33, 61, 0.06);
-  transition: box-shadow 0.15s ease, transform 0.15s ease;
-}
-
-.usdt-best:hover {
-  transform: translateY(-1px);
-  box-shadow: 0 8px 20px rgba(20, 33, 61, 0.1);
-}
-
-.usdt-best-label {
-  display: block;
-  font-size: 0.78rem;
-  font-weight: 700;
-  color: var(--u-muted);
-  margin-bottom: 6px;
-}
-
-.usdt-best-row {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-}
-
-.usdt-best-row strong {
-  font-size: 1.35rem;
-  font-variant-numeric: tabular-nums;
 }
 
 .usdt-note {
@@ -2049,18 +2015,6 @@ p {
     font-size: 0.66rem;
     padding: 4px 6px;
   }
-  .usdt-bests {
-    gap: 10px;
-  }
-  .usdt-best {
-    padding: 8px 12px;
-  }
-  .usdt-best-label {
-    margin-bottom: 2px;
-  }
-  .usdt-best-row strong {
-    font-size: 1.15rem;
-  }
   .usdt-provider {
     gap: 7px;
   }
@@ -2079,6 +2033,10 @@ p {
   .usdt-table .usdt-col-fee,
   .usdt-table .usdt-col-offline {
     display: none;
+  }
+  /* offline and fee are hidden: the sell cell closes the partner frame */
+  .usdt-table tr.usdt-featured > :nth-child(3) {
+    box-shadow: inset -2px 2px 0 var(--u-best), inset 0 -2px 0 var(--u-best);
   }
   .usdt-col-service {
     width: 38%;

@@ -32,6 +32,7 @@
   {
     "id": "asterium",
     "name": "Asterium",
+    "partner": true,
     "url": "https://asterium.uz",
     "mark": "A",
     "bg": "#2b2b3a",
