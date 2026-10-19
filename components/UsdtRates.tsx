@@ -5,8 +5,9 @@ import { site } from "@/lib/site";
 import { ShareBar } from "./ShareBar";
 import { best, fmtDay, fmtSom, fmtTime, rateRows, rates, type Row } from "@/lib/usdt";
 
-// USDT/UZS rates at Uzbek exchangers, light card with the best offers in an
-// highlighted cell. Server-rendered from content/usdt-rates.json.
+// USDT/UZS rates at Uzbek exchangers, light card. The partner (a paid
+// placement) comes first in a frame; every other row looks the same.
+// Server-rendered from content/usdt-rates.json.
 
 function Tether() {
   return (
@@ -53,12 +54,13 @@ function Offices({ row, locale, t }: { row: Row; locale: Locale; t: (typeof usdt
   );
 }
 
-function Provider({ row, fee, office }: { row: Row; fee: string | null; office: string | null }) {
+function Provider({ row, fee, office, sponsor }: { row: Row; fee: string | null; office: string | null; sponsor: string }) {
   return (
     <a className="usdt-provider" href={row.url} target="_blank" rel="sponsored noopener">
       <Badge row={row} />
       <span>
         <strong>{row.name}</strong>
+        {row.partner && <small className="usdt-sponsor">{sponsor}</small>}
         {row.note && <small>{row.note}</small>}
         {office && <small className="usdt-office-mobile">📍 {office}</small>}
         {fee && <small className="usdt-fee-mobile">{fee}</small>}
@@ -69,21 +71,13 @@ function Provider({ row, fee, office }: { row: Row; fee: string | null; office: 
 
 export function UsdtRates({ locale }: { locale: Locale }) {
   const t = usdtText[locale];
-  const rows = rateRows();
+  // The partner goes first; the rest keep their order.
+  const rows = rateRows().sort((a, b) => Number(!!b.partner) - Number(!!a.partner));
   const top = best(rows);
 
   const cell = (row: Row, key: "buy" | "sell") => {
     const v = row.quote?.[key];
-    const isBest = top[key]?.id === row.id;
-    if (row.fresh && v != null) {
-      // Every number sits in the same box, so best and plain values line up.
-      return (
-        <span className={isBest ? "usdt-val is-best" : "usdt-val"} title={isBest ? t.best : undefined}>
-          {fmtSom(v)}
-          {isBest && <small className="usdt-best-tag">{t.bestShort}</small>}
-        </span>
-      );
-    }
+    if (row.fresh && v != null) return <span className="usdt-val">{fmtSom(v)}</span>;
     // Not verified today: never a guess, a link to check it at the source.
     return (
       <a className="usdt-check" href={row.url} target="_blank" rel="sponsored noopener">
@@ -97,24 +91,6 @@ export function UsdtRates({ locale }: { locale: Locale }) {
   const fee = (row: Row) => {
     const f = feeText(row);
     return f ? <span className="usdt-fee">{f}</span> : <span className="usdt-dash">—</span>;
-  };
-
-  const summary = (key: "buy" | "sell" | "fee", label: string) => {
-    const row = top[key];
-    if (!row) return null;
-    const value = key === "fee" ? feeText(row) : `${fmtSom(row.quote![key]!)} ${t.som}`;
-    return (
-      <a className="usdt-best" href={row.url} target="_blank" rel="sponsored noopener">
-        <span className="usdt-best-label">{label}</span>
-        <span className="usdt-best-row">
-          <Badge row={row} />
-          <span>
-            <strong>{value}</strong>
-            <small>{row.name}</small>
-          </span>
-        </span>
-      </a>
-    );
   };
 
   // What the share buttons post: the date and today's best offers.
@@ -170,12 +146,13 @@ export function UsdtRates({ locale }: { locale: Locale }) {
               </thead>
               <tbody>
                 {rows.map((row) => (
-                  <tr key={row.id}>
+                  <tr key={row.id} className={row.partner ? "usdt-featured" : undefined}>
                     <th scope="row">
                       <Provider
                         row={row}
                         fee={feeText(row) && `${t.cashShort}: ${feeText(row)}`}
                         office={row.offline?.length ? `${t.office}: ${row.offline.map((o) => o[locale]).join("; ")}` : null}
+                        sponsor={t.sponsor}
                       />
                     </th>
                     <td>{cell(row, "buy")}</td>
@@ -189,14 +166,6 @@ export function UsdtRates({ locale }: { locale: Locale }) {
               </tbody>
             </table>
           </div>
-
-          {(top.buy || top.sell || top.fee) && (
-            <div className="usdt-bests">
-              {summary("buy", t.bestBuy)}
-              {summary("sell", t.bestSell)}
-              {summary("fee", t.bestCash)}
-            </div>
-          )}
 
           <p className="usdt-note">
             {t.note} {t.partner}{" "}
