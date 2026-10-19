@@ -20,6 +20,14 @@ const uz = {
   disclaimer: "Yangiliklar ma'lumot uchun berilgan va investitsiya tavsiyasi emas. Kriptovalyuta bilan faqat O'zbekistonda litsenziyaga ega provayderlar orqali ishlang.",
   telegram: "Yangiliklarni Telegramda kuzatish",
   pricesNav: "Kurs",
+  share: "Ulashish:",
+  shareTelegram: "Telegram",
+  shareStories: "Instagram Stories",
+  shareCopy: "Havolani nusxalash",
+  shareCopied: "Havola nusxalandi",
+  storyKicker: "Yangiliklar",
+  storyCta: "To'liq maqola saytda:",
+  storySaved: "Rasm saqlandi. Instagram'da Story oching, rasmni qo'shing va «Link» stikeri bilan maqola havolasini qo'ying.",
 };
 
 const ru: typeof uz = {
@@ -40,6 +48,14 @@ const ru: typeof uz = {
   disclaimer: "Новости носят информационный характер и не являются инвестиционной рекомендацией. Работайте с криптовалютой только через провайдеров, лицензированных в Узбекистане.",
   telegram: "Следить за новостями в Telegram",
   pricesNav: "Курс",
+  share: "Поделиться:",
+  shareTelegram: "Telegram",
+  shareStories: "Instagram Stories",
+  shareCopy: "Копировать ссылку",
+  shareCopied: "Ссылка скопирована",
+  storyKicker: "Новости",
+  storyCta: "Полная статья на сайте:",
+  storySaved: "Картинка сохранена. Откройте Story в Instagram, добавьте её и прикрепите ссылку на статью стикером «Ссылка».",
 };
 
 const en: typeof uz = {
@@ -60,6 +76,14 @@ const en: typeof uz = {
   disclaimer: "News is for information only and is not investment advice. Use only crypto providers licensed in Uzbekistan.",
   telegram: "Follow the news on Telegram",
   pricesNav: "Rates",
+  share: "Share:",
+  shareTelegram: "Telegram",
+  shareStories: "Instagram Stories",
+  shareCopy: "Copy link",
+  shareCopied: "Link copied",
+  storyKicker: "News",
+  storyCta: "Read the full article at:",
+  storySaved: "Image saved. Open a Story in Instagram, add the image and attach the article with a Link sticker.",
 };
 
 export const newsText = { uz, ru, en };

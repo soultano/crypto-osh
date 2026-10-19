@@ -2102,3 +2102,64 @@ p {
   font-size: 0.8rem;
   color: var(--u-muted);
 }
+
+/* Share buttons under every news article */
+.article-share {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px 14px;
+  margin: 28px 0 8px;
+  padding: 16px 0;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.article-share-label {
+  font-weight: 700;
+  color: var(--text);
+}
+
+.article-share-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.article-share-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 42px;
+  padding: 0 16px;
+  border: 0;
+  border-radius: 999px;
+  color: #fff;
+  font: inherit;
+  font-size: 0.92rem;
+  font-weight: 700;
+  text-decoration: none;
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.article-share-btn:hover,
+.article-share-btn:focus-visible {
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgb(0 0 0 / 0.3);
+}
+
+.article-share-btn.share-copy {
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--text);
+}
+
+.article-share .share-note {
+  flex-basis: 100%;
+  color: var(--muted);
+}
+
+.article-share .share-note:empty {
+  display: none;
+}
