@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { ArticleShare } from "@/components/ArticleShare";
 import { NewsList } from "@/components/News";
 import { newsText } from "@/content/news";
 import { locales, type Locale } from "@/lib/i18n";
@@ -73,6 +74,22 @@ export default async function Article({ params }: { params: Params }) {
             <h2>{n.take}</h2>
             <p>{t.take}</p>
           </aside>
+          <ArticleShare
+            url={`${site.url}/${locale}/news/${slug}`}
+            title={t.title}
+            summary={t.summary}
+            date={newsDate(item.date, locale)}
+            labels={{
+              share: n.share,
+              telegram: n.shareTelegram,
+              stories: n.shareStories,
+              copy: n.shareCopy,
+              copied: n.shareCopied,
+              storyKicker: n.storyKicker,
+              storyCta: n.storyCta,
+              storySaved: n.storySaved,
+            }}
+          />
           {item.sources.length > 0 && (
             <p className="news-sources">
               {n.sources}:{" "}
