@@ -2,18 +2,21 @@ import type { Metadata, Viewport } from "next";
 import { notFound } from "next/navigation";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Sections";
+import { themeColors } from "@/lib/theme";
 import { defaultLocale, getDictionary, htmlLang, isLocale, locales, ogLocale } from "@/lib/i18n";
 import { site, photos } from "@/lib/site";
 import "../globals.css";
 
 export const dynamicParams = false;
 
+const themeScript = `try{if(localStorage.getItem("theme")==="dark")document.documentElement.dataset.theme="dark"}catch(e){}`;
+
 export function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
 }
 
 export const viewport: Viewport = {
-  themeColor: "#0b1838",
+  themeColor: themeColors.light,
   width: "device-width",
   initialScale: 1,
 };
@@ -71,7 +74,14 @@ export default async function LocaleLayout({
   };
 
   return (
-    <html lang={htmlLang[locale]}>
+    // data-theme is set by the script below before React hydrates.
+    <html lang={htmlLang[locale]} data-theme="light" suppressHydrationWarning>
+      <head>
+        <script
+          // Runs before paint, so a dark-theme visitor never sees a light flash.
+          dangerouslySetInnerHTML={{ __html: themeScript }}
+        />
+      </head>
       <body>
         <a href="#main" className="skip">
           Skip to content

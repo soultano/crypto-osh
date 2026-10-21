@@ -5,6 +5,7 @@ import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { newsText } from "@/content/news";
 import { locales, localeLabels, type Locale, type Dictionary } from "@/lib/i18n";
+import { ThemeToggle } from "./ThemeToggle";
 
 export function Header({ locale, nav }: { locale: Locale; nav: Dictionary["nav"] }) {
   const pathname = usePathname() || `/${locale}`;
@@ -47,6 +48,7 @@ export function Header({ locale, nav }: { locale: Locale; nav: Dictionary["nav"]
         </nav>
 
         <div className="header-tools">
+          <ThemeToggle locale={locale} />
           <div className="lang" role="group" aria-label="Language">
             {locales.map((l) => (
               <Link
