@@ -1,0 +1,71 @@
+{
+  "slug": "2026-10-21-exchanges-eu-license-grey-money-p2p",
+  "date": "2026-10-21T18:15:00+05:00",
+  "tags": [
+    "regulation",
+    "exchanges",
+    "p2p",
+    "aml"
+  ],
+  "sources": [
+    {
+      "name": "ForkLog (19th EU sanctions package)",
+      "url": "https://forklog.com/en/the-eu-brings-down-the-banhammer-on-russian-crypto-users/"
+    },
+    {
+      "name": "KuCoin News (21st package, 14 platforms)",
+      "url": "https://www.kucoin.com/news/flash/eu-expands-crypto-sanctions-against-russia-adds-14-platforms-to-ban"
+    },
+    {
+      "name": "SpazioCrypto (21st package, 26.08.2026)",
+      "url": "https://en.spaziocrypto.com/sanctions/eu-crypto-sanctions-august-2026-what-every-casp-must-know/"
+    },
+    {
+      "name": "The Block (OKX Europe on MiCA, 23.06.2026)",
+      "url": "https://www.theblock.co/post/405777/okx-europe-chief-mica-deadline-nears"
+    },
+    {
+      "name": "Crypto Briefing (BingX EU MiCA license)",
+      "url": "https://cryptobriefing.com/bingx-eu-austria-mica-casp-license/"
+    }
+  ],
+  "uz": {
+    "title": "Birjalar Yevropa litsenziyasi ortidan: kulrang pul, P2P va pul yuvishga qarshi kurash kuchaymoqda",
+    "summary": "Yirik kriptobirjalar tobora ko'proq Yevropaning MiCA litsenziyasini tanlamoqda va u bilan birga Yevropa qoidalarini ham qabul qilmoqda. Ikkinchi darajali birjalardan birining vakili aytishicha, YI regulyatorlari rossiyaliklarga xizmat ko'rsatayotgan platformalarga jiddiy kirishgan. Birjani P2P orqali to'ldirayotganlar uchun bu nimani anglatadi.",
+    "body": [
+      "Nima deyilmoqda. Telegram-kanalda tier-2 birjalaridan birining vakili so'zlari keltirilgan (ismi va birja nomi aytilmagan). Uning so'zlariga ko'ra, Yevropa regulyatorlari rossiyaliklarga xizmat ko'rsatayotgan global kriptobirjalarga jiddiy kirishgan. Sanksiya paketlari kengayadi va, uning ta'biri bilan aytganda, global o'yinchilardan hech kim «HTX o'rnida qolishni» istamaydi, shuning uchun rossiyaliklarni ommaviy ravishda offbord qilish, ya'ni akkauntlarini yopish boshlanadi. Bu anonim manba so'zlari, birjalarning bu borada rasmiy bayonoti hozircha yo'q.",
+      "Kim xavf zonasida. Manba asosiy xavf zonasi sifatida YIda ishlashga ruxsat olgan birjalarni ko'rsatadi: OKX, Bybit, Gate, KuCoin va BingX. Bu platformalarning Yevropa bo'linmalarida MiCA reglamenti bo'yicha litsenziya bor. MEXCda Yevropa litsenziyasi yo'q, lekin manbaning so'zlariga ko'ra, u ham zarba ostida qolishi mumkin.",
+      "Nega aynan hozir. MiCA o'tish davri 2026-yil 1-iyulda tugadi: shu sanadan keyin litsenziyasiz YI mijozlari bilan ishlash mumkin emas. OKX Europe rahbari Erald Gus iyun oyidayoq kriptobirjalarning taxminan 80 foizi MiCAdan omon chiqmasligini aytgan edi. Litsenziya 27 davlat bozoriga yo'l ochadi, lekin evaziga birja KYC, pul yuvishga qarshi kurash (AML) va sanksiyalar bo'yicha Yevropa qoidalariga rioya qilishi shart. Qoidabuzarlik uchun esa faqat Yevropa «sho''ba»si emas, butun guruh javob beradi.",
+      "Sanksiyalar kriptoga allaqachon tegmoqda. YIning 19-sanksiya paketi (2025-yil oktabr) Yevropa kriptoprovayderlariga Rossiya fuqarolari va rezidentlariga xizmat ko'rsatishni taqiqladi, shundan so'ng Bybit EU rossiyaliklar uchun ro'yxatdan o'tishni yopdi. 2026-yil 23-iyulda qabul qilinib, 25-avgustdan kuchga kirgan 21-paket yanada uzoqqa bordi: Gruziya, Panama, BAA, Marshall orollari, Qirg'iziston va Belarusdagi 14 ta kriptoplatforma taqiq ostiga tushdi. Bundan tashqari, YIda har qanday uchinchi davlatdagi kriptoprovayderlar bilan bitimlarni taqiqlash vositasi paydo bo'ldi, agar ular orqali sanksiyalar muntazam chetlab o'tilsa. Hozircha hech bir davlat bu ro'yxatga tushmagan.",
+      "Kulrang pul va P2P. Bundan mantiqiy xulosa: Yevropa litsenziyasiga ega birjalarga «kulrang» oqimni ushlab turish foydali emas. Foydalanuvchi uchun bu kelib chiqishi noaniq to'ldirishlar qattiqroq tekshirilishini anglatadi. Mablag' manbasini tasdiqlash so'rovlari, shubhali P2P-kontragentlar bilan bog'liq bitimlar bo'yicha kechikish va muzlatishlar, P2P-merchantlarning o'zini ham qattiqroq tekshirish kutilmoqda. Bu birjalar e'lon qilgan choralar emas, MiCA va AML qoidalari qanday ishlashiga asoslangan bizning prognozimiz.",
+      "Nega bu faqat rossiyaliklarga tegishli emas. Bybit, OKX va boshqa birjalarning P2P bo'limlaridan Markaziy Osiyoda ham faol foydalaniladi. Agar P2P-bitimlar zanjiri orqali akkauntingizdan sanksiya yoki firibgarlik sxemalari bilan bog'liq pul o'tgan bo'lsa, o'zingiz hech narsani buzmagan bo'lsangiz ham akkaunt bloklanishi mumkin."
+    ],
+    "take": "O'zbekiston uchun xulosa oddiy. Telegram yoki xorijiy birjalardagi P2P orqali kriptoni «qo'ldan» sotib olish va sotish bizda O'RQ-899 qonuni bilan allaqachon taqiqlangan, endi esa birjalarning o'zi ham kulrang pulni tobora faolroq tozalaydi. Kriptoni faqat NAPP litsenziyasiga ega platformalar orqali sotib oling va soting, notanish odamlardan o'tkazma qabul qilmang va kartangizni «pul o'tkazish» uchun bermang. Agar mablag'ingiz xorijiy birjada bo'lsa, verifikatsiyadan o'tganingizga va pulning kelib chiqishini tasdiqlay olishingizga ishonch hosil qiling."
+  },
+  "ru": {
+    "title": "Биржи идут за европейской лицензией и закручивают гайки: серые деньги, P2P и отмыв под ударом",
+    "summary": "Крупные криптобиржи всё чаще выбирают европейскую лицензию MiCA, а вместе с ней и европейские правила. По словам представителя одной из бирж второго эшелона, регуляторы ЕС всерьёз взялись за площадки, которые обслуживают россиян. Что это значит для тех, кто пополняет биржу через P2P.",
+    "body": [
+      "Что сообщают. В Telegram-канале опубликован пересказ слов представителя одной из бирж tier-2 (имя и биржа не названы). По его словам, европейские регуляторы всерьёз взялись за глобальные криптобиржи, которые обслуживают россиян. Санкционные пакеты будут расширяться, и, как он выразился, никто из глобальных игроков не хочет «оказаться на месте HTX», поэтому россиян начнут массово офбордить, то есть закрывать им аккаунты. Это слова анонимного источника, официальных заявлений бирж на этот счёт пока нет.",
+      "Кто в зоне риска. Главной зоной риска источник называет биржи, которые уже получили разрешение на работу в ЕС: OKX, Bybit, Gate, KuCoin и BingX. У европейских подразделений этих площадок есть лицензии по регламенту MiCA. У MEXC европейской лицензии нет, но, по словам собеседника, она тоже может попасть под раздачу.",
+      "Почему именно сейчас. Переходный период MiCA закончился 1 июля 2026 года: после этой даты без лицензии работать с клиентами из ЕС нельзя. Глава OKX Europe Эральд Гус ещё в июне говорил, что около 80% криптобирж MiCA не переживут. Лицензия даёт доступ к рынку из 27 стран, но взамен биржа обязана соблюдать европейские правила по KYC, противодействию отмыванию денег (AML) и санкциям. И отвечает за нарушения вся группа, а не только европейская «дочка».",
+      "Санкции уже касаются крипты. 19-й пакет санкций ЕС (октябрь 2025) запретил европейским криптопровайдерам обслуживать граждан и резидентов России, после чего Bybit EU закрыл регистрацию для россиян. 21-й пакет, принятый 23 июля 2026 года и вступивший в силу 25 августа, пошёл дальше: под запрет попали 14 криптоплатформ из Грузии, Панамы, ОАЭ, Маршалловых островов, Кыргызстана и Беларуси. А ещё у ЕС появился инструмент, которым можно запретить сделки с криптопровайдерами из любых третьих стран, если через них систематически обходят санкции. Пока ни одна страна под него не попала.",
+      "Серые деньги и P2P. Отсюда логичный вывод: биржам с европейской лицензией невыгодно держать у себя «серый» поток. Для пользователя это значит, что пополнения, происхождение которых непонятно, будут проверять строже. Ждите запросов на подтверждение источника средств, задержек и заморозок по сделкам, связанным с подозрительными P2P-контрагентами, и более жёсткой проверки самих P2P-мерчантов. Это наш прогноз на основе того, как устроены правила MiCA и AML, а не объявленные биржами меры.",
+      "Почему это касается не только россиян. P2P-разделы Bybit, OKX и других бирж активно используют и в Центральной Азии. Если по цепочке P2P-сделок через ваш аккаунт прошли деньги, связанные с санкционными или мошенническими схемами, аккаунт могут заблокировать, даже если вы сами ничего не нарушали."
+    ],
+    "take": "Для Узбекистана вывод простой. Покупка и продажа крипты «с рук» через Telegram или P2P на зарубежных биржах у нас и так запрещена законом ЗРУ-899, а теперь ещё и сами биржи будут всё активнее вычищать серые деньги. Покупайте и продавайте крипту только через площадки с лицензией НАПП, не принимайте переводы от незнакомцев и не давайте свою карту «прогнать деньги». Если держите средства на зарубежной бирже, убедитесь, что верификация пройдена и происхождение денег вы сможете подтвердить."
+  },
+  "en": {
+    "title": "Exchanges chase an EU license and tighten the screws on grey money, P2P and laundering",
+    "summary": "More big crypto exchanges are taking the EU's MiCA license, and EU rules come with it. A representative of a tier-2 exchange says EU regulators have started going after platforms that serve Russians. Here is what that means for anyone who funds an exchange account through P2P.",
+    "body": [
+      "What is being reported. A Telegram channel published remarks attributed to a representative of a tier-2 exchange (neither the person nor the exchange is named). According to them, European regulators have got serious about global crypto exchanges that serve Russians. Sanctions packages will keep widening and, in their words, no global player wants to \"end up where HTX is\", so Russians will start being offboarded en masse, meaning their accounts closed. This comes from an anonymous source; the exchanges have made no official statements on it.",
+      "Who is at risk. The source names exchanges that already hold permission to operate in the EU as the main risk zone: OKX, Bybit, Gate, KuCoin and BingX. Their European arms hold licenses under the MiCA regulation. MEXC has no European license, but the source says it could get caught up as well.",
+      "Why now. The MiCA transition period ended on July 1, 2026: after that date, serving EU clients without a license is not allowed. Back in June, OKX Europe CEO Erald Ghoos said about 80% of crypto exchanges would not survive MiCA. A license opens a 27-country market, but in return the exchange must follow EU rules on KYC, anti-money laundering (AML) and sanctions. And it is the whole group that answers for violations, not just its European subsidiary.",
+      "Sanctions already reach crypto. The EU's 19th sanctions package (October 2025) barred European crypto providers from serving Russian citizens and residents, after which Bybit EU closed sign-ups to Russians. The 21st package, adopted on July 23, 2026 and in force since August 25, went further: 14 crypto platforms based in Georgia, Panama, the UAE, the Marshall Islands, Kyrgyzstan and Belarus were banned. The EU also gained a tool to prohibit dealings with crypto providers in any third country whose infrastructure is systematically used to evade sanctions. No country has been designated under it yet.",
+      "Grey money and P2P. The logical conclusion: exchanges with an EU license have no reason to keep a \"grey\" flow on their books. For users, that means deposits of unclear origin will be checked harder. Expect source-of-funds requests, delays and freezes on trades linked to suspicious P2P counterparties, and stricter vetting of P2P merchants themselves. This is our forecast based on how MiCA and AML rules work, not measures the exchanges have announced.",
+      "Why this is not only about Russians. The P2P sections of Bybit, OKX and other exchanges are widely used in Central Asia too. If money tied to sanctioned or fraudulent schemes passed through your account along a chain of P2P trades, the account can be blocked even if you yourself did nothing wrong."
+    ],
+    "take": "For Uzbekistan the lesson is simple. Buying and selling crypto person-to-person on Telegram or foreign exchanges' P2P is already illegal here under law ZRU-899, and now the exchanges themselves will be cleaning out grey money more and more actively. Buy and sell crypto only through NAPP-licensed platforms, do not accept transfers from strangers and never lend your card to \"pass money through\". If you keep funds on a foreign exchange, make sure your verification is complete and that you can prove where the money came from."
+  }
+}
