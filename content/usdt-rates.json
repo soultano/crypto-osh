@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-21T08:14:37.025Z",
+  "updatedAt": "2026-10-21T08:57:05.465Z",
   "quotes": {
     "voluto": {
       "buy": 12180,
@@ -9,11 +9,11 @@
       "at": "2026-10-21T08:14:37.025Z"
     },
     "asterium": {
-      "buy": null,
-      "sell": null,
+      "buy": 12301,
+      "sell": 11976,
       "fee": 0.6,
-      "source": "asterium.uz/ru/crypto-exchange",
-      "at": "2026-10-14T15:12:31.575Z"
+      "at": "2026-10-21T08:57:05.465Z",
+      "source": "manual"
     },
     "tcrypto": {
       "buy": 12659,
