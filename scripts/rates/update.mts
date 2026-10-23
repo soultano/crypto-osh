@@ -9,11 +9,14 @@
 //   tcrypto  api.tcrypto.uz info/calc     (quote for 100 USDT)
 //   Unexpay  api.unexpay.uz make-calc     (quote for 100 USDT; its flat 10 000
 //            placeholder is rejected by the Central Bank sanity band)
-//   Asterium no public rate (shown in the office); only the published 0.6% fee
+//   Asterium shop-rates.asterium.dev (office rates, Basic auth from the
+//            ASTERIUM_API_USER / ASTERIUM_API_PASS secrets); without them,
+//            only the fee from asterium.uz/ru/crypto-exchange
 //   Binance, Walt: no public rate API reachable; rows link to the site
 //
-// Rates for those are entered by hand: scripts/rates/manual.mts.
+// Rates for the others are entered by hand: scripts/rates/manual.mts.
 //
+// Runs twice a day (.github/workflows/daily-rates.yml).
 // Run: node scripts/rates/update.mts   (RATES_DRY_RUN=1 prints, writes nothing)
 
 import fs from "node:fs";
@@ -100,9 +103,16 @@ const sources: Record<string, Source> = {
     return { buy: await calc("BUY"), sell: await calc("SELL"), fee: null, source: "api.unexpay.uz/public/make-calc" };
   },
 
-  // Asterium exchanges in its Tashkent office; the rate is given there, so
-  // only the fee is public. It is read from the page so a change shows up.
+  // Asterium's shop (office) rates API. Without the credentials, only the
+  // published fee is read from their page.
   async asterium() {
+    const user = process.env.ASTERIUM_API_USER;
+    const pass = process.env.ASTERIUM_API_PASS;
+    if (user && pass) {
+      const auth = Buffer.from(`${user}:${pass}`).toString("base64");
+      const r = await http("https://shop-rates.asterium.dev/", { headers: { authorization: `Basic ${auth}` } });
+      return { ...asteriumQuote(r as AsteriumRates), source: "shop-rates.asterium.dev" };
+    }
     const res = await fetch("https://asterium.uz/ru/crypto-exchange", { headers: { "user-agent": UA }, signal: AbortSignal.timeout(15000) });
     if (!res.ok) throw new Error(`asterium: HTTP ${res.status}`);
     // "Комиссия за обмен 0,6%", possibly split across tags.
@@ -112,6 +122,23 @@ const sources: Record<string, Source> = {
     return { buy: null, sell: null, fee: Number(m[1].replace(",", ".")), source: "asterium.uz/ru/crypto-exchange" };
   },
 };
+
+// Asterium answers a list of tiers by amount ("count"); the smallest tier is
+// what an ordinary customer gets. buy = UZS→USDT, sell = USDT→UZS, and the
+// cash-dollar fee is the markup on USD→USDT (1.008 USD per USDT = 0.8%).
+type AsteriumRates = { data?: { operation: string; from: string; to: string; count: number; rate: number }[] };
+
+function asteriumQuote(r: AsteriumRates) {
+  const tier = (operation: string, from: string, to: string) => {
+    const rows = (r.data ?? []).filter((x) => x.operation === operation && x.from === from && x.to === to && typeof x.rate === "number");
+    if (!rows.length) throw new Error(`asterium: no ${operation} ${from}→${to} in ${JSON.stringify(r).slice(0, 300)}`);
+    return rows.reduce((a, b) => (b.count < a.count ? b : a)).rate;
+  };
+  const cents = (n: number) => Math.round(n * 100) / 100;
+  const usd = tier("buy", "USD", "USDT");
+  const fee = usd > 1 && usd < 1.1 ? cents((usd - 1) * 100) : null;
+  return { buy: cents(tier("buy", "UZS", "USDT")), sell: cents(tier("sell", "USDT", "UZS")), fee };
+}
 
 // The first plausible numeric field called rate/rate_amount/price/course.
 function pickRate(obj: Record<string, unknown>, label: string): number {

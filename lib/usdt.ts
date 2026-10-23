@@ -1,5 +1,5 @@
 // USDT/UZS rates at licensed exchangers in Uzbekistan. The numbers live in
-// content/usdt-rates.json, written every morning by scripts/rates/update.mts
+// content/usdt-rates.json, written twice a day by scripts/rates/update.mts
 // from each exchanger's own public API or page. A rate that could not be
 // verified today is never guessed: the table links to the exchanger's site
 // to check it there.
