@@ -16,10 +16,20 @@ type RatesFile = { updatedAt: string | null; quotes: Record<string, Quote> };
 const ids = ["binance", "walt", "unexpay", "asterium"];
 const outPath = path.join(process.cwd(), "content", "usdt-rates.json");
 
+// The Central Bank dollar rate; Voluto's API republishes it when cbu.uz is
+// unreachable from GitHub's runners.
 async function cbuBand(): Promise<[number, number]> {
-  const r = await fetch("https://cbu.uz/uz/arkhiv-kursov-valyut/json/USD/", { signal: AbortSignal.timeout(15000) });
-  const usd = Number(((await r.json()) as { Rate?: string }[])?.[0]?.Rate);
-  if (!(usd > 0)) throw new Error("cbu.uz: no USD rate");
+  const get = async (url: string, pick: (j: any) => unknown) => {
+    try {
+      const r = await fetch(url, { signal: AbortSignal.timeout(15000) });
+      return Number(pick(await r.json()));
+    } catch {
+      return NaN;
+    }
+  };
+  let usd = await get("https://cbu.uz/uz/arkhiv-kursov-valyut/json/USD/", (j) => j?.[0]?.Rate);
+  if (!(usd > 0)) usd = await get("https://voluto.uz/api/rate-setting", (j) => j?.data?.cbuRate);
+  if (!(usd > 0)) throw new Error("no Central Bank USD rate (cbu.uz and voluto.uz both failed)");
   return [usd * 0.93, usd * 1.12];
 }
 
