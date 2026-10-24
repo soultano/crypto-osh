@@ -42,20 +42,31 @@ async function http(url: string, init: RequestInit = {}): Promise<unknown> {
 // USDT trades within a few percent of the dollar, so a quote far from the
 // Central Bank dollar rate is a placeholder or a broken source, never a real
 // price (Unexpay's public calculator, for one, answers a flat 10 000).
-let band: [number, number] = [5000, 50000];
+let band: [number, number] = [0, 0];
 
 function plausible(n: unknown): n is number {
   return typeof n === "number" && Number.isFinite(n) && n > band[0] && n < band[1];
 }
 
+// The Central Bank dollar rate from cbu.uz; when cbu.uz is unreachable
+// (it often is from GitHub's runners), the same CBU rate as Voluto's API
+// republishes it. With neither, no quote is trusted: a wide band let
+// Unexpay's flat 10 000 placeholder through.
 async function setBandFromCbu() {
+  const set = (usd: number) => usd > 0 && (band = [usd * 0.93, usd * 1.12]);
   try {
     const r = (await http("https://cbu.uz/uz/arkhiv-kursov-valyut/json/USD/")) as { Rate?: string }[];
-    const usd = Number(r?.[0]?.Rate);
-    if (usd > 0) band = [usd * 0.93, usd * 1.12];
+    if (set(Number(r?.[0]?.Rate))) return;
   } catch (e) {
-    console.warn(`cbu.uz: ${(e as Error).message} — using a wide sanity band`);
+    console.warn(`cbu.uz: ${(e as Error).message} — trying Voluto's copy of the CBU rate`);
   }
+  try {
+    const { data } = (await http("https://voluto.uz/api/rate-setting")) as { data: { cbuRate?: unknown } };
+    if (set(Number(data.cbuRate))) return;
+  } catch (e) {
+    console.warn(`voluto cbuRate: ${(e as Error).message}`);
+  }
+  throw new Error("no Central Bank rate to check quotes against");
 }
 
 type Source = () => Promise<Omit<Quote, "at">>;
@@ -171,6 +182,8 @@ async function main() {
         for (const k of ["buy", "sell"] as const) {
           if (q[k] !== null && !plausible(q[k])) throw new Error(`${id}: implausible ${k} ${q[k]}`);
         }
+        // An exchanger always buys dearer than it sells: equal numbers are a placeholder.
+        if (q.buy !== null && q.sell !== null && q.buy <= q.sell) throw new Error(`${id}: buy ${q.buy} ≤ sell ${q.sell}`);
         const was = prev.quotes[id];
         // A fee-only source (Asterium) must not wipe a rate entered by hand.
         if (q.buy === null && q.sell === null && was?.source === "manual") next.quotes[id] = { ...was, fee: q.fee };
