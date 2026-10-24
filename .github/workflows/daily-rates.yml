@@ -1,7 +1,9 @@
-# Refreshes the USDT/UZS rates table every morning (08:00 Tashkent) from each
-# exchanger's own public API, commits content/usdt-rates.json to main so
-# Vercel redeploys the home page, then posts the table to Telegram.
+# Refreshes the USDT/UZS rates table twice a day (08:00 and 18:00 Tashkent)
+# from each exchanger's own API, commits content/usdt-rates.json to main so
+# Vercel redeploys the home page, then (morning only) posts the table to Telegram.
 # Secrets (repo → Settings → Secrets and variables → Actions):
+#   ASTERIUM_API_USER       login for shop-rates.asterium.dev
+#   ASTERIUM_API_PASS       password for shop-rates.asterium.dev
 #   TELEGRAM_BOT_TOKEN      optional, for posting to the channel
 #   TELEGRAM_NEWS_CHAT_ID   optional, e.g. @cryptoosh or -100…
 name: Daily USDT rates
@@ -9,6 +11,7 @@ name: Daily USDT rates
 on:
   schedule:
     - cron: "0 3 * * *"
+    - cron: "0 13 * * *"
   workflow_dispatch:
 
 permissions:
@@ -29,6 +32,9 @@ jobs:
           node-version: 24
 
       - name: Fetch today's rates
+        env:
+          ASTERIUM_API_USER: ${{ secrets.ASTERIUM_API_USER }}
+          ASTERIUM_API_PASS: ${{ secrets.ASTERIUM_API_PASS }}
         run: node scripts/rates/update.mts
 
       - name: Commit and push
@@ -41,6 +47,8 @@ jobs:
           git push
 
       - name: Post to Telegram
+        # Once a day: the evening run only refreshes the site.
+        if: github.event.schedule != '0 13 * * *'
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_NEWS_CHAT_ID: ${{ secrets.TELEGRAM_NEWS_CHAT_ID }}
