@@ -1,0 +1,27 @@
+{
+  "name": "Crypto Osh",
+  "alternateNames": ["Kripto Osh", "Крипто Ош"],
+  "tagline": "O'zbekiston kripto ishqibozlari hamjamiyati",
+  "description": "Kripto Osh — O'zbekistondagi treyderlar, web3 dasturchilar, KOL va blogerlarning ochiq hamjamiyati va assotsiatsiyasi. Osh atrofidagi oflayn uchrashuvlar, networking va ta'limiy tadbirlar.",
+  "founder": {
+    "name": "Tohir Sultonov",
+    "telegram": "https://t.me/Soultanov"
+  },
+  "community": {
+    "region": "Uzbekistan",
+    "cities": ["Tashkent", "Samarkand", "Fergana", "Urgench"],
+    "telegram_group": "https://t.me/+3LQvpeGh5hNlMjVi",
+    "instagram": "https://www.instagram.com/uzsoul/"
+  },
+  "links": {
+    "website": "https://cryptoosh.uz",
+    "uz": "https://cryptoosh.uz/uz",
+    "ru": "https://cryptoosh.uz/ru",
+    "en": "https://cryptoosh.uz/en",
+    "kurs": "https://cryptoosh.uz/uz/kurs",
+    "people": "https://cryptoosh.uz/uz/people",
+    "videos": "https://cryptoosh.uz/uz/videos",
+    "business": "https://cryptoosh.uz/uz/business",
+    "llms": "https://cryptoosh.uz/llms.txt"
+  }
+}

@@ -1,0 +1,23 @@
+User-agent: *
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+Site-Name: Crypto Osh
+Site-Description: Community and association of cryptocurrency enthusiasts, Web3 developers, and traders in Uzbekistan.
+Contact: https://t.me/Soultanov
+Sitemap: https://cryptoosh.uz/sitemap.xml
+LLMs-Txt: https://cryptoosh.uz/llms.txt

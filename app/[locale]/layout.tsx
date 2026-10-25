@@ -4,7 +4,7 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Sections";
 import { themeColors } from "@/lib/theme";
 import { defaultLocale, getDictionary, htmlLang, isLocale, locales, ogLocale } from "@/lib/i18n";
-import { site, photos } from "@/lib/site";
+import { site, photos, videos } from "@/lib/site";
 import "../globals.css";
 
 export const dynamicParams = false;
@@ -61,16 +61,54 @@ export default async function LocaleLayout({
   if (!isLocale(locale)) notFound();
   const t = getDictionary(locale);
 
+  const sameAsLinks = [
+    site.contacts.telegram,
+    site.contacts.group,
+    site.contacts.instagram,
+    ...videos.map((v) => `https://www.youtube.com/watch?v=${v.id}`),
+  ].filter(Boolean);
+
   const jsonLd = {
     "@context": "https://schema.org",
-    "@type": "Organization",
-    name: "Crypto Osh",
-    alternateName: ["Крипто Ош", "Kripto Osh"],
-    url: site.url,
-    logo: `${site.url}${photos.poster}`,
-    description: t.meta.description,
-    areaServed: "UZ",
-    founder: { "@type": "Person", name: t.founder.name },
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": `${site.url}/#website`,
+        url: site.url,
+        name: "Crypto Osh",
+        alternateName: ["Kripto Osh", "Крипто Ош"],
+        description: t.meta.description,
+        inLanguage: htmlLang[locale],
+      },
+      {
+        "@type": "Organization",
+        "@id": `${site.url}/#organization`,
+        name: "Crypto Osh",
+        alternateName: ["Kripto Osh", "Крипто Ош"],
+        url: site.url,
+        logo: `${site.url}${photos.poster}`,
+        description: t.meta.description,
+        areaServed: "UZ",
+        founder: {
+          "@type": "Person",
+          name: t.founder.name,
+          url: site.contacts.telegram || undefined,
+        },
+        sameAs: sameAsLinks,
+      },
+      {
+        "@type": "FAQPage",
+        "@id": `${site.url}/${locale}/#faq`,
+        mainEntity: t.business.faq.map((item) => ({
+          "@type": "Question",
+          name: item.q,
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: item.a,
+          },
+        })),
+      },
+    ],
   };
 
   return (

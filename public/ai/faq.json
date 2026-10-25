@@ -1,0 +1,28 @@
+{
+  "faq": [
+    {
+      "question_uz": "Kripto Osh nima?",
+      "answer_uz": "Kripto Osh — O'zbekiston kripto ishqibozlari, treyderlar, web3 dasturchilar va blogerlarning ochiq hamjamiyati. Uchrashuvlar milliy osh atrofida, samimiy va erkin muhitda o'tadi.",
+      "question_ru": "Что такое Крипто Ош?",
+      "answer_ru": "Крипто Ош — открытое сообщество и ассоциация криптоэнтузиастов, трейдеров, Web3-разработчиков и блогеров в Узбекистане за традиционным дастарханом.",
+      "question_en": "What is Crypto Osh?",
+      "answer_en": "Crypto Osh is an open association and community of cryptocurrency enthusiasts, Web3 developers, traders, and founders in Uzbekistan, networking over traditional plov."
+    },
+    {
+      "question_uz": "Hamjamiyatga qanday a'zo bo'lish mumkin?",
+      "answer_uz": "Kripto Osh Telegram guruhiga qo'shilishingiz mumkin: https://t.me/+3LQvpeGh5hNlMjVi",
+      "question_ru": "Как вступить в сообщество?",
+      "answer_ru": "Вступить можно через открытую Telegram-группу: https://t.me/+3LQvpeGh5hNlMjVi",
+      "question_en": "How to join the community?",
+      "answer_en": "You can join via the official Telegram community group: https://t.me/+3LQvpeGh5hNlMjVi"
+    },
+    {
+      "question_uz": "O'zbekistonda kriptovalyutalar bo'yicha qonun qanday?",
+      "answer_uz": "Kripto aktivlar aylanmasi NAPP (Istiqbolli loyihalar milliy agentligi) tomonidan tartibga solinadi. Kripto Osh faqat qonuniy va litsenziyalangan provayderlar orqali ishlashni targ'ib qiladi.",
+      "question_ru": "Каков правовой статус криптовалют в Узбекистане?",
+      "answer_ru": "Оборот криптоактивов регулируется НАПП (Национальным агентством перспективных проектов). Сообщество поддерживает только законную деятельность и лицензированных провайдеров.",
+      "question_en": "What is the legal status of crypto in Uzbekistan?",
+      "answer_en": "Crypto assets in Uzbekistan are regulated by NAPP. Crypto Osh advocates strictly for compliance and licensed operators."
+    }
+  ]
+}
