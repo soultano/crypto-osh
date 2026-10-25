@@ -4,11 +4,11 @@ import { useEffect, useRef, useState } from "react";
 import type { StoryLabels } from "@/content/story";
 
 // Instagram has no web link that opens Stories with a picture, so we draw a
-// 1080x1920 story card and hand it to the phone's share sheet, where Instagram
-// offers "Stories". The sheet is only offered on phones: on a computer it has
-// no Instagram. Where the browser cannot share files (Telegram's and
-// Instagram's in-app browsers, computers) a window shows the card to save,
-// with a button that opens the Stories camera.
+// 1080x1920 story card and show it in a window: on phones a button hands it to
+// the share sheet, where Instagram offers "Stories", and another opens the
+// Instagram camera for a saved image. Where the browser cannot share files
+// (Telegram's and Instagram's in-app browsers, computers) the card is there to
+// save or download.
 
 export type StoryCard = {
   kicker: string;
@@ -130,7 +130,7 @@ function drawStory({ kicker, title, body, cta, url }: StoryCard): Promise<Blob |
   ctx.font = `800 52px ${font}`;
   ctx.fillText(new URL(url).host, pad + 44, boxY + 152);
 
-  return new Promise((resolve) => canvas.toBlob(resolve, "image/png"));
+  return new Promise((resolve) => canvas.toBlob(resolve, "image/jpeg", 0.9));
 }
 
 type Phone = "ios" | "android" | null;
@@ -143,32 +143,40 @@ function phone(): Phone {
   return null;
 }
 
-// Opens Instagram on the Stories camera; Android needs an intent link, as
+// Opens Instagram on its camera (instagram://camera is the documented link;
+// it lands on Stories). Android needs an intent link, as
 // Chrome does not follow unknown schemes from a page.
 function instagramLink(p: Phone): string {
-  if (p === "android") return "intent://story-camera#Intent;scheme=instagram;package=com.instagram.android;S.browser_fallback_url=https%3A%2F%2Fwww.instagram.com%2F;end";
-  if (p === "ios") return "instagram://story-camera";
+  if (p === "android") return "intent://camera#Intent;scheme=instagram;package=com.instagram.android;S.browser_fallback_url=https%3A%2F%2Fwww.instagram.com%2F;end";
+  if (p === "ios") return "instagram://camera";
   return "https://www.instagram.com/";
 }
 
-// Returns the click handler for the Instagram button and the window it opens
-// when the phone cannot take the card through its share sheet.
+// Returns the click handler for the Instagram button and the window it opens.
+// The window comes first on every device: iOS shows Instagram in the share
+// sheet only when the reader has it in that row, so the window also offers
+// "save the image, then open Instagram" right next to the share button.
 export function useInstagramStory(card: StoryCard, labels: StoryLabels, flash: (msg: string) => void) {
   const file = useRef<File | null>(null);
   const [src, setSrc] = useState<string | null>(null);
   const [open, setOpen] = useState(false);
   const [copied, setCopied] = useState(false);
   const [device, setDevice] = useState<Phone>(null);
+  const [canShare, setCanShare] = useState(false);
 
   // Drawn ahead of the click: Safari only opens the share sheet when share()
-  // runs straight from the tap, with no await before it.
+  // runs straight from the tap, with no await before it. JPEG, as iOS shows a
+  // PNG as a document there and not as a photo.
   useEffect(() => {
-    setDevice(phone());
+    const p = phone();
+    setDevice(p);
     let live = true;
     let href: string | null = null;
     drawStory(card).then((blob) => {
       if (!live || !blob) return;
-      file.current = new File([blob], "cryptoosh-story.png", { type: "image/png" });
+      const f = new File([blob], "cryptoosh-story.jpg", { type: "image/jpeg" });
+      file.current = f;
+      setCanShare(!!p && !!navigator.canShare?.({ files: [f] }));
       href = URL.createObjectURL(blob);
       setSrc(href);
     });
@@ -185,21 +193,23 @@ export function useInstagramStory(card: StoryCard, labels: StoryLabels, flash: (
     return () => document.removeEventListener("keydown", onKey);
   }, [open]);
 
-  const share = async () => {
-    const f = file.current;
-    // Only the file goes to the share sheet: with a link or text alongside,
-    // Instagram offers only Direct, not Stories.
-    if (f && device && navigator.canShare?.({ files: [f] })) {
-      try {
-        await navigator.share({ files: [f] });
-        flash(labels.tip);
-        return;
-      } catch (e) {
-        if ((e as Error).name === "AbortError") return;
-      }
-    }
+  const show = () => {
     setCopied(false);
     setOpen(true);
+  };
+
+  // Only the file goes to the share sheet: with a link or text alongside,
+  // Instagram offers only Direct, not Stories.
+  const send = async () => {
+    const f = file.current;
+    if (!f) return;
+    try {
+      await navigator.share({ files: [f] });
+      setOpen(false);
+      flash(labels.tip);
+    } catch {
+      // Cancelled or refused: the window stays with the other ways.
+    }
   };
 
   const copy = async () => {
@@ -219,15 +229,20 @@ export function useInstagramStory(card: StoryCard, labels: StoryLabels, flash: (
         </button>
         <p className="story-sheet-title">{labels.title}</p>
         {src && <img className="story-sheet-img" src={src} alt={card.title} />}
-        <p className="story-sheet-hint">{device ? labels.hold : labels.desktop}</p>
+        <p className="story-sheet-hint">{canShare ? labels.sendHint : device ? labels.hold : labels.desktop}</p>
         <div className="story-sheet-actions">
+          {canShare && (
+            <button type="button" className="story-sheet-btn story-sheet-ig" onClick={send}>
+              {labels.send}
+            </button>
+          )}
           {device && (
-            <a className="story-sheet-btn story-sheet-ig" href={instagramLink(device)}>
+            <a className={`story-sheet-btn${canShare ? "" : " story-sheet-ig"}`} href={instagramLink(device)}>
               {labels.open}
             </a>
           )}
-          {src && (
-            <a className="story-sheet-btn" href={src} download="cryptoosh-story.png">
+          {src && !canShare && (
+            <a className="story-sheet-btn" href={src} download="cryptoosh-story.jpg">
               {labels.download}
             </a>
           )}
@@ -240,5 +255,5 @@ export function useInstagramStory(card: StoryCard, labels: StoryLabels, flash: (
     </div>
   ) : null;
 
-  return { share, sheet };
+  return { share: show, sheet };
 }

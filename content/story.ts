@@ -2,6 +2,8 @@
 
 const uz = {
   title: "Instagram Stories uchun rasm",
+  send: "Instagram'ga yuborish",
+  sendHint: "Menyuda Instagram → Story'ni tanlang. Instagram ro'yxatda bo'lmasa, «Rasmni saqlash»ni bosing, so'ng «Instagram'ni ochish».",
   hold: "Rasmni bosib turing va «Rasmni saqlash»ni tanlang.",
   desktop: "Rasmni yuklab oling va telefondan Story'ga joylang.",
   download: "Rasmni yuklab olish",
@@ -15,6 +17,8 @@ const uz = {
 
 const ru: typeof uz = {
   title: "Картинка для Instagram Stories",
+  send: "Отправить в Instagram",
+  sendHint: "В меню выберите Instagram → История. Если Instagram нет в списке, нажмите «Сохранить изображение», а затем «Открыть Instagram».",
   hold: "Нажмите на картинку и удерживайте, затем выберите «Сохранить в Фото».",
   desktop: "Скачайте картинку и выложите её в сторис с телефона.",
   download: "Скачать картинку",
@@ -28,6 +32,8 @@ const ru: typeof uz = {
 
 const en: typeof uz = {
   title: "Image for Instagram Stories",
+  send: "Send to Instagram",
+  sendHint: "In the menu choose Instagram → Story. If Instagram is not listed, tap “Save Image”, then “Open Instagram”.",
   hold: "Press and hold the image, then choose “Save to Photos”.",
   desktop: "Download the image and post it to your Story from your phone.",
   download: "Download image",
