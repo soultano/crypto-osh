@@ -2330,3 +2330,107 @@ p {
 .article-share .share-note:empty {
   display: none;
 }
+
+/* Instagram Stories window: the story card to save, and a button that opens
+   the Stories camera. Dark in both themes, like the card itself. */
+.story-sheet {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: grid;
+  place-items: center;
+  padding: 16px;
+  background: rgb(4 9 22 / 0.78);
+  overflow-y: auto;
+}
+
+.story-sheet-box {
+  position: relative;
+  width: min(100%, 380px);
+  padding: 20px 18px 18px;
+  border-radius: 20px;
+  background: #0f1d42;
+  color: #eef1f8;
+  text-align: center;
+  box-shadow: 0 20px 50px rgb(0 0 0 / 0.45);
+}
+
+.story-sheet-close {
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  width: 36px;
+  height: 36px;
+  border: 0;
+  background: none;
+  color: #a9b4cf;
+  font-size: 1.6rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.story-sheet-title {
+  margin: 0 32px 12px;
+  font-weight: 800;
+}
+
+.story-sheet-img {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  max-height: 52vh;
+  margin: 0 auto;
+  border-radius: 12px;
+  /* Lets iOS offer "Save to Photos" on a long press. */
+  -webkit-touch-callout: default;
+  user-select: auto;
+}
+
+.story-sheet-hint,
+.story-sheet-steps {
+  margin: 12px 0 0;
+  font-size: 0.85rem;
+  color: #c9d1e6;
+}
+
+.story-sheet-steps {
+  color: #a9b4cf;
+}
+
+.story-sheet-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 14px;
+}
+
+.story-sheet-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 42px;
+  padding: 0 16px;
+  border: 0;
+  border-radius: 999px;
+  background: rgb(255 255 255 / 0.12);
+  color: #eef1f8;
+  font: inherit;
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.story-sheet-btn:hover,
+.story-sheet-btn:focus-visible {
+  color: #fff;
+  background: rgb(255 255 255 / 0.2);
+}
+
+.story-sheet-ig,
+.story-sheet-ig:hover,
+.story-sheet-ig:focus-visible {
+  flex-basis: 100%;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
+}

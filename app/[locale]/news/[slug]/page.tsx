@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ArticleShare } from "@/components/ArticleShare";
+import { storyText } from "@/content/story";
 import { NewsList } from "@/components/News";
 import { newsText } from "@/content/news";
 import { locales, type Locale } from "@/lib/i18n";
@@ -87,8 +88,8 @@ export default async function Article({ params }: { params: Params }) {
               copied: n.shareCopied,
               storyKicker: n.storyKicker,
               storyCta: n.storyCta,
-              storySaved: n.storySaved,
             }}
+            story={storyText[locale]}
           />
           {item.sources.length > 0 && (
             <p className="news-sources">

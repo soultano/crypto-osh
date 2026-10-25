@@ -1,12 +1,14 @@
 "use client";
 
 import { useState } from "react";
+import type { StoryLabels } from "@/content/story";
+import { useInstagramStory } from "./InstagramStory";
 
 // Share buttons under the USDT table. Telegram, WhatsApp, X and Facebook have
-// web share links. Instagram has none, so its button opens the phone's share
-// sheet (where Instagram is listed) and on a computer copies the text instead.
+// web share links. Instagram gets a story card with today's best rates, see
+// InstagramStory.
 
-type Labels = { share: string; copy: string; copied: string; instagramHint: string };
+type Labels = { share: string; copy: string; copied: string; storyKicker: string; storyCta: string };
 
 const nets = [
   { id: "telegram", name: "Telegram", href: (u: string, t: string) => `https://t.me/share/url?url=${u}&text=${t}` },
@@ -31,7 +33,7 @@ export function Icon({ id }: { id: string }) {
   );
 }
 
-export function ShareBar({ text, url, labels }: { text: string; url: string; labels: Labels }) {
+export function ShareBar({ text, url, labels, story }: { text: string; url: string; labels: Labels; story: StoryLabels }) {
   const [note, setNote] = useState<string | null>(null);
   const u = encodeURIComponent(url);
   const t = encodeURIComponent(text);
@@ -39,7 +41,7 @@ export function ShareBar({ text, url, labels }: { text: string; url: string; lab
 
   const flash = (msg: string) => {
     setNote(msg);
-    setTimeout(() => setNote(null), 3000);
+    setTimeout(() => setNote(null), 6000);
   };
 
   const copy = async (msg: string) => {
@@ -51,18 +53,13 @@ export function ShareBar({ text, url, labels }: { text: string; url: string; lab
     }
   };
 
-  const instagram = async () => {
-    if (navigator.share) {
-      try {
-        await navigator.share({ text, url });
-        return;
-      } catch (e) {
-        if ((e as Error).name === "AbortError") return;
-      }
-    }
-    await copy(labels.instagramHint);
-    window.open("https://www.instagram.com/", "_blank", "noopener");
-  };
+  // The first line of the text is the card's title, the rest its body.
+  const [title, ...rest] = text.split("\n");
+  const ig = useInstagramStory(
+    { kicker: labels.storyKicker, title, body: rest.join("\n"), cta: labels.storyCta, url },
+    story,
+    flash,
+  );
 
   return (
     <div className="share-bar">
@@ -73,7 +70,7 @@ export function ShareBar({ text, url, labels }: { text: string; url: string; lab
             <Icon id={n.id} />
           </a>
         ))}
-        <button type="button" className="share-btn share-instagram" onClick={instagram} aria-label="Instagram" title="Instagram">
+        <button type="button" className="share-btn share-instagram" onClick={ig.share} aria-label="Instagram" title="Instagram">
           <Icon id="instagram" />
         </button>
         <button type="button" className="share-btn share-copy" onClick={() => copy(labels.copied)} aria-label={labels.copy} title={labels.copy}>
@@ -83,6 +80,7 @@ export function ShareBar({ text, url, labels }: { text: string; url: string; lab
       <span className="share-note" role="status" aria-live="polite">
         {note}
       </span>
+      {ig.sheet}
     </div>
   );
 }
