@@ -3,6 +3,7 @@ import { usdtText } from "@/content/usdt";
 import type { Locale } from "@/lib/i18n";
 import { site } from "@/lib/site";
 import { ShareBar } from "./ShareBar";
+import { storyText } from "@/content/story";
 import { best, fmtDay, fmtSom, fmtTime, rateRows, rates, type Row } from "@/lib/usdt";
 
 // USDT/UZS rates at Uzbek exchangers, light card. The partner (a paid
@@ -175,7 +176,8 @@ export function UsdtRates({ locale }: { locale: Locale }) {
           <ShareBar
             text={shareText}
             url={`${site.url}/${locale}`}
-            labels={{ share: t.share, copy: t.copy, copied: t.copied, instagramHint: t.instagramHint }}
+            labels={{ share: t.share, copy: t.copy, copied: t.copied, storyKicker: t.storyKicker, storyCta: t.storyCta }}
+            story={storyText[locale]}
           />
         </div>
       </div>

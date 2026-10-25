@@ -31,7 +31,8 @@ const uz = {
   share: "Ulashish:",
   copy: "Matnni nusxalash",
   copied: "Nusxalandi",
-  instagramHint: "Matn nusxalandi: Instagram'da joylang",
+  storyKicker: "USDT / UZS · bugungi kurs",
+  storyCta: "Barcha kurslar saytda:",
   shareTitle: "USDT/UZS kurslari",
 };
 
@@ -66,7 +67,8 @@ const ru: typeof uz = {
   share: "Поделиться:",
   copy: "Скопировать текст",
   copied: "Скопировано",
-  instagramHint: "Текст скопирован: вставьте его в Instagram",
+  storyKicker: "USDT / UZS · курс сегодня",
+  storyCta: "Все курсы на сайте:",
   shareTitle: "Курс USDT/UZS",
 };
 
@@ -101,7 +103,8 @@ const en: typeof uz = {
   share: "Share:",
   copy: "Copy text",
   copied: "Copied",
-  instagramHint: "Text copied: paste it on Instagram",
+  storyKicker: "USDT / UZS · today's rate",
+  storyCta: "All rates on the site:",
   shareTitle: "USDT/UZS rates",
 };
 

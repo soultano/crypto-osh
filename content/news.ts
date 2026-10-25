@@ -27,7 +27,6 @@ const uz = {
   shareCopied: "Havola nusxalandi",
   storyKicker: "Yangiliklar",
   storyCta: "To'liq maqola saytda:",
-  storySaved: "Rasm saqlandi. Instagram'da Story oching, rasmni qo'shing va «Link» stikeri bilan maqola havolasini qo'ying.",
 };
 
 const ru: typeof uz = {
@@ -55,7 +54,6 @@ const ru: typeof uz = {
   shareCopied: "Ссылка скопирована",
   storyKicker: "Новости",
   storyCta: "Полная статья на сайте:",
-  storySaved: "Картинка сохранена. Откройте Story в Instagram, добавьте её и прикрепите ссылку на статью стикером «Ссылка».",
 };
 
 const en: typeof uz = {
@@ -83,7 +81,6 @@ const en: typeof uz = {
   shareCopied: "Link copied",
   storyKicker: "News",
   storyCta: "Read the full article at:",
-  storySaved: "Image saved. Open a Story in Instagram, add the image and attach the article with a Link sticker.",
 };
 
 export const newsText = { uz, ru, en };
