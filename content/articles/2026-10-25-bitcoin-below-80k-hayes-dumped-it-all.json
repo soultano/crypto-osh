@@ -1,0 +1,60 @@
+{
+  "slug": "2026-10-25-bitcoin-below-80k-hayes-dumped-it-all",
+  "date": "2026-10-25T21:30:00+05:00",
+  "tags": [
+    "bitcoin",
+    "market",
+    "liquidations",
+    "security"
+  ],
+  "sources": [
+    {
+      "name": "The Block (liquidations, Hayes, ETF flows, 24.10.2026)",
+      "url": "https://theblock.co/news/markets/2026-10-24-crypto-longs-lose-404-million-in-four-hours-as-bitcoin-briefly-slips-below-80000-431608"
+    },
+    {
+      "name": "Bitcoin News Digest (price, oil, Fed, options, 25.10.2026)",
+      "url": "https://bitcoinnewsdigest.substack.com/p/bitcoin-news-digest-october-25-2026"
+    },
+    {
+      "name": "The Crypto Basic (Electrum 4.8.3, 24.10.2026)",
+      "url": "https://thecryptobasic.com/2026/10/24/tcb-daily-edition-what-happened-in-crypto-on-october-24-2026/"
+    }
+  ],
+  "ru": {
+    "title": "«Я всё сбросил»: сооснователь BitMEX вышел из рынка, биткоин нырнул ниже $80 000. Кто на самом деле потерял",
+    "summary": "В субботу биткоин на время ушёл ниже 80 тысяч долларов, а Артур Хейс написал, что продал всё. Но больше всех потеряли совсем не те, о ком вы подумали, а на этой неделе рынок ждут ещё две важные даты.",
+    "body": [
+      "Что случилось. В субботу, 24 октября, биткоин ненадолго упал ниже 80 000 долларов, до 79 280. За четыре часа рынок выбил 404 млн долларов ставок на рост. За сутки ликвидации задели 201 тысячу трейдеров на 815 млн. В воскресенье утром биткоин стоит около 80 500. Это всего на 2% ниже, чем неделю назад.",
+      "Кто «слил всё». В ту же ночь сооснователь BitMEX Артур Хейс написал в X: «I dumped it all», то есть «я всё сбросил». Его семейный фонд Maelstrom закрыл позиции по ETH, ENA, UNI и другим токенам. Причины, по словам Хейса, в мутной макроэкономике и геополитике. Он вернётся, когда увидит сигнал «всё чисто». Когда это будет, не уточнил.",
+      "Почему нервничают. Нефть Brent в пятницу закрылась на 116,72 доллара за баррель, это максимум с конца апреля. У Ормузского пролива повреждены семь танкеров. США сокращают персонал посольств в Иордании, Ливане, Катаре и ОАЭ. Из биткоин-ETF за четверг и пятницу ушло 773 млн долларов. Эфир просел сильнее биткоина: до 2 314 долларов, минус 3,8% за сутки.",
+      "Кто на самом деле потерял. Не те, кто держит биткоин, а те, кто торговал в долг. Падения на 1–2% хватило, чтобы закрыть сотни тысяч позиций с плечом. 94% ликвидаций по биткоину пришлось на ставки на рост. Если вы купили монету на свои и храните её у себя, вы просто видите цифру поменьше.",
+      "Что дальше. Впереди две даты. 28 октября ФРС объявит решение по ставке, и рынок почти на 90% ждёт, что её не тронут. 30 октября истекают опционы на биткоин примерно на 12,3 млрд долларов. В такие дни цену часто дёргает в обе стороны. Аналитики спорят: Питер Шифф ждёт 75 000, Bitwise ждёт выше 100 000 к концу года."
+    ],
+    "take": "Биткоин за 80 000 долларов стоит примерно от 940 млн до 1 млрд сумов, в зависимости от курса. USDT на наших лицензированных площадках сегодня продают за 12 000–12 600 сумов, а выкупают за 11 760–11 800 (вся таблица на главной). Покупать или нет, решать вам. Правила одни: только площадки с лицензией НАПП и никакого плеча на зарубежных биржах. И если храните биткоин в кошельке Electrum, обновитесь до версии 4.8.3: разработчики закрыли критическую уязвимость. Скачивайте только с официального сайта."
+  },
+  "uz": {
+    "title": "«Hammasini sotib yubordim»: BitMEX asoschilaridan biri bozordan chiqdi, bitkoin 80 000 dollardan pastga sho'ng'idi. Aslida kim yutqazdi",
+    "summary": "Shanba kuni bitkoin bir muddat 80 ming dollardan pastga tushdi, Artur Xeys esa hammasini sotganini yozdi. Lekin eng ko'p yutqazganlar siz o'ylagan odamlar emas, bu hafta esa bozorni yana ikkita muhim sana kutmoqda.",
+    "body": [
+      "Nima bo'ldi. Shanba, 24-oktabr kuni bitkoin qisqa muddatga 80 000 dollardan pastga, 79 280 gacha tushdi. To'rt soat ichida bozor o'sishga tikilgan 404 mln dollarlik pozitsiyalarni yopib yubordi. Bir sutkada likvidatsiyalar 201 ming treyderga tegdi, jami 815 mln dollar. Yakshanba ertalab bitkoin taxminan 80 500 dollar turibdi. Bu bir hafta oldingidan atigi 2% past.",
+      "Kim «hammasini sotdi». O'sha kechasi BitMEX asoschilaridan biri Artur Xeys X'da shunday yozdi: «I dumped it all», ya'ni «hammasini sotib yubordim». Uning oilaviy fondi Maelstrom ETH, ENA, UNI va boshqa tokenlar bo'yicha pozitsiyalarni yopdi. Xeysning so'zlariga ko'ra, sababi noaniq makroiqtisodiyot va geosiyosatda. U «hammasi joyida» signalini ko'rganda qaytadi. Qachonligini aytmadi.",
+      "Nega xavotir. Brent nefti juma kuni barreli 116,72 dollarda yopildi, bu aprel oxiridan beri eng yuqori daraja. Hormuz bo'g'ozi yaqinida yettita tanker shikastlangan. AQSh Iordaniya, Livan, Qatar va BAAdagi elchixonalari xodimlarini qisqartirmoqda. Payshanba va juma kunlari bitkoin-ETFlardan 773 mln dollar chiqib ketdi. Efir bitkoindan ko'proq tushdi: 2 314 dollargacha, bir sutkada minus 3,8%.",
+      "Aslida kim yutqazdi. Bitkoinni shunchaki saqlab turganlar emas, qarzga savdo qilganlar. Yuz minglab leverajli pozitsiyalarni yopish uchun 1–2% tushish yetarli bo'ldi. Bitkoin bo'yicha likvidatsiyalarning 94 foizi o'sishga tikilgan pozitsiyalar edi. Agar tangani o'z pulingizga sotib olib, o'zingizda saqlayotgan bo'lsangiz, siz shunchaki kichikroq raqamni ko'ryapsiz.",
+      "Keyin nima. Oldinda ikkita sana bor. 28-oktabrda AQSh Federal zaxira tizimi (FRS) stavka bo'yicha qarorini e'lon qiladi, bozor deyarli 90% ehtimol bilan stavka o'zgarmasligini kutmoqda. 30-oktabrda taxminan 12,3 mlrd dollarlik bitkoin opsionlari muddati tugaydi. Bunday kunlarda narx ko'pincha ikki tomonga ham sakraydi. Tahlilchilar bahslashmoqda: Piter Shiff 75 000 ni kutmoqda, Bitwise esa yil oxirigacha 100 000 dan yuqorini."
+    ],
+    "take": "80 000 dollarlik bitkoin kursga qarab taxminan 940 mln dan 1 mlrd so'mgacha turadi. Bizning litsenziyali platformalarda bugun USDT 12 000–12 600 so'mdan sotilmoqda va 11 760–11 800 so'mdan sotib olinmoqda (to'liq jadval bosh sahifada). Sotib olish yoki olmaslik o'zingizning qaroringiz. Qoidalar esa bir xil: faqat NAPP litsenziyasiga ega platformalar va xorijiy birjalarda hech qanday leveraj yo'q. Agar bitkoinni Electrum hamyonida saqlasangiz, 4.8.3 versiyasiga yangilang: dasturchilar jiddiy zaiflikni yopishdi. Faqat rasmiy saytdan yuklab oling."
+  },
+  "en": {
+    "title": "\"I dumped it all\": BitMEX co-founder exits the market as bitcoin dives below $80,000. Who really lost",
+    "summary": "On Saturday bitcoin briefly slipped under $80,000, and Arthur Hayes posted that he had sold everything. But the people who lost the most are not who you might think, and the market has two big dates coming up this week.",
+    "body": [
+      "What happened. On Saturday, October 24, bitcoin briefly fell below $80,000, to $79,280. In four hours the market wiped out $404 million of bets on a rise. Over 24 hours liquidations hit 201,000 traders for $815 million. On Sunday morning bitcoin trades around $80,500, only about 2% lower than a week ago.",
+      "Who \"dumped it all\". That same night BitMEX co-founder Arthur Hayes wrote on X: \"I dumped it all.\" His family office Maelstrom closed its positions in ETH, ENA, UNI and other tokens. Hayes blamed \"dicey\" macro and geopolitics, and said he would come back once he sees an \"all clear\" signal. He did not say when.",
+      "Why everyone is nervous. Brent oil closed Friday at $116.72 a barrel, its highest since late April. Seven tankers have been reported damaged near the Strait of Hormuz. The US is cutting embassy staff in Jordan, Lebanon, Qatar and the UAE. Bitcoin ETFs lost $773 million over Thursday and Friday. Ether fell harder than bitcoin, to $2,314, down 3.8% on the day.",
+      "Who really lost. Not the people holding bitcoin, but the people trading on borrowed money. A 1–2% drop was enough to close hundreds of thousands of leveraged positions. 94% of bitcoin liquidations were bets on a rise. If you bought your coins with your own money and keep them yourself, you are simply looking at a smaller number.",
+      "What next. Two dates are ahead. On October 28 the Fed announces its rate decision, and the market puts about 90% odds on no change. On October 30 roughly $12.3 billion of bitcoin options expire. Days like these often jerk the price both ways. Analysts disagree: Peter Schiff expects $75,000, Bitwise expects above $100,000 by year-end."
+    ],
+    "take": "A bitcoin at $80,000 is worth roughly 940 million to 1 billion som, depending on the rate. On our licensed platforms USDT sells today for 12,000–12,600 som and is bought back at 11,760–11,800 (full table on the home page). Whether to buy is your call. The rules stay the same: only NAPP-licensed platforms, and no leverage on foreign exchanges. And if you keep bitcoin in an Electrum wallet, update to version 4.8.3: the developers fixed a critical vulnerability. Download it only from the official website."
+  }
+}
