@@ -15,8 +15,9 @@ export type ProviderId = "binance" | "voluto" | "asterium" | "tcrypto" | "walt" 
 export type Office = { ru: string; uz: string; en: string; map: string; hours: { ru: string; uz: string; en: string } };
 
 // fee: a published cash-dollar fee (%) to show when the morning run could not read it.
+// logo: a square image in /public shown in the badge instead of the mark letter.
 // partner: a paid placement, shown first in the table in a frame and marked as a partner.
-export type Provider = { id: ProviderId; name: string; note?: string; url: string; mark: string; bg: string; fg: string; offline?: Office[]; fee?: number; partner?: boolean };
+export type Provider = { id: ProviderId; name: string; note?: string; url: string; mark: string; logo?: string; bg: string; fg: string; offline?: Office[]; fee?: number; partner?: boolean };
 
 export const providers = providerList as Provider[];
 
