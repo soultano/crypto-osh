@@ -1,17 +1,23 @@
 import type { NextConfig } from "next";
+import { gaId } from "./lib/site";
 
 const isDev = process.env.NODE_ENV !== "production";
 
-// Strict Content Security Policy. The site has no forms, no third-party
-// analytics and no user-generated content; the only external origins are
-// YouTube (privacy-enhanced embeds, loaded on click) and its thumbnail CDN.
+// Google Analytics hosts, allowed only when NEXT_PUBLIC_GA_ID is set.
+const ga = gaId(process.env.NEXT_PUBLIC_GA_ID)
+  ? " https://www.googletagmanager.com https://*.google-analytics.com https://*.analytics.google.com"
+  : "";
+
+// Strict Content Security Policy. The site has no forms and no user-generated
+// content; the only external origins are YouTube (privacy-enhanced embeds,
+// loaded on click), its thumbnail CDN and, when turned on, Google Analytics.
 const csp = [
   "default-src 'self'",
-  `script-src 'self' 'unsafe-inline'${isDev ? " 'unsafe-eval'" : ""}`,
+  `script-src 'self' 'unsafe-inline'${isDev ? " 'unsafe-eval'" : ""}${ga}`,
   "style-src 'self' 'unsafe-inline'",
-  "img-src 'self' data: blob: https://i.ytimg.com",
+  `img-src 'self' data: blob: https://i.ytimg.com${ga}`,
   "font-src 'self'",
-  "connect-src 'self'",
+  `connect-src 'self'${ga}`,
   "frame-src https://www.youtube-nocookie.com",
   "media-src 'self'",
   "object-src 'none'",
