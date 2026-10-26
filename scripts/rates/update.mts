@@ -135,8 +135,9 @@ const sources: Record<string, Source> = {
 };
 
 // Asterium answers a list of tiers by amount ("count"); the smallest tier is
-// what an ordinary customer gets. buy = UZS→USDT, sell = USDT→UZS, and the
-// cash-dollar fee is the markup on USD→USDT (1.008 USD per USDT = 0.8%).
+// what an ordinary customer gets. buy = UZS→USDT, sell = USDT→UZS. The fee
+// is not read from here: its USD→USDT markup (1.008 = 0.8%) is not the fee
+// Asterium charges, so the row shows the 0.6% from usdt-providers.json.
 type AsteriumRates = { data?: { operation: string; from: string; to: string; count: number; rate: number }[] };
 
 function asteriumQuote(r: AsteriumRates) {
@@ -146,9 +147,7 @@ function asteriumQuote(r: AsteriumRates) {
     return rows.reduce((a, b) => (b.count < a.count ? b : a)).rate;
   };
   const cents = (n: number) => Math.round(n * 100) / 100;
-  const usd = tier("buy", "USD", "USDT");
-  const fee = usd > 1 && usd < 1.1 ? cents((usd - 1) * 100) : null;
-  return { buy: cents(tier("buy", "UZS", "USDT")), sell: cents(tier("sell", "USDT", "UZS")), fee };
+  return { buy: cents(tier("buy", "UZS", "USDT")), sell: cents(tier("sell", "USDT", "UZS")), fee: null };
 }
 
 // The first plausible numeric field called rate/rate_amount/price/course.

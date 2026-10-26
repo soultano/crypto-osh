@@ -11,7 +11,7 @@
     "asterium": {
       "buy": 12127.8,
       "sell": 11806.77,
-      "fee": 0.8,
+      "fee": null,
       "source": "shop-rates.asterium.dev",
       "at": "2026-10-26T08:29:00.332Z"
     },
