@@ -35,8 +35,9 @@
     "partner": true,
     "url": "https://asterium.uz",
     "mark": "A",
-    "bg": "#2b2b3a",
-    "fg": "#ffffff",
+    "logo": "/logos/asterium.png",
+    "bg": "#ffffff",
+    "fg": "#0d0e14",
     "offline": [
       {
         "ru": "ул. Саида Барака, 12А",

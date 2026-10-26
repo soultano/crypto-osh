@@ -24,7 +24,8 @@ function Tether() {
 function Badge({ row }: { row: Row }) {
   return (
     <span className="usdt-badge" style={{ background: row.bg, color: row.fg }} aria-hidden="true">
-      {row.mark}
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      {row.logo ? <img className="usdt-badge-logo" src={row.logo} alt="" width={34} height={34} /> : row.mark}
     </span>
   );
 }
