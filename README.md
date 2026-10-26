@@ -45,6 +45,7 @@ npm run build && npm start
 | `NEXT_PUBLIC_PHONE` | `+998901234567` |
 | `NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION` | код из Google Search Console (только сам код из `content="…"`) |
 | `NEXT_PUBLIC_YANDEX_VERIFICATION` | код из Яндекс Вебмастера (только сам код из `content="…"`) |
+| `NEXT_PUBLIC_GA_ID` | идентификатор Google Analytics 4, вида `G-ABC123XYZ`. Пусто = статистика выключена |
 
 Значения по умолчанию уже прописаны в `lib/site.ts`, переменные нужны только чтобы их поменять. Пустой телефон скрывает кнопку звонка. Секретов в репозитории нет и быть не должно: токен бота хранится только в переменных Vercel.
 
@@ -106,6 +107,25 @@ npm run build && npm start
 1. **Google Search Console** (search.google.com/search-console) → добавить ресурс `https://cryptoosh.uz` → способ «HTML-тег» → скопировать код в `NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION` на Vercel → Redeploy → «Подтвердить». Затем «Файлы Sitemap» → `https://cryptoosh.uz/sitemap.xml`.
 2. **Яндекс Вебмастер** (webmaster.yandex.ru) → добавить сайт → «Мета-тег» → код в `NEXT_PUBLIC_YANDEX_VERIFICATION` → Redeploy → «Проверить». Затем «Индексирование → Файлы Sitemap» → тот же адрес, и «Переобход страниц» → `https://cryptoosh.uz/ru/business`.
 3. В Вебмастере указать регион сайта: Узбекистан.
+
+## Статистика: Google Analytics 4
+
+1. analytics.google.com → «Начать измерение» → аккаунт `Crypto Osh` → ресурс `cryptoosh.uz`, часовой пояс Ташкент, валюта UZS → поток «Веб» → адрес `https://cryptoosh.uz`.
+2. Скопировать «Идентификатор потока данных» (`G-…`) в `NEXT_PUBLIC_GA_ID` на Vercel → Redeploy.
+3. В GA: «Администратор → Специальные определения» → создать параметры событий `method`, `partner`, `channel`, `link_text`, `link_url`, `link_domain`, чтобы они были видны в отчётах.
+
+Что считается само: визиты, источники, страны и города, устройства, страницы. Сверх этого сайт шлёт события кликов:
+
+| Событие | Когда | Параметры |
+| --- | --- | --- |
+| `share` | кнопки «Поделиться» | `method`: telegram, whatsapp, x, facebook, instagram, copy |
+| `partner_click` | обменники в таблице USDT | `partner`: домен обменника |
+| `contact_click` | Telegram, группа, Instagram, звонок | `channel`, `link_text` |
+| `cta_click` | кнопки-ссылки внутри сайта | `link_url`, `link_text` |
+| `map_click` | адрес офиса на Яндекс Картах | `link_text` |
+| `outbound_click` | любая другая внешняя ссылка | `link_domain`, `link_text` |
+
+У всех событий есть `page_path`: на какой странице нажали.
 
 Переменные `NEXT_PUBLIC_*` вшиваются при сборке, поэтому после их изменения нужен новый деплой.
 
