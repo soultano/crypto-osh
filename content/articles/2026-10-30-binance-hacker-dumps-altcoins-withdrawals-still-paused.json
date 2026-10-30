@@ -1,0 +1,57 @@
+{
+  "slug": "2026-10-30-binance-hacker-dumps-altcoins-withdrawals-still-paused",
+  "date": "2026-10-30T20:01:56+05:00",
+  "tags": [
+    "binance",
+    "hack",
+    "security",
+    "laundering"
+  ],
+  "sources": [
+    {
+      "name": "Bitcoin.com News",
+      "url": "https://news.bitcoin.com/security/binance-hacker-dumps-158m-altcoins-key-leak-doubts/"
+    },
+    {
+      "name": "CoinDesk",
+      "url": "https://www.coindesk.com/markets/2026/10/30/binance-hacker-dumps-a-little-known-2017-token-and-it-crashes-90"
+    },
+    {
+      "name": "Decrypt",
+      "url": "https://decrypt.co/382194/binance-hack-exit-ramps-defi-exchange-ethereum"
+    }
+  ],
+  "uz": {
+    "title": "Binance xakeri altkoinlarni sotib, ETHga o‘tkazmoqda: pul yechish hali to‘xtatilgan",
+    "summary": "Binance’dan o‘g‘irlangan mablag‘larni xaker tezda sotib, ETHga aylantirmoqda. Birja esa muzlatilgan qariyb 3 mlrd dollarni qaytarish uchun FBI bilan ishlayapti.",
+    "body": [
+      "O‘g‘irlikdan keyingi kunlarda xaker vaqtni behuda o‘tkazmadi. Blokcheyn kuzatuvchilariga ko‘ra, u taxminan 158 mln dollarlik altkoinlarni sotib, evaziga 70 480 ETH oldi. Kichik va kam savdoli tokenlar bunday yirik sotuvni ko‘tarolmadi: masalan, 2017-yilgi FUN tokeni 90% ga qulab tushdi.",
+      "Chainalysis hisobicha, xaker muzlatilishdan qochish uchun 325 mln dollarlik aktivni almashtirgan, tranzaksiyalar esa avtomatlashtirilgan pul yuvishga o‘xshaydi. Xaker hamyonlari muzlatilishi mumkin bo‘lgan stablkoinlarni markazlashmagan birjalarda ETHga almashtirgani ham qayd etildi. Ayrim tahlilchilar Binance’ning ‘maxfiy kalitlar sizib chiqmagan’ degan bayonotiga shubha bildirmoqda.",
+      "Binance ma’lumotiga ko‘ra, hamkorlar qariyb 3 mlrd dollarlik aktivni muzlatgan (Chainalysis bu summani taxminan 2,8 mlrd deb baholaydi), birja ularni qaytarish uchun FBI va huquq-tartibot organlari bilan ishlamoqda. Synthetix 8,4 mln SNXni qaytarib oldi, USDT0 esa 6,19 mln tokenni muzlatdi.",
+      "Binance rahbari Richard Teng pul yechishni yakshanba kuni qayta ochish rejasi kuchda ekanini aytdi, lekin bu qayta qurilgan tizim sinovdan o‘tishiga bog‘liq. Zaxiralar haqidagi hisobot dushanbaga va’da qilingan."
+    ],
+    "take": "Eslatib o‘tamiz: Binance O‘zbekistonda NAPP litsenziyasiga ega emas, biz uni tavsiya qilmaymiz. Agar kimdadir u yerda mablag‘ qolgan bo‘lsa, faqat birjaning rasmiy e’lonlariga ishoning: ‘kompensatsiya’ va ‘tez yechib berish’ va’da qilgan Telegram xabarlari va havolalar ehtimoli katta firibgarlik. Bu voqea yana bir bor ko‘rsatdi: eng katta birja ham pulni bir necha kunga qulflab qo‘yishi mumkin."
+  },
+  "ru": {
+    "title": "Хакер Binance сливает альткоины в ETH, вывод средств всё ещё на паузе",
+    "summary": "Похититель средств Binance быстро продаёт украденные токены и переводит их в ETH. Биржа вместе с ФБР пытается вернуть около $3 млрд замороженных активов.",
+    "body": [
+      "Хакер времени не теряет. По данным ончейн-аналитиков, он продал альткоинов примерно на $158 млн и получил за них 70 480 ETH. Мелкие токены с тонким рынком такой объём не выдержали: например, токен FUN 2017 года рухнул на 90%.",
+      "Chainalysis считает, что хакер обменял активов на $325 млн, чтобы уйти от заморозки, а характер транзакций похож на автоматическое отмывание. Связанные с ним кошельки меняли стейблкоины, которые можно заморозить, на ETH через децентрализованные биржи. Часть аналитиков сомневается в словах Binance о том, что приватные ключи не утекли.",
+      "По данным Binance, партнёры заморозили около $3 млрд (Chainalysis оценивает сумму примерно в $2,8 млрд), и биржа работает с ФБР и другими правоохранителями над их возвратом. Synthetix вернул 8,4 млн украденных SNX, а USDT0 заморозил 6,19 млн токенов.",
+      "Глава Binance Ричард Тенг сказал, что план возобновить вывод в воскресенье в силе, но всё зависит от того, пройдёт ли тесты перестроенная система. Отчёт о резервах обещают к понедельнику."
+    ],
+    "take": "Напомним: у Binance нет лицензии НАПП, и мы её не советуем. Если у вас там остались деньги, верьте только официальным объявлениям биржи: сообщения в Telegram про «компенсацию» и «ускоренный вывод» почти наверняка от мошенников. А главный урок простой: даже крупнейшая биржа может на несколько дней закрыть доступ к вашим деньгам."
+  },
+  "en": {
+    "title": "Binance hacker dumps altcoins into ETH as withdrawals stay paused",
+    "summary": "The thief behind the Binance breach is quickly selling stolen tokens for ETH, while the exchange works with the FBI to recover about $3 billion in frozen assets.",
+    "body": [
+      "The hacker is moving fast. On-chain trackers say about $158 million in altcoins was sold for 70,480 ETH. Small tokens with thin markets could not absorb the selling: FUN, a 2017-era token, crashed 90%.",
+      "Chainalysis says the attacker swapped $325 million to dodge freezes, with transaction patterns pointing to automated laundering. Linked wallets were also seen swapping freezable stablecoins for ETH on decentralized exchanges. Some analysts are questioning Binance's claim that no private keys were leaked.",
+      "Binance says partners have frozen about $3 billion (Chainalysis puts it near $2.8 billion), and it is working with the FBI and other law enforcement to recover the funds. Synthetix recovered 8.4 million stolen SNX, and USDT0 froze 6.19 million tokens.",
+      "Binance CEO Richard Teng said the Sunday target for restarting withdrawals is still on track, but it depends on the rebuilt system passing tests. A reserve report is promised by Monday."
+    ],
+    "take": "A reminder: Binance has no NAPP licence in Uzbekistan and we don't recommend it. If you still have funds there, trust only the exchange's official announcements; Telegram messages promising 'compensation' or 'fast withdrawals' are almost certainly scams. The bigger lesson: even the largest exchange can lock your money for days."
+  }
+}

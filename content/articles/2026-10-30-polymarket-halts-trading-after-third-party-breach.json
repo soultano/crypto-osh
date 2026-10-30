@@ -1,0 +1,49 @@
+{
+  "slug": "2026-10-30-polymarket-halts-trading-after-third-party-breach",
+  "date": "2026-10-30T20:01:56+05:00",
+  "tags": [
+    "polymarket",
+    "hack",
+    "security"
+  ],
+  "sources": [
+    {
+      "name": "Cointelegraph",
+      "url": "https://cointelegraph.com/news/polymarket-suspends-trading-user-funds-compromised"
+    },
+    {
+      "name": "CoinDesk",
+      "url": "https://www.coindesk.com/markets/2026/10/29/polymarket-suspends-trading-after-third-party-breach-leads-to-user-losses"
+    }
+  ],
+  "uz": {
+    "title": "Polymarket uchinchi tomon xizmati buzilgach savdoni to‘xtatdi",
+    "summary": "Bashorat bozori Polymarket foydalanuvchilar hisobidan pul yo‘qolayotgani haqidagi shikoyatlardan so‘ng savdoni to‘xtatdi. Sabab: platforma ishlatadigan tashqi provayderlardan biri buzilgan.",
+    "body": [
+      "Payshanba kuni foydalanuvchilar hisoblaridan mablag‘ chiqib ketayotganini xabar qila boshladi. Polymarket o‘zining uchinchi tomon provayderlaridan biri buzilganini tasdiqladi va savdoni cheklab, relayer amallarini to‘xtatdi.",
+      "Mavjud buyurtmalarni bekor qilish mumkin, lekin yangi sotib olish va sotish buyurtmalari bloklangan. Bir treyder hisobidan 800 ming dollar yo‘qolganini aytdi.",
+      "Arkham ma’lumotiga ko‘ra, gumon qilinayotgan xaker hamyonida taxminan 2,65 mln dollarlik POL bor. Tekshiruv davom etmoqda."
+    ],
+    "take": "Bu holat bir narsani ko‘rsatadi: platformaning o‘zi emas, u ishlatadigan tashqi xizmat buzilsa ham pulingiz xavf ostida. Polymarket O‘zbekistonda litsenziyaga ega emas, bunday platformalarda mablag‘ saqlash har doim qo‘shimcha xavf. Kriptoni uzoq muddat saqlasangiz, o‘z hamyoningizda va faqat ishonchli qurilmada saqlagan ma’qul."
+  },
+  "ru": {
+    "title": "Polymarket остановил торги после взлома стороннего провайдера",
+    "summary": "Рынок прогнозов Polymarket приостановил торговлю после жалоб пользователей на списания с аккаунтов. Причина: взломан один из внешних провайдеров платформы.",
+    "body": [
+      "В четверг пользователи начали сообщать, что с их счетов уходят деньги. Polymarket подтвердил, что взломан один из сторонних провайдеров, ограничил торги и поставил на паузу работу релейера.",
+      "Существующие ордера можно отменить, но новые заявки на покупку и продажу заблокированы. Один трейдер рассказал, что с его аккаунта увели $800 тыс.",
+      "По данным Arkham, на кошельке предполагаемого взломщика около $2,65 млн в токенах POL. Расследование продолжается."
+    ],
+    "take": "Урок тут такой: деньги под угрозой даже тогда, когда ломают не саму платформу, а её подрядчика. У Polymarket нет лицензии в Узбекистане, и держать средства на таких площадках всегда дополнительный риск. Для долгого хранения надёжнее свой кошелёк на проверенном устройстве."
+  },
+  "en": {
+    "title": "Polymarket halts trading after a third-party provider is breached",
+    "summary": "Prediction market Polymarket paused trading after users reported drained accounts, blaming a compromised third-party provider.",
+    "body": [
+      "On Thursday users began reporting funds leaving their accounts. Polymarket confirmed that one of its third-party providers had been breached, restricted trading and paused relayer actions.",
+      "Existing orders can still be cancelled, but new buy and sell orders are blocked. One trader reported an $800,000 account drain.",
+      "According to Arkham data, a suspected attacker wallet holds about $2.65 million in POL. The investigation is ongoing."
+    ],
+    "take": "The lesson: your money can be at risk even when the platform itself isn't hacked, only one of its vendors. Polymarket is not licensed in Uzbekistan, and keeping funds on such platforms adds risk. For long-term holding, your own wallet on a trusted device is the safer choice."
+  }
+}

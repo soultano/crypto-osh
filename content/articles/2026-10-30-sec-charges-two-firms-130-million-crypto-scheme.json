@@ -1,0 +1,50 @@
+{
+  "slug": "2026-10-30-sec-charges-two-firms-130-million-crypto-scheme",
+  "date": "2026-10-30T20:01:56+05:00",
+  "tags": [
+    "sec",
+    "scam",
+    "fraud",
+    "regulation"
+  ],
+  "sources": [
+    {
+      "name": "Bitcoin Magazine",
+      "url": "https://bitcoinmagazine.com/news/sec-charges-companies-130-million-crypto"
+    },
+    {
+      "name": "The Defiant",
+      "url": "https://thedefiant.io/news/regulation/sec-charges-bg-wealth-and-dsj-exchange-in-alleged-130-million-crypto-fraud"
+    }
+  ],
+  "uz": {
+    "title": "SEC ‘xavfsiz daromad’ va’da qilgan 130 mln dollarlik kripto sxemani fosh qildi",
+    "summary": "AQSh SEC BG Wealth Sharing va DSJ Exchange kompaniyalarini o‘n minglab odamdan 130 mln dollardan ortiq pul yig‘gan kripto firibgarlikda aybladi.",
+    "body": [
+      "AQSh Qimmatli qog‘ozlar va birjalar komissiyasi (SEC) Koloradoda ro‘yxatdan o‘tgan, lekin xorijdan boshqariladigan ikki kompaniya – BG Wealth Sharing Ltd. va DSJ Exchange Pty Ltd.ga qarshi da’vo qo‘zg‘atdi. Da’vo Kaliforniya shimoliy okrugi federal sudiga topshirilgan.",
+      "SEC ma’lumotiga ko‘ra, kamida 2025-yil oktyabridan 2026-yil iyunigacha kompaniyalar AQShning 40 dan ortiq shtati va bir necha hududidagi odamlarni ‘boylikni bo‘lishish dasturi’ga jalb qilgan. Ishtirokchilarga kripto savdosidan xavfsiz, risksiz daromad va’da qilingan.",
+      "Ishonch qozonish uchun ular soxta federal hujjatlar topshirib, go‘yo SEC ruxsatiga ega ekanini da’vo qilgan. Natijada o‘n minglab oddiy investordan 130 mln dollardan ortiq yig‘ilgan, yo‘qotishlar esa 100 mln dollardan oshgan."
+    ],
+    "take": "Bunday ‘dasturlar’ bizda ham Telegram guruhlari orqali tarqaladi, sxema bir xil: risksiz foyda va ‘davlat ruxsati bor’ degan gap. Esda tuting: kriptoda kafolatlangan daromad yo‘q, ro‘yxatdan o‘tish esa ruxsat degani emas. O‘zbekistonda kripto bilan ishlaydigan provayderning NAPP litsenziyasi bor-yo‘qligini har doim o‘zingiz tekshiring."
+  },
+  "ru": {
+    "title": "SEC обвинила две компании в крипто-схеме на $130 млн с «безрисковым доходом»",
+    "summary": "Комиссия по ценным бумагам США предъявила обвинения BG Wealth Sharing и DSJ Exchange, которые собрали более $130 млн с десятков тысяч розничных инвесторов.",
+    "body": [
+      "SEC подала иск против двух компаний, зарегистрированных в Колорадо, но управляемых из-за рубежа: BG Wealth Sharing Ltd. и DSJ Exchange Pty Ltd. Жалоба подана в федеральный суд Северного округа Калифорнии.",
+      "По версии регулятора, как минимум с октября 2025 по июнь 2026 года компании заманивали людей из более чем 40 штатов и нескольких территорий США в «программу разделения богатства». Участникам обещали безрисковый доход от крипто-трейдинга.",
+      "Чтобы выглядеть солидно, они подавали фальшивые федеральные документы и утверждали, что одобрены SEC. В итоге собрали больше $130 млн, а инвесторы потеряли свыше $100 млн."
+    ],
+    "take": "Такие «программы» гуляют и по нашим Telegram-чатам, и схема всегда одна: доход без риска и «разрешение от государства». В крипте гарантированной прибыли не бывает, а регистрация компании ещё не значит лицензию. В Узбекистане всегда проверяйте сами, есть ли у провайдера лицензия НАПП."
+  },
+  "en": {
+    "title": "SEC charges two firms over a $130 million 'risk-free' crypto scheme",
+    "summary": "The US SEC charged BG Wealth Sharing and DSJ Exchange with a crypto fraud that raised more than $130 million from tens of thousands of retail investors.",
+    "body": [
+      "The SEC sued two Colorado-incorporated but foreign-operated companies, BG Wealth Sharing Ltd. and DSJ Exchange Pty Ltd., in federal court for the Northern District of California.",
+      "According to the regulator, from at least October 2025 to June 2026 the firms drew people from more than 40 US states and several territories into a 'wealth-sharing program' that promised risk-free returns from crypto trading.",
+      "To look legitimate, they filed false federal documents and claimed SEC approval. They raised more than $130 million, and investors lost over $100 million."
+    ],
+    "take": "Schemes like this circulate in our Telegram chats too, always with the same pitch: profit without risk and 'government approval'. There is no guaranteed return in crypto, and a company registration is not a licence. In Uzbekistan, always check for yourself whether a provider holds a NAPP licence."
+  }
+}
