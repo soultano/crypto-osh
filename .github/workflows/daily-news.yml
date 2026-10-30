@@ -11,6 +11,11 @@ on:
   schedule:
     - cron: "0 2 * * *"
   workflow_dispatch:
+    inputs:
+      count:
+        description: "How many stories (1–10); empty = the usual 3–4"
+        required: false
+        default: ""
 
 permissions:
   contents: write
@@ -34,6 +39,8 @@ jobs:
       - name: Write today's news
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          NEWS_MIN: ${{ inputs.count }}
+          NEWS_MAX: ${{ inputs.count }}
         run: node scripts/news/generate.mts
 
       - name: Commit and push
