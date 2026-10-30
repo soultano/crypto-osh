@@ -237,7 +237,12 @@ export const people: Person[] = [
     photo: "/people/shokhrukh-mamadjonov.webp",
     ogImage: "/people/shokhrukh-mamadjonov-og.jpg",
     cardTags: [0, 1, 2, 3],
-    links: [{ label: "LinkedIn", url: "https://www.linkedin.com/in/shokhrukh-mamadjonov-b20997333" }],
+    links: [
+      { label: "LinkedIn", url: "https://www.linkedin.com/in/shokhrukh-mamadjonov-b20997333" },
+      { label: "Liberandum AI", url: "https://liberandum.ai/en" },
+      { label: "Chef AI", url: "https://play.google.com/store/apps/details?id=com.quanteon.chefai_mobile" },
+      { label: "Unex Payments", url: "https://unexpay.uz/" },
+    ],
     text: {
       ru: {
         name: "Шохрух Мамаджонов",
