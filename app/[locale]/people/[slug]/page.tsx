@@ -1,6 +1,6 @@
-import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { PersonPhoto } from "@/components/People";
 import { Contact } from "@/components/Sections";
 import { Rosette } from "@/components/Ornament";
 import { getDictionary, isLocale, locales, type Locale } from "@/lib/i18n";
@@ -27,7 +27,7 @@ export async function generateMetadata({ params }: { params: Params }) {
     title: `${p.name} · ${getDictionary(locale).people.title}`,
     description: p.metaDescription,
     type: "profile",
-    image: { url: person.ogImage, width: 1200, height: 630, alt: p.name },
+    image: person.ogImage ? { url: person.ogImage, width: 1200, height: 630, alt: p.name } : undefined,
   });
 }
 
@@ -49,7 +49,7 @@ export default async function PersonPage({ params }: { params: Params }) {
       name: p.name,
       description: p.short,
       jobTitle: p.role,
-      image: `${site.url}${person.photo}`,
+      image: person.photo ? `${site.url}${person.photo}` : undefined,
       knowsAbout: p.directions,
       sameAs: person.links.map((l) => l.url),
     },
@@ -65,11 +65,10 @@ export default async function PersonPage({ params }: { params: Params }) {
           </nav>
           <div className="profile-head">
             <div className="profile-photo arch">
-              <Image
-                src={person.photo}
+              <PersonPhoto
+                person={person}
+                name={p.name}
                 alt={t.people.photoAlt.replace("{name}", p.name)}
-                width={1024}
-                height={1024}
                 priority
                 sizes="(max-width: 900px) 260px, 340px"
               />

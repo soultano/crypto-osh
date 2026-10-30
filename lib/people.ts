@@ -4,7 +4,8 @@ import type { Locale } from "./i18n";
 // ecosystem. Only facts confirmed by the person or the community go here.
 // To add someone: put a square portrait in public/people/, add an entry
 // below with all three locales, and the list, profile page and sitemap
-// pick it up.
+// pick it up. Without a portrait the card shows the person's initials and
+// link previews use the site poster.
 
 type PersonText = {
   name: string;
@@ -20,8 +21,8 @@ type PersonText = {
 
 export type Person = {
   slug: string;
-  photo: string;
-  ogImage: string;
+  photo?: string;
+  ogImage?: string;
   // Directions shown as chips on the card (indexes into `directions`).
   cardTags: number[];
   links: { label: string; url: string }[];
@@ -227,6 +228,88 @@ export const people: Person[] = [
           "Strategic Partnerships",
           "Digital Media & Community Building",
           "Uzbekistan & Central Asia Tech Ecosystem",
+        ],
+      },
+    },
+  },
+  {
+    slug: "shokhrukh-mamadjonov",
+    cardTags: [0, 1, 2, 3],
+    links: [{ label: "LinkedIn", url: "https://www.linkedin.com/in/shokhrukh-mamadjonov-b20997333" }],
+    text: {
+      ru: {
+        name: "Шохрух Мамаджонов",
+        role: "Блокчейн-специалист и предприниматель",
+        metaDescription: "Шохрух Мамаджонов — блокчейн-специалист и предприниматель: Liberandum AI, Quanteon, Unex Payments и Chef AI.",
+        short:
+          "Шохрух Мамаджонов — блокчейн-специалист и предприниматель с высокой инициативностью и выраженным стремлением к масштабированию. Развивает проекты в области AI, исламских финансов, регулируемых криптоуслуг и потребительских AI-приложений.",
+        bio: [
+          "Шохрух Мамаджонов — блокчейн-специалист и предприниматель с высокой инициативностью и выраженным стремлением к масштабированию.",
+          "Его предпринимательская деятельность охватывает несколько направлений.",
+          "Liberandum AI — международная AI-платформа, ориентированная на анализ цифровых активов с точки зрения исламских финансов.",
+          "Quanteon — разработка технологических продуктов, AI-сервисов и цифровых платформ.",
+          "Unex Payments — регулируемые криптовалютные услуги и финансовая инфраструктура Узбекистана.",
+          "Chef AI — потребительское AI-приложение, которое, по данным компании, набрало более 150 тысяч загрузок.",
+        ],
+        directions: [
+          "Блокчейн",
+          "Искусственный интеллект",
+          "Исламские финансы и цифровые активы",
+          "Регулируемые криптоуслуги",
+          "Финансовая инфраструктура",
+          "AI-сервисы и цифровые платформы",
+          "Потребительские AI-приложения",
+          "Технологическое предпринимательство",
+        ],
+      },
+      uz: {
+        name: "Shohruh Mamadjonov",
+        role: "Blokcheyn mutaxassisi va tadbirkor",
+        metaDescription: "Shohruh Mamadjonov — blokcheyn mutaxassisi va tadbirkor: Liberandum AI, Quanteon, Unex Payments va Chef AI.",
+        short:
+          "Shohruh Mamadjonov — yuqori tashabbuskorlikka va kengayishga kuchli intilishga ega blokcheyn mutaxassisi va tadbirkor. AI, islomiy moliya, tartibga solinadigan kripto xizmatlar va iste'molchilar uchun AI ilovalari sohasida loyihalarni rivojlantiradi.",
+        bio: [
+          "Shohruh Mamadjonov — yuqori tashabbuskorlikka va kengayishga kuchli intilishga ega blokcheyn mutaxassisi va tadbirkor.",
+          "Uning tadbirkorlik faoliyati bir nechta yo'nalishni qamrab oladi.",
+          "Liberandum AI — raqamli aktivlarni islomiy moliya nuqtai nazaridan tahlil qilishga yo'naltirilgan xalqaro AI platformasi.",
+          "Quanteon — texnologik mahsulotlar, AI xizmatlari va raqamli platformalar ishlab chiqish.",
+          "Unex Payments — tartibga solinadigan kriptovalyuta xizmatlari va O'zbekistonning moliyaviy infratuzilmasi.",
+          "Chef AI — iste'molchilar uchun AI ilovasi; kompaniya ma'lumotlariga ko'ra, u 150 mingdan ortiq marta yuklab olingan.",
+        ],
+        directions: [
+          "Blokcheyn",
+          "Sun'iy intellekt",
+          "Islomiy moliya va raqamli aktivlar",
+          "Tartibga solinadigan kripto xizmatlar",
+          "Moliyaviy infratuzilma",
+          "AI xizmatlari va raqamli platformalar",
+          "Iste'molchilar uchun AI ilovalari",
+          "Texnologik tadbirkorlik",
+        ],
+      },
+      en: {
+        name: "Shokhrukh Mamadjonov",
+        role: "Blockchain specialist and entrepreneur",
+        metaDescription: "Shokhrukh Mamadjonov is a blockchain specialist and entrepreneur behind Liberandum AI, Quanteon, Unex Payments and Chef AI.",
+        short:
+          "Shokhrukh Mamadjonov is a blockchain specialist and entrepreneur with strong initiative and a clear drive to scale. His ventures span AI, Islamic finance, regulated crypto services and consumer AI apps.",
+        bio: [
+          "Shokhrukh Mamadjonov is a blockchain specialist and entrepreneur with strong initiative and a clear drive to scale.",
+          "His business activity covers several areas.",
+          "Liberandum AI is an international AI platform that analyzes digital assets from the perspective of Islamic finance.",
+          "Quanteon develops technology products, AI services and digital platforms.",
+          "Unex Payments works on regulated cryptocurrency services and financial infrastructure in Uzbekistan.",
+          "Chef AI is a consumer AI app that, according to the company, has passed 150,000 downloads.",
+        ],
+        directions: [
+          "Blockchain",
+          "Artificial intelligence",
+          "Islamic finance and digital assets",
+          "Regulated crypto services",
+          "Financial infrastructure",
+          "AI services and digital platforms",
+          "Consumer AI apps",
+          "Tech entrepreneurship",
         ],
       },
     },
