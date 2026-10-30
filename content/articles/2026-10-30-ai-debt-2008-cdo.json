@@ -1,0 +1,76 @@
+{
+  "slug": "2026-10-30-ai-debt-2008-cdo",
+  "date": "2026-10-30T15:15:00+05:00",
+  "tags": [
+    "ai",
+    "market",
+    "debt",
+    "opinion"
+  ],
+  "sources": [
+    {
+      "name": "Fortune (Meta Hyperion, $27B bonds, A+ rating, 31.10.2025)",
+      "url": "https://fortune.com/2025/10/31/metas-27-billion-bet-turns-ai-compute-into-wall-streets-hottest-new-investment/"
+    },
+    {
+      "name": "Bloomberg via EnergyNow ($3T build-out, AI debt, xAI, JPMorgan forecast, 02.2026)",
+      "url": "https://energynow.com/2026/02/the-3-trillion-ai-data-center-build-out-becomes-all-consuming-for-debt-markets/"
+    },
+    {
+      "name": "Forbes (GPU-backed debt goes investment grade, 09.06.2026)",
+      "url": "https://www.forbes.com/sites/daraabasiita/2026/06/09/gpu-debt-has-gone-investment-grade-heres-who-holds-the-risk/"
+    },
+    {
+      "name": "Yahoo Finance / Bloomberg (PGIM CLO with a 15% AI cap, 30.09.2026)",
+      "url": "https://finance.yahoo.com/markets/options/articles/pgim-anchors-first-clo-15-162243031.html"
+    }
+  ],
+  "ru": {
+    "title": "Ипотека 2008 года, только с видеокартами: почему меня настораживают долги под ИИ",
+    "summary": "Крипта стоит на месте, потому что деньги ушли в ИИ. А там, на рынке долгов под дата-центры, я узнаю схемы, с которых начинался кризис 2008 года.",
+    "body": [
+      "Крипта сейчас в стагнации, и, на мой взгляд, причина простая: 2026 год стал годом ИИ. Деньги, внимание и аппетит к риску ушли туда. И чем внимательнее я смотрю на рынок ИИ-инфраструктуры, тем чаще узнаю знакомые схемы из кризиса 2008 года.",
+      "Как было тогда. Уолл-стрит собирала рискованные ипотечные кредиты в пакеты, CDO, получала на них высокие рейтинги и продавала инвесторам и пенсионным фондам. Чем всё закончилось, мы прекрасно помним.",
+      "Что происходит сейчас. Компании занимают огромные суммы на строительство дата-центров для ИИ. По оценкам Morgan Stanley и Moody's, вся стройка обойдётся больше чем в 3 трлн долларов. Только за 2025 год под ИИ выпустили долгов минимум на 200 млрд. И всё чаще эти долги не держат у себя, а упаковывают в ценные бумаги и продают дальше.",
+      "Пример первый, Meta. Она строит дата-центр Hyperion в Луизиане. Долг на 27 млрд долларов оформили не на саму Meta, а на отдельную компанию, где ей принадлежит всего 20%. Бумаги получили рейтинг A+, BlackRock купил их больше чем на 3 млрд.",
+      "Пример второй, CoreWeave. Компания занимает под залог видеокарт. В 2023 году такой кредит стоил около 15% годовых. В марте 2026-го заём на 8,5 млрд под те же чипы получил уже инвестиционный рейтинг. При этом топовая видеокарта может потерять половину цены за три года, а кредит рассчитан до 2032-го.",
+      "Пример третий, xAI. Компания Илона Маска заняла 5 млрд долларов, часть из них под 12,5% годовых.",
+      "Кто в итоге держит риск. JPMorgan ждёт, что в 2026 и 2027 годах долги дата-центров будут упаковывать в бумаги на 30–40 млрд долларов в год. Бумаги с инвестиционным рейтингом охотно берут страховые компании и пенсионные фонды. Риск уходит от тех, кто строит, к тем, кто просто хотел надёжный процент.",
+      "Первые звоночки. В сентябре управляющая компания PGIM впервые поставила в пакет кредитов жёсткий лимит: не больше 15% долгов, связанных с ИИ. Когда профессионалы сами начинают ограничивать себя, это стоит заметить.",
+      "Не 2008, но механика знакомая. Конечно, это ещё не означает повторения 2008 года. Арендаторы здесь не заёмщики без дохода, а крупнейшие техкомпании с длинными контрактами. Но механика узнаваемая: высокая доходность, сложная финансовая упаковка и риски, которые не всегда очевидны покупателю."
+    ],
+    "take": "Поэтому я бы внимательно смотрел, что именно лежит внутри подобных инструментов, прежде чем гнаться за красивыми процентами. Это касается и нас: если вам предлагают «инвестиции в ИИ» или «доход с дата-центров» под 15–20% годовых, первым делом спросите, что внутри и кто платит. Не можете получить понятный ответ — проходите мимо."
+  },
+  "uz": {
+    "title": "2008-yilgi ipoteka, faqat videokartalar bilan: nega sun'iy intellekt qarzlari meni xavotirga solyapti",
+    "summary": "Kripto joyida turibdi, chunki pul sun'iy intellektga ketdi. U yerda, data-markazlar qarzlari bozorida esa men 2008-yilgi inqiroz boshlangan sxemalarni taniyapman.",
+    "body": [
+      "Kripto hozir turg'unlikda va menimcha, sababi oddiy: 2026-yil sun'iy intellekt yili bo'ldi. Pul, e'tibor va tavakkalga ishtiyoq o'sha yoqqa ketdi. SI infratuzilmasi bozoriga qanchalik diqqat bilan qarasam, 2008-yilgi inqirozdan tanish sxemalarni shunchalik ko'p uchratyapman.",
+      "O'shanda qanday bo'lgan edi. Uoll-strit xavfli ipoteka kreditlarini paketlarga, ya'ni CDO'larga yig'ar, ularga yuqori reyting olar va investorlar hamda pensiya jamg'armalariga sotardi. Hammasi qanday tugaganini yaxshi eslaymiz.",
+      "Hozir nima bo'lyapti. Kompaniyalar SI uchun data-markazlar qurishga ulkan qarzlar olyapti. Morgan Stanley va Moody's hisobiga ko'ra, butun qurilish 3 trln dollardan oshadi. Faqat 2025-yilning o'zida SI uchun kamida 200 mlrd dollarlik qarz chiqarildi. Bu qarzlar tobora ko'proq o'zida saqlanmay, qimmatli qog'ozlarga o'ralib, boshqalarga sotilyapti.",
+      "Birinchi misol, Meta. U Luizianada Hyperion data-markazini quryapti. 27 mlrd dollarlik qarz Metaning o'ziga emas, alohida kompaniyaga rasmiylashtirildi, unda Metaga atigi 20% tegishli. Qog'ozlar A+ reytingini oldi, BlackRock ulardan 3 mlrd dollardan ko'prog'ini sotib oldi.",
+      "Ikkinchi misol, CoreWeave. Kompaniya videokartalarni garovga qo'yib qarz oladi. 2023-yilda bunday kredit yillik taxminan 15% turardi. 2026-yil martida xuddi shu chiplar garovidagi 8,5 mlrd dollarlik qarz allaqachon investitsion reytingni oldi. Holbuki eng yaxshi videokarta uch yilda narxining yarmini yo'qotishi mumkin, kredit esa 2032-yilgacha.",
+      "Uchinchi misol, xAI. Ilon Maskning kompaniyasi 5 mlrd dollar qarz oldi, uning bir qismi yillik 12,5% foizda.",
+      "Oxir-oqibat xavfni kim ko'taradi. JPMorgan 2026 va 2027-yillarda data-markazlar qarzlari yiliga 30–40 mlrd dollarlik qog'ozlarga o'raladi deb kutyapti. Investitsion reytingli qog'ozlarni sug'urta kompaniyalari va pensiya jamg'armalari bajonidil oladi. Xavf quruvchilardan shunchaki ishonchli foiz istaganlarga o'tyapti.",
+      "Birinchi qo'ng'iroqlar. Sentyabrda PGIM boshqaruv kompaniyasi ilk bor kreditlar paketiga qat'iy cheklov qo'ydi: SI bilan bog'liq qarzlar 15% dan oshmasin. Professionallar o'zlarini o'zlari cheklay boshlasa, bunga e'tibor berish kerak.",
+      "2008 emas, lekin mexanika tanish. Albatta, bu hali 2008-yil takrorlanadi degani emas. Bu yerdagi ijarachilar daromadsiz qarzdorlar emas, uzoq muddatli shartnomalarga ega eng yirik texnologiya kompaniyalari. Ammo mexanika tanish: yuqori daromad, murakkab moliyaviy qadoq va xaridorga har doim ham ko'rinmaydigan xavflar."
+    ],
+    "take": "Shuning uchun chiroyli foizlar ortidan quvishdan oldin, bunday vositalar ichida aynan nima borligini diqqat bilan ko'rib chiqqan bo'lardim. Bu bizga ham tegishli: agar sizga yillik 15–20% bilan «SI'ga investitsiya» yoki «data-markazlardan daromad» taklif qilishsa, avvalo ichida nima borligini va kim to'lashini so'rang. Tushunarli javob ololmasangiz, o'tib keting."
+  },
+  "en": {
+    "title": "2008 mortgages, but with graphics cards: why AI debt makes me uneasy",
+    "summary": "Crypto is going sideways because the money has moved into AI. And in the market for data-center debt, I keep recognising the schemes that set off the 2008 crisis.",
+    "body": [
+      "Crypto is stuck right now, and in my view the reason is simple: 2026 became the year of AI. Money, attention and appetite for risk all went there. The closer I look at the AI infrastructure market, the more often I recognise familiar schemes from the 2008 crisis.",
+      "How it worked back then. Wall Street bundled risky mortgages into packages called CDOs, got high credit ratings on them and sold them to investors and pension funds. We all remember how that ended.",
+      "What is happening now. Companies are borrowing huge sums to build data centers for AI. Morgan Stanley and Moody's estimate the whole build-out will cost more than $3 trillion. In 2025 alone, at least $200 billion of AI-related debt was issued. More and more of that debt isn't kept on the books but packaged into securities and sold on.",
+      "Example one, Meta. It is building the Hyperion data center in Louisiana. The $27 billion of debt sits not with Meta itself but with a separate company in which Meta owns just 20%. The bonds were rated A+, and BlackRock bought more than $3 billion of them.",
+      "Example two, CoreWeave. The company borrows against graphics cards. In 2023 such a loan cost around 15% a year. In March 2026, an $8.5 billion loan backed by the same kind of chips already earned an investment-grade rating. Yet a top-end GPU can lose half its value in three years, while the loan runs to 2032.",
+      "Example three, xAI. Elon Musk's company borrowed $5 billion, part of it at 12.5% a year.",
+      "Who ends up holding the risk. JPMorgan expects $30–40 billion a year of data-center debt to be packaged into securities in 2026 and 2027. Insurers and pension funds are keen buyers of investment-grade paper. The risk moves from those who build to those who simply wanted a safe return.",
+      "The first warning signs. In September, asset manager PGIM for the first time put a hard cap into a loan pool: no more than 15% AI-related debt. When professionals start limiting themselves, it is worth noticing.",
+      "Not 2008, but the mechanics are familiar. Of course, this doesn't mean 2008 is repeating. The tenants here aren't borrowers with no income but the biggest tech companies on long contracts. Still, the mechanics are recognisable: high yields, complex financial packaging and risks that aren't always obvious to the buyer."
+    ],
+    "take": "That's why I would look carefully at what exactly sits inside these instruments before chasing attractive returns. This applies to us too: if someone offers you an \"AI investment\" or \"data-center income\" at 15–20% a year, first ask what's inside and who pays. If you can't get a clear answer, walk away."
+  }
+}
