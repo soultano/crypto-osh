@@ -234,6 +234,8 @@ export const people: Person[] = [
   },
   {
     slug: "shokhrukh-mamadjonov",
+    photo: "/people/shokhrukh-mamadjonov.webp",
+    ogImage: "/people/shokhrukh-mamadjonov-og.jpg",
     cardTags: [0, 1, 2, 3],
     links: [{ label: "LinkedIn", url: "https://www.linkedin.com/in/shokhrukh-mamadjonov-b20997333" }],
     text: {
