@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { notFound } from "next/navigation";
 import { Analytics } from "@/components/Analytics";
 import { Header } from "@/components/Header";
+import { Motion } from "@/components/Motion";
 import { Footer } from "@/components/Sections";
 import { themeColors } from "@/lib/theme";
 import { defaultLocale, getDictionary, htmlLang, isLocale, locales, ogLocale } from "@/lib/i18n";
@@ -129,6 +130,7 @@ export default async function LocaleLayout({
         <Header locale={locale} nav={t.nav} />
         <main id="main">{children}</main>
         <Footer t={t} locale={locale} />
+        <Motion />
         {site.analytics && <Analytics id={site.analytics} />}
         <script
           type="application/ld+json"

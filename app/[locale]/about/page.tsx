@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { Contact, Mission, SectionHead } from "@/components/Sections";
 import { Rosette } from "@/components/Ornament";
+import { Art } from "@/components/Illustrations";
 import { getDictionary, type Locale } from "@/lib/i18n";
 import { pageMetadata } from "@/lib/meta";
 import { photos } from "@/lib/site";
@@ -19,6 +20,7 @@ export default async function About({ params }: { params: Promise<{ locale: stri
           <span className="eyebrow">{t.about.kicker}</span>
           <h1>{t.about.title}</h1>
         </div>
+        <Art name="madrasa" className="page-hero-art" />
       </section>
 
       <section className="section">
@@ -28,7 +30,7 @@ export default async function About({ params }: { params: Promise<{ locale: stri
               <p key={p}>{p}</p>
             ))}
           </div>
-          <div className="split-media arch">
+          <div className="split-media soft">
             <Image src={photos.groupOutdoor} alt={t.about.title} width={1600} height={1200} sizes="(max-width: 900px) 90vw, 45vw" />
           </div>
         </div>
@@ -51,7 +53,7 @@ export default async function About({ params }: { params: Promise<{ locale: stri
 
       <section className="section">
         <div className="container founder">
-          <div className="founder-photo arch">
+          <div className="founder-photo round">
             <Image src={photos.founder} alt={t.founder.name} width={1200} height={1600} sizes="(max-width: 900px) 70vw, 360px" />
           </div>
           <div>

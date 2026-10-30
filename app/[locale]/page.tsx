@@ -2,7 +2,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { Audience, Contact, Gallery, Mission, SectionHead, VideoGrid } from "@/components/Sections";
 import { NewsList } from "@/components/News";
-import { IkatBand, Rosette } from "@/components/Ornament";
+import { Rosette } from "@/components/Ornament";
+import { Art, Skyline } from "@/components/Illustrations";
 import { UsdtDisclaimer, UsdtRates } from "@/components/UsdtRates";
 import { CoinPrices } from "@/components/CoinPrices";
 import { newsText, pricesText } from "@/content/news";
@@ -48,12 +49,15 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
           </div>
           <div className="hero-art">
             <Rosette className="hero-rosette" size={420} />
-            <div className="hero-photo">
+            <Art name="doppi" className="hero-float hero-float-a" />
+            <Art name="anor" className="hero-float hero-float-b" />
+            <Art name="non" className="hero-float hero-float-c" />
+            <div className="hero-photo round">
               <Image src={photos.poster} alt="Crypto Osh" width={1024} height={1024} priority sizes="(max-width: 900px) 80vw, 420px" />
             </div>
           </div>
         </div>
-        <IkatBand />
+        <Skyline className="skyline" />
       </section>
 
       {prices && (
@@ -97,7 +101,7 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
 
       <section className="section">
         <div className="container split">
-          <div className="split-media arch">
+          <div className="split-media soft">
             <Image src={photos.group2} alt={t.gallery.title} width={1200} height={1600} sizes="(max-width: 900px) 90vw, 45vw" />
           </div>
           <div>
@@ -124,6 +128,7 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
               <h2>{t.businessTeaser.title}</h2>
               <p>{t.businessTeaser.text}</p>
             </div>
+            <Art name="plov" className="offer-art art-float" />
             <div className="offer-price">
               <strong>{t.businessTeaser.price}</strong>
               <Link className="btn" href={`/${locale}/business`}>

@@ -3,7 +3,8 @@ import Link from "next/link";
 import type { Dictionary, Locale } from "@/lib/i18n";
 import { newsText } from "@/content/news";
 import { photos, site, videos } from "@/lib/site";
-import { Divider, IkatBand, Rosette } from "./Ornament";
+import { Divider } from "./Ornament";
+import { Art, Dastarkhan } from "./Illustrations";
 import { VideoCard } from "./VideoCard";
 
 export function SectionHead({ kicker, title, intro }: { kicker?: string; title: string; intro?: string }) {
@@ -98,9 +99,11 @@ export function Contact({ t }: { t: Dictionary }) {
   const hasAny = group || telegram || instagram || phone;
   return (
     <section className="section contact" id="contact">
-      <IkatBand />
       <div className="container contact-inner">
-        <Rosette className="contact-rosette" size={180} />
+        <div className="art-scene contact-art" aria-hidden="true">
+          <Art name="plov" className="art-float" />
+          <Art name="choynak" className="art-float art-side" />
+        </div>
         <div>
           <h2>{t.contact.title}</h2>
           <p className="lead">{t.contact.text}</p>
@@ -139,7 +142,7 @@ export function Contact({ t }: { t: Dictionary }) {
 export function Footer({ t, locale }: { t: Dictionary; locale: Locale }) {
   return (
     <footer className="footer">
-      <IkatBand />
+      <Dastarkhan />
       <div className="container footer-inner">
         <div>
           <Link href={`/${locale}`} className="brand">

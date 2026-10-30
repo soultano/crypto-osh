@@ -3,7 +3,7 @@ import Link from "next/link";
 import type { Dictionary, Locale } from "@/lib/i18n";
 import type { Person } from "@/lib/people";
 
-// Portrait inside the arch frame, or the person's initials when there is no photo yet.
+// Round portrait, or the person's initials when there is no photo yet.
 export function PersonPhoto({
   person,
   name,
@@ -39,7 +39,7 @@ export function PersonCard({ person, locale, t }: { person: Person; locale: Loca
   const href = `/${locale}/people/${person.slug}`;
   return (
     <article className="person-card">
-      <div className="person-photo arch">
+      <div className="person-photo round">
         <PersonPhoto
           person={person}
           name={p.name}
