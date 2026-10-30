@@ -1,3 +1,4 @@
+import { Art } from "@/components/Illustrations";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ArticleShare } from "@/components/ArticleShare";
@@ -72,6 +73,7 @@ export default async function Article({ params }: { params: Params }) {
             <p key={i}>{p}</p>
           ))}
           <aside className="take">
+            <Art name="choynak" className="take-art" />
             <h2>{n.take}</h2>
             <p>{t.take}</p>
           </aside>

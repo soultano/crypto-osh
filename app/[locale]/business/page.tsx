@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Contact, SectionHead } from "@/components/Sections";
-import { IkatBand } from "@/components/Ornament";
+import { Art, Skyline } from "@/components/Illustrations";
 import { getDictionary, isLocale, type Locale } from "@/lib/i18n";
 import { customPageMetadata } from "@/lib/meta";
 import { photos, site } from "@/lib/site";
@@ -71,7 +71,8 @@ export default async function Business({ params }: { params: Promise<{ locale: s
               </Link>
             </div>
           </div>
-          <div className="split-media arch">
+          <div className="split-media soft has-art">
+            <Art name="choynak" className="media-art art-float" />
             <Image src={photos.plov} alt={b.heroAlt} width={1200} height={1600} priority sizes="(max-width: 900px) 90vw, 45vw" />
           </div>
         </div>
@@ -163,7 +164,7 @@ export default async function Business({ params }: { params: Promise<{ locale: s
       </section>
 
       <section className="cta-band">
-        <IkatBand />
+        <Skyline className="skyline skyline-top" />
         <div className="container center">
           <h2>{b.ctaTitle}</h2>
           <Link className="btn" href={`/${locale}/business#contact`}>

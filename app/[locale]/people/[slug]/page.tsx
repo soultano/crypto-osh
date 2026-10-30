@@ -2,7 +2,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { PersonPhoto } from "@/components/People";
 import { Contact } from "@/components/Sections";
-import { Rosette } from "@/components/Ornament";
+import { Art } from "@/components/Illustrations";
 import { getDictionary, isLocale, locales, type Locale } from "@/lib/i18n";
 import { customPageMetadata } from "@/lib/meta";
 import { getPerson, people } from "@/lib/people";
@@ -64,7 +64,7 @@ export default async function PersonPage({ params }: { params: Params }) {
             <Link href={`/${locale}/people`}>← {t.people.back}</Link>
           </nav>
           <div className="profile-head">
-            <div className="profile-photo arch">
+            <div className="profile-photo round">
               <PersonPhoto
                 person={person}
                 name={p.name}
@@ -120,7 +120,7 @@ export default async function PersonPage({ params }: { params: Params }) {
                 ))}
               </ul>
             </div>
-            <Rosette className="founder-rosette" size={90} />
+            <Art name="doppi" className="aside-art art-float" />
           </aside>
         </div>
         <div className="container">

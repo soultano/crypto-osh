@@ -1,3 +1,4 @@
+import { Art } from "@/components/Illustrations";
 import Link from "next/link";
 import { CoinPrices } from "@/components/CoinPrices";
 import { Converter } from "@/components/Converter";
@@ -48,6 +49,7 @@ export default async function Kurs({ params }: { params: Promise<{ locale: strin
           <h1>{p.title}</h1>
           <p className="lead">{p.lead}</p>
         </div>
+        <Art name="non" className="page-hero-art" />
       </section>
 
       <UsdtRates locale={locale} />

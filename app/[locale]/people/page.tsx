@@ -1,3 +1,4 @@
+import { Art } from "@/components/Illustrations";
 import { PersonCard } from "@/components/People";
 import { Contact } from "@/components/Sections";
 import { getDictionary, type Locale } from "@/lib/i18n";
@@ -23,6 +24,7 @@ export default async function People({ params }: { params: Promise<{ locale: str
           <h1>{t.people.title}</h1>
           <p className="lead">{t.people.intro}</p>
         </div>
+        <Art name="doppi" className="page-hero-art" />
       </section>
       <section className="section">
         <div className="container">

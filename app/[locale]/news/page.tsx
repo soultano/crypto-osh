@@ -1,3 +1,4 @@
+import { Art } from "@/components/Illustrations";
 import { NewsList } from "@/components/News";
 import { Contact } from "@/components/Sections";
 import { newsText } from "@/content/news";
@@ -24,6 +25,7 @@ export default async function News({ params }: { params: Promise<{ locale: strin
           <h1>{n.title}</h1>
           <p className="lead">{n.lead}</p>
         </div>
+        <Art name="choynak" className="page-hero-art" />
       </section>
       <section className="section">
         <div className="container">

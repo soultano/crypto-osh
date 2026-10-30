@@ -1,3 +1,4 @@
+import { Art } from "@/components/Illustrations";
 import { Contact, VideoGrid } from "@/components/Sections";
 import { getDictionary, type Locale } from "@/lib/i18n";
 import { pageMetadata } from "@/lib/meta";
@@ -17,6 +18,7 @@ export default async function Videos({ params }: { params: Promise<{ locale: str
           <h1>{t.videos.title}</h1>
           <p className="lead">{t.videos.intro}</p>
         </div>
+        <Art name="minaret" className="page-hero-art" />
       </section>
       <section className="section">
         <div className="container">
