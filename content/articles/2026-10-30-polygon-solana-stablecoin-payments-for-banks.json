@@ -1,0 +1,58 @@
+{
+  "slug": "2026-10-30-polygon-solana-stablecoin-payments-for-banks",
+  "date": "2026-10-30T19:33:27+05:00",
+  "tags": [
+    "stablecoins",
+    "polygon",
+    "solana",
+    "payments"
+  ],
+  "sources": [
+    {
+      "name": "CryptoSlate",
+      "url": "https://cryptoslate.com/central-banks-map-their-role-in-a-payments-system-shared-with-stablecoins/"
+    },
+    {
+      "name": "CoinDesk",
+      "url": "https://www.coindesk.com/business/2026/10/29/from-rivals-to-partners-polygon-and-solana-team-to-bring-stablecoin-payments-to-banks"
+    },
+    {
+      "name": "The Defiant",
+      "url": "https://thedefiant.io/converge/tradfi-and-fintech/polygon-extends-bank-to-stablecoin-payment-stack-to-solana"
+    },
+    {
+      "name": "Decrypt",
+      "url": "https://decrypt.co/381850/polygon-stablecoin-payments-open-money-stack-solana"
+    }
+  ],
+  "uz": {
+    "title": "Raqiblardan hamkorlarga: Polygon va Solana stablekoin to'lovlarini banklarga olib kelmoqda",
+    "summary": "Polygon bank va stablekoin o'rtasidagi to'lov infratuzilmasini Solana tarmog'iga kengaytirdi. Endi Solana'dagi bizneslar bitta integratsiya orqali bank mablag'lari, hamyonlar va xalqaro to'lovlarga ulanadi.",
+    "body": [
+      "Uzoq yillik ikki raqib endi birga ishlaydi. Polygon o'zining Open Money Stack deb nomlangan to'lov tizimini Solana'ga olib keldi. Bitta integratsiya Solana bizneslariga bankdan pul kiritish, ichki hamyonlar, tarmoqlararo o'tkazmalar va dunyo bo'ylab to'lovlarni beradi. Xalqaro to'lovlar bilan shug'ullanuvchi Kira kompaniyasi uni birinchilardan bo'lib ishlatmoqda.",
+      "Bu qadam Polygon Tron'ni qo'llab-quvvatlashni qo'shgani va Coinme'ni sotib olishni yakunlaganidan keyin keldi. Maqsad: Solana'dagi stablekoin faolligini Polygon'ning bank, hamyon va to'lov infratuzilmasi bilan bog'lash.",
+      "Markaziy banklar ham shu mavzuni o'ylayapti. CryptoSlate yozishicha, 29-oktabrda e'lon qilingan rasmiy xulosalarda markaziy banklar stablekoinlar bilan umumiy to'lov tizimidagi o'z rolini ko'rib chiqqan: hisob-kitobga kirish, infratuzilma, nazorat va muvofiqlashtirish. Foyda va xatarlar esa hali shartli deb baholanmoqda."
+    ],
+    "take": "USDT'da maosh oladigan o'zbekistonlik frilanserlar uchun bu stablekoinlar oddiy banklarga yaqinlashayotganining belgisi, xorijdan pul olish kelajakda soddaroq bo'lishi mumkin. Ammo bizda bir kunda hech narsa o'zgarmaydi: stablekoinni so'mga almashtirish hamon faqat NAPP litsenziyasiga ega provayderlar orqali. Kuzatib boramiz, banklarimiz va to'lov kompaniyalarimiz shunga o'xshash yechimlarni qachon qo'llay boshlaydi."
+  },
+  "ru": {
+    "title": "Из соперников в партнёры: Polygon и Solana ведут стейблкоин-платежи в банки",
+    "summary": "Polygon расширил свою инфраструктуру для платежей между банками и стейблкоинами на Solana. Бизнесы в сети Solana получат через одну интеграцию банковское пополнение, кошельки и международные выплаты.",
+    "body": [
+      "Два давних конкурента теперь работают вместе. Polygon запустил свою платёжную систему Open Money Stack на Solana. Одна интеграция даёт бизнесам в Solana пополнение с банковского счёта, встроенные кошельки, переводы между сетями и выплаты по всему миру. Одним из первых её начала использовать компания Kira, которая занимается трансграничными платежами.",
+      "Шаг последовал за добавлением поддержки Tron и закрытием сделки по покупке Coinme. Идея в том, чтобы связать стейблкоин-активность Solana с банковской, кошельковой и платёжной инфраструктурой Polygon.",
+      "Центробанки тоже думают об этом. Как пишет CryptoSlate, в официальных материалах от 29 октября центробанки описали свою роль в платёжной системе, которую они делят со стейблкоинами: доступ к расчётам, инфраструктура, надзор и координация. Выгоды и риски при этом пока оцениваются с оговорками."
+    ],
+    "take": "Для фрилансеров в Узбекистане, которые получают оплату в USDT, это знак того, что стейблкоины подходят всё ближе к обычным банкам и получать деньги из-за рубежа со временем может стать проще. Но у нас за день ничего не поменяется: менять стейблкоины на сумы по-прежнему можно только через провайдеров с лицензией НАПП. Будем смотреть, когда похожие решения появятся у наших банков и платёжных компаний."
+  },
+  "en": {
+    "title": "From rivals to partners: Polygon and Solana bring stablecoin payments to banks",
+    "summary": "Polygon has extended its bank-to-stablecoin payment infrastructure to Solana, letting Solana businesses connect bank funding, wallets and global payouts through a single integration.",
+    "body": [
+      "Two long-time rivals are now working together. Polygon has rolled out its payments system, called Open Money Stack, on Solana. One integration gives Solana businesses bank funding, embedded wallets, cross-chain transfers and global payouts. Cross-border payments firm Kira is among the first adopters.",
+      "The move follows Polygon adding Tron support and completing its acquisition of Coinme. The aim is to connect Solana's stablecoin activity with Polygon's banking, wallet and payment infrastructure.",
+      "Central banks are thinking about the same thing. As CryptoSlate reports, official summaries published on October 29 set out how central banks see their role in a payment system shared with stablecoins: settlement access, infrastructure, oversight and coordination, with benefits and risks still treated as conditional."
+    ],
+    "take": "For Uzbek freelancers paid in USDT, this is a sign that stablecoins are moving closer to ordinary banks, and receiving money from abroad could get simpler over time. But nothing changes here overnight: swapping stablecoins for soums is still done only through NAPP-licensed providers. We'll be watching for when local banks and payment companies adopt similar rails."
+  }
+}

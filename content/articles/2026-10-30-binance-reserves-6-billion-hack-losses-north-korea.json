@@ -1,0 +1,46 @@
+{
+  "slug": "2026-10-30-binance-reserves-6-billion-hack-losses-north-korea",
+  "date": "2026-10-30T19:33:27+05:00",
+  "tags": [
+    "binance",
+    "hack",
+    "north-korea",
+    "security"
+  ],
+  "sources": [
+    {
+      "name": "Gazeta.uz",
+      "url": "https://www.gazeta.uz/ru/2026/10/30/binance/"
+    }
+  ],
+  "uz": {
+    "title": "Binance xakerlik zararini qoplash uchun 6,34 mlrd dollar ajratdi, Shimoliy Koreya gumon ostida",
+    "summary": "Binance 6,3 mlrd dollarlik xakerlik hujumidan keyin foydalanuvchilar zararini qoplash uchun o'z hisobidan 6,34 mlrd dollardan ortiq mablag' ajratdi. Chainalysis va TRM Labs hujumni Shimoliy Koreyaning TraderTraitor guruhiga bog'lamoqda.",
+    "body": [
+      "Kripto tarixidagi eng yirik o'g'irlikdan bir kun o'tib Binance o'z javobini aniq raqam bilan aytdi. Birja foydalanuvchilar zararini qoplash uchun o'z mablag'idan 6,34 mlrd dollardan ortiq pul zaxiralagan. Birja so'zlariga ko'ra, taxminan 5 mlrd dollar o'g'irlangan tokenlarning aynan o'zida allaqachon saqlanmoqda, qolganini sotib olyapti va bu aktivlar navbatdagi zaxiralar hisobotida (proof-of-reserves) ko'rsatiladi. Xavfsizlik tizimi qayta qurilayotgan paytda pul yechish to'xtatib turilibdi.",
+      "Blokcheyn tahlilchilari Chainalysis va TRM Labs hujumni Shimoliy Koreya bilan bog'liq TraderTraitor guruhiga bog'lashdi. Aynan shu guruh Bybit xakerligida ham ayblangan. Chainalysis zararni 6,4 mlrd dollar deb baholaydi: mablag'lar 29-oktabr kuni AQSh sharqiy vaqti bilan soat 16:20 atrofida bir nechta blokcheyndagi Binance issiq hamyonlaridan chiqa boshlagan. Kun.uz yozishicha, dastlabki versiya shunday: DevOps muhandislaridan birining noutbuki buzilgan, xakerlarga esa taxminan 20 daqiqa yetgan.",
+      "Hamkorlar o'g'irlangan aktivlarning qariyb 3 mlrd dollarini muzlatib qo'yishdi, Binance ularni qaytarish uchun FBI bilan ishlayapti. Bozor ham silkindi: CoinDesk ma'lumotiga ko'ra, fyuchers likvidatsiyalari 1,57 mlrd dollarga yetdi, bitkoin 77 350 dollar atrofida savdolashdi."
+    ],
+    "take": "Binance'ning O'zbekistonda NAPP litsenziyasi yo'q va biz uni tavsiya qilmaymiz, ammo ko'pchilik hali ham xorijiy platformalarda kripto saqlaydi. Xulosa oddiy: eng katta birja ham bir kechada pul yechishni to'xtatishi mumkin, shuning uchun katta jamg'armani hech qaysi birjada ushlab turmang, oldi-sotdini esa litsenziyali provayderlar orqali qiling. Yana bir ogohlantirish: firibgarlar «Binance kompensatsiyasi» degan havolalar va soxta yordam xizmati xabarlarini yuborishi mumkin, haqiqiy qoplash uchun sizdan seed-fraza yoki to'lov so'ralmaydi."
+  },
+  "ru": {
+    "title": "Binance выделила $6,34 млрд на покрытие потерь от взлома, в атаке подозревают КНДР",
+    "summary": "Binance зарезервировала более $6,34 млрд собственных средств, чтобы покрыть потери пользователей после взлома на $6,3 млрд. Chainalysis и TRM Labs связывают атаку с северокорейской группировкой TraderTraitor.",
+    "body": [
+      "Через день после крупнейшей кражи в истории крипты Binance назвала конкретную цифру. Биржа отложила более $6,34 млрд своих денег на компенсацию пользователям. По её словам, около $5 млрд уже лежит в тех же токенах, что были украдены, остальное она докупает, а эти активы войдут в следующий отчёт о резервах (proof-of-reserves). Вывод средств пока остановлен, пока биржа перестраивает защиту.",
+      "Аналитические компании Chainalysis и TRM Labs обе указывают на TraderTraitor, подразделение, связанное с Северной Кореей. Эту же группировку обвиняли во взломе Bybit. Chainalysis оценивает ущерб в $6,4 млрд: деньги начали уходить из горячих кошельков Binance в нескольких блокчейнах 29 октября около 16:20 по восточному времени США. Как пишет Kun.uz, по предварительной версии взломали ноутбук одного из DevOps-инженеров, а хакерам хватило примерно 20 минут.",
+      "Партнёры заморозили около $3 млрд похищенного, Binance работает с ФБР, чтобы вернуть эти средства. Рынок тоже тряхнуло: по данным CoinDesk, ликвидации на фьючерсах подскочили до $1,57 млрд, биткоин торговался около $77 350."
+    ],
+    "take": "У Binance нет лицензии НАПП в Узбекистане, и мы её не советуем, но многие у нас всё ещё держат крипту на иностранных площадках. Вывод простой: даже самая большая биржа может за ночь закрыть вывод, поэтому крупные сбережения на бирже не держим, а покупаем и продаём через лицензированных провайдеров. И будьте осторожны: мошенники наверняка начнут рассылать ссылки про «компенсацию от Binance» и писать от имени поддержки. Настоящий возврат никогда не требует вашу seed-фразу или оплату."
+  },
+  "en": {
+    "title": "Binance sets aside $6.34 billion to cover hack losses as North Korea is blamed",
+    "summary": "Binance says it has reserved more than $6.34 billion of its own funds to make users whole after a $6.3 billion hack, while Chainalysis and TRM Labs link the attack to North Korea's TraderTraitor group.",
+    "body": [
+      "A day after the largest crypto theft on record, Binance has put a number on its response. The exchange reserved more than $6.34 billion of its own money to cover user losses. It says about $5 billion is already held in the same tokens that were stolen, it is buying the rest, and the assets will show up in its next proof-of-reserves report. Withdrawals remain paused while it overhauls security.",
+      "Blockchain analytics firms Chainalysis and TRM Labs both tie the attack to TraderTraitor, a North Korea-linked unit also blamed for the Bybit hack. Chainalysis puts the total at $6.4 billion and says funds began leaving Binance hot wallets on several blockchains around 4:20 p.m. Eastern time on October 29. According to Kun.uz, the preliminary version is that a DevOps engineer's laptop was compromised, and the attackers needed about 20 minutes.",
+      "Partners have frozen roughly $3 billion of the stolen assets, and Binance says it is working with the FBI to recover them. The market felt it too: per CoinDesk, futures liquidations jumped to $1.57 billion and bitcoin traded near $77,350."
+    ],
+    "take": "Binance holds no NAPP licence in Uzbekistan and we don't recommend it, but many people here still keep coins on foreign platforms. The lesson is simple: even the biggest exchange can freeze withdrawals overnight, so don't keep large savings on any exchange, and buy and sell through licensed providers. Also expect scammers to send 'Binance compensation' links and fake support messages; a real refund never asks for your seed phrase or a payment."
+  }
+}
