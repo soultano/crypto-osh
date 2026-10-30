@@ -10,7 +10,8 @@ import "../globals.css";
 
 export const dynamicParams = false;
 
-const themeScript = `try{if(localStorage.getItem("theme")==="dark")document.documentElement.dataset.theme="dark"}catch(e){}`;
+// A choice made with the toggle wins; until then the site follows the system theme.
+const themeScript = `try{var t=localStorage.getItem("theme");if(t!=="light"&&t!=="dark")t=matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light";document.documentElement.dataset.theme=t}catch(e){}`;
 
 export function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
