@@ -45,7 +45,7 @@ npm run build && npm start
 | `NEXT_PUBLIC_PHONE` | `+998901234567` |
 | `NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION` | код из Google Search Console (только сам код из `content="…"`) |
 | `NEXT_PUBLIC_YANDEX_VERIFICATION` | код из Яндекс Вебмастера (только сам код из `content="…"`) |
-| `NEXT_PUBLIC_GA_ID` | идентификатор Google Analytics 4, вида `G-ABC123XYZ`. Пусто = статистика выключена |
+| `NEXT_PUBLIC_GA_ID` | `G-4RPNR7LZ6P` (по умолчанию): идентификатор Google Analytics 4. `off` выключает статистику |
 
 Значения по умолчанию уже прописаны в `lib/site.ts`, переменные нужны только чтобы их поменять. Пустой телефон скрывает кнопку звонка. Секретов в репозитории нет и быть не должно: токен бота хранится только в переменных Vercel.
 
@@ -111,7 +111,7 @@ npm run build && npm start
 ## Статистика: Google Analytics 4
 
 1. analytics.google.com → «Начать измерение» → аккаунт `Crypto Osh` → ресурс `cryptoosh.uz`, часовой пояс Ташкент, валюта UZS → поток «Веб» → адрес `https://cryptoosh.uz`.
-2. Скопировать «Идентификатор потока данных» (`G-…`) в `NEXT_PUBLIC_GA_ID` на Vercel → Redeploy.
+2. Идентификатор `G-4RPNR7LZ6P` уже прописан в `lib/site.ts`. Другой ресурс: его `G-…` в `NEXT_PUBLIC_GA_ID` на Vercel → Redeploy.
 3. В GA: «Администратор → Специальные определения» → создать параметры событий `method`, `partner`, `channel`, `link_text`, `link_url`, `link_domain`, чтобы они были видны в отчётах.
 
 Что считается само: визиты, источники, страны и города, устройства, страницы. Сверх этого сайт шлёт события кликов:
