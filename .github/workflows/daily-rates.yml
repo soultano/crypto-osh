@@ -1,6 +1,7 @@
 # Refreshes the USDT/UZS rates table twice a day (08:00 and 18:00 Tashkent)
 # from each exchanger's own API, commits content/usdt-rates.json to main so
-# Vercel redeploys the home page, then (morning only) posts the table to Telegram.
+# Vercel redeploys the home page, saves a crypto price snapshot
+# (content/prices-snapshot.json) as the site's fallback, then (morning only) posts the table to Telegram.
 # Secrets (repo → Settings → Secrets and variables → Actions):
 #   ASTERIUM_API_USER       login for shop-rates.asterium.dev
 #   ASTERIUM_API_PASS       password for shop-rates.asterium.dev
@@ -13,6 +14,11 @@ on:
     - cron: "0 3 * * *"
     - cron: "0 13 * * *"
   workflow_dispatch:
+    inputs:
+      post:
+        description: "Post the table to the Telegram channel"
+        type: boolean
+        default: true
 
 permissions:
   contents: write
@@ -31,6 +37,11 @@ jobs:
         with:
           node-version: 24
 
+      - name: Save a snapshot of crypto prices
+        # The site's fallback when its own live requests fail (lib/prices.ts).
+        continue-on-error: true
+        run: node scripts/rates/prices.mts
+
       - name: Fetch today's rates
         env:
           ASTERIUM_API_USER: ${{ secrets.ASTERIUM_API_USER }}
@@ -39,7 +50,7 @@ jobs:
 
       - name: Commit and push
         run: |
-          git add content/usdt-rates.json
+          git add content/usdt-rates.json content/prices-snapshot.json
           git config user.name "Crypto Osh Rates"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git commit -m "USDT rates for $(TZ=Asia/Tashkent date +%F)"
@@ -48,7 +59,7 @@ jobs:
 
       - name: Post to Telegram
         # Once a day: the evening run only refreshes the site.
-        if: github.event.schedule != '0 13 * * *'
+        if: github.event_name == 'schedule' && github.event.schedule != '0 13 * * *' || github.event_name == 'workflow_dispatch' && inputs.post
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_NEWS_CHAT_ID: ${{ secrets.TELEGRAM_NEWS_CHAT_ID }}
