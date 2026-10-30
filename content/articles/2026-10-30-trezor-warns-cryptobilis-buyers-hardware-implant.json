@@ -1,0 +1,54 @@
+{
+  "slug": "2026-10-30-trezor-warns-cryptobilis-buyers-hardware-implant",
+  "date": "2026-10-30T19:33:27+05:00",
+  "tags": [
+    "trezor",
+    "security",
+    "hardware-wallet"
+  ],
+  "sources": [
+    {
+      "name": "Decrypt",
+      "url": "https://decrypt.co/382216/trezor-warns-cryptobilis-buyers-after-report-of-hardware-implant-in-safe-5"
+    },
+    {
+      "name": "Cointelegraph",
+      "url": "https://cointelegraph.com/news/trezor-cryptobilis-wallet-implant-funds-warning"
+    },
+    {
+      "name": "The Block",
+      "url": "https://www.theblock.co/news/ecosystems/2026-10-30-trezor-reports-suspected-hardware-implant-432196"
+    },
+    {
+      "name": "The Defiant",
+      "url": "https://thedefiant.io/news/security/trezor-urges-cryptobilis-buyers-to-move-funds-after-implant-report"
+    }
+  ],
+  "uz": {
+    "title": "Trezor CryptoBilis xaridorlarini mablag'ni ko'chirishga chaqirdi: hamyonda yashirin qurilma gumoni",
+    "summary": "Trezor mart oyidan beri CryptoBilis qayta sotuvchisidan qurilma sotib olganlarni kriptoni ko'chirishga chaqirdi. Sababi: Trezor Safe 5 ichida apparat implanti topilgani haqidagi ishonchli xabar.",
+    "body": [
+      "Trezor'ga CryptoBilis qayta sotuvchisi orqali sotilgan Safe 5 hamyoni ichida begona apparat implanti borligi haqida xabar kelgan. Kompaniya qurilmani hali o'zi tekshirmagan, lekin xabarni jiddiy va ishonchli deb hisoblaydi. Shu sabab mart oyidan beri CryptoBilis'dan xarid qilgan barcha mijozlarga mablag'larini yangi hamyonga o'tkazishni maslahat berdi.",
+      "Trezor ma'lumotiga ko'ra, hozircha CryptoBilis xaridorlaridan hech kim pul yo'qotganini aytmagan. Bu ogohlantirish Ledger bilan bog'liq shunga o'xshash voqeadan ko'p o'tmay keldi: Singapur politsiyasi 10-sentabrdan boshlab buzilgan Ledger hamyonlari bo'yicha kamida ikki holat va 2,7 mln dollar zararni qayd etgan. Ledger esa jamoatchilikni faqat 9-oktabrda ogohlantirgan edi."
+    ],
+    "take": "Apparat hamyonning xavfsizligi u sizning qo'lingizga qaysi yo'l bilan kelganiga bog'liq. Qurilmani faqat ishlab chiqaruvchining rasmiy do'konidan oling, tasodifiy sotuvchilar va qo'lda ishlatilgan qurilmalardan voz keching, oldindan yozilgan seed-frazali hamyonni hech qachon qabul qilmang. Agar Trezor'ni CryptoBilis'dan olgan bo'lsangiz, kompaniya aytganidek, mablag'ni yangi seed-frazali yangi hamyonga ko'chiring."
+  },
+  "ru": {
+    "title": "Trezor просит покупателей CryptoBilis перевести средства из-за подозрения на «жучок»",
+    "summary": "Trezor призвал всех, кто покупал устройства у реселлера CryptoBilis с марта, перевести крипту после достоверного сообщения об аппаратном импланте внутри Trezor Safe 5.",
+    "body": [
+      "В Trezor поступило сообщение, что внутри кошелька Safe 5, проданного через реселлера CryptoBilis, нашли посторонний аппаратный имплант. Сама компания устройство ещё не изучала, но считает сообщение достоверным. Поэтому всем, кто покупал у CryptoBilis с марта, советуют перевести средства на новый кошелёк.",
+      "По словам Trezor, пока ни один покупатель CryptoBilis не сообщил о потере денег. Предупреждение прозвучало вскоре после похожей истории с Ledger: полиция Сингапура насчитала как минимум два случая и $2,7 млн потерь из-за вскрытых кошельков Ledger начиная с 10 сентября, тогда как публичное предупреждение Ledger вышло только 9 октября."
+    ],
+    "take": "Аппаратный кошелёк надёжен ровно настолько, насколько надёжен путь, которым он попал к вам. Покупайте только в официальном магазине производителя, не берите устройства у случайных продавцов и с рук, и никогда не принимайте кошелёк с уже записанной seed-фразой. Если ваш Trezor куплен у CryptoBilis, сделайте то, что просит компания: переведите средства на новый кошелёк с новой фразой."
+  },
+  "en": {
+    "title": "Trezor tells CryptoBilis buyers to move funds over a suspected wallet implant",
+    "summary": "Trezor has urged anyone who bought a device from reseller CryptoBilis since March to move their crypto after a credible report of a hardware implant inside a Trezor Safe 5.",
+    "body": [
+      "Trezor received a report that a Safe 5 hardware wallet sold through the reseller CryptoBilis had a hardware implant inside. The company has not examined the device yet, but says it treats the report as credible and advises everyone who bought from CryptoBilis since March to move their funds to a new wallet.",
+      "So far, according to Trezor, no CryptoBilis buyer has reported losing money. The warning comes soon after a similar story with Ledger: Singapore police counted at least two cases and $2.7 million in losses from tampered Ledger wallets starting September 10, a month before Ledger's public alert on October 9."
+    ],
+    "take": "A hardware wallet is only as safe as the route it took to reach you. Buy only from the manufacturer's official store, avoid random sellers and second-hand devices, and never accept a wallet that comes with a pre-written seed phrase. If you bought your Trezor from CryptoBilis, do what the company asks and move your funds to a new wallet with a fresh seed."
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "slug": "2026-10-30-kucoin-exits-russia-belarus-sanctions",
+  "date": "2026-10-30T19:33:27+05:00",
+  "tags": [
+    "kucoin",
+    "russia",
+    "sanctions",
+    "exchanges"
+  ],
+  "sources": [
+    {
+      "name": "Cointelegraph",
+      "url": "https://cointelegraph.com/news/kucoin-services-russia-belarus-suspended"
+    },
+    {
+      "name": "CoinDesk",
+      "url": "https://www.coindesk.com/policy/2026/10/29/kucoin-exits-russia-and-belarus-as-crypto-exchanges-withdraw-from-western-sanctioned-markets"
+    }
+  ],
+  "uz": {
+    "title": "KuCoin Rossiya va Belarusdan chiqmoqda: MEXC va Bitget'dan keyin navbatdagi birja",
+    "summary": "KuCoin qonun va regulyator talablariga rioya qilishni sabab qilib, Rossiya va Belarusdagi xizmatlarini to'xtatib, hisoblarni yopmoqda. MEXC va Bitget shu oy boshida xuddi shunday qaror e'lon qilgan edi.",
+    "body": [
+      "KuCoin kriptobirjasi Rossiya va Belarusdagi foydalanuvchilarga xizmat ko'rsatishni to'xtatmoqda. Birja buni qonun va regulyator talablariga rioya qilish bilan izohladi, ikkala davlat ham xalqaro sanksiyalar ostida. Bu mamlakatlardagi hisoblar yopilmoqda.",
+      "KuCoin yolg'iz emas: MEXC va Bitget oktabr boshida shunga o'xshash chiqishni e'lon qilgan. Buyuk Britaniyada esa HTX (sobiq Huobi) regulyator FCA bilan kelishuvga erishgach, mamlakatdan chiqdi: britaniyalik mijozlardan depozit qabul qilish to'xtatildi, mavjud foydalanuvchilar pul yechish uchun bir martalik 48 soatlik oynaga ruxsat so'rashi kerak."
+    ],
+    "take": "O'zbekistonda ko'pchilik Rossiya bilan ishlaydi va ba'zilar o'sha xorijiy birjalardan foydalanadi. Bu voqea shuni ko'rsatadi: litsenziyasiz xorijiy platforma siz yashamaydigan davlatning qoidalari sabab ham hisobingizni yopib qo'yishi mumkin. Shuning uchun kriptoni O'zbekistonda NAPP litsenziyasiga ega, qoidalari aniq provayderlar orqali sotib olish va sotish ishonchliroq."
+  },
+  "ru": {
+    "title": "KuCoin уходит из России и Беларуси вслед за MEXC и Bitget",
+    "summary": "KuCoin приостанавливает работу и закрывает аккаунты в России и Беларуси, ссылаясь на требования закона и регуляторов. MEXC и Bitget объявили о похожих шагах в начале месяца.",
+    "body": [
+      "Криптобиржа KuCoin отключает пользователей из России и Беларуси. Причиной биржа назвала соблюдение законов и требований регуляторов, обе страны находятся под международными санкциями. Аккаунты в этих странах закрываются.",
+      "KuCoin не первая: MEXC и Bitget объявили о похожем уходе ещё в начале октября. А в Великобритании HTX (бывший Huobi) ушла с рынка после мирового соглашения с регулятором FCA: биржа перестала принимать депозиты от британцев, а нынешним клиентам для вывода нужно запросить одноразовое 48-часовое окно."
+    ],
+    "take": "Многие в Узбекистане работают с Россией, и кто-то пользуется теми же иностранными биржами. История показывает: нелицензированная зарубежная площадка может закрыть ваш аккаунт из-за правил страны, в которой вы даже не живёте. Поэтому надёжнее покупать и продавать крипту через провайдеров с лицензией НАПП, где правила понятны и прописаны."
+  },
+  "en": {
+    "title": "KuCoin exits Russia and Belarus, following MEXC and Bitget",
+    "summary": "KuCoin is suspending services and closing accounts in Russia and Belarus, citing legal and regulatory compliance. MEXC and Bitget announced similar moves earlier this month.",
+    "body": [
+      "Crypto exchange KuCoin is cutting off users based in Russia and Belarus. It cites legal and regulatory compliance; both countries are under international sanctions. Accounts in the two countries are being closed.",
+      "KuCoin isn't the first: MEXC and Bitget announced similar exits earlier in October. In the UK, HTX (formerly Huobi) has also left after settling with the regulator FCA. It stopped taking deposits from British customers, and existing users must request a one-time 48-hour window to withdraw."
+    ],
+    "take": "Many people in Uzbekistan do business with Russia, and some use the same foreign exchanges. This shows that an unlicensed foreign platform can close your account because of rules in a country you don't even live in. That's why buying and selling through NAPP-licensed providers in Uzbekistan, where the rules are clear, is the safer path."
+  }
+}
