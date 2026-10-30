@@ -1,0 +1,58 @@
+{
+  "slug": "2026-10-30-nyse-owner-ice-brings-hyperliquid-perpetual-futures-to",
+  "date": "2026-10-30T19:51:02+05:00",
+  "tags": [
+    "hyperliquid",
+    "derivatives",
+    "regulation",
+    "usa"
+  ],
+  "sources": [
+    {
+      "name": "Cointelegraph",
+      "url": "https://cointelegraph.com/markets/hype-price-all-time-high-ice-us-hyperliquid-perps"
+    },
+    {
+      "name": "Decrypt",
+      "url": "https://decrypt.co/382149/hyperliquid-hype-jumps-nyse-owner-ice-perpetual-futures-us"
+    },
+    {
+      "name": "The Defiant",
+      "url": "https://thedefiant.io/news/defi/ice-plans-us-regulated-hyperliquid-perps-with-tradexyz"
+    },
+    {
+      "name": "The Block",
+      "url": "https://www.theblock.co/news/business/2026-10-29-ice-tradexyz-hyperliquid-perpetual-futures-us-432132"
+    }
+  ],
+  "uz": {
+    "title": "Nyu-York birjasi egasi ICE Hyperliquid fyucherslarini AQShga olib kirmoqchi",
+    "summary": "Nyu-York fond birjasi (NYSE) egasi ICE Trade[XYZ] bilan Hyperliquid asosidagi muddatsiz fyucherslarni AQShda qonuniy tarzda ishga tushirish bo'yicha kelishdi. Shu xabardan keyin HYPE tokeni 13–15% ko'tarildi.",
+    "body": [
+      "Qisqasi: an'anaviy moliyaning eng katta o'yinchilaridan biri DeFi platformasiga yo'l ochmoqda. NYSE egasi Intercontinental Exchange (ICE) Trade[XYZ] kompaniyasi bilan shartnoma imzoladi. Maqsad: Hyperliquid ustiga qurilgan muddatsiz fyucherslarni AQShda regulyator nazorati ostida ishga tushirish.",
+      "ICE Trade[XYZ]'da ozchilik ulushini ham sotib oladi. Oddiy investorlar bu fyucherslarga litsenziyaga ega fyuchers brokerlari orqali kira oladi, ular orasida ICE'ning OKX bilan qo'shma korxonasi ham bor.",
+      "Muddatsiz fyuchers (perp) bu amal qilish muddati yo'q kontrakt, odatda kredit yelkasi bilan savdo qilinadi. Xabardan keyin Hyperliquid'ning HYPE tokeni turli manbalarga ko'ra 13–15% o'sdi, Cointelegraph esa token tarixiy maksimumiga yaqinlashganini yozdi."
+    ],
+    "take": "Biz uchun asosiy signal: Uoll-strit DeFi'ni chetlab o'tmayapti, balki uni o'z qonuniy doirasiga olib kirmoqda. Ammo yelkali fyucherslar eng xavfli vositalardan biri, bir kunlik tebranish depozitni nolga tushirishi mumkin. O'zbekistonda kriptoni faqat NAPP litsenziyasiga ega provayderlar orqali sotib oling va sotishni unutmang, litsenziyasiz xorijiy platformalarda yelka bilan o'ynash qonuniy ham, moliyaviy ham xavf."
+  },
+  "ru": {
+    "title": "Владелец Нью-Йоркской биржи ICE хочет вывести фьючерсы Hyperliquid в США",
+    "summary": "ICE, владелец NYSE, договорился с Trade[XYZ] о запуске регулируемых бессрочных фьючерсов на базе Hyperliquid в США. Токен HYPE после новости вырос на 13–15%.",
+    "body": [
+      "Коротко: один из главных игроков традиционных финансов открывает дверь для DeFi-платформы. Intercontinental Exchange (ICE), которому принадлежит Нью-Йоркская фондовая биржа, подписал соглашение с компанией Trade[XYZ]. Цель — запустить в США бессрочные фьючерсы на базе Hyperliquid под надзором регулятора.",
+      "ICE также берёт миноритарную долю в Trade[XYZ]. Розничные инвесторы получат доступ через лицензированных фьючерсных брокеров, среди них и совместное предприятие ICE с OKX.",
+      "Бессрочный фьючерс (perp) — это контракт без даты истечения, обычно с кредитным плечом. На новости токен Hyperliquid HYPE подорожал на 13–15% по разным данным, а Cointelegraph отметил, что он подбирается к историческому максимуму."
+    ],
+    "take": "Главный сигнал для нас: Уолл-стрит не обходит DeFi стороной, а встраивает его в свои законные рамки. Но фьючерсы с плечом — один из самых рискованных инструментов, один резкий день может обнулить депозит. В Узбекистане покупать и продавать крипту стоит только через провайдеров с лицензией НАПП, а торговля с плечом на нелицензированных иностранных площадках — риск и по закону, и для кошелька."
+  },
+  "en": {
+    "title": "NYSE owner ICE moves to bring Hyperliquid perpetual futures to the US",
+    "summary": "ICE, the owner of the New York Stock Exchange, struck a deal with Trade[XYZ] to launch regulated Hyperliquid-based perpetual futures in the US. The HYPE token rose 13–15% on the news.",
+    "body": [
+      "In short: one of traditional finance's biggest players is opening a door for a DeFi platform. Intercontinental Exchange (ICE), which owns the NYSE, signed an agreement with Trade[XYZ] to launch perpetual futures built on Hyperliquid in the United States under regulatory oversight.",
+      "ICE is also taking a minority stake in Trade[XYZ]. Retail traders are expected to get access through regulated futures brokers, including ICE's joint venture with OKX.",
+      "A perpetual future (perp) is a contract with no expiry date, usually traded with leverage. After the announcement, Hyperliquid's HYPE token climbed 13–15% depending on the source, and Cointelegraph noted it was edging toward an all-time high."
+    ],
+    "take": "The key signal for us: Wall Street isn't ignoring DeFi, it is pulling it inside its own legal framework. But leveraged futures are among the riskiest tools out there, and one sharp move can wipe out a deposit. In Uzbekistan, buy and sell crypto only through NAPP-licensed providers; trading with leverage on unlicensed foreign platforms is a risk both legally and for your wallet."
+  }
+}
