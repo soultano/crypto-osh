@@ -1,0 +1,46 @@
+{
+  "slug": "2026-10-30-binance-hot-wallets-drained-eip-7702",
+  "date": "2026-10-30T14:45:00+05:00",
+  "tags": ["binance", "security", "hack", "ethereum"],
+  "sources": [
+    { "name": "crypto.news (EIP-7702, Binance statement, 30.10.2026)", "url": "https://crypto.news/binance-hack-eip-7702-wallet-attack/" },
+    { "name": "TRM Labs (on-chain totals by network)", "url": "https://www.trmlabs.com/resources/blog/north-korea-steals-usd-6-36-billion-from-binance-in-the-largest-hack-in-history" },
+    { "name": "Techreport (how EIP-7702 delegation may have been used)", "url": "https://techreport.com/news/software/binance-hack-eip-7702-delegation/" }
+  ],
+  "uz": {
+    "title": "Binance qanday qilib $6 mlrdga tushdi? Xakerlar birja hamyonlarini EIP-7702 orqali bo'shatgan bo'lishi mumkin",
+    "summary": "Binance xakerlarining \"saxiyligi\" yana hayratda qoldirdi: ular yana oddiy foydalanuvchilarning emas, birjaning o'z mablag'larini o'g'irlashdi. Oncheyn-tahlilchilar ma'lumotiga ko'ra, zarar $5,64 mlrdga yetdi.",
+    "body": [
+      "Nima bo'ldi. Oncheyn-tahlilchilar birjaning issiq hamyonlari (hot wallets) EIP-7702 mexanizmi orqali buzilgan bo'lishi mumkinligini aniqlashdi. Xaker zararli delegatsiya shartnomasi yordamida birja nomidan tranzaksiyalarni amalga oshirgan bo'lishi ehtimol.",
+      "Hujum sxemasi qisqacha. 1) EIP-7702 orqali zararli shartnoma ishga tushirilgan. 2) Birjaning bir nechta hamyonidan aktivlarni yechish funksiyasi faollashtirilgan. 3) Katta miqdordagi USDT, USDC, ETH va boshqa tokenlar begona manzillarga o'tkazilgan.",
+      "Qancha chiqib ketdi. Xususan, yangi hamyonga 195 460 ETH va bitta manzildan 780 mln USDC chiqarib ketilgan. Mutaxassislarning taxminicha, xakerlar xususiy kalitlarni (private keys) emas, aynan EIP-7702 tasdiqlash imzolarini qo'lga kiritgan.",
+      "UPDATE: zarar $5,64 mlrdga yetdi. Tahlillar birja bilan bog'liq hamyonlardan quyidagi mablag'lar chiqib ketganini ko'rsatmoqda: Ethereum — $3,528 mlrd; Bitcoin — $1,5 mlrd; Tron — $628 mln; Arbitrum, Optimism va Base — $38 mln.",
+      "Kim turibdi. Hujum ortida kim turgani hozircha noma'lum, Shimoliy Koreya izi esa shunchaki faraz. Sun'iy intellektning ishi bo'ldimi yoki Vitalik yangi funksiyalarini oxiriga yetkazmadimi, vaqt ko'rsatadi."
+    ],
+    "take": "Raqamlar hali o'zgarib turibdi: bu oncheyn-tahlilchilarning dastlabki hisob-kitoblari, Binance hujumning aniq sababini hali e'lon qilmadi. Birja foydalanuvchilar mablag'lari xavfsizligini va zararni SAFU fondi hamda o'z mablag'lari hisobidan qoplashini aytdi. Xulosa eski: katta summalarni birjada ushlab turmang, uzoq muddatli jamg'armani o'zingizning hamyoningizda saqlang, sotib olish va sotishni esa NAPP litsenziyasiga ega platformalarda qiling."
+  },
+  "ru": {
+    "title": "Как Binance потеряла $6 млрд? Хакеры могли опустошить кошельки биржи через EIP-7702",
+    "summary": "«Щедрость» хакеров Binance снова удивила: они опять украли не у обычных пользователей, а собственные средства биржи. По данным ончейн-аналитиков, ущерб дошёл до $5,64 млрд.",
+    "body": [
+      "Что случилось. Ончейн-аналитики выяснили, что горячие кошельки биржи (hot wallets), возможно, были взломаны через механизм EIP-7702. Вероятно, хакер с помощью вредоносного контракта делегирования проводил транзакции от имени биржи.",
+      "Схема атаки коротко. 1) Через EIP-7702 запущен вредоносный контракт. 2) Активирована функция вывода активов с нескольких кошельков биржи. 3) Крупные суммы в USDT, USDC, ETH и других токенах переведены на чужие адреса.",
+      "Сколько ушло. В частности, на новый кошелёк выведено 195 460 ETH, а с одного адреса — 780 млн USDC. По предположению специалистов, хакеры получили не приватные ключи (private keys), а именно подписи-разрешения EIP-7702.",
+      "UPDATE: ущерб дошёл до $5,64 млрд. Анализ показывает, что с кошельков, связанных с биржей, ушли такие суммы: Ethereum — $3,528 млрд; Bitcoin — $1,5 млрд; Tron — $628 млн; Arbitrum, Optimism и Base — $38 млн.",
+      "Кто стоит за атакой. Пока неизвестно, а северокорейский след — всего лишь версия. Сработал ли искусственный интеллект или Виталик не довёл до ума новые функции, покажет время."
+    ],
+    "take": "Цифры ещё меняются: это первые подсчёты ончейн-аналитиков, точную причину взлома Binance пока не назвала. Биржа заявила, что средства пользователей в безопасности, а ущерб она покроет из фонда SAFU и собственных денег. Вывод старый: не держите крупные суммы на бирже, долгосрочные накопления храните в своём кошельке, а покупайте и продавайте крипту на площадках с лицензией НАПП."
+  },
+  "en": {
+    "title": "How did Binance lose $6 billion? Hackers may have drained the exchange's wallets via EIP-7702",
+    "summary": "The Binance hackers' \"generosity\" surprised everyone again: once more they stole the exchange's own funds rather than ordinary users'. According to on-chain analysts, the damage has reached $5.64 billion.",
+    "body": [
+      "What happened. On-chain analysts found that the exchange's hot wallets may have been compromised through the EIP-7702 mechanism. The hacker likely used a malicious delegation contract to send transactions on the exchange's behalf.",
+      "The attack in short. 1) A malicious contract was activated via EIP-7702. 2) A function withdrawing assets from several of the exchange's wallets was triggered. 3) Large amounts of USDT, USDC, ETH and other tokens were sent to outside addresses.",
+      "How much left. In particular, 195,460 ETH went to a new wallet and 780 million USDC left a single address. Specialists believe the hackers obtained not private keys but EIP-7702 authorization signatures.",
+      "UPDATE: losses reach $5.64 billion. Analysis shows these amounts left wallets linked to the exchange: Ethereum — $3.528 billion; Bitcoin — $1.5 billion; Tron — $628 million; Arbitrum, Optimism and Base — $38 million.",
+      "Who is behind it. Still unknown, and the North Korean trail is just a hypothesis. Whether it was AI at work or Vitalik didn't finish polishing his new features, time will tell."
+    ],
+    "take": "The numbers are still moving: these are on-chain analysts' first estimates, and Binance has not yet named the exact cause. The exchange said user funds are safe and that it will cover the losses from its SAFU fund and its own money. The lesson is the old one: don't keep large sums on an exchange, keep long-term savings in your own wallet, and buy and sell crypto on NAPP-licensed platforms."
+  }
+}
