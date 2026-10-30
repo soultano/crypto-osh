@@ -3,8 +3,8 @@ import { gaId } from "./lib/site";
 
 const isDev = process.env.NODE_ENV !== "production";
 
-// Google Analytics hosts, allowed only when NEXT_PUBLIC_GA_ID is set.
-const ga = gaId(process.env.NEXT_PUBLIC_GA_ID)
+// Google Analytics hosts, allowed only while analytics is on.
+const ga = gaId()
   ? " https://www.googletagmanager.com https://*.google-analytics.com https://*.analytics.google.com"
   : "";
 

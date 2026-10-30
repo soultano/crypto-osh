@@ -12,9 +12,10 @@ function safeUrl(value: string | undefined, hosts: string[]): string {
   }
 }
 
-// Google Analytics 4 measurement id, e.g. G-ABC123XYZ. Empty turns analytics off.
-export function gaId(value: string | undefined): string {
-  return value && /^G-[A-Z0-9]{4,20}$/.test(value) ? value : "";
+// Google Analytics 4 measurement id of cryptoosh.uz. NEXT_PUBLIC_GA_ID
+// overrides it; "off" turns analytics off.
+export function gaId(value = process.env.NEXT_PUBLIC_GA_ID || "G-4RPNR7LZ6P"): string {
+  return /^G-[A-Z0-9]{4,20}$/.test(value) ? value : "";
 }
 
 // Search console verification codes are short tokens; anything else is dropped.
@@ -33,7 +34,7 @@ export const site = {
     instagram: safeUrl(process.env.NEXT_PUBLIC_INSTAGRAM_URL || "https://www.instagram.com/uzsoul/", ["instagram.com", "www.instagram.com"]),
     phone: process.env.NEXT_PUBLIC_PHONE || "", // e.g. +998901234567
   },
-  analytics: gaId(process.env.NEXT_PUBLIC_GA_ID),
+  analytics: gaId(),
   // Google Search Console / Yandex Webmaster "meta tag" verification codes.
   verification: {
     google: token(process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION),
