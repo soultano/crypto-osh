@@ -4,8 +4,9 @@ import { useEffect } from "react";
 import type { Locale } from "@/lib/i18n";
 import { themeColors } from "@/lib/theme";
 
-// Light by default; the choice is kept in localStorage. The inline script in
-// the layout sets <html data-theme> before paint, so this button only flips it.
+// Follows the system theme until the visitor picks one; the choice is kept in
+// localStorage. The inline script in the layout sets <html data-theme> before
+// paint, so this button only flips it.
 // Both icons are rendered and CSS shows the one for the current theme, so the
 // server HTML never has to know which theme the visitor picked.
 
@@ -20,9 +21,23 @@ const labels: Record<Locale, string> = {
 };
 
 export function ThemeToggle({ locale }: { locale: Locale }) {
-  // The browser bar follows a stored dark choice too.
   useEffect(() => {
+    // The browser bar follows a dark theme too.
     if (document.documentElement.dataset.theme === "dark") setChromeColor("dark");
+
+    // Without a manual choice, switch along with the system theme.
+    const media = matchMedia("(prefers-color-scheme: dark)");
+    const follow = () => {
+      try {
+        const stored = localStorage.getItem("theme");
+        if (stored === "light" || stored === "dark") return;
+      } catch {}
+      const next = media.matches ? "dark" : "light";
+      document.documentElement.dataset.theme = next;
+      setChromeColor(next);
+    };
+    media.addEventListener("change", follow);
+    return () => media.removeEventListener("change", follow);
   }, []);
 
   const toggle = () => {

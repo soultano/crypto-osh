@@ -1,7 +1,7 @@
 /* Crypto Osh — palette drawn from Registan majolica (lapis, turquoise),
    suzani embroidery (pomegranate, saffron) and cotton cream.
    Brand colours are fixed; everything below them is a theme token.
-   Light is the default; <html data-theme="dark"> switches (see ThemeToggle). */
+   Light unless the system is dark; <html data-theme="dark"> switches (see ThemeToggle). */
 :root {
   --lapis-900: #07122b;
   --lapis-800: #0b1838;
