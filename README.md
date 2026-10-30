@@ -27,7 +27,7 @@ npm run build && npm start
 | Новости: сами статьи | `content/articles/*.json` (одна новость = один файл, можно править руками) |
 | Новости и курс: тексты страниц | `content/news.ts` |
 | Тон голоса для новостей | `scripts/news/tone.md` |
-| Монеты на странице курса | `lib/prices.ts` → `coins` |
+| Монеты на странице курса | `lib/prices-live.ts` → `coins` |
 | Видео (YouTube ID и подписи) | `lib/site.ts` → `videos` |
 | Фото | `public/photos`, пути в `lib/site.ts` → `photos` |
 | Контакты, домен | переменные окружения (см. ниже) |
