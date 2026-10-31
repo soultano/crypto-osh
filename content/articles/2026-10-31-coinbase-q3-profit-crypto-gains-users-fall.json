@@ -1,0 +1,49 @@
+{
+  "slug": "2026-10-31-coinbase-q3-profit-crypto-gains-users-fall",
+  "date": "2026-10-31T12:53:30+05:00",
+  "tags": [
+    "coinbase",
+    "earnings",
+    "usdc"
+  ],
+  "sources": [
+    {
+      "name": "CryptoSlate",
+      "url": "https://cryptoslate.com/coinbases-719-million-profit-reveals-a-company-caught-between-two-crypto-economies/"
+    },
+    {
+      "name": "Decrypt",
+      "url": "https://decrypt.co/382188/coinbase-beats-719-million-q3-profit-crypto-gains"
+    }
+  ],
+  "uz": {
+    "title": "Coinbase 719 million dollar foyda qildi, lekin faol foydalanuvchilar kamaydi",
+    "summary": "Coinbase uchinchi chorakda 719 million dollar sof foyda e'lon qildi, uning katta qismi qo'lidagi kriptoning qimmatlashuvidan kelgan. Daromad kutilganidan biroz past chiqdi, oylik faol foydalanuvchilar esa 7,4 millionga tushdi.",
+    "body": [
+      "Daromad taxminan 1,2 milliard dollar bo'ldi, tahlilchilar 1,233 milliard kutgan edi. Foydaning asosiy qismi kompaniya ushlab turgan kripto qiymati oshgani hisobidan. Bunday tuzatishlarsiz sof foyda atigi 77,7 million dollar.",
+      "Oyiga kamida bir marta savdo qiladigan foydalanuvchilar soni bir yil oldingi 9,3 milliondan 7,4 millionga tushdi, kompaniya buni bozor holati bilan izohladi. Shu bilan birga Coinbase'ning savdo hajmidagi ulushi ketma-ket to'rtinchi chorak o'sib, 10,7% ga yetdi.",
+      "Obuna va xizmatlardan tushum 570 million dollar bo'ldi. Coinbase mahsulotlaridagi o'rtacha USDC hajmi rekord 22 milliard dollarga chiqdi."
+    ],
+    "take": "Coinbase O'zbekistonda ishlamaydi, lekin u bozor uchun termometr. Faol odamlar kamaygani oddiy treyderlar sovib qolganini ko'rsatadi. Kripto narxidan kelgan foyda qog'ozdagi foyda: narx tushsa, u ham eriydi, bu hafta bitcoin 80 ming dollardan pastga tushganini ko'rdik."
+  },
+  "ru": {
+    "title": "Coinbase получила $719 млн прибыли, но активных пользователей стало меньше",
+    "summary": "Coinbase отчиталась о $719 млн чистой прибыли за третий квартал, в основном за счёт подорожания своей крипты. Выручка чуть не дотянула до прогнозов, а число активных пользователей упало до 7,4 млн.",
+    "body": [
+      "Выручка составила около $1,2 млрд при ожиданиях аналитиков в $1,233 млрд. Основная часть прибыли — переоценка крипты, которую держит компания. Скорректированная чистая прибыль без этого — всего $77,7 млн.",
+      "Пользователей, которые совершают сделки хотя бы раз в месяц, стало 7,4 млн против 9,3 млн год назад. Компания объяснила это состоянием рынка. При этом доля Coinbase в объёме торгов росла четвёртый квартал подряд и дошла до 10,7%.",
+      "Доход от подписок и сервисов — $570 млн. Средний объём USDC в продуктах Coinbase достиг рекордных $22 млрд."
+    ],
+    "take": "Coinbase в Узбекистане не работает, но это хороший градусник рынка. Меньше активных людей — значит, розничные трейдеры остывают. Прибыль от роста цены крипты — бумажная: упадёт цена, растает и она, а биткоин на этой неделе уже опускался ниже $80 000."
+  },
+  "en": {
+    "title": "Coinbase posts $719 million profit, but active users fall",
+    "summary": "Coinbase reported $719 million in Q3 net income, driven mostly by gains on its own crypto. Revenue came in slightly below forecasts and monthly transacting users dropped to 7.4 million.",
+    "body": [
+      "Revenue was about $1.2 billion against the $1.233 billion analysts expected. Most of the profit came from the rising value of crypto the company holds; adjusted net income was just $77.7 million.",
+      "Monthly transacting users fell to 7.4 million from 9.3 million a year earlier, which Coinbase put down to market conditions. Its share of crypto trading volume still rose for a fourth straight quarter, to 10.7%.",
+      "Subscription and services revenue reached $570 million, and average USDC held in Coinbase products hit a record $22 billion."
+    ],
+    "take": "Coinbase doesn't operate in Uzbekistan, but it works as a thermometer for the market. Fewer active users means retail traders are cooling off. Profit from rising crypto prices is paper profit that can vanish when prices fall, and bitcoin already dipped below $80,000 this week."
+  }
+}

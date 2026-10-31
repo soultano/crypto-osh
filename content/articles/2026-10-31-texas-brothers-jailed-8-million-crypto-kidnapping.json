@@ -1,0 +1,46 @@
+{
+  "slug": "2026-10-31-texas-brothers-jailed-8-million-crypto-kidnapping",
+  "date": "2026-10-31T12:53:30+05:00",
+  "tags": [
+    "security",
+    "crime",
+    "wrench-attack"
+  ],
+  "sources": [
+    {
+      "name": "Decrypt",
+      "url": "https://decrypt.co/382269/crypto-kidnapping-texas-brothers-15-year-prison"
+    },
+    {
+      "name": "The Block",
+      "url": "https://www.theblock.co/news/regulation/2026-10-30-texas-brothers-sentenced-15-years-8-million-crypto-robbery-minnesota-432221"
+    }
+  ],
+  "uz": {
+    "title": "Oilani qurol bilan ushlab, 8 million dollar kripto olgan aka-ukalarga 15 yildan qamoq",
+    "summary": "AQShda Texaslik aka-uka Raymond va Isiah Garsiya Minnesotadagi oilani to'qqiz soatdan ko'proq qurol bilan ushlab, otani 8 million dollardan ortiq kriptoni o'tkazishga majburlagani uchun 15 yildan qamoqqa hukm qilindi.",
+    "body": [
+      "Hukm juma kuni chiqarildi. Jinoyatchilar oilani qurol bilan qo'rqitib, otadan kriptoni o'zlariga o'tkazishni talab qilgan.",
+      "Bunday holatlar \"kalit hujumi\" (wrench attack) deb ataladi: kriptoni texnik yo'l bilan emas, odamga jismoniy bosim o'tkazib olishadi. Bu ish shunday hujumlar bo'yicha eng aniq sud jarayonlaridan biri deb baholanmoqda."
+    ],
+    "take": "Eng kuchli hamyon ham odamni qurol oldida himoya qilmaydi. Shuning uchun balansingizni chatlarda va storislarda ko'rsatmang, kimga qancha kriptongiz borligini aytmang. Naqd pul bilan yuzma-yuz P2P uchrashuvlardan ehtiyot bo'ling va faqat NAPP litsenziyasiga ega provayderlardan foydalaning."
+  },
+  "ru": {
+    "title": "Братьев, отнявших у семьи $8 млн в крипте под дулом пистолета, посадили на 15 лет",
+    "summary": "В США братья из Техаса Рэймонд и Айзайя Гарсия получили по 15 лет за то, что больше девяти часов держали семью в Миннесоте под прицелом и заставили отца перевести им крипту на сумму свыше $8 млн.",
+    "body": [
+      "Приговор вынесли в пятницу. Преступники угрожали семье оружием и требовали, чтобы отец перевёл им криптовалюту.",
+      "Такие преступления называют «атакой гаечным ключом» (wrench attack): крипту забирают не взломом, а физическим давлением на человека. Это дело называют одним из самых показательных судебных процессов по таким нападениям."
+    ],
+    "take": "Никакой кошелёк не спасёт, если на вас наставили пистолет. Поэтому не светите балансы в чатах и сторис и не рассказывайте, у кого сколько крипты. Осторожнее с личными P2P-встречами с наличными и пользуйтесь только провайдерами с лицензией НАПП."
+  },
+  "en": {
+    "title": "Texas brothers get 15 years for $8 million crypto kidnapping",
+    "summary": "In the US, Texas brothers Raymond and Isiah Garcia were sentenced to 15 years each for holding a Minnesota family at gunpoint for over nine hours and forcing the father to transfer more than $8 million in crypto.",
+    "body": [
+      "The sentences were handed down on Friday. The pair threatened the family with guns and made the father send them his cryptocurrency.",
+      "Crimes like this are called 'wrench attacks': the crypto is taken not by hacking but by physical force against the owner. The case is seen as one of the clearest prosecutions of such an attack so far."
+    ],
+    "take": "No wallet protects you when someone points a gun at you. Don't show off balances in chats or stories, and don't tell people how much crypto you hold. Be careful with face-to-face P2P cash meetups, and stick to NAPP-licensed providers."
+  }
+}

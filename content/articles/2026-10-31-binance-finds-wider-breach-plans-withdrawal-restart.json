@@ -1,0 +1,58 @@
+{
+  "slug": "2026-10-31-binance-finds-wider-breach-plans-withdrawal-restart",
+  "date": "2026-10-31T12:53:30+05:00",
+  "tags": [
+    "binance",
+    "hack",
+    "security",
+    "north-korea"
+  ],
+  "sources": [
+    {
+      "name": "Bitcoin.com News",
+      "url": "https://news.bitcoin.com/security/binance-hackers-deploy-never-seen-before-crypto-laundering-tactics/"
+    },
+    {
+      "name": "Cointelegraph",
+      "url": "https://cointelegraph.com/magazine/binance-hackers-raced-to-move-billions-before-could-be-frozen"
+    },
+    {
+      "name": "CryptoSlate",
+      "url": "https://cryptoslate.com/binance-hackers-deploy-never-seen-before-laundering-tactics-to-conceal-6-3-billion-theft/"
+    },
+    {
+      "name": "CoinDesk",
+      "url": "https://www.coindesk.com/tech/2026/10/30/binance-uncovers-wider-breach-in-usd6-3-billion-exploit-targets-sunday-withdrawal-restart"
+    }
+  ],
+  "uz": {
+    "title": "Binance buzilish kengroq ekanini aniqladi, pul yechishni yakshanba kuni tiklamoqchi",
+    "summary": "Binance xakerlar dastlab o'ylangandan ko'proq joydan kirgani va izlarini o'chirganini ma'lum qildi. Birja pul yechishni yakshanba kuni bosqichma-bosqich qaytarish va dushanba kuni zaxiralar isbotini e'lon qilishni rejalashtirmoqda.",
+    "body": [
+      "Binance hamraisi Richard Teng tergovchilar avval shubha qilingan muhandis noutbukidan tashqari yana boshqa buzilish nuqtalarini topganini aytdi. Xakerlar tasdiqlash tekshiruvlarini chetlab o'tgan va dalillarni yo'q qilgan. Birja pul yechish xizmatini qaytadan quryapti va butun kompaniya bo'yicha xavfsizlikni tekshiryapti.",
+      "Pul yechish birdaniga emas, bosqichma-bosqich va faqat xavfsizlik tekshiruvlaridan keyin ochiladi, maqsad yakshanba. Dushanba kuni zaxiralar isboti chiqishi kerak. Binance o'g'irlangan aktivlarni o'z mablag'idan qoplashga va'da bergan. Tergovga FBI va AQSh Maxfiy xizmati qo'shildi.",
+      "Chainalysis qisqa vaqt ichida minglab o'tkazmalarni qayd etdi: bu avtomatlashtirilgan, avval ko'rilmagan pul yuvish usuli bo'lishi mumkin. Hujum Shimoliy Koreya xakerlariga bog'lanmoqda. Ular stablecoinlarni muzlatib bo'lmaydigan kriptoga tez almashtirishga shoshilgan. Circle 823 million dollarni muzlatdi, jami taxminan 3 milliard dollar muzlatilgan, 3,3 milliardi hali qaytarilmagan. Xakerlar qo'lida 18 270 BTC (taxminan 1,4 milliard dollar) va 500 mingdan ortiq ETH bor."
+    ],
+    "take": "Binance'da NAPP litsenziyasi yo'q va biz uni tavsiya qilmaymiz, lekin bu voqea hamma uchun dars: pulni birjada saqlash uning xavfsizligiga ishonish demak. Yana bir saboq: USDT va USDC'ni chiqaruvchi kompaniya muzlata oladi, bu ham himoya, ham xavf. \"Binance pulingizni qaytaramiz\" deb to'lov so'raydigan xabarlar firibgarlikdir, ularga aldanmang."
+  },
+  "ru": {
+    "title": "Binance нашла новые точки взлома и хочет вернуть вывод средств в воскресенье",
+    "summary": "Binance сообщила, что хакеры зашли через большее число точек, чем думали сначала, и замели следы. Биржа планирует поэтапно открыть вывод в воскресенье и опубликовать доказательство резервов в понедельник.",
+    "body": [
+      "Сооснователь и гендиректор Binance Ричард Тенг рассказал, что следователи нашли и другие точки проникновения, а не только ноутбук инженера, на который думали вначале. Хакеры обошли проверки при подтверждении операций и уничтожили улики. Биржа заново собирает сервис вывода и проверяет безопасность по всей компании.",
+      "Вывод откроют не сразу, а по этапам и только после проверок, цель — воскресенье. В понедельник обещают доказательство резервов. Украденное Binance возместит из своих средств. К расследованию подключились ФБР и Секретная служба США.",
+      "Chainalysis заметила тысячи переводов за короткие промежутки времени: похоже на автоматическое отмывание, причём таких схем раньше не видели. Атаку связывают с хакерами из Северной Кореи. Они спешили обменять стейблкоины на крипту, которую эмитент заморозить не может. Circle заморозила $823 млн, всего заморожено около $3 млрд, ещё $3,3 млрд не вернули. У хакеров на руках 18 270 BTC (около $1,4 млрд) и больше 500 тысяч ETH."
+    ],
+    "take": "У Binance нет лицензии НАПП, и мы её не советуем, но урок общий для всех: держать деньги на бирже — значит доверять её защите. Второй урок: USDT и USDC эмитент может заморозить, это и защита, и риск. Если вам пишут «вернём деньги с Binance» и просят оплату — это мошенники, не ведитесь."
+  },
+  "en": {
+    "title": "Binance finds a wider breach, aims to restart withdrawals on Sunday",
+    "summary": "Binance says hackers got in through more entry points than first thought and wiped their tracks. The exchange aims to reopen withdrawals in phases on Sunday and publish proof of reserves on Monday.",
+    "body": [
+      "Co-CEO Richard Teng said investigators found further breach points beyond the engineer's laptop that was first suspected. The attackers got around approval controls and destroyed evidence. Binance is rebuilding its withdrawal service and running a company-wide security review.",
+      "Withdrawals will return in stages and only after security checks, with Sunday as the target. Proof of reserves is due Monday. Binance has committed its own funds to replace the stolen assets, and the FBI and US Secret Service are now working on the case.",
+      "Chainalysis spotted thousands of transfers fired off in short bursts, pointing to automated laundering of a kind not seen before, and linked the theft to North Korean hackers. The attackers rushed to swap stablecoins into crypto that issuers cannot freeze. Circle froze $823 million; about $3 billion is frozen in total, while $3.3 billion has not been recovered. The hackers held 18,270 BTC (about $1.4 billion) and more than 500,000 ETH."
+    ],
+    "take": "Binance has no NAPP licence and we don't recommend it, but the lesson applies to everyone: money on an exchange is only as safe as that exchange's security. It also shows that USDT and USDC can be frozen by their issuers, which cuts both ways. Any message offering to 'recover your Binance funds' for a fee is a scam."
+  }
+}

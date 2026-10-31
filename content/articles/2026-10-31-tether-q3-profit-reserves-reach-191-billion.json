@@ -1,0 +1,46 @@
+{
+  "slug": "2026-10-31-tether-q3-profit-reserves-reach-191-billion",
+  "date": "2026-10-31T12:53:30+05:00",
+  "tags": [
+    "tether",
+    "usdt",
+    "stablecoins"
+  ],
+  "sources": [
+    {
+      "name": "Bitcoin.com News",
+      "url": "https://news.bitcoin.com/finance/tether-reports-1-5b-q3-profit-total-reserves-reach-191-5b/"
+    },
+    {
+      "name": "Cointelegraph",
+      "url": "https://cointelegraph.com/news/tethers-excess-reserves-nearly-double-to-8b-as-q3-profit-hits-15b"
+    }
+  ],
+  "uz": {
+    "title": "Tether uchinchi chorakda 1,5 milliard dollar foyda ko'rdi, zaxiralar 191,5 milliardga yetdi",
+    "summary": "USDT chiqaruvchisi Tether 2026-yilning uchinchi choragida 1,5 milliard dollar sof operatsion foyda olganini e'lon qildi. Ortiqcha zaxiralar deyarli ikki barobar o'sib, 8 milliard dollarga chiqdi.",
+    "body": [
+      "Tether 30-oktabr kuni chorak hisobotini e'lon qildi. Yil boshidan beri foyda 4,5 milliard dollarni tashkil etdi. Tokenlarni ta'minlovchi zaxiralar 191,5 milliard dollarga yetdi.",
+      "Ortiqcha zaxiralar, ya'ni barcha USDT'ni qoplagandan keyin qoladigan yostiq, deyarli ikki barobar oshib 8 milliard dollar bo'ldi. Sentyabr oxirida kompaniyadagi bitcoin 8,37 milliard dollarga baholangan. AQSh davlat obligatsiyalari hajmi bo'yicha Tether yirik xorijiy davlat egalari bilan tenglashmoqda."
+    ],
+    "take": "Biz uchun USDT ko'pincha raqamli dollar: frilanserlar maoshi, P2P, o'tkazmalar. Zaxira yostig'ining kattalashishi egalari uchun yaxshi xabar, lekin Binance voqeasi Tether tangalarni muzlata olishini yana ko'rsatdi. USDT'ni faqat NAPP litsenziyasiga ega provayderlar orqali sotib oling va soting."
+  },
+  "ru": {
+    "title": "Tether заработала $1,5 млрд за третий квартал, резервы выросли до $191,5 млрд",
+    "summary": "Эмитент USDT Tether сообщила о $1,5 млрд чистой операционной прибыли за третий квартал 2026 года. Избыточные резервы почти удвоились, до $8 млрд.",
+    "body": [
+      "Tether опубликовала квартальный отчёт 30 октября. С начала года прибыль составила $4,5 млрд. Резервы, которые обеспечивают токены, дошли до $191,5 млрд.",
+      "Избыточные резервы — запас сверх того, что нужно для покрытия всех USDT, — почти удвоились и достигли $8 млрд. Биткоины компании на конец сентября оценивались в $8,37 млрд. По объёму американских гособлигаций Tether уже сопоставима с крупными иностранными держателями-государствами."
+    ],
+    "take": "Для многих у нас USDT — это цифровой доллар: зарплаты фрилансеров, P2P, переводы. Больший запас резервов — хорошая новость для держателей, но история с Binance напомнила, что Tether может заморозить монеты. Покупайте и продавайте USDT только через провайдеров с лицензией НАПП."
+  },
+  "en": {
+    "title": "Tether earns $1.5 billion in Q3 as reserves reach $191.5 billion",
+    "summary": "USDT issuer Tether reported $1.5 billion in net operating profit for the third quarter of 2026. Its excess reserves nearly doubled to $8 billion.",
+    "body": [
+      "Tether released its quarterly attestation on October 30. Profit so far this year stands at $4.5 billion, and the reserves backing its tokens reached $191.5 billion.",
+      "Excess reserves, the cushion left over after covering every USDT in circulation, almost doubled to $8 billion. The company's bitcoin was valued at $8.37 billion at the end of September, and its US Treasury holdings now rival those of major foreign government holders."
+    ],
+    "take": "For many people here, USDT is a digital dollar for freelance pay, P2P and transfers. A bigger reserve cushion is good news for holders, but the Binance case is a reminder that Tether can freeze coins. Buy and sell USDT only through NAPP-licensed providers."
+  }
+}
