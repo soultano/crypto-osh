@@ -1,0 +1,61 @@
+{
+  "slug": "2026-11-01-fbi-confirms-north-korea-behind-binance-hack",
+  "date": "2026-11-01T13:33:25+05:00",
+  "tags": [
+    "binance",
+    "hack",
+    "north-korea",
+    "security"
+  ],
+  "sources": [
+    {
+      "name": "Cointelegraph",
+      "url": "https://cointelegraph.com/news/fbi-blames-north-korea-for-record-63b-binance-hack"
+    },
+    {
+      "name": "CoinDesk",
+      "url": "https://www.coindesk.com/policy/2026/10/31/fbi-confirms-north-korea-s-role-in-usd6-billion-binance-hack-asks-defi-community-to-block-btc-eth-sol-addresses"
+    },
+    {
+      "name": "Bitcoin.com News",
+      "url": "https://news.bitcoin.com/featured/trump-speaks-on-6-3b-binance-hack-as-fbi-confirms-north-korea/"
+    },
+    {
+      "name": "The Defiant",
+      "url": "https://thedefiant.io/news/hacks/fbi-attributes-6-billion-plus-binance-hack-to-north-korea"
+    }
+  ],
+  "uz": {
+    "title": "FBI: Binance'dan 6,3 mlrd dollar o'g'irlash ortida Shimoliy Koreya turibdi",
+    "summary": "AQSh Federal qidiruv byurosi Binance birjasiga qilingan rekord hujumni rasman Shimoliy Koreya bilan bog'ladi. Byuro xakerlar manzillarini bloklashda yordam so'ramoqda.",
+    "body": [
+      "FBI kripto tarixidagi eng katta o'g'irlik, ya'ni Binance'dan taxminan 6,3 mlrd dollar olib ketilishi ortida Shimoliy Koreya turganini tasdiqladi. Byuro bitcoin, Ethereum va Solana tarmoqlaridagi yuzlab manzillar ro'yxatini e'lon qildi. U DeFi loyihalari va xususiy kompaniyalardan bu manzillarni bloklab, o'g'irlangan pulni yuvishga yo'l qo'ymaslikni so'radi.",
+      "Chainalysis ma'lumotiga ko'ra, xakerlar allaqachon minglab manzillardan foydalangan va bu son yana o'sadi. AQSh prezidenti Donald Tramp 30 oktabrda amaldorlar voqeani o'rganayotganini aytdi. U Binance mijozlarga zararni qoplash bo'yicha bergan va'dasini ham tilga oldi. CFTC raisi Maykl Selig esa bu hodisa xorijiy birjalar AQShda ro'yxatdan o'tishi va kiberxavfsizlikni kuchaytirishi kerakligini ko'rsatadi, deb hisoblaydi.",
+      "Binance zarar ko'rgan aktivlarning taxminan 95 foizini o'z mablag'lari hisobidan qopladi. Qolgan 5 foiz likvidligi past tokenlarga to'g'ri keladi. Birja 1 noyabrdan bitcoindan boshlab pul yechishni qayta ochmoqda.",
+      "Hujum boshqalarni ham cho'chitdi. Bitcoin saqlovchi ommaviy kompaniyalar ichida 18-o'rinda turgan Next Technology Holding o'zining taxminan 5 833 BTC'sini sotish yoki garovga qo'yishga ruxsat berdi. Kompaniyaning Binance'da bitta ham bitcoini yo'q. Ammo u birjalarning zaifligi, xalqaro kiberhujumlar va kvant kompyuterlari xavfini sabab qilib ko'rsatdi."
+    ],
+    "take": "Biz uchun asosiy xulosa: o'g'irlangan pul minglab manzillar bo'ylab tarqalmoqda va bunday kripto P2P savdo orqali oddiy odamlarga ham yetib kelishi mumkin. Shuning uchun kriptoni faqat NAPP litsenziyasiga ega provayderlar orqali sotib oling va noma'lum odamlardan arzon taklif kelsa, ehtiyot bo'ling. Pulni birjada uzoq saqlash ham ishonchli emasligini bu voqea yana bir bor ko'rsatdi."
+  },
+  "ru": {
+    "title": "ФБР: за взломом Binance на $6,3 млрд стоит Северная Корея",
+    "summary": "ФБР официально связало рекордную атаку на Binance с Северной Кореей и попросило индустрию блокировать адреса хакеров.",
+    "body": [
+      "ФБР подтвердило, что за крупнейшей кражей в истории крипты стоит Северная Корея. С биржи Binance вывели около $6,3 млрд. Бюро опубликовало список из сотен адресов в сетях биткоина, Ethereum и Solana. Оно просит DeFi-проекты и частные компании блокировать эти адреса, чтобы украденное не удалось отмыть.",
+      "По данным Chainalysis, хакеры уже задействовали тысячи адресов, и их число будет расти. Президент США Дональд Трамп 30 октября заявил, что чиновники разбираются в ситуации, и упомянул обещание Binance покрыть убытки. Глава CFTC Майкл Селиг считает, что этот случай показывает: офшорные биржи должны регистрироваться в США и соблюдать американские стандарты кибербезопасности.",
+      "Binance говорит, что из собственных средств уже восполнила около 95% затронутых активов. Оставшиеся 5% приходятся на малоликвидные токены. С 1 ноября биржа начинает снова открывать вывод, первым идёт биткоин.",
+      "Взлом напугал и других игроков. Next Technology Holding, 18-я по размеру публичная компания-держатель биткоина, разрешила продать или заложить свои примерно 5833 BTC. На Binance у неё биткоинов нет. Компания объясняет решение уязвимостью бирж, международными кибератаками и рисками квантовых компьютеров."
+    ],
+    "take": "Для нас главное вот что: украденные деньги расходятся по тысячам адресов, и такая крипта может дойти до обычных людей через P2P. Поэтому покупайте крипту только через провайдеров с лицензией НАПП и с подозрением относитесь к слишком выгодным предложениям от незнакомцев. Эта история ещё раз показала, что хранить деньги на бирже долго рискованно."
+  },
+  "en": {
+    "title": "FBI says North Korea is behind the $6.3 billion Binance hack",
+    "summary": "The FBI has formally tied the record Binance theft to North Korea. It is asking the industry to block the attackers' addresses.",
+    "body": [
+      "The FBI confirmed that North Korea is behind the largest theft in crypto history: roughly $6.3 billion drained from Binance. The bureau published hundreds of bitcoin, Ethereum and Solana addresses. It asked DeFi projects and private companies to block them so the stolen funds can't be laundered.",
+      "Chainalysis says the attackers have already used thousands of addresses and expects that number to keep growing. On Oct. 30, US President Donald Trump said officials were looking into the hack and noted Binance's promise to cover losses. CFTC Chair Michael Selig said the case shows that offshore exchanges should register in the US and meet US-grade cybersecurity standards.",
+      "Binance says it has used its own funds to replenish about 95% of the affected assets. The remaining 5% is in less-liquid tokens. The exchange is reopening withdrawals from Nov. 1, starting with bitcoin.",
+      "The hack is rattling others too. Next Technology Holding, the 18th-largest public corporate bitcoin holder, has authorized the sale or pledging of about 5,833 BTC. None of its bitcoin sits on Binance. The company cited exchange weaknesses, international cyberattacks and quantum computing risks."
+    ],
+    "take": "For us, the key point is this: the stolen money is spreading across thousands of addresses, and some of it can reach ordinary people through P2P deals. Buy crypto only through NAPP-licensed providers, and be wary of unusually cheap offers from strangers. This case is another reminder that keeping funds on an exchange for a long time carries real risk."
+  }
+}

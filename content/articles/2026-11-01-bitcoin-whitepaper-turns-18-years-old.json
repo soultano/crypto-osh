@@ -1,0 +1,49 @@
+{
+  "slug": "2026-11-01-bitcoin-whitepaper-turns-18-years-old",
+  "date": "2026-11-01T13:33:25+05:00",
+  "tags": [
+    "bitcoin",
+    "satoshi",
+    "history"
+  ],
+  "sources": [
+    {
+      "name": "BeInCrypto",
+      "url": "https://beincrypto.com/bitcoin-whitepaper-18-satoshi-paradox-ai/"
+    },
+    {
+      "name": "CoinDesk",
+      "url": "https://www.coindesk.com/opinion/2026/10/31/18-years-in-what-has-bitcoin-truly-done"
+    }
+  ],
+  "uz": {
+    "title": "Bitcoin 18 yoshda: Satoshi oq qog'ozidan voyaga yetgan aktivgacha",
+    "summary": "31 oktabrda Satoshi Nakamoto bitcoin oq qog'ozini e'lon qilganiga 18 yil to'ldi. Yubiley rekord birja hujumi, sun'iy intellekt va kvant xavfi haqidagi gaplar fonida o'tdi.",
+    "body": [
+      "2008-yil 31-oktabrda Satoshi Nakamoto bitcoin oq qog'ozini e'lon qildi. Unda bankning ishtirokisiz, to'g'ridan-to'g'ri odamdan odamga o'tadigan pul taklif qilingan edi. G'oya oddiy: tarmoqdagi kompyuterlar o'tkazmalarni tekshiradi va bitta bitcoinni ikki marta sarflashga yo'l qo'ymaydi.",
+      "Satoshi 2010-yilda ommaviy yozishni to'xtatdi va hali ham noma'lum. Unga tegishli deb hisoblangan bitcoinlar taxminan 85 mlrd dollar turadi. Hozir bitcoin taxminan 77 330 dollar atrofida savdolanmoqda, umumiy bozor qiymati esa qariyb 1,55 trln dollar.",
+      "Cointelegraph ta'kidlashicha, \"voyaga yetish\" sun'iy intellektga bog'liq xavfsizlik tahdidlari, kvant kompyuterlari haqidagi xavotirlar va tarixdagi eng katta birja hujumi fonida keldi. CoinDesk sharhlovchisi Nikhilesh De esa bitcoinning madaniy ta'siri, ehtimol, bitcoinning o'zidan ham kattaroq bo'lib chiqqanini yozadi."
+    ],
+    "take": "18 yil oldin Satoshi \"ishonchli uchinchi tomonsiz\" pulni taklif qilgan edi. Binance voqeasi esa bu g'oya bugun ham nega muhimligini eslatdi. Bizda kripto qonuniy yo'l bilan, NAPP litsenziyali provayderlar orqali sotib olinadi. Lekin uni qayerda va qanday saqlashni har kim o'zi o'ylab ko'rishi kerak."
+  },
+  "ru": {
+    "title": "Биткоину 18 лет: от white paper Сатоши до взрослого актива",
+    "summary": "31 октября исполнилось 18 лет с публикации white paper биткоина Сатоши Накамото. Юбилей пришёлся на время рекордного взлома биржи, споров об ИИ и квантовых рисках.",
+    "body": [
+      "31 октября 2008 года Сатоши Накамото опубликовал white paper биткоина. Это было описание денег, которые переходят от человека к человеку без банка. Идея простая: компьютеры сети проверяют переводы и не дают потратить один и тот же биткоин дважды.",
+      "Сатоши перестал писать публично в 2010 году, и до сих пор неизвестно, кто он. Монеты, которые ему приписывают, стоят около $85 млрд. Сейчас биткоин торгуется около $77 330, а его рыночная стоимость — примерно $1,55 трлн.",
+      "Cointelegraph отмечает, что «совершеннолетие» биткоин встречает на фоне угроз безопасности, связанных с ИИ, страхов перед квантовыми компьютерами и крупнейшего в истории взлома биржи. Обозреватель CoinDesk Никхилеш Де пишет, что культурное влияние white paper, возможно, оказалось даже важнее самого биткоина."
+    ],
+    "take": "18 лет назад Сатоши предложил деньги «без доверенного посредника». История с Binance напомнила, почему эта идея важна и сегодня. У нас крипту покупают законно, через провайдеров с лицензией НАПП. А вот где и как её хранить, каждому стоит решить самому."
+  },
+  "en": {
+    "title": "Bitcoin turns 18: from Satoshi's white paper to a grown-up asset",
+    "summary": "Oct. 31 marked 18 years since Satoshi Nakamoto published the bitcoin white paper. The anniversary comes amid a record exchange hack, AI security worries and quantum fears.",
+    "body": [
+      "On Oct. 31, 2008, Satoshi Nakamoto published the bitcoin white paper. It described money that moves directly between people, without a bank. The idea was simple: computers across the network check transactions and stop the same bitcoin from being spent twice.",
+      "Satoshi stopped posting publicly in 2010, and his identity is still unknown. The coins attributed to him are worth about $85 billion. Bitcoin now trades near $77,330, with a market value of roughly $1.55 trillion.",
+      "Cointelegraph notes that bitcoin comes of age amid AI-driven security threats, quantum computing fears and the biggest exchange hack in history. CoinDesk's Nikhilesh De argues that the white paper's cultural impact may turn out to be bigger than bitcoin itself."
+    ],
+    "take": "Eighteen years ago, Satoshi proposed money with \"no trusted third party\", and the Binance hack shows why that idea still matters. In Uzbekistan, crypto is bought legally through NAPP-licensed providers. Where and how you then store it is a decision worth thinking through yourself."
+  }
+}

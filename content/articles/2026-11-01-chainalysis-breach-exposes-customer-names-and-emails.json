@@ -1,0 +1,50 @@
+{
+  "slug": "2026-11-01-chainalysis-breach-exposes-customer-names-and-emails",
+  "date": "2026-11-01T13:33:25+05:00",
+  "tags": [
+    "chainalysis",
+    "security",
+    "data-breach",
+    "phishing"
+  ],
+  "sources": [
+    {
+      "name": "CryptoSlate",
+      "url": "https://cryptoslate.com/chainalysis-breach-customer-names-emails-roles/"
+    },
+    {
+      "name": "The Block",
+      "url": "https://www.theblock.co/news/business/2026-10-31-chainalysis-says-hacker-using-offensive-agentic-techniques-accessed-its-customers-names-and-emails-432244"
+    }
+  ],
+  "uz": {
+    "title": "Chainalysis buzildi: mijozlarning ismlari va email manzillari xakerlar qo'lida",
+    "summary": "Blokcheyn tahlili bo'yicha kompaniya Chainalysis xaker mijozlar ma'lumotlariga kirganini tan oldi. Ular orasida ismlar, email manzillar va kompaniyadagi lavozimlar bor.",
+    "body": [
+      "Chainalysis birjalar va kompaniyalarga kripto o'tkazmalarni kuzatishda yordam beradi. Kompaniya xaker mijozlarining ismlari, email manzillari va ish joyidagi lavozimlariga kirganini ma'lum qildi. Uning so'zlariga ko'ra, hujumchi \"hujumkor agent texnikalari\"dan foydalangan.",
+      "Kompaniya hozir aynan qaysi yozuvlar o'g'irlanganini aniqlamoqda. Mijozlarga kutilmagan kirish tasdiqlash so'rovlari kelsa, ehtiyot bo'lish tavsiya qilindi.",
+      "Chainalysis shu bilan birga Binance'dagi alohida, milliardlab dollarlik hujumni ham kuzatib bormoqda. Kompaniya ma'lumotiga ko'ra, Binance xakerlari stablecoinlar muzlatilishidan qochish uchun Tron tarmog'idagi protokoldan foydalanmoqda."
+    ],
+    "take": "Ism, email va lavozim fishing xatlari uchun tayyor xom ashyo hisoblanadi. Sizga \"tizimga kirishni tasdiqlang\" degan kutilmagan xabar yoki kod kelsa, hech narsani bosmang va tasdiqlamang. Avval xizmatning rasmiy sayti yoki ilovasi orqali tekshiring. Bu qoida kripto bilan ishlaydigan har birimiz uchun foydali."
+  },
+  "ru": {
+    "title": "Утечка в Chainalysis: хакер получил имена и почты клиентов",
+    "summary": "Компания блокчейн-аналитики Chainalysis сообщила, что хакер получил доступ к данным клиентов: именам, email-адресам и должностям.",
+    "body": [
+      "Chainalysis помогает биржам и компаниям отслеживать криптопереводы. Она сообщила, что хакер добрался до имён клиентов, их email-адресов и должностей в компаниях. По словам Chainalysis, атакующий применял «наступательные агентные техники».",
+      "Сейчас компания выясняет, какие именно записи были затронуты. Клиентов просят быть внимательными, если придёт неожиданный запрос на подтверждение входа.",
+      "Параллельно Chainalysis отслеживает отдельный многомиллиардный взлом Binance. По её данным, хакеры Binance используют протокол в сети Tron, чтобы уйти от заморозки стейблкоинов."
+    ],
+    "take": "Имя, почта и должность — готовый материал для фишинговых писем. Если вам пришёл неожиданный запрос «подтвердите вход» или код, ничего не нажимайте и не подтверждайте. Сначала проверьте всё через официальный сайт или приложение сервиса. Это простое правило полезно каждому, кто работает с криптой."
+  },
+  "en": {
+    "title": "Chainalysis breach exposes customer names, emails and job roles",
+    "summary": "Blockchain analytics firm Chainalysis says a hacker accessed customer data, including names, email addresses and company roles.",
+    "body": [
+      "Chainalysis, which helps exchanges and companies trace crypto transfers, says a hacker reached customers' names, email addresses and job roles. According to the firm, the attacker used \"offensive agentic techniques\".",
+      "The company is still working out exactly which records were accessed. It is urging customers to watch out for unexpected login confirmation prompts.",
+      "Chainalysis is also tracking the separate multibillion-dollar Binance hack. It says the Binance attackers are using a protocol on Tron to avoid stablecoin freezes."
+    ],
+    "take": "Names, emails and job titles are ready-made material for phishing emails. If you get an unexpected \"confirm your login\" request or code, don't click or approve anything. Check first through the service's official website or app. It's a simple rule worth following for anyone who holds crypto."
+  }
+}
