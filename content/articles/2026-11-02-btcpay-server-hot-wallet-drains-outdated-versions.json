@@ -1,0 +1,58 @@
+{
+  "slug": "2026-11-02-btcpay-server-hot-wallet-drains-outdated-versions",
+  "date": "2026-11-02T13:45:28+05:00",
+  "tags": [
+    "bitcoin",
+    "security",
+    "btcpay",
+    "payments"
+  ],
+  "sources": [
+    {
+      "name": "The Defiant",
+      "url": "https://thedefiant.io/news/hacks/btcpay-links-hot-wallet-drains-to-versions-2-4-1-and-older"
+    },
+    {
+      "name": "BeInCrypto",
+      "url": "https://beincrypto.com/btcpay-server-hack-hot-wallets-drained/"
+    },
+    {
+      "name": "Cointelegraph",
+      "url": "https://cointelegraph.com/news/btcpay-server-hot-wallet-thefts-older-versions"
+    },
+    {
+      "name": "Bitcoin.com News",
+      "url": "https://news.bitcoin.com/security/bitcoin-payment-processor-btcpay-hit-by-hot-wallet-theft-reports/"
+    }
+  ],
+  "uz": {
+    "title": "BTCPay Server: eski versiyalardagi issiq hamyonlar bo'shatilmoqda",
+    "summary": "Bitkoin qabul qilish uchun ochiq kodli BTCPay vositasi jamoasi xakerlar issiq hamyonlarni bo'shatayotgani sabab serverlarni o'chirishni so'radi. Hujumlar 2.4.2 dan eski versiyalar bilan bog'liq.",
+    "body": [
+      "BTCPay Server — do'konlar o'zi o'rnatib, bitkoin qabul qiladigan bepul ochiq kodli dastur. 1-noyabr kechqurun jamoa xavotir bildirdi: xakerlar issiq hamyonlarni bo'shatmoqda. Barcha operatorlardan serverlarini o'chirib qo'yish so'ralgan.",
+      "Issiq hamyonda maxfiy kalitlar serverning o'zida saqlanadi. Shuning uchun admin huquqiga ega har kim tangalarni ko'chira oladi. Hujumchilar aynan shunday huquqni yangilanmagan serverlarda qo'lga kiritgan, izlar avgustdagi tuzatishdan oldingi zaifliklarga olib boradi. Asoschi Nicolas Dorier holatlarni 2.4.2 dan eski versiyalar bilan bog'ladi. Eng so'nggi 2.4.7 versiyaga hujum bo'lgani haqida ishonchli xabarlar yo'q.",
+      "Jamoa tekshiruvni davom ettirmoqda va qancha pul yo'qolgani hali aytilmagan."
+    ],
+    "take": "O'zbekistonda ham ba'zi frilanserlar va onlayn do'konlar bitkoinni o'z serverlari orqali qabul qiladi. Agar sizda BTCPay bo'lsa, eng so'nggi versiyaga yangilang va admin huquqi kimda ekanini tekshiring. Umumiy qoida: issiq hamyonda faqat kundalik ish uchun kerakli summani saqlang, qolganini oflayn hamyonda."
+  },
+  "ru": {
+    "title": "BTCPay Server: с горячих кошельков на старых версиях уводят биткоины",
+    "summary": "Команда открытого платёжного сервиса BTCPay попросила выключить серверы после сообщений о краже с горячих кошельков. Атаки связаны с версиями старше 2.4.2.",
+    "body": [
+      "BTCPay Server — бесплатная программа с открытым кодом, которую магазины сами ставят у себя, чтобы принимать биткоин. Поздно вечером 1 ноября команда подняла тревогу: злоумышленники опустошают горячие кошельки. Всех операторов попросили выключить серверы.",
+      "В горячем кошельке приватные ключи хранятся прямо на сервере, поэтому любой с правами администратора может перевести монеты. Именно такой доступ атакующие получили на необновлённых серверах, а следы ведут к уязвимостям, закрытым ещё августовским патчем. Основатель Nicolas Dorier связал случаи с версиями старше 2.4.2. Надёжных сообщений об атаках на последнюю версию 2.4.7 нет.",
+      "Команда продолжает расследование и пока не назвала сумму потерь."
+    ],
+    "take": "В Узбекистане тоже есть фрилансеры и интернет-магазины, которые принимают биткоин через свой сервер. Если у вас стоит BTCPay, обновитесь до последней версии и проверьте, у кого есть права администратора. Общее правило: в горячем кошельке держите только то, что нужно для текущих расчётов, остальное — офлайн."
+  },
+  "en": {
+    "title": "BTCPay Server warns of hot wallet thefts on outdated versions",
+    "summary": "The open-source bitcoin payment tool told operators to switch off their servers after attackers drained hot wallets. The attacks are linked to versions older than 2.4.2.",
+    "body": [
+      "BTCPay Server is a free open-source program that shops host themselves to accept bitcoin. Late on November 1, the team sounded the alarm: attackers were draining hot wallets. All operators were asked to shut down their servers.",
+      "In a hot wallet setup, the private keys sit on the server itself, so anyone with admin access can move the coins. Attackers got exactly that access on outdated servers, and the traces point to flaws fixed by an August patch. Founder Nicolas Dorier tied the cases to versions older than 2.4.2. There are no credible reports of attacks on the latest 2.4.7 release.",
+      "The team is still investigating and has not disclosed total losses."
+    ],
+    "take": "In Uzbekistan, some freelancers and online shops also accept bitcoin through their own servers. If you run BTCPay, update to the latest version and check who has admin access. The general rule: keep only what you need for day-to-day payments in a hot wallet, and the rest offline."
+  }
+}

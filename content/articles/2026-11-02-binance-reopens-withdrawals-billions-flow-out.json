@@ -1,0 +1,58 @@
+{
+  "slug": "2026-11-02-binance-reopens-withdrawals-billions-flow-out",
+  "date": "2026-11-02T13:45:28+05:00",
+  "tags": [
+    "binance",
+    "hack",
+    "exchanges",
+    "withdrawals"
+  ],
+  "sources": [
+    {
+      "name": "The Defiant",
+      "url": "https://thedefiant.io/news/cefi/binance-restores-usd-withdrawals-as-post-hack-reopening-expands"
+    },
+    {
+      "name": "Cointelegraph",
+      "url": "https://cointelegraph.com/news/binance-net-outflows-surge-to-58b-as-withdrawals-resume-after-record-hack"
+    },
+    {
+      "name": "CryptoSlate",
+      "url": "https://cryptoslate.com/tracked-binance-wallets-record-2-5-billion-in-outflows-as-withdrawals-reopen-after-hack/"
+    },
+    {
+      "name": "CryptoNews",
+      "url": "https://cryptonews.com/news/mark-zuckerberg-meta-ai-predicts-an-xrp-explosion/"
+    }
+  ],
+  "uz": {
+    "title": "Binance pul yechishni qayta ochdi: milliardlar chiqib ketdi, birja esa to'layapti",
+    "summary": "Binance 6,3 mlrd dollarlik buzib kirishdan keyin dollarda pul yechishni tikladi va birinchi bosqichdagi 15 ta tarmoq guruhini qayta ochdi. Sof chiqim taxminan 5,8 mlrd dollarga yetdi. Bu mijozlarning qariyb 171 mlrd dollarlik aktivlarining kichik qismi.",
+    "body": [
+      "Binance rekord darajadagi 6,3 mlrd dollarlik xakerlik hujumidan keyin asta-sekin o'ziga kelyapti. Birja dollarda pul yechishni tikladi. Birinchi bosqichdagi barcha 15 ta kripto tarmoq guruhi qayta ishlayapti. Bir qator boshqa tokenlarni yechish esa hali to'xtatilgan.",
+      "Odamlar pulini olishga shoshildi. 1-noyabr kuni ochilgandan keyingi dastlabki to'qqiz yarim soatda 4,65 mlrd dollar yechildi, 1,01 mlrd dollar kiritildi. Sof chiqim 3,64 mlrd dollarni tashkil qildi. Cointelegraph ma'lumotiga ko'ra, keyin sof chiqim taxminan 5,8 mlrd dollarga yetdi va sekinlashdi. Mijozlarning qariyb 171 mlrd dollarlik aktivlariga nisbatan bu katta emas: birinchi to'lqin taxminan 2,1% bo'lgan.",
+      "DeFiLlama kuzatayotgan hamyonlardan 1-noyabr kuni qariyb 1,08 mlrd dollarlik USDT, 912 mln dollarlik bitkoin, 385 mln dollarlik USDC va 131 mln dollarlik wrapped ether chiqib ketgan. Binance zaxiralarining to'liq zero-knowledge isboti avval dushanbaga va'da qilingan edi. Endi u 3-noyabr, seshanbaga ko'chirildi."
+    ],
+    "take": "Hamma 2022-yildagi FTX bilan solishtiryapti, lekin hozircha raqamlar boshqacha: pul chiqyapti, birja esa to'layapti. Biz uchun saboq o'sha-o'sha: birjadagi tanga bu va'da, o'z hamyoningiz emas. O'zbekistonda kriptoni faqat NAPP litsenziyasiga ega provayderlar orqali oling va soting. «Pul yechishga yordam beramiz» deb yozadigan «Binance qo'llab-quvvatlash xizmati»dan ehtiyot bo'ling: katta yangiliklardan keyin firibgarlar aynan shunday ishlaydi."
+  },
+  "ru": {
+    "title": "Binance открыла вывод: ушли миллиарды, но биржа платит",
+    "summary": "Binance вернула вывод долларов и открыла все 15 сетевых групп первой волны после взлома на $6,3 млрд. Чистый отток дошёл примерно до $5,8 млрд. Это небольшая доля от примерно $171 млрд активов клиентов.",
+    "body": [
+      "Binance понемногу приходит в себя после рекордного взлома на $6,3 млрд. Биржа вернула вывод долларов. Все 15 криптосетевых групп первой волны снова работают. Вывод ряда других токенов пока остаётся на паузе.",
+      "Люди побежали забирать деньги. За первые девять с половиной часов после открытия 1 ноября вывели $4,65 млрд, а завели $1,01 млрд. Чистый отток составил $3,64 млрд. По данным Cointelegraph, потом он дошёл примерно до $5,8 млрд и замедлился. На фоне примерно $171 млрд клиентских активов это немного: первая волна заняла около 2,1%.",
+      "По данным DeFiLlama, 1 ноября с отслеживаемых кошельков ушло около $1,08 млрд в USDT, $912 млн в биткоине, $385 млн в USDC и $131 млн в wrapped ether. Полное zero-knowledge доказательство резервов Binance сначала обещала в понедельник. Теперь его ждут во вторник, 3 ноября."
+    ],
+    "take": "Все сравнивают с FTX в 2022 году, но пока цифры другие: деньги уходят, а биржа платит. Урок для нас прежний: монеты на любой бирже — это обещание, а не ваш кошелёк. В Узбекистане покупайте и продавайте крипту только через провайдеров с лицензией НАПП. И берегитесь «поддержки Binance», которая предлагает помочь с выводом: после громких новостей мошенники пишут именно так."
+  },
+  "en": {
+    "title": "Binance reopens withdrawals: billions flow out, but the exchange keeps paying",
+    "summary": "Binance has restored USD withdrawals and reopened all 15 first-wave network groups after the $6.3 billion hack. Net outflows reached about $5.8 billion, a small slice of roughly $171 billion in customer assets.",
+    "body": [
+      "Binance is slowly getting back on its feet after the record $6.3 billion hack. The exchange has restored dollar withdrawals. All 15 crypto network groups in the first wave are open again. Withdrawals for several other tokens are still on hold.",
+      "People rushed to pull money out. In the first nine and a half hours after reopening on November 1, users withdrew $4.65 billion and deposited $1.01 billion, a net outflow of $3.64 billion. According to Cointelegraph, net outflows later climbed to about $5.8 billion before slowing. Against roughly $171 billion in customer assets, that is not much: the first wave was about 2.1%.",
+      "DeFiLlama data on tracked wallets shows what left on November 1: about $1.08 billion in USDT, $912 million in bitcoin, $385 million in USDC and $131 million in wrapped ether. Binance's full zero-knowledge proof of reserves was first promised for Monday. It is now due on Tuesday, November 3."
+    ],
+    "take": "Everyone is comparing this to FTX in 2022, but so far the numbers look different: money is leaving, and the exchange is paying. The lesson for us is the same as always: coins on any exchange are a promise, not your own wallet. In Uzbekistan, buy and sell crypto only through NAPP-licensed providers. And watch out for 'Binance support' offering to help with withdrawals: after big news, this is exactly how scammers write."
+  }
+}

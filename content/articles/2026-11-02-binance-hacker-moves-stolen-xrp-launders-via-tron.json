@@ -1,0 +1,58 @@
+{
+  "slug": "2026-11-02-binance-hacker-moves-stolen-xrp-launders-via-tron",
+  "date": "2026-11-02T13:45:28+05:00",
+  "tags": [
+    "binance",
+    "hack",
+    "laundering",
+    "xrp"
+  ],
+  "sources": [
+    {
+      "name": "Bitcoin.com News",
+      "url": "https://news.bitcoin.com/security/binance-hacker-moves-293m-stolen-xrp/"
+    },
+    {
+      "name": "The Defiant",
+      "url": "https://thedefiant.io/news/hacks/analyst-traces-140-million-in-binance-loot-through-four-tron-exit-routes"
+    },
+    {
+      "name": "The Block",
+      "url": "https://www.theblock.co/news/defi/2026-11-01-north-korean-hackers-launder-242-million-of-binance-loot-via-tron-as-fbi-presses-thorchain-analyst-432257"
+    },
+    {
+      "name": "CryptoSlate",
+      "url": "https://cryptoslate.com/ethereum-validators-pocket-30-million-windfall-as-binance-hackers-lose-119-million-in-rushed-trades/"
+    }
+  ],
+  "uz": {
+    "title": "Binance xakeri 293 mln dollarlik XRPni ko'chirdi, o'lja Tron orqali yuvilmoqda",
+    "summary": "Hujumchi o'g'irlangan 233,46 mln XRPning hammasini oltita yangi hamyonga o'tkazdi. Tahlilchilar esa Tron va ko'priklar orqali yuvilgan yuzlab million dollarni kuzatmoqda.",
+    "body": [
+      "Taxminan 80 soatlik sukutdan keyin o'g'irlangan XRP harakatga keldi. Binance xakeri 233,46 mln XRPning hammasini, qariyb 293 mln dollarni, oltita yangi hamyonga jo'natdi. Avval UTC bo'yicha 03:47 da 1000 XRPlik sinov to'lovlari yuborilgan. Ripple oddiy XRPni muzlata olmaydi, shuning uchun bu pulni to'xtatish mumkin bo'lgan asosiy joy birjalar bo'lib qolmoqda.",
+      "Tahlilchining aytishicha, Tron orqali allaqachon taxminan 242 mln dollar yuvilgan. Relay, THORChain, Chainflip va Symbiosis ko'priklari Tron'dan qariyb 140 mln dollarni olib chiqqan, eng ko'pini, 48 mln dollarni, Relay o'tkazgan. FBIning 31-oktabrdagi bloklash so'rovida THORChain tugun operatorlari alohida ko'rsatilgan.",
+      "Chainalysis ma'lumotiga ko'ra, Tron'dagi operatsiya 1000 dan ortiq manzil va 3000 dan ortiq depozitni qamragan. Taxminan 500 mln dollar shu tarmoq orqali o'tgan, keyin pul boshqa zanjirlarga, jumladan Solana'ga tarqalgan. 18 270 ta o'g'irlangan BTC turgan 19 ta hamyonga esa faqat bir dollardan kam to'lovlar kelyapti. Ularda notanish odamlarning xabarlari bor: «help me bro» iltimoslaridan tortib pul yuvish takliflarigacha."
+    ],
+    "take": "O'g'irlangan pul oxir-oqibat naqd pulga aylanishga harakat qiladi, ko'pincha P2P va kichik birjalar orqali. Kimdir sizga USDT yoki XRPni bozordan sezilarli arzon taklif qilsa, o'ylab ko'ring: bunday tangalar keyin muzlatilishi mumkin, muammo esa sizniki bo'ladi. Faqat NAPP litsenziyasiga ega provayderlar orqali savdo qiling."
+  },
+  "ru": {
+    "title": "Хакер Binance перевёл XRP на $293 млн, добыча утекает через Tron",
+    "summary": "Атакующий перевёл все 233,46 млн украденных XRP на шесть новых кошельков. Аналитики тем временем отслеживают сотни миллионов, отмытых через Tron и мосты.",
+    "body": [
+      "После примерно 80 часов тишины украденные XRP пришли в движение. Хакер Binance отправил все 233,46 млн XRP, около $293 млн, на шесть новых кошельков. Начал он с тестовых платежей по 1000 XRP в 03:47 UTC. Ripple не может заморозить нативные XRP, поэтому главным местом, где эти деньги можно остановить, остаются биржи.",
+      "По словам аналитика, через Tron уже отмыто около $242 млн. Мосты Relay, THORChain, Chainflip и Symbiosis вывели из Tron примерно $140 млн, больше всего, $48 млн, прошло через Relay. В запросе ФБР на блокировку от 31 октября прямо упомянуты операторы узлов THORChain.",
+      "По данным Chainalysis, операция в Tron охватила более 1000 адресов и свыше 3000 депозитов. Через сеть прошло около $500 млн, после чего деньги разошлись по другим блокчейнам, включая Solana. А на 19 кошельков, где лежат 18 270 украденных BTC, приходят только платежи меньше доллара с сообщениями от незнакомцев: от «help me bro» до предложений отмыть деньги."
+    ],
+    "take": "Краденые деньги рано или поздно пытаются превратить в наличные, часто через P2P и мелкие площадки. Если вам предлагают USDT или XRP заметно дешевле рынка, подумайте дважды: такие монеты могут потом заморозить, и проблемы будут уже ваши. Торгуйте только через провайдеров с лицензией НАПП."
+  },
+  "en": {
+    "title": "Binance hacker moves $293 million in XRP as loot leaks out through Tron",
+    "summary": "The attacker moved all 233.46 million stolen XRP into six new wallets. Meanwhile, analysts are tracing hundreds of millions laundered through Tron and crypto bridges.",
+    "body": [
+      "After about 80 hours of silence, the stolen XRP is on the move. The Binance hacker sent all 233.46 million XRP, worth about $293 million, to six new wallets. It started with test payments of 1,000 XRP at 03:47 UTC. Ripple cannot freeze native XRP, so exchanges remain the main place where these funds could be stopped.",
+      "An analyst says about $242 million has already been laundered through Tron. The bridges Relay, THORChain, Chainflip and Symbiosis carried about $140 million off the network, with Relay handling the most at $48 million. The FBI's October 31 blocking request names THORChain node operators directly.",
+      "Chainalysis says the Tron operation spanned more than 1,000 addresses and over 3,000 deposits. About $500 million passed through the network before the funds scattered to other chains, including Solana. Meanwhile, the 19 wallets holding 18,270 stolen BTC have received nothing but sub-dollar payments carrying messages from strangers, from 'help me bro' pleas to laundering offers."
+    ],
+    "take": "Stolen money sooner or later tries to turn into cash, often through P2P and small platforms. If someone offers you USDT or XRP well below market, think twice: such coins can be frozen later, and the trouble becomes yours. Trade only through NAPP-licensed providers."
+  }
+}
