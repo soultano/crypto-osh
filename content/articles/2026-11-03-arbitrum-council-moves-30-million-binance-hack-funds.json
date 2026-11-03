@@ -1,0 +1,58 @@
+{
+  "slug": "2026-11-03-arbitrum-council-moves-30-million-binance-hack-funds",
+  "date": "2026-11-03T13:56:25+05:00",
+  "tags": [
+    "arbitrum",
+    "binance",
+    "hack",
+    "decentralization"
+  ],
+  "sources": [
+    {
+      "name": "CoinDesk",
+      "url": "https://www.coindesk.com/tech/2026/11/03/arbitrum-s-council-moved-usd30-million-of-binance-hack-funds-without-the-hacker-s-key"
+    },
+    {
+      "name": "Bitcoin.com News",
+      "url": "https://news.bitcoin.com/security/binance-hack-funds-spread-across-12000-wallets-in-under-four-days/"
+    },
+    {
+      "name": "Decrypt",
+      "url": "https://decrypt.co/382383/mystery-106-million-crypto-theft-eu-entity-binance-hack"
+    },
+    {
+      "name": "The Defiant",
+      "url": "https://thedefiant.io/news/hacks/relay-reports-route-disruptions-in-bid-to-block-binance-hack-funds"
+    }
+  ],
+  "uz": {
+    "title": "Arbitrum kengashi xakerning kalitisiz Binance'dan o'g'irlangan 30 mln dollarni ko'chirdi",
+    "summary": "12 kishilik qo'mita tarmoqning asosiy kontraktini qisqa muddatga o'zgartirib, xaker manzilidagi pulni ko'chirdi. Bu yil bunday holat ikkinchi marta.",
+    "body": [
+      "Arbitrum tarmog'ining 12 kishilik xavfsizlik qo'mitasi Binance buzilishidan qolgan 30 mln dollarni ko'chirdi. Buning uchun u o'zida kaliti bo'lmagan manzildan pul yechish imkonini berish maqsadida asosiy kontraktlardan birini vaqtincha qayta yozdi, keyin kodni avvalgi holiga qaytardi.",
+      "CoinDesk ma'lumotiga ko'ra, bu yil Arbitrum'da bunday aralashuv ikkinchi marta bo'lmoqda.",
+      "Shu orada Elliptic o'g'irlangan pullar to'rt kundan kamroq vaqtda 11 ta blokcheyndagi taxminan 12 000 hamyon orqali o'tganini hisobladi. Kompaniya fikricha, naqdlashtirilgan qismi juda kichik, bog'liq qoldiqlar esa 3,24 mlrd dollar. Elliptic bitcoin aralashtirgichlari orqali o'tkazishning birinchi holatlarini ham qayd etdi."
+    ],
+    "take": "Bir tomondan, o'g'rilardan pulni qaytarish yaxshi xabar. Boshqa tomondan, 'markazlashmagan' deb ataladigan tarmoqda kichik guruh istalgan manzildagi pulni ko'chira olishi ma'lum bo'ldi. Qaysi tarmoqda pul saqlayotgan bo'lsangiz, uni aslida kim boshqarishini bilib qo'ying: bu xavfsizlik va ishonch masalasi."
+  },
+  "ru": {
+    "title": "Совет Arbitrum перевёл $30 млн украденных у Binance денег без ключа хакера",
+    "summary": "Комитет из 12 человек ненадолго переписал базовый контракт сети и забрал средства с адреса взломщика. Это уже второй такой случай за год.",
+    "body": [
+      "Совет безопасности Arbitrum из 12 человек перевёл $30 млн из добычи взломщиков Binance. Для этого он временно переписал один из ключевых контрактов сети, чтобы потратить деньги с адреса, ключа от которого у него не было, а потом вернул код обратно.",
+      "По данным CoinDesk, такое вмешательство в Arbitrum уже второе за этот год.",
+      "Тем временем Elliptic подсчитала: меньше чем за четыре дня украденное прошло примерно через 12 000 кошельков в 11 блокчейнах. По оценке компании, обналичена лишь ничтожная часть, а на связанных адресах остаётся $3,24 млрд. Elliptic также заметила первые попытки прогнать биткоины через миксеры."
+    ],
+    "take": "С одной стороны, вернуть деньги у воров хорошо. С другой, выяснилось, что в «децентрализованной» сети небольшая группа может сдвинуть средства с любого адреса. Где бы вы ни держали крипту, стоит понимать, кто на самом деле управляет сетью: это вопрос и безопасности, и доверия."
+  },
+  "en": {
+    "title": "Arbitrum council moves $30 million of Binance hack funds without the hacker's key",
+    "summary": "A 12-member committee briefly rewrote a core network contract to move funds from the attacker's address. It is the second such case this year.",
+    "body": [
+      "Arbitrum's 12-member Security Council moved $30 million of the Binance hack proceeds. To do it, the committee temporarily rewrote one of the network's core contracts so it could spend from an address it held no key for, then restored the original code.",
+      "According to CoinDesk, this is the second time this year Arbitrum has stepped in like this.",
+      "Meanwhile, Elliptic found the stolen funds passed through about 12,000 wallets on 11 blockchains in under four days. The firm believes only a negligible amount has been cashed out, with $3.24 billion still sitting in linked addresses. Elliptic also flagged the first bitcoin mixing of the loot."
+    ],
+    "take": "Getting money back from thieves is good news. But it also shows that on a so-called decentralized network, a small group can move funds from any address. Wherever you keep crypto, it pays to know who really controls the network: that is a question of both safety and trust."
+  }
+}

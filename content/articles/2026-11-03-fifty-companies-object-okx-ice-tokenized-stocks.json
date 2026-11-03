@@ -1,0 +1,54 @@
+{
+  "slug": "2026-11-03-fifty-companies-object-okx-ice-tokenized-stocks",
+  "date": "2026-11-03T13:56:25+05:00",
+  "tags": [
+    "tokenization",
+    "stocks",
+    "okx",
+    "ice"
+  ],
+  "sources": [
+    {
+      "name": "Bitcoin Magazine",
+      "url": "https://bitcoinmagazine.com/news/50-companies-blocks-okx-ice-token"
+    },
+    {
+      "name": "Decrypt",
+      "url": "https://decrypt.co/382348/nvidia-nike-biggest-wave-yet-tokenized-stock-objections"
+    },
+    {
+      "name": "CoinDesk",
+      "url": "https://www.coindesk.com/business/2026/11/02/nvidia-costco-and-nike-join-pushback-against-okx-ice-tokenized-stock-plans"
+    }
+  ],
+  "uz": {
+    "title": "Nvidia, Nike va yana 48 kompaniya o'z aksiyalarini OKX–ICE'da tokenlashtirishga qarshi chiqdi",
+    "summary": "OKX va NYSE egasi ICE qo'shma platformasida aksiyalari token sifatida savdoga chiqishiga 50 ta ommaviy kompaniya e'tiroz bildirdi.",
+    "body": [
+      "OKX birjasi va Nyu-York fond birjasi egasi Intercontinental Exchange (ICE) yirik kompaniyalar aksiyalarini token ko'rinishida sotadigan OKXICE platformasini tayyorlamoqda. Ammo kompaniyalarning o'zi bunga rozi emas: e'tiroz bildirganlar soni 50 taga yetdi.",
+      "30 oktabrdagi ro'yxatga yana 12 ta kompaniya qo'shildi, jumladan Nvidia, Costco, Nike, Micron va Reddit. Ulardan oldin Microsoft, Alphabet, JPMorgan Chase, Goldman Sachs, Walmart, Broadcom, Verizon va Intel qarshi chiqqan edi.",
+      "CoinDesk hisobiga ko'ra, dastlab tanlangan 62 kompaniyadan 43 tasi, ya'ni taxminan 69 foizi rad javobini bergan. Apple, Tesla va Amazon kabi 19 ta kompaniya hozircha e'tiroz bildirmagan. Birinchi 30 kunlik muddat seshanba kuni tugaydi."
+    ],
+    "take": "Tokenlashtirilgan aksiyalar ko'pincha chet eldagi odamlarga AQSh aksiyalarini oson sotib olish yo'li sifatida reklama qilinadi. Bu voqea ko'rsatadiki, kompaniyaning o'zi rozi bo'lmasa, bunday tokenlar atrofida savollar ko'p. Shuning uchun 'Apple yoki Tesla aksiyasi tokenini sotamiz' degan notanish platformalardan ehtiyot bo'ling."
+  },
+  "ru": {
+    "title": "Nvidia, Nike и ещё 48 компаний против токенизации своих акций на OKX–ICE",
+    "summary": "Уже 50 публичных компаний возразили против торговли их акциями в виде токенов на совместной площадке OKX и владельца NYSE ICE.",
+    "body": [
+      "Биржа OKX и Intercontinental Exchange (ICE), владелец Нью-Йоркской фондовой биржи, готовят площадку OKXICE для торговли акциями крупных компаний в виде токенов. Но сами компании не в восторге: возражений уже 50.",
+      "В списке от 30 октября добавились ещё 12, в том числе Nvidia, Costco, Nike, Micron и Reddit. До них против высказались Microsoft, Alphabet, JPMorgan Chase, Goldman Sachs, Walmart, Broadcom, Verizon и Intel.",
+      "По подсчёту CoinDesk, из 62 компаний, отобранных изначально, отказались 43, это около 69%. Ещё 19, среди них Apple, Tesla и Amazon, пока не возражали. Первое 30-дневное окно для ответа закрывается во вторник."
+    ],
+    "take": "Токенизированные акции часто продают как простой способ купить американские бумаги из-за рубежа. Эта история показывает: если сама компания против, вопросов к таким токенам много. Так что осторожнее с незнакомыми площадками, которые предлагают «токены акций Apple или Tesla»."
+  },
+  "en": {
+    "title": "Nvidia, Nike and 48 others object to tokenizing their shares on OKX–ICE",
+    "summary": "Fifty public companies have now objected to their shares trading as tokens on the joint venue of OKX and NYSE owner ICE.",
+    "body": [
+      "Crypto exchange OKX and Intercontinental Exchange (ICE), the owner of the New York Stock Exchange, are preparing OKXICE, a venue to trade big companies' shares as tokens. The companies themselves are pushing back: objections have reached 50.",
+      "The October 30 notice added 12 more, including Nvidia, Costco, Nike, Micron and Reddit. They join earlier objectors such as Microsoft, Alphabet, JPMorgan Chase, Goldman Sachs, Walmart, Broadcom, Verizon and Intel.",
+      "By CoinDesk's count, 43 of the 62 companies initially picked, about 69%, have opted out. Nineteen, including Apple, Tesla and Amazon, have not disclosed objections. The first 30-day window closes on Tuesday."
+    ],
+    "take": "Tokenized stocks are often pitched as an easy way for people abroad to buy US shares. This story shows that when the company itself objects, such tokens raise plenty of questions. So be careful with unknown platforms offering 'Apple or Tesla stock tokens'."
+  }
+}

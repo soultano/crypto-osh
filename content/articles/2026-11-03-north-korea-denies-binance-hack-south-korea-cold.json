@@ -1,0 +1,58 @@
+{
+  "slug": "2026-11-03-north-korea-denies-binance-hack-south-korea-cold",
+  "date": "2026-11-03T13:56:25+05:00",
+  "tags": [
+    "binance",
+    "north-korea",
+    "regulation",
+    "security"
+  ],
+  "sources": [
+    {
+      "name": "Cointelegraph",
+      "url": "https://cointelegraph.com/news/south-korea-urges-exchanges-to-boost-cold-storage-after-binance-hack"
+    },
+    {
+      "name": "The Block",
+      "url": "https://www.theblock.co/news/regulation/2026-11-02-kim-jong-un-sister-rejects-fbi-claims-linking-north-korea-binance-hack-432344"
+    },
+    {
+      "name": "The Defiant",
+      "url": "https://thedefiant.io/news/hacks/north-korea-rejects-fbi-blame-for-6-3-billion-binance-hack"
+    },
+    {
+      "name": "Decrypt",
+      "url": "https://decrypt.co/382355/north-korea-laundering-binance-hack-loot-new-wallet-every-25-seconds"
+    }
+  ],
+  "uz": {
+    "title": "Shimoliy Koreya Binance buzilishiga aloqasini rad etdi, Janubiy Koreya birjalardan ko'proq 'sovuq' saqlashni so'radi",
+    "summary": "Kim Yo Jong FBI ayblovlarini 'bema'ni ritorika' deb atadi. Seul esa birjalarni mijozlar kriptosini ko'proq oflayn hamyonlarda saqlashga chaqirdi.",
+    "body": [
+      "FBI 6,3 mlrd dollarlik Binance buzilishida Shimoliy Koreya xakerlarini aybladi. Endi Pxenyan javob berdi: Kim Chen Inning singlisi Kim Yo Jong AQSh ayblovlarini siyosiy maqsadli va 'bema'ni ritorika' deb atadi.",
+      "Chainalysis esa o'g'irlangan mablag'lar avvalgi bir buzilishdan qolgan pullar bilan aralashayotganini ko'rsatdi, bu FBI xulosasini qo'llab-quvvatlovchi dalillardan biri.",
+      "Qo'shni Janubiy Koreyada regulyator birjalardan sovuq (internetga ulanmagan) hamyonlardagi ulushni oshirishni so'radi. U yerda birjalar hozir ham mijozlar kriptosining kamida 80 foizini sovuq hamyonlarda saqlashi shart."
+    ],
+    "take": "Kim aybdor ekanidan qat'i nazar, oddiy foydalanuvchi uchun asosiy savol bitta: birja pulingizni qanday saqlaydi. Janubiy Koreya tajribasi shuni ko'rsatadiki, qoidalar qattiq bo'lsa ham, regulyatorlar yanada ko'proq himoya talab qilmoqda. O'zingiz ishlatadigan litsenziyali provayderdan mablag'lar qanday saqlanishini so'rab ko'rish ortiqcha bo'lmaydi."
+  },
+  "ru": {
+    "title": "КНДР отрицает причастность к взлому Binance, Южная Корея требует больше холодного хранения",
+    "summary": "Ким Ё Чжон назвала обвинения ФБР «абсурдной риторикой». Сеул призвал биржи держать больше клиентской крипты в офлайн-кошельках.",
+    "body": [
+      "ФБР обвинило северокорейских хакеров во взломе Binance на $6,3 млрд. Теперь Пхеньян ответил: сестра Ким Чен Ына Ким Ё Чжон назвала обвинения США политически мотивированными и «абсурдной риторикой».",
+      "При этом Chainalysis указывает, что украденные средства смешиваются с деньгами от одного из прошлых взломов, и это один из аргументов в пользу версии ФБР.",
+      "А в Южной Корее регулятор попросил биржи увеличить долю холодного, то есть отключённого от интернета, хранения. Там биржи и так обязаны держать в холодных кошельках не меньше 80% клиентской крипты."
+    ],
+    "take": "Кто бы ни стоял за взломом, для обычного человека главный вопрос один: как биржа хранит ваши деньги. Пример Кореи показывает, что даже при строгих правилах регуляторы просят больше защиты. Не лишним будет спросить у своего лицензированного провайдера, как устроено хранение средств."
+  },
+  "en": {
+    "title": "North Korea denies Binance hack role as South Korea pushes exchanges toward cold storage",
+    "summary": "Kim Yo Jong called the FBI's accusations 'absurd rhetoric'. Seoul urged exchanges to keep more customer crypto in offline wallets.",
+    "body": [
+      "The FBI blamed North Korean hackers for the $6.3 billion Binance hack. Pyongyang has now hit back: Kim Jong Un's sister Kim Yo Jong called the US claims politically motivated and 'absurd rhetoric'.",
+      "Chainalysis, meanwhile, says the stolen funds are being mixed with proceeds from an earlier exploit, one of the points supporting the FBI's attribution.",
+      "In South Korea, the regulator asked exchanges to hold more funds in cold, offline storage. Exchanges there are already required to keep at least 80% of customer crypto in cold wallets."
+    ],
+    "take": "Whoever is behind it, the key question for an ordinary user is simple: how does your exchange store your money? Korea shows that even with strict rules, regulators want more protection. It is worth asking your licensed provider how they keep customer funds."
+  }
+}

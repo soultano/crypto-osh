@@ -1,0 +1,58 @@
+{
+  "slug": "2026-11-03-mercado-bitcoin-brazil-exchange-hacked-46-million",
+  "date": "2026-11-03T13:56:25+05:00",
+  "tags": [
+    "hack",
+    "exchanges",
+    "brazil",
+    "security"
+  ],
+  "sources": [
+    {
+      "name": "The Defiant",
+      "url": "https://thedefiant.io/news/hacks/chainalysis-puts-mercado-bitcoin-hack-at-49-million-across-17-chains"
+    },
+    {
+      "name": "CryptoSlate",
+      "url": "https://cryptoslate.com/tether-freezes-4-5-million-as-mercado-bitcoin-hacker-holds-46-million-in-crypto/"
+    },
+    {
+      "name": "The Block",
+      "url": "https://www.theblock.co/news/defi/2026-11-02-mercado-bitcoin-hack-46-million-brazil-exchange-432333"
+    },
+    {
+      "name": "Cointelegraph",
+      "url": "https://cointelegraph.com/news/mercado-bitcoin-hack"
+    }
+  ],
+  "uz": {
+    "title": "Braziliyaning eng yirik kripto birjasi Mercado Bitcoin buzildi: taxminan 46–49 mln dollar",
+    "summary": "Mercado Bitcoin xavfsizlik hodisasini tasdiqlab, pul yechishni to'xtatdi. Chainalysis zararni 17 ta blokcheyn bo'ylab 49 mln dollar deb baholadi.",
+    "body": [
+      "Binance voqeasidan keyin yana bir birja xakerlar qurboni bo'ldi. Braziliyadagi eng katta kripto birja Mercado Bitcoin dushanba kuni xavfsizlik hodisasini tan oldi, kiritish va yechishni to'xtatdi.",
+      "The Block zararni 46 mln dollar deb yozdi, Chainalysis esa 17 ta tarmoq bo'yicha hisoblab, 49 mln dollar degan raqamni keltirdi. Xakerning hamyonlaridan 2 800 ETH, 2,24 mln USDC va 1,7 mln TRX boshqa manzillarga ko'chirilgan.",
+      "Tether 4,5 mln dollarlik USDTni muzlatdi. Birjaning o'zi 11 mln dollar bloklanganini aytmoqda va mijozlar pul yo'qotmasligini va'da qilmoqda. Kuzatish uchun manzillar e'lon qilingan, lekin xizmatlar qachon qayta ochilishi aytilmagan."
+    ],
+    "take": "Bir hafta ichida ikkinchi yirik birja buzildi: pulni bitta platformada uzoq ushlab turish xavfli ekanini yana bir bor ko'ramiz. Biz kriptoni faqat NAPP litsenziyasiga ega provayderlar orqali sotib olamiz va sotamiz, uzoq muddatga saqlanadigan mablag'ni esa o'z hamyoningizda saqlash haqida o'ylab ko'ring. Yana bir dars: o'g'irlangan USDT muzlatilishi mumkin, shuning uchun P2P'da notanish odamdan kelgan 'shubhali' tangalarni qabul qilishda ehtiyot bo'ling."
+  },
+  "ru": {
+    "title": "Взломана крупнейшая криптобиржа Бразилии Mercado Bitcoin: ущерб около $46–49 млн",
+    "summary": "Mercado Bitcoin подтвердила инцидент безопасности и остановила вывод средств. Chainalysis оценила ущерб в $49 млн на 17 блокчейнах.",
+    "body": [
+      "После Binance хакеры добрались до ещё одной биржи. Крупнейшая криптобиржа Бразилии Mercado Bitcoin в понедельник признала взлом и приостановила ввод и вывод средств.",
+      "The Block оценил ущерб в $46 млн, а Chainalysis, посчитав по 17 сетям, называет $49 млн. С кошельков взломщика уже ушли дальше 2 800 ETH, 2,24 млн USDC и 1,7 млн TRX.",
+      "Tether заморозил $4,5 млн в USDT. Сама биржа говорит, что заблокировано $11 млн, и обещает, что клиенты ничего не потеряют. Адреса для отслеживания опубликованы, но сроков возобновления работы нет."
+    ],
+    "take": "Вторая крупная биржа за неделю: держать всё на одной площадке надолго рискованно. Крипту мы покупаем и продаём только через провайдеров с лицензией НАПП, а то, что храните долго, стоит держать в своём кошельке. И ещё урок: украденные USDT могут заморозить, так что на P2P осторожнее с монетами от незнакомцев."
+  },
+  "en": {
+    "title": "Brazil's largest crypto exchange Mercado Bitcoin hacked for about $46–49 million",
+    "summary": "Mercado Bitcoin confirmed a security incident and paused withdrawals. Chainalysis puts the losses at $49 million across 17 blockchains.",
+    "body": [
+      "Another exchange has been hit, days after Binance. Mercado Bitcoin, Brazil's biggest crypto exchange, confirmed a security incident on Monday and suspended deposits and withdrawals.",
+      "The Block reported a $46 million loss, while Chainalysis, counting across 17 chains, puts it at $49 million. The attacker's wallets have already sent on 2,800 ETH, 2.24 million USDC and 1.7 million TRX.",
+      "Tether froze $4.5 million in USDT. The exchange says $11 million has been blocked and promises customers will not lose money. It published tracking addresses but gave no date for reopening."
+    ],
+    "take": "Two major exchange hacks in one week show again that leaving everything on one platform for a long time is risky. We buy and sell crypto only through NAPP-licensed providers, and it is worth keeping long-term savings in your own wallet. One more lesson: stolen USDT can be frozen, so be careful accepting coins from strangers on P2P."
+  }
+}
