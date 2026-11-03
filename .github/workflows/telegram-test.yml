@@ -1,0 +1,38 @@
+# Posts an already published article to the Telegram channel, to check the
+# bot and channel setup without waiting for tomorrow's news.
+# Actions → "Telegram test post" → Run workflow.
+name: Telegram test post
+
+on:
+  workflow_dispatch:
+    inputs:
+      slugs:
+        description: "Article slug(s), comma-separated; empty = the newest article"
+        required: false
+        default: ""
+
+jobs:
+  post:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+      - name: Check secrets
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_NEWS_CHAT_ID: ${{ secrets.TELEGRAM_NEWS_CHAT_ID }}
+        run: |
+          if [ -z "$TELEGRAM_BOT_TOKEN" ] || [ -z "$TELEGRAM_NEWS_CHAT_ID" ]; then
+            echo "::error::Add TELEGRAM_BOT_TOKEN and TELEGRAM_NEWS_CHAT_ID in Settings → Secrets and variables → Actions."
+            exit 1
+          fi
+      - name: Post to Telegram
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_NEWS_CHAT_ID: ${{ secrets.TELEGRAM_NEWS_CHAT_ID }}
+          TELEGRAM_NEWS_LANG: ${{ vars.TELEGRAM_NEWS_LANG }}
+          NEWS_SLUGS: ${{ inputs.slugs || 'latest' }}
+        run: node scripts/news/telegram.mts
