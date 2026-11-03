@@ -52,6 +52,11 @@ export function allNews(): NewsItem[] {
   return cache;
 }
 
+// Evergreen how-to articles, tagged "qollanma" (Uzbek for "guide").
+export function guides(): NewsItem[] {
+  return allNews().filter((n) => n.tags.includes("qollanma"));
+}
+
 export function getNews(slug: string): NewsItem | undefined {
   return allNews().find((n) => n.slug === slug);
 }

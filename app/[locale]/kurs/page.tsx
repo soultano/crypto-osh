@@ -3,6 +3,7 @@ import Link from "next/link";
 import { ChannelCta } from "@/components/ChannelCta";
 import { CoinPrices } from "@/components/CoinPrices";
 import { Converter } from "@/components/Converter";
+import { Guides } from "@/components/Guides";
 import { UsdtDisclaimer, UsdtRates } from "@/components/UsdtRates";
 import { pricesText } from "@/content/news";
 import type { Locale } from "@/lib/i18n";
@@ -75,6 +76,7 @@ export default async function Kurs({ params }: { params: Promise<{ locale: strin
           )}
 
           <ChannelCta locale={locale} />
+          <Guides locale={locale} />
 
           <h2 className="faq-title">{p.faqTitle}</h2>
           <div className="faq">
