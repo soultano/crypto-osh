@@ -40,7 +40,8 @@ npm run build && npm start
 | --- | --- |
 | `NEXT_PUBLIC_SITE_URL` | `https://cryptoosh.uz` (по умолчанию) |
 | `NEXT_PUBLIC_TELEGRAM_URL` | `https://t.me/Soultanov` (по умолчанию) |
-| `NEXT_PUBLIC_TELEGRAM_GROUP_URL` | `https://t.me/+3LQvpeGh5hNlMjVi` (по умолчанию): ссылка с заявками на вступление, кнопка «Вступить в группу» |
+| `NEXT_PUBLIC_COMMUNITY_URL` | `https://t.me/tapsuzbot/app?startapp=0a86a435` (по умолчанию): платная подписка на группу комьюнити через taps.uz (12 000 сум/мес), блок «Комьюнити» на каждой странице и кнопки «Вступить» |
+| `NEXT_PUBLIC_TELEGRAM_CHANNEL_URL` | `https://t.me/soulweb` (по умолчанию): бесплатный канал с новостями |
 | `NEXT_PUBLIC_INSTAGRAM_URL` | `https://www.instagram.com/uzsoul/` (по умолчанию) |
 | `NEXT_PUBLIC_PHONE` | `+998901234567` |
 | `NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION` | код из Google Search Console (только сам код из `content="…"`) |
@@ -90,15 +91,11 @@ npm run build && npm start
 
 **Binance, Walt, Unexpay, Asterium вручную.** У них нет открытого курса: Binance UZ закрыт для запросов не из Узбекистана, у Walt курс только внутри мини-приложения Telegram, Unexpay отдаёт заглушку. Asterium вносится руками, только если их API не ответил. Поэтому их курс вносится руками: посмотреть в приложении → **Actions → USDT rates: enter by hand → Run workflow** (работает и из приложения GitHub на телефоне) → вписать `покупка/продажа`, например `12150/11980`, пустое поле = не трогать. Скрипт `scripts/rates/manual.mts` сверяет числа с курсом ЦБ, сохраняет их и, если стоит галочка, публикует таблицу в канал. Ручной курс держится до конца дня по Ташкенту, на следующий день снова «Проверить на сайте».
 
-## Бот группы: вступление через представление
+## Комьюнити: только платная подписка
 
-`app/api/telegram/route.ts`. Человек нажимает «Подать заявку» в группе, бот пишет ему в личку и просит рассказать о себе. После ответа (не короче 40 символов) бот одобряет заявку и публикует представление в группе.
+В группу комьюнити вступают только по подписке через taps.uz (12 000 сум в месяц): `https://t.me/tapsuzbot/app?startapp=0a86a435`. Бесплатных пригласительных ссылок на сайте нет. Блок «Комьюнити» (`components/CommunityCta.tsx`, тексты в `content/community.ts`) стоит внизу каждой страницы на всех трёх языках, кнопки «Вступить в комьюнити» есть ещё в блоке контактов и в футере. Бесплатный канал @soulweb с новостями и курсом остаётся отдельным блоком (`ChannelCta`).
 
-1. В Telegram у **@BotFather**: `/newbot` → имя и username бота → скопировать токен. Никому его не пересылать.
-2. Vercel → Settings → Environment Variables: `TELEGRAM_BOT_TOKEN` (токен) и `TELEGRAM_WEBHOOK_SECRET` (случайная строка из латинских букв и цифр, 20+ символов) → Redeploy.
-3. Один раз открыть `https://cryptoosh.uz/api/telegram?setup=<TELEGRAM_WEBHOOK_SECRET>`: должно быть «Готово: бот подключён».
-4. В группе: **Администраторы → Добавить** бота с правом «Добавление участников». Бот напишет в группу её ID: вписать его в `TELEGRAM_GROUP_ID` на Vercel → Redeploy. Сообщение бота можно удалить.
-5. В группе: **Пригласительные ссылки** → у ссылки, которая стоит на сайте, включить **«Заявки на вступление»** (или создать новую с этой галочкой и поставить её в `NEXT_PUBLIC_TELEGRAM_GROUP_URL`). Группа может оставаться частной.
+Бот сайта (`app/api/telegram/route.ts`) больше никого не принимает в группу: он не одобряет заявки, а на любое сообщение в личку отвечает ссылкой на подписку. Если наш бот всё ещё админ в группе, его можно убрать оттуда, `TELEGRAM_GROUP_ID` на Vercel больше не нужен. После деплоя один раз открыть `https://cryptoosh.uz/api/telegram?setup=<TELEGRAM_WEBHOOK_SECRET>`, чтобы бот перестал получать заявки.
 
 ## Поиск: Google и Яндекс
 
@@ -120,7 +117,7 @@ npm run build && npm start
 | --- | --- | --- |
 | `share` | кнопки «Поделиться» | `method`: telegram, whatsapp, x, facebook, instagram, copy |
 | `partner_click` | обменники в таблице USDT | `partner`: домен обменника |
-| `contact_click` | Telegram, группа, Instagram, звонок | `channel`, `link_text` |
+| `contact_click` | Telegram, комьюнити (`telegram_community`), Instagram, звонок | `channel`, `link_text` |
 | `cta_click` | кнопки-ссылки внутри сайта | `link_url`, `link_text` |
 | `map_click` | адрес офиса на Яндекс Картах | `link_text` |
 | `outbound_click` | любая другая внешняя ссылка | `link_domain`, `link_text` |

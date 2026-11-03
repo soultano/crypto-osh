@@ -95,8 +95,8 @@ export function VideoGrid({ t, locale, limit }: { t: Dictionary; locale: Locale;
 }
 
 export function Contact({ t }: { t: Dictionary }) {
-  const { group, telegram, instagram, phone } = site.contacts;
-  const hasAny = group || telegram || instagram || phone;
+  const { community, telegram, instagram, phone } = site.contacts;
+  const hasAny = community || telegram || instagram || phone;
   return (
     <section className="section contact" id="contact">
       <div className="container contact-inner">
@@ -109,13 +109,13 @@ export function Contact({ t }: { t: Dictionary }) {
           <p className="lead">{t.contact.text}</p>
           {hasAny ? (
             <div className="btn-row">
-              {group && (
-                <a className="btn" href={group} target="_blank" rel="noopener noreferrer">
-                  {t.contact.group}
+              {community && (
+                <a className="btn" href={community} target="_blank" rel="noopener noreferrer">
+                  {t.contact.community}
                 </a>
               )}
               {telegram && (
-                <a className={group ? "btn btn-ghost" : "btn"} href={telegram} target="_blank" rel="noopener noreferrer">
+                <a className={community ? "btn btn-ghost" : "btn"} href={telegram} target="_blank" rel="noopener noreferrer">
                   {t.contact.telegram}
                 </a>
               )}
@@ -161,9 +161,9 @@ export function Footer({ t, locale }: { t: Dictionary; locale: Locale }) {
           <Link href={`/${locale}/people`}>{t.nav.people}</Link>
           <Link href={`/${locale}/videos`}>{t.nav.videos}</Link>
           <Link href={`/${locale}#contact`}>{t.nav.contact}</Link>
-          {site.contacts.group && (
-            <a href={site.contacts.group} target="_blank" rel="noopener noreferrer">
-              {t.contact.group}
+          {site.contacts.community && (
+            <a href={site.contacts.community} target="_blank" rel="noopener noreferrer">
+              {t.contact.community}
             </a>
           )}
         </nav>

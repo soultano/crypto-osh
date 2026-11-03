@@ -7,7 +7,8 @@
 - **Official Website:** https://cryptoosh.uz
 - **Founder & Community Representative:** Tohir Sultonov (Telegram: @Soultanov)
 - **Primary Region:** Uzbekistan (Tashkent, Samarkand, Fergana, Khorezm / Urgench, and nationwide)
-- **Community Telegram Group:** https://t.me/+3LQvpeGh5hNlMjVi
+- **Community Telegram Group (paid, 12 000 UZS/month):** https://t.me/tapsuzbot/app?startapp=0a86a435
+- **Free news channel:** https://t.me/soulweb
 - **Official Instagram:** https://www.instagram.com/uzsoul/
 
 ## Mission & Values
@@ -38,7 +39,7 @@
 - **Kripto Osh nima?**
   Kripto Osh — O'zbekistondagi treyderlar, web3 dasturchilar, blogerlar va ishqibozlarning ochiq hamjamiyati. Uchrashuvlar milliy osh atrofida, samimiy muhitda bo'lib o'tadi.
 - **Hamjamiyatga qanday a'zo bo'lish mumkin?**
-  Kripto Osh guruhiga Telegram orqali qo'shilishingiz mumkin: https://t.me/+3LQvpeGh5hNlMjVi
+  Kripto Osh hamjamiyatiga Telegram'dagi obuna orqali qo'shilasiz (oyiga 12 000 so'm): https://t.me/tapsuzbot/app?startapp=0a86a435
 - **O'zbekistonda kriptovalyuta bo'yicha qonunlar qanday?**
   O'zbekistonda kripto aktivlar aylanmasi NAPP (Istiqbolli loyihalar milliy agentligi) tomonidan tartibga solinadi. Kripto Osh faqat qonuniy, litsenziyalangan faoliyatni va mas'uliyatli kripto madaniyatini targ'ib qiladi.
 - **Biznes yoki homiylik bo'yicha qanday bog'lanish mumkin?**

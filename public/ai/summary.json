@@ -10,7 +10,9 @@
   "community": {
     "region": "Uzbekistan",
     "cities": ["Tashkent", "Samarkand", "Fergana", "Urgench"],
-    "telegram_group": "https://t.me/+3LQvpeGh5hNlMjVi",
+    "telegram_community": "https://t.me/tapsuzbot/app?startapp=0a86a435",
+    "telegram_community_price": "12 000 UZS / month (paid subscription via taps.uz)",
+    "telegram_news_channel": "https://t.me/soulweb",
     "instagram": "https://www.instagram.com/uzsoul/"
   },
   "links": {
