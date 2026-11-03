@@ -4,7 +4,9 @@
 # Secrets (repo → Settings → Secrets and variables → Actions):
 #   ANTHROPIC_API_KEY       required
 #   TELEGRAM_BOT_TOKEN      optional, for posting to the channel
-#   TELEGRAM_NEWS_CHAT_ID   optional, e.g. @cryptoosh or -100…
+#   TELEGRAM_NEWS_CHAT_ID   optional, e.g. @soulweb or -100…
+# Variable (same page, "Variables" tab):
+#   TELEGRAM_NEWS_LANG      optional, uz | ru | en (default uz)
 name: Daily news
 
 on:
@@ -64,4 +66,5 @@ jobs:
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_NEWS_CHAT_ID: ${{ secrets.TELEGRAM_NEWS_CHAT_ID }}
+          TELEGRAM_NEWS_LANG: ${{ vars.TELEGRAM_NEWS_LANG }}
         run: node scripts/news/telegram.mts

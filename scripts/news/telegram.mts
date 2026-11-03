@@ -1,10 +1,15 @@
 // Posts the news written today (news-new.json) to the Telegram channel,
-// in Uzbek, each with a link to the article on the site. Waits until the
-// new deploy actually serves the article, so the link preview works.
+// each with a link to the article on the site. Waits until the new deploy
+// actually serves the article, so the link preview works.
 //
-// Env: TELEGRAM_BOT_TOKEN, TELEGRAM_NEWS_CHAT_ID (e.g. @cryptoosh or -100…),
-// SITE_URL (default https://cryptoosh.uz). Without the token or chat id the
-// step does nothing.
+// Links carry utm_source=telegram&utm_medium=social&utm_campaign=<channel>,
+// so GA4 shows channel visits under Traffic acquisition.
+//
+// Env: TELEGRAM_BOT_TOKEN, TELEGRAM_NEWS_CHAT_ID (e.g. @soulweb or -100…),
+// TELEGRAM_NEWS_LANG (uz | ru | en, default uz), SITE_URL (default
+// https://cryptoosh.uz), NEWS_SLUGS (comma-separated slugs, or "latest" for
+// the newest article: posts those instead of news-new.json, for a test run).
+// Without the token or chat id the step does nothing.
 
 import fs from "node:fs";
 import path from "node:path";
@@ -13,6 +18,37 @@ const token = process.env.TELEGRAM_BOT_TOKEN;
 const chat = process.env.TELEGRAM_NEWS_CHAT_ID;
 const site = (process.env.SITE_URL || "https://cryptoosh.uz").replace(/\/$/, "");
 const root = process.cwd();
+const lang = (["uz", "ru", "en"] as const).find((l) => l === process.env.TELEGRAM_NEWS_LANG?.trim()) ?? "uz";
+const campaign = (chat || "channel").replace(/^@/, "").replace(/[^\w-]/g, "") || "channel";
+
+const LABELS = {
+  uz: { take: "🇺🇿", more: "Batafsil saytda" },
+  ru: { take: "🇺🇿", more: "Подробнее на сайте" },
+  en: { take: "🇺🇿", more: "Read more on the site" },
+};
+
+function utm(url: string, slug: string): string {
+  const u = new URL(url);
+  u.searchParams.set("utm_source", "telegram");
+  u.searchParams.set("utm_medium", "social");
+  u.searchParams.set("utm_campaign", campaign);
+  u.searchParams.set("utm_content", slug);
+  return u.toString();
+}
+
+function pickSlugs(): string[] {
+  const dir = path.join(root, "content", "articles");
+  const wanted = process.env.NEWS_SLUGS?.trim();
+  if (wanted === "latest") {
+    const all = fs.readdirSync(dir).filter((f) => f.endsWith(".json"));
+    const dated = all.map((f) => ({ slug: f.slice(0, -5), date: JSON.parse(fs.readFileSync(path.join(dir, f), "utf8")).date as string }));
+    dated.sort((a, b) => Date.parse(b.date) - Date.parse(a.date) || b.slug.localeCompare(a.slug));
+    return dated.slice(0, 1).map((d) => d.slug);
+  }
+  if (wanted) return wanted.split(",").map((x) => x.trim()).filter((x) => /^[\w-]+$/.test(x));
+  const listPath = path.join(root, "news-new.json");
+  return fs.existsSync(listPath) ? JSON.parse(fs.readFileSync(listPath, "utf8")) : [];
+}
 
 function esc(s: string): string {
   return s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
@@ -37,31 +73,32 @@ async function main() {
     console.log("TELEGRAM_BOT_TOKEN or TELEGRAM_NEWS_CHAT_ID not set: skipping Telegram.");
     return;
   }
-  const listPath = path.join(root, "news-new.json");
-  const slugs: string[] = fs.existsSync(listPath) ? JSON.parse(fs.readFileSync(listPath, "utf8")) : [];
+  const slugs = pickSlugs();
   if (!slugs.length) return console.log("No new articles.");
 
   for (const slug of slugs) {
     const a = JSON.parse(fs.readFileSync(path.join(root, "content", "articles", `${slug}.json`), "utf8"));
-    const url = `${site}/uz/news/${slug}`;
+    const url = `${site}/${lang}/news/${slug}`;
     if (!(await waitFor(url))) {
       console.warn(`${url} is not live yet: skipping its post.`);
       continue;
     }
+    const t = a[lang] ?? a.uz;
+    const link = utm(url, slug);
     const text = [
-      `<b>${esc(a.uz.title)}</b>`,
+      `<b>${esc(t.title)}</b>`,
       "",
-      esc(a.uz.summary),
+      esc(t.summary),
       "",
-      `🇺🇿 ${esc(a.uz.take)}`,
+      `${LABELS[lang].take} ${esc(t.take)}`,
       "",
-      `👉 <a href="${url}">Batafsil saytda</a>`,
+      `👉 <a href="${esc(link)}">${LABELS[lang].more}</a>`,
       (a.tags as string[]).map((t) => `#${t.replace(/-/g, "_")}`).join(" "),
     ].join("\n");
     const res = await fetch(`https://api.telegram.org/bot${token}/sendMessage`, {
       method: "POST",
       headers: { "content-type": "application/json" },
-      body: JSON.stringify({ chat_id: chat, text, parse_mode: "HTML", link_preview_options: { url, prefer_large_media: true } }),
+      body: JSON.stringify({ chat_id: chat, text, parse_mode: "HTML", link_preview_options: { url: link, prefer_large_media: true } }),
     });
     const body = (await res.json()) as { ok: boolean; description?: string };
     if (!body.ok) throw new Error(`Telegram: ${body.description}`);
