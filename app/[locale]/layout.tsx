@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { notFound } from "next/navigation";
 import { Analytics } from "@/components/Analytics";
+import { CommunityCta } from "@/components/CommunityCta";
 import { Header } from "@/components/Header";
 import { Motion } from "@/components/Motion";
 import { Footer } from "@/components/Sections";
@@ -66,7 +67,7 @@ export default async function LocaleLayout({
 
   const sameAsLinks = [
     site.contacts.telegram,
-    site.contacts.group,
+    site.contacts.channel,
     site.contacts.instagram,
     ...videos.map((v) => `https://www.youtube.com/watch?v=${v.id}`),
   ].filter(Boolean);
@@ -128,7 +129,10 @@ export default async function LocaleLayout({
           Skip to content
         </a>
         <Header locale={locale} nav={t.nav} />
-        <main id="main">{children}</main>
+        <main id="main">
+          {children}
+          <CommunityCta locale={locale} />
+        </main>
         <Footer t={t} locale={locale} />
         <Motion />
         {site.analytics && <Analytics id={site.analytics} />}

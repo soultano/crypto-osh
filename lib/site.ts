@@ -28,11 +28,12 @@ export const site = {
   name: "Crypto Osh",
   contacts: {
     telegram: safeUrl(process.env.NEXT_PUBLIC_TELEGRAM_URL || "https://t.me/Soultanov", ["t.me"]),
-    // Community group: an invite link with join requests on, so the bot can
-    // ask each newcomer to introduce themselves. Empty hides the button.
-    // News channel: the daily news are posted here automatically.
+    // News channel (free): the daily news are posted here automatically.
     channel: safeUrl(process.env.NEXT_PUBLIC_TELEGRAM_CHANNEL_URL || "https://t.me/soulweb", ["t.me"]),
-    group: safeUrl(process.env.NEXT_PUBLIC_TELEGRAM_GROUP_URL || "https://t.me/+3LQvpeGh5hNlMjVi", ["t.me"]),
+    // Community group (paid, 12 000 UZS a month): the only way in is the
+    // subscription in the taps.uz bot. There is no free invite link on the
+    // site any more. Empty hides the community block and buttons.
+    community: safeUrl(process.env.NEXT_PUBLIC_COMMUNITY_URL || "https://t.me/tapsuzbot/app?startapp=0a86a435", ["t.me"]),
     instagram: safeUrl(process.env.NEXT_PUBLIC_INSTAGRAM_URL || "https://www.instagram.com/uzsoul/", ["instagram.com", "www.instagram.com"]),
     phone: process.env.NEXT_PUBLIC_PHONE || "", // e.g. +998901234567
   },

@@ -33,6 +33,7 @@ function describe(el: Element): Record<string, string> | null {
     return el.classList.contains("btn") ? { event: "cta_click", link_url: el.pathname + el.hash, link_text: text } : null;
   }
   if (el.closest(".channel-cta")) return { event: "contact_click", channel: "telegram_channel", link_text: text };
+  if (href.includes("t.me/tapsuzbot")) return { event: "contact_click", channel: "telegram_community", link_text: text };
   if (el.hostname === "t.me") return { event: "contact_click", channel: href.includes("/+") ? "telegram_group" : "telegram", link_text: text };
   if (el.hostname.endsWith("instagram.com")) return { event: "contact_click", channel: "instagram", link_text: text };
   if (el.hostname.startsWith("yandex.")) return { event: "map_click", link_text: text };
