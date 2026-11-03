@@ -328,6 +328,7 @@ export const people: Person[] = [
     cardTags: [0, 1, 2, 3],
     links: [
       { label: "LinkedIn", url: "https://www.linkedin.com/in/rakhmatulla-zakirov-bitcoin/" },
+      { label: "Nadirium", url: "https://nadirium.io/" },
     ],
     text: {
       ru: {
@@ -340,6 +341,7 @@ export const people: Person[] = [
           "Рахматулла Закиров — предприниматель, инвестор и основатель BitMoney.",
           "Имеет более 15 лет опыта в финансах и бизнесе.",
           "Около 9 лет занимается блокчейном, цифровыми активами и FinTech-проектами.",
+          "Также он CEO и сооснователь Nadirium — консалтинговой компании, которая помогает частным лицам и организациям внедрять Bitcoin: стратегия, управление рисками, обучение и подготовка к использованию Bitcoin как резервного актива.",
         ],
         directions: [
           "Блокчейн",
@@ -360,6 +362,7 @@ export const people: Person[] = [
           "Rakhmatulla Zakirov — tadbirkor, investor va BitMoney asoschisi.",
           "Moliya va biznesda 15 yildan ortiq tajribaga ega.",
           "Qariyb 9 yildan buyon blokcheyn, raqamli aktivlar va FinTech loyihalari bilan shug'ullanadi.",
+          "Shuningdek, u Nadirium kompaniyasining CEO'si va hammuassisi. Nadirium — jismoniy shaxslar va tashkilotlarga Bitcoin'ni joriy etishda yordam beradigan konsalting kompaniyasi: strategiya, risklarni boshqarish, o'qitish va Bitcoin'ni zaxira aktiv sifatida qo'llashga tayyorlash.",
         ],
         directions: [
           "Blokcheyn",
@@ -380,6 +383,7 @@ export const people: Person[] = [
           "Rakhmatulla Zakirov is an entrepreneur, investor and the founder of BitMoney.",
           "He has more than 15 years of experience in finance and business.",
           "For about 9 years he has worked on blockchain, digital assets and FinTech projects.",
+          "He is also the CEO and co-founder of Nadirium, a consulting company that helps individuals and organizations adopt Bitcoin through strategy, risk management, training and preparation for holding Bitcoin as a treasury reserve asset.",
         ],
         directions: [
           "Blockchain",
