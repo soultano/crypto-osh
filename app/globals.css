@@ -3000,3 +3000,54 @@ p {
     transition-delay: 0s !important;
   }
 }
+
+/* ---------- Telegram channel invitation ---------- */
+
+.channel-cta {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin: 1.8rem 0;
+  padding: 18px 20px;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: var(--card-bg);
+  box-shadow: var(--card-shadow);
+}
+
+.channel-cta-icon {
+  flex: none;
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: #229ed9;
+  color: #fff;
+}
+
+.channel-cta-text {
+  flex: 1;
+  min-width: 0;
+}
+
+.channel-cta-text p {
+  margin: 4px 0 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.channel-cta .btn {
+  flex: none;
+}
+
+@media (max-width: 640px) {
+  .channel-cta {
+    flex-wrap: wrap;
+  }
+
+  .channel-cta .btn {
+    width: 100%;
+    justify-content: center;
+  }
+}

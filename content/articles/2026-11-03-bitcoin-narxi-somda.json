@@ -1,0 +1,57 @@
+{
+  "slug": "2026-11-03-bitcoin-narxi-somda",
+  "date": "2026-11-03T12:00:00+05:00",
+  "tags": [
+    "qollanma",
+    "bitcoin",
+    "kurs"
+  ],
+  "sources": [
+    {
+      "name": "O'zbekiston Respublikasi Markaziy banki",
+      "url": "https://cbu.uz/"
+    }
+  ],
+  "uz": {
+    "title": "Bitcoin narxi so'mda: qanday hisoblanadi va nega har joyda har xil",
+    "summary": "1 bitcoin necha so'm turadi, bu narx qayerdan olinadi va nega birjalarda kurs farq qiladi. Bugungi narxni qayerdan ko'rish va o'zingiz qanday hisoblash mumkin.",
+    "body": [
+      "Bitcoin uchun «rasmiy so'm narxi» yo'q. Butun dunyo bitcoin narxini AQSh dollarida (BTC/USD) yoki USDT'da belgilaydi, so'mdagi narx esa shundan hisoblab chiqiladi.",
+      "Formula oddiy: bitcoinning dollardagi narxi × dollarning so'mdagi kursi. Masalan, bitcoin 100 000 dollar, dollar esa 12 000 so'm bo'lsa, 1 BTC = 100 000 × 12 000 = 1,2 mlrd so'm. Bu taxminiy misol, bugungi aniq raqamlar «Kurs» sahifasida.",
+      "Crypto Osh «Kurs» sahifasida bitcoin, ethereum, USDT, TON va boshqa tangalarning narxi so'mda va dollarda har 10 daqiqada yangilanadi. Dollar kursi O'zbekiston Markaziy bankidan olinadi. U yerda kalkulyator ham bor: summani kiriting va necha so'm bo'lishini darhol ko'ring.",
+      "Nega birjada narx boshqacha? Birinchidan, birja o'z kursini qo'yadi va sotib olish bilan sotish o'rtasida farq (spred) bo'ladi. Ikkinchidan, komissiya. Uchinchidan, birja dollarni Markaziy bank kursida emas, o'z kursida hisoblashi mumkin. Shuning uchun haqiqiy xarid narxi deyarli har doim «toza» hisobdan biroz yuqori bo'ladi.",
+      "Satoshi nima? Bitcoinni butunlay sotib olish shart emas. 1 bitcoin 100 million satoshiga bo'linadi. 100 ming so'mga ham bitcoinning bir qismini olish mumkin.",
+      "Narx nimalardan o'zgaradi? AQSh foiz stavkalari va inflyatsiya ma'lumotlari, bitcoin ETF'larga pul oqimi, yirik o'yinchilarning savdosi, xakerlik va regulyatorlarning qarorlari. So'mdagi narxga dollar kursining o'zgarishi ham ta'sir qiladi.",
+      "Bitcoinni O'zbekistonda qonuniy sotib olish faqat litsenziyali provayderlar orqali mumkin. Odatda avval USDT olinadi, keyin u bitcoinga almashtiriladi. Bu haqda alohida qo'llanmamiz bor: «USDT qanday sotib olinadi»."
+    ],
+    "take": "Qisqasi: bitcoinning so'mdagi narxi = dollardagi narxi × dollar kursi. Bugungi aniq narx va kalkulyator Crypto Osh «Kurs» sahifasida, har 10 daqiqada yangilanadi."
+  },
+  "ru": {
+    "title": "Цена биткоина в сумах: как считается и почему везде разная",
+    "summary": "Сколько стоит 1 биткоин в сумах, откуда берётся эта цена и почему на биржах курс отличается. Где смотреть сегодняшнюю цену и как посчитать самому.",
+    "body": [
+      "«Официальной цены» биткоина в сумах не существует. Весь мир считает биткоин в долларах США (BTC/USD) или в USDT, а цена в сумах пересчитывается из неё.",
+      "Формула простая: цена биткоина в долларах × курс доллара в сумах. Например, если биткоин стоит 100 000 долларов, а доллар 12 000 сумов, то 1 BTC = 100 000 × 12 000 = 1,2 млрд сумов. Это условный пример, точные цифры на сегодня — на странице «Курс».",
+      "На странице «Курс» Crypto Osh цены биткоина, эфира, USDT, TON и других монет в сумах и долларах обновляются каждые 10 минут. Курс доллара берётся у Центрального банка Узбекистана. Там же есть калькулятор: введите сумму и сразу увидите, сколько это в сумах.",
+      "Почему на бирже цена другая? Во-первых, биржа ставит свой курс, и между покупкой и продажей есть разница (спред). Во-вторых, комиссия. В-третьих, биржа может считать доллар не по курсу ЦБ, а по своему. Поэтому реальная цена покупки почти всегда немного выше «чистого» расчёта.",
+      "Что такое сатоши? Покупать биткоин целиком не обязательно. 1 биткоин делится на 100 миллионов сатоши. Часть биткоина можно купить и на 100 тысяч сумов.",
+      "От чего меняется цена? Ставки ФРС и данные по инфляции в США, приток денег в биткоин-ETF, сделки крупных игроков, взломы и решения регуляторов. На цену в сумах влияет и изменение курса доллара.",
+      "Законно купить биткоин в Узбекистане можно только через лицензированных провайдеров. Обычно сначала покупают USDT, а потом меняют его на биткоин. Об этом у нас есть отдельная инструкция: «Как купить USDT»."
+    ],
+    "take": "Коротко: цена биткоина в сумах = цена в долларах × курс доллара. Точная цена на сегодня и калькулятор — на странице «Курс» Crypto Osh, обновляется каждые 10 минут."
+  },
+  "en": {
+    "title": "Bitcoin price in som: how it is calculated and why it differs",
+    "summary": "How much 1 bitcoin costs in som, where that price comes from and why exchanges quote different rates. Where to see today's price and how to work it out yourself.",
+    "body": [
+      "There is no official som price for bitcoin. The whole world prices bitcoin in US dollars (BTC/USD) or USDT, and the som price is converted from that.",
+      "The formula is simple: bitcoin's dollar price × the dollar rate in som. For example, if bitcoin is 100,000 dollars and a dollar is 12,000 som, 1 BTC = 100,000 × 12,000 = 1.2 billion som. That is an illustration; today's exact numbers are on the Rates page.",
+      "On the Crypto Osh Rates page, prices for bitcoin, ether, USDT, TON and other coins in som and dollars refresh every 10 minutes. The dollar rate comes from the Central Bank of Uzbekistan. There is a calculator too: enter an amount and see the som value at once.",
+      "Why is the exchange price different? First, the exchange sets its own rate, with a gap between buying and selling (the spread). Second, fees. Third, the exchange may convert dollars at its own rate rather than the central bank's. So the real purchase price is almost always a little above the plain calculation.",
+      "What is a satoshi? You do not have to buy a whole bitcoin. One bitcoin splits into 100 million satoshi, so you can buy a slice of bitcoin even for 100,000 som.",
+      "What moves the price? US interest rates and inflation data, money flowing into bitcoin ETFs, trades by large holders, hacks and regulators' decisions. Changes in the dollar rate also move the som price.",
+      "In Uzbekistan, bitcoin can be bought legally only through licensed providers. People usually buy USDT first and then swap it for bitcoin. We have a separate guide on that: How to buy USDT."
+    ],
+    "take": "In short: bitcoin's som price = its dollar price × the dollar rate. Today's exact price and a calculator are on the Crypto Osh Rates page, refreshed every 10 minutes."
+  }
+}

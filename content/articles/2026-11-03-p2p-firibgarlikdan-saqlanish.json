@@ -1,0 +1,63 @@
+{
+  "slug": "2026-11-03-p2p-firibgarlikdan-saqlanish",
+  "date": "2026-11-03T12:00:00+05:00",
+  "tags": [
+    "qollanma",
+    "p2p",
+    "xavfsizlik"
+  ],
+  "sources": [
+    {
+      "name": "Lex.uz (O'RQ-899)",
+      "url": "https://www.lex.uz/docs/6763849"
+    }
+  ],
+  "uz": {
+    "title": "Kripto firibgarlikdan qanday saqlanish: 6 ta keng tarqalgan sxema",
+    "summary": "Soxta chek, «uchburchak» to'lov, iflos pul, soxta birja va «kafolatli daromad». O'zbekistonda kripto bilan bog'liq eng ko'p uchraydigan firibgarlik usullari va ulardan himoyalanish yo'llari.",
+    "body": [
+      "Kripto atrofida firibgarlar ko'p, va ularning qurboni asosan tajribasiz yangi boshlovchilar bo'ladi. Quyida eng ko'p uchraydigan sxemalar va har biridan qanday saqlanish kerakligi.",
+      "1. Soxta to'lov cheki. «Pulni o'tkazdim» deb skrinshot yoki soxta SMS yuborishadi, siz esa USDT'ni yuborasiz. Himoya: pul haqiqatan kartangizga tushganini bank ilovasida tekshirmaguncha hech narsa yubormang. Umuman olganda, «qo'ldan» savdo qilmang.",
+      "2. «Uchburchak» to'lov. Firibgar sizdan USDT sotib oladi, lekin pulni boshqa aldangan odam to'laydi. Keyin o'sha odam bankka murojaat qiladi, kartangiz bloklanadi, siz esa firibgarlikka sherik sifatida tekshiruvga tushasiz. Himoya: faqat litsenziyali provayderlar bilan ishlang.",
+      "3. Iflos pul. O'g'irlangan yoki firibgarlik bilan topilgan mablag' P2P orqali «tozalanadi». Uni qabul qilgan treyder ham javobgarlikka tortilishi mumkin. Himoya: kartangizni hech kimga «pul aylantirish» uchun bermang va noma'lum odamlardan to'lov qabul qilmang.",
+      "4. Soxta birja va fishing. Haqiqiy birjaga o'xshash sayt yoki Telegram-bot, «qo'llab-quvvatlash xizmati» nomidan yozilgan xabar. Ular login, parol yoki seed-iborangizni so'raydi. Himoya: manzilni o'zingiz yozing yoki xatcho'pdan oching, seed-iborani hech qachon hech kimga bermang — haqiqiy xizmat uni hech qachon so'ramaydi.",
+      "5. «Kafolatli daromad». «Oyiga 30%», «bot o'zi savdo qiladi», «do'stingizni taklif qiling». Bu moliyaviy piramidalarning klassik belgilari. Himoya: kriptoda kafolatlangan daromad yo'q. Kim kafolat bersa, u aldayapti.",
+      "6. Ishonchsiz hamyon va qurilma. Rasmiy bo'lmagan do'kondan olingan apparat hamyon yoki noma'lum ilova mablag'ni o'g'irlashi mumkin. Himoya: hamyonni faqat ishlab chiqaruvchidan yoki rasmiy distributordan oling, ilovani rasmiy do'kondan o'rnating.",
+      "Qonuniy jihat: O'zbekistonda litsenziyasiz kripto savdo (Telegram, xorijiy birjalardagi P2P) ma'muriy javobgarlikka, takrorlansa jinoiy javobgarlikka olib keladi. Ya'ni «qo'ldan» savdoda siz nafaqat firibgarlarga, balki qonunga ham duch kelasiz.",
+      "Agar aldangan bo'lsangiz: barcha yozishmalar, cheklar va tranzaksiya xeshlarini saqlang, darhol bankingizga va ichki ishlar organlariga murojaat qiling. Qanchalik tez harakat qilsangiz, pulni qaytarish imkoni shunchalik yuqori."
+    ],
+    "take": "Qisqasi: faqat litsenziyali provayderlar, faqat o'z kartangiz, seed-ibora faqat sizda. «Juda yaxshi» kurs va «kafolatli daromad» — firibgarlikning birinchi belgisi."
+  },
+  "ru": {
+    "title": "Как не попасться на крипто-мошенников: 6 самых частых схем",
+    "summary": "Фальшивый чек, «треугольник», грязные деньги, фейковая биржа и «гарантированный доход». Самые частые крипто-схемы мошенников в Узбекистане и как от них защититься.",
+    "body": [
+      "Вокруг крипты много мошенников, и чаще всего их жертвами становятся неопытные новички. Ниже самые частые схемы и как защититься от каждой.",
+      "1. Фальшивый чек. Присылают скриншот или поддельное СМС «деньги отправил», а вы отправляете USDT. Защита: ничего не отправляйте, пока не проверите в банковском приложении, что деньги реально пришли на карту. А лучше вообще не торгуйте «с рук».",
+      "2. «Треугольник». Мошенник покупает у вас USDT, но платит за него другой обманутый человек. Потом этот человек идёт в банк, вашу карту блокируют, а вас проверяют как соучастника. Защита: работайте только с лицензированными провайдерами.",
+      "3. Грязные деньги. Украденные или полученные обманом средства «отмывают» через P2P. Принявшего их трейдера тоже могут привлечь к ответственности. Защита: не давайте свою карту никому «прокрутить деньги» и не принимайте переводы от незнакомцев.",
+      "4. Фейковая биржа и фишинг. Сайт или Telegram-бот, похожий на настоящую биржу, сообщение от «службы поддержки». Просят логин, пароль или seed-фразу. Защита: вводите адрес сами или открывайте из закладок, никогда никому не давайте seed-фразу — настоящий сервис её никогда не спрашивает.",
+      "5. «Гарантированный доход». «30% в месяц», «бот сам торгует», «пригласи друга». Классические признаки финансовой пирамиды. Защита: в крипте нет гарантированного дохода. Кто гарантирует, тот обманывает.",
+      "6. Ненадёжный кошелёк и устройство. Аппаратный кошелёк из неофициального магазина или неизвестное приложение могут украсть средства. Защита: покупайте кошелёк только у производителя или официального дистрибьютора, приложения ставьте из официальных магазинов.",
+      "Закон: в Узбекистане торговля криптой без лицензии (Telegram, P2P на иностранных биржах) ведёт к административной ответственности, а при повторе — к уголовной. То есть, торгуя «с рук», вы рискуете нарваться не только на мошенников, но и на закон.",
+      "Если вас обманули: сохраните всю переписку, чеки и хэши транзакций, сразу обращайтесь в свой банк и в органы внутренних дел. Чем быстрее вы действуете, тем выше шанс вернуть деньги."
+    ],
+    "take": "Коротко: только лицензированные провайдеры, только своя карта, seed-фраза только у вас. «Слишком хороший» курс и «гарантированный доход» — первый признак мошенничества."
+  },
+  "en": {
+    "title": "How to avoid crypto scams: the 6 most common schemes",
+    "summary": "Fake receipts, the triangle, dirty money, fake exchanges and guaranteed returns. The most common crypto scams in Uzbekistan and how to protect yourself.",
+    "body": [
+      "Crypto attracts plenty of scammers, and their victims are mostly inexperienced newcomers. Below are the most common schemes and how to guard against each.",
+      "1. Fake receipt. They send a screenshot or a fake SMS saying the money was sent, and you send the USDT. Protection: send nothing until your banking app shows the money really arrived. Better still, do not trade hand to hand at all.",
+      "2. The triangle. A scammer buys USDT from you, but another deceived person pays for it. That person then goes to the bank, your card is blocked, and you are investigated as an accomplice. Protection: deal only with licensed providers.",
+      "3. Dirty money. Stolen or scammed funds get laundered through P2P, and the trader who received them can be held liable too. Protection: never lend your card to anyone to move money, and do not accept transfers from strangers.",
+      "4. Fake exchanges and phishing. A site or Telegram bot that looks like a real exchange, or a message from support. They ask for your login, password or seed phrase. Protection: type the address yourself or open it from bookmarks, and never give anyone your seed phrase; a real service never asks for it.",
+      "5. Guaranteed returns. 30% a month, a bot that trades for you, invite a friend. These are the classic signs of a pyramid scheme. Protection: there are no guaranteed returns in crypto. Whoever guarantees them is lying.",
+      "6. Untrusted wallets and devices. A hardware wallet from an unofficial shop or an unknown app can steal your funds. Protection: buy wallets only from the maker or an official distributor, and install apps only from official stores.",
+      "The law: in Uzbekistan, trading crypto without a licence (Telegram, P2P on foreign exchanges) carries administrative liability, and criminal liability if repeated. Trading hand to hand, you risk running into the law as well as scammers.",
+      "If you have been scammed: keep all messages, receipts and transaction hashes, and go to your bank and the police right away. The faster you act, the better the chance of getting the money back."
+    ],
+    "take": "In short: licensed providers only, your own card only, your seed phrase only with you. A rate that is too good or a guaranteed return is the first sign of a scam."
+  }
+}

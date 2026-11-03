@@ -1,3 +1,4 @@
+import { ChannelCta } from "@/components/ChannelCta";
 import { Art } from "@/components/Illustrations";
 import { NewsList } from "@/components/News";
 import { Contact } from "@/components/Sections";
@@ -29,6 +30,7 @@ export default async function News({ params }: { params: Promise<{ locale: strin
       </section>
       <section className="section">
         <div className="container">
+          <ChannelCta locale={locale} />
           <NewsList items={allNews()} locale={locale} />
           <p className="legal news-legal">{n.disclaimer}</p>
         </div>
