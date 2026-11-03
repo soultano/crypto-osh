@@ -3,6 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ArticleShare } from "@/components/ArticleShare";
 import { ChannelCta } from "@/components/ChannelCta";
+import { Guides } from "@/components/Guides";
 import { storyText } from "@/content/story";
 import { NewsList } from "@/components/News";
 import { newsText } from "@/content/news";
@@ -117,6 +118,7 @@ export default async function Article({ params }: { params: Params }) {
             </ul>
           )}
           <ChannelCta locale={locale} />
+          <Guides locale={locale} skip={slug} />
           <div className="btn-row">
             <Link className="btn btn-ghost" href={`/${locale}/kurs`}>
               {n.pricesNav} BTC / USDT
