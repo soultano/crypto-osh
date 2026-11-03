@@ -392,6 +392,84 @@ export const people: Person[] = [
       },
     },
   },
+  {
+    slug: "zafar-davronov",
+    photo: "/people/zafar-davronov.webp",
+    ogImage: "/people/zafar-davronov-og.jpg",
+    cardTags: [0, 1, 2, 3],
+    links: [
+      { label: "LinkedIn", url: "https://www.linkedin.com/in/zafar-davronov/" },
+      { label: "Telegram", url: "https://t.me/reffcryptoflow" },
+    ],
+    text: {
+      ru: {
+        name: "Зафар Давронов",
+        role: "Web3-маркетолог, адвайзер крипто- и GameFi-проектов",
+        metaDescription: "Зафар Давронов — Web3-маркетолог и комьюнити-менеджер: рост крипто- и GameFi-проектов, продвижение в Twitter (X), консультации по запуску.",
+        short:
+          "Зафар Давронов — Web3-маркетолог и комьюнити-менеджер. В крипте с 2021 года, в 17 лет развивал GameFi-стартап. Сегодня выстраивает рост крипто- и Web3-продуктов и консультирует команды по комьюнити, позиционированию и запуску.",
+        bio: [
+          "Зафар Давронов — Web3-маркетолог и комьюнити-менеджер.",
+          "Свой путь в крипте начал в 2021 году с продажи вайтлистов NFT-проектов, а уже в 17 лет развивал GameFi-стартап: привлёк десятки тысяч пользователей и помог проекту выйти на крупные инвестиции.",
+          "Сегодня выстраивает рост крипто- и Web3-продуктов, от крупных финансовых площадок до нишевых проектов, которые набирают сотни тысяч охватов через Twitter (X).",
+          "Консультирует команды по комьюнити, позиционированию и запуску.",
+          "Главная слабость: торговля мемкоинами на Solana. Знает, что это плохая идея, но всё равно открывает график ещё раз.",
+        ],
+        directions: [
+          "Web3-маркетинг",
+          "Комьюнити-менеджмент",
+          "GameFi",
+          "Продвижение в Twitter (X)",
+          "NFT",
+          "Позиционирование и запуск проектов",
+        ],
+      },
+      uz: {
+        name: "Zafar Davronov",
+        role: "Web3-marketolog, kripto va GameFi loyihalari maslahatchisi",
+        metaDescription: "Zafar Davronov — Web3-marketolog va hamjamiyat menejeri: kripto va GameFi loyihalarini o'stirish, Twitter (X) orqali targ'ibot, ishga tushirish bo'yicha maslahatlar.",
+        short:
+          "Zafar Davronov — Web3-marketolog va hamjamiyat menejeri. 2021 yildan beri kriptoda, 17 yoshida GameFi startapini rivojlantirgan. Bugun kripto va Web3 mahsulotlarining o'sishini yo'lga qo'yadi va jamoalarga hamjamiyat, pozitsiyalash va ishga tushirish bo'yicha maslahat beradi.",
+        bio: [
+          "Zafar Davronov — Web3-marketolog va hamjamiyat menejeri.",
+          "Kriptodagi yo'lini 2021 yilda NFT loyihalarining whitelist'larini sotishdan boshlagan, 17 yoshida esa GameFi startapini rivojlantirgan: o'n minglab foydalanuvchilarni jalb qilgan va loyihaga yirik investitsiyalarga chiqishda yordam bergan.",
+          "Bugun kripto va Web3 mahsulotlarining o'sishini yo'lga qo'yadi: yirik moliyaviy platformalardan tortib Twitter (X) orqali yuz minglab qamrov to'playdigan tor yo'nalishdagi loyihalargacha.",
+          "Jamoalarga hamjamiyat, pozitsiyalash va ishga tushirish bo'yicha maslahat beradi.",
+          "Asosiy zaifligi: Solana'dagi memkoinlar savdosi. Bu yomon fikr ekanini biladi, lekin baribir grafikni yana bir bor ochadi.",
+        ],
+        directions: [
+          "Web3-marketing",
+          "Hamjamiyat menejmenti",
+          "GameFi",
+          "Twitter (X) orqali targ'ibot",
+          "NFT",
+          "Loyihalarni pozitsiyalash va ishga tushirish",
+        ],
+      },
+      en: {
+        name: "Zafar Davronov",
+        role: "Web3 marketer and advisor to crypto and GameFi projects",
+        metaDescription: "Zafar Davronov is a Web3 marketer and community manager who grows crypto and GameFi projects, drives reach on Twitter (X) and advises teams on launches.",
+        short:
+          "Zafar Davronov is a Web3 marketer and community manager. He has been in crypto since 2021 and was growing a GameFi startup at 17. Today he builds growth for crypto and Web3 products and advises teams on community, positioning and launches.",
+        bio: [
+          "Zafar Davronov is a Web3 marketer and community manager.",
+          "He started in crypto in 2021 by selling NFT project whitelists, and at 17 he was already growing a GameFi startup: he brought in tens of thousands of users and helped the project land major investment.",
+          "Today he builds growth for crypto and Web3 products, from large financial platforms to niche projects that reach hundreds of thousands of people through Twitter (X).",
+          "He advises teams on community, positioning and launches.",
+          "Main weakness: trading memecoins on Solana. He knows it is a bad idea, but he opens the chart one more time anyway.",
+        ],
+        directions: [
+          "Web3 marketing",
+          "Community management",
+          "GameFi",
+          "Twitter (X) promotion",
+          "NFT",
+          "Positioning and project launches",
+        ],
+      },
+    },
+  },
 ];
 
 export function getPerson(slug: string): Person | undefined {
