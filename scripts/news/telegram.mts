@@ -54,18 +54,28 @@ function esc(s: string): string {
   return s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
 }
 
-async function waitFor(url: string, minutes = 12): Promise<boolean> {
+// Waits until the site serves the article (following redirects, e.g. to
+// www). Returns the last status seen so the log shows why it gave up.
+async function waitFor(url: string, minutes = 10): Promise<string> {
   const until = Date.now() + minutes * 60_000;
+  let last = "no answer";
   while (Date.now() < until) {
     try {
-      const res = await fetch(url, { method: "HEAD", redirect: "manual", signal: AbortSignal.timeout(15000) });
-      if (res.status === 200) return true;
-    } catch {
-      // not yet
+      const res = await fetch(url, {
+        redirect: "follow",
+        headers: { "user-agent": "Mozilla/5.0 (compatible; CryptoOshNews/1.0; +https://cryptoosh.uz)" },
+        signal: AbortSignal.timeout(15000),
+      });
+      await res.body?.cancel();
+      if (res.ok) return "ok";
+      last = `HTTP ${res.status} at ${res.url}`;
+    } catch (e) {
+      last = String((e as Error).message || e);
     }
+    console.log(`waiting for ${url}: ${last}`);
     await new Promise((r) => setTimeout(r, 20_000));
   }
-  return false;
+  return last;
 }
 
 async function main() {
@@ -79,10 +89,9 @@ async function main() {
   for (const slug of slugs) {
     const a = JSON.parse(fs.readFileSync(path.join(root, "content", "articles", `${slug}.json`), "utf8"));
     const url = `${site}/${lang}/news/${slug}`;
-    if (!(await waitFor(url))) {
-      console.warn(`${url} is not live yet: skipping its post.`);
-      continue;
-    }
+    // A test run posts already published articles: no need to wait.
+    const state = process.env.NEWS_SLUGS ? "ok" : await waitFor(url);
+    if (state !== "ok") console.warn(`${url} did not answer 200 (${state}); posting anyway.`);
     const t = a[lang] ?? a.uz;
     const link = utm(url, slug);
     const text = [
