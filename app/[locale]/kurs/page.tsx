@@ -1,5 +1,6 @@
 import { Art } from "@/components/Illustrations";
 import Link from "next/link";
+import { ChannelCta } from "@/components/ChannelCta";
 import { CoinPrices } from "@/components/CoinPrices";
 import { Converter } from "@/components/Converter";
 import { UsdtDisclaimer, UsdtRates } from "@/components/UsdtRates";
@@ -72,6 +73,8 @@ export default async function Kurs({ params }: { params: Promise<{ locale: strin
               {p.unavailable}
             </p>
           )}
+
+          <ChannelCta locale={locale} />
 
           <h2 className="faq-title">{p.faqTitle}</h2>
           <div className="faq">

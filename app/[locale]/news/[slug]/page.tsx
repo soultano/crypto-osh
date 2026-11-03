@@ -2,6 +2,7 @@ import { Art } from "@/components/Illustrations";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ArticleShare } from "@/components/ArticleShare";
+import { ChannelCta } from "@/components/ChannelCta";
 import { storyText } from "@/content/story";
 import { NewsList } from "@/components/News";
 import { newsText } from "@/content/news";
@@ -115,12 +116,8 @@ export default async function Article({ params }: { params: Params }) {
               ))}
             </ul>
           )}
+          <ChannelCta locale={locale} />
           <div className="btn-row">
-            {site.contacts.group && (
-              <a className="btn" href={site.contacts.group} target="_blank" rel="noopener noreferrer">
-                {n.telegram}
-              </a>
-            )}
             <Link className="btn btn-ghost" href={`/${locale}/kurs`}>
               {n.pricesNav} BTC / USDT
             </Link>
