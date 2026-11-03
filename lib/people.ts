@@ -321,6 +321,77 @@ export const people: Person[] = [
       },
     },
   },
+  {
+    slug: "rakhmatulla-zakirov",
+    photo: "/people/rakhmatulla-zakirov.webp",
+    ogImage: "/people/rakhmatulla-zakirov-og.jpg",
+    cardTags: [0, 1, 2, 3],
+    links: [
+      { label: "LinkedIn", url: "https://www.linkedin.com/in/rakhmatulla-zakirov-bitcoin/" },
+    ],
+    text: {
+      ru: {
+        name: "Рахматулла Закиров",
+        role: "Предприниматель, инвестор и основатель BitMoney",
+        metaDescription: "Рахматулла Закиров — предприниматель, инвестор и основатель BitMoney: более 15 лет в финансах и бизнесе, около 9 лет в блокчейне и FinTech.",
+        short:
+          "Рахматулла Закиров — предприниматель, инвестор и основатель BitMoney. Более 15 лет опыта в финансах и бизнесе. Около 9 лет занимается блокчейном, цифровыми активами и FinTech-проектами.",
+        bio: [
+          "Рахматулла Закиров — предприниматель, инвестор и основатель BitMoney.",
+          "Имеет более 15 лет опыта в финансах и бизнесе.",
+          "Около 9 лет занимается блокчейном, цифровыми активами и FinTech-проектами.",
+        ],
+        directions: [
+          "Блокчейн",
+          "Цифровые активы",
+          "FinTech",
+          "Инвестиции",
+          "Финансы",
+          "Предпринимательство",
+        ],
+      },
+      uz: {
+        name: "Rakhmatulla Zakirov",
+        role: "Tadbirkor, investor va BitMoney asoschisi",
+        metaDescription: "Rakhmatulla Zakirov — tadbirkor, investor va BitMoney asoschisi: moliya va biznesda 15 yildan ortiq, blokcheyn va FinTech'da qariyb 9 yil tajriba.",
+        short:
+          "Rakhmatulla Zakirov — tadbirkor, investor va BitMoney asoschisi. Moliya va biznesda 15 yildan ortiq tajribaga ega. Qariyb 9 yildan buyon blokcheyn, raqamli aktivlar va FinTech loyihalari bilan shug'ullanadi.",
+        bio: [
+          "Rakhmatulla Zakirov — tadbirkor, investor va BitMoney asoschisi.",
+          "Moliya va biznesda 15 yildan ortiq tajribaga ega.",
+          "Qariyb 9 yildan buyon blokcheyn, raqamli aktivlar va FinTech loyihalari bilan shug'ullanadi.",
+        ],
+        directions: [
+          "Blokcheyn",
+          "Raqamli aktivlar",
+          "FinTech",
+          "Investitsiyalar",
+          "Moliya",
+          "Tadbirkorlik",
+        ],
+      },
+      en: {
+        name: "Rakhmatulla Zakirov",
+        role: "Entrepreneur, investor and founder of BitMoney",
+        metaDescription: "Rakhmatulla Zakirov is an entrepreneur, investor and founder of BitMoney, with 15+ years in finance and business and about 9 years in blockchain and FinTech.",
+        short:
+          "Rakhmatulla Zakirov is an entrepreneur, investor and the founder of BitMoney. He has more than 15 years of experience in finance and business, and for about 9 years he has worked on blockchain, digital assets and FinTech projects.",
+        bio: [
+          "Rakhmatulla Zakirov is an entrepreneur, investor and the founder of BitMoney.",
+          "He has more than 15 years of experience in finance and business.",
+          "For about 9 years he has worked on blockchain, digital assets and FinTech projects.",
+        ],
+        directions: [
+          "Blockchain",
+          "Digital assets",
+          "FinTech",
+          "Investment",
+          "Finance",
+          "Entrepreneurship",
+        ],
+      },
+    },
+  },
 ];
 
 export function getPerson(slug: string): Person | undefined {
