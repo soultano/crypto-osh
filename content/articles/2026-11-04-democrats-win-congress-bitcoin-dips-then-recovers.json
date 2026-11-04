@@ -1,0 +1,61 @@
+{
+  "slug": "2026-11-04-democrats-win-congress-bitcoin-dips-then-recovers",
+  "date": "2026-11-04T13:27:48+05:00",
+  "tags": [
+    "bitcoin",
+    "usa",
+    "regulation",
+    "politics"
+  ],
+  "sources": [
+    {
+      "name": "Cointelegraph",
+      "url": "https://cointelegraph.com/news/democrats-win-us-house-congress-control"
+    },
+    {
+      "name": "The Defiant",
+      "url": "https://thedefiant.io/news/regulation/democrats-win-house-gaining-new-leverage-over-crypto-legislation"
+    },
+    {
+      "name": "BeInCrypto",
+      "url": "https://beincrypto.com/us-midterm-results-btc-us-futures/"
+    },
+    {
+      "name": "The Block",
+      "url": "https://www.theblock.co/news/regulation/2026-11-03-midterm-election-odds-polymarket-kalshi-democrats-432461"
+    }
+  ],
+  "uz": {
+    "title": "AQSh Kongressini demokratlar egalladi: bitkoin 7 haftalik minimumdan qaytdi",
+    "summary": "AQShdagi oraliq saylovlarda demokratlar Vakillar palatasi va Senatda g'alaba qozondi. Saylov kechasi bitkoin 75 618 dollargacha tushdi, so'ng 78 000 dollar atrofiga qaytdi.",
+    "body": [
+      "AQSh oraliq saylovlarida demokratlar Vakillar palatasini qo'lga kiritdi, The Defiant ma'lumotiga ko'ra Senatni ham. 2027-yil yanvaridan ular palata qo'mitalarini boshqaradi va Tramp ma'muriyatini tekshirish vakolatiga ega bo'ladi.",
+      "Kripto uchun asosiy savol — bozor tuzilmasi haqidagi CLARITY Act qonun loyihasi. U protsedura ovozi muvaffaqiyatsiz chiqqanidan keyin Senatda to'xtab turibdi. Elizabeth Uorren esa Senatning bank qo'mitasini boshqarishi mumkin.",
+      "Saylov kechasi bitkoin 75 618 dollargacha tushdi — bu so'nggi yetti haftadagi eng past daraja. 24 soat ichida long pozitsiyalar likvidatsiyasi 300 mln dollarga yaqinlashdi. Keyin narx 77 000 dollarga tiklandi va ertalab 78 000 dollarga yaqinlashdi.",
+      "Tramp bilan bog'liq tokenlar ham chuqur minusda. Tron asoschisi Justin Sun esa World Liberty Financial kompaniyasiga qarshi qariyb 264 000 dollarlik sanksiya so'ramoqda: uning da'vosicha, kompaniya muzlatilgan WLFI tokenlari bo'yicha sud jarayonida BAAdagi egalik aloqalarini yashirgan."
+    ],
+    "take": "AQSh qonunlari butun bozor qoidalariga, jumladan frilanserlarimiz maosh oladigan stablkoinlarga ham ta'sir qiladi. Bu kecha yana bir bor ko'rsatdi: bitkoin bir necha soatda minglab dollarga tebranishi oddiy hol, shuning uchun his-hayajon bilan yoki qarz pulga qaror qabul qilmang. Kriptoni faqat NAPP litsenziyasiga ega provayderlar orqali sotib oling va soting."
+  },
+  "ru": {
+    "title": "Демократы взяли Конгресс США, биткоин отскочил от семинедельного минимума",
+    "summary": "На промежуточных выборах в США демократы выиграли Палату представителей и Сенат. В ночь выборов биткоин падал до $75 618, а затем вернулся к $78 000.",
+    "body": [
+      "Демократы выиграли Палату представителей на промежуточных выборах в США, а по данным The Defiant, и Сенат. С января 2027 года они возглавят комитеты палаты и получат право проверять администрацию Трампа.",
+      "Для крипты главный вопрос — законопроект CLARITY Act о структуре рынка. Он застрял в Сенате после проваленного процедурного голосования. Возглавить банковский комитет Сената может Элизабет Уоррен.",
+      "В ночь выборов биткоин опустился до $75 618 — минимума за семь недель. Ликвидации длинных позиций за сутки приблизились к $300 млн. Потом цена восстановилась до $77 000, а к утру подошла к $78 000.",
+      "Токены, связанные с Трампом, остаются глубоко в минусе. А основатель Tron Джастин Сан требует почти $264 000 санкций против World Liberty Financial: по его словам, компания скрывала связи владельцев с ОАЭ в суде по его замороженным токенам WLFI."
+    ],
+    "take": "Законы США задают правила для всего рынка, включая стейблкоины, в которых получают зарплату наши фрилансеры. Эта ночь снова показала: колебание биткоина на тысячи долларов за пару часов — обычное дело, поэтому не принимайте решений на эмоциях и не входите на заёмные деньги. Покупаем и продаём только через провайдеров с лицензией НАПП."
+  },
+  "en": {
+    "title": "Democrats take US Congress as bitcoin bounces off a seven-week low",
+    "summary": "Democrats won the US House and the Senate in the midterms. Bitcoin fell to $75,618 on election night, then climbed back toward $78,000.",
+    "body": [
+      "Democrats won the House in the US midterm elections and, according to The Defiant, the Senate as well. From January 2027 they will run House committees and gain the power to investigate the Trump administration.",
+      "For crypto, the key issue is the CLARITY Act, the market-structure bill. It is stuck on the Senate floor after a failed procedural vote, and Elizabeth Warren is positioned to take over the Senate Banking Committee.",
+      "On election night bitcoin dropped to $75,618, a seven-week low, as long liquidations over 24 hours neared $300 million. It then recovered to $77,000 and was approaching $78,000 by morning.",
+      "Trump-linked tokens remain deeply underwater. Tron founder Justin Sun is also seeking nearly $264,000 in sanctions against World Liberty Financial, accusing it of hiding UAE ownership ties during his lawsuit over frozen WLFI tokens."
+    ],
+    "take": "US law shapes the rules for the whole market, including the stablecoins our freelancers get paid in. This night was another reminder that bitcoin swinging by thousands of dollars in hours is normal, so don't make decisions on emotion or with borrowed money. Buy and sell only through NAPP-licensed providers."
+  }
+}

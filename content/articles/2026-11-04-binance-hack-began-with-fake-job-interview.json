@@ -1,0 +1,58 @@
+{
+  "slug": "2026-11-04-binance-hack-began-with-fake-job-interview",
+  "date": "2026-11-04T13:27:48+05:00",
+  "tags": [
+    "binance",
+    "hack",
+    "security",
+    "north-korea"
+  ],
+  "sources": [
+    {
+      "name": "CryptoSlate",
+      "url": "https://cryptoslate.com/south-korea-orders-massive-crypto-wallet-lockdown-following-the-binance-hack/"
+    },
+    {
+      "name": "CoinDesk",
+      "url": "https://www.coindesk.com/tech/2026/11/03/south-korea-s-president-says-country-needs-a-cybersecurity-czar-following-usd6-3-billion-binance-hack"
+    },
+    {
+      "name": "Bitcoin Magazine",
+      "url": "https://bitcoinmagazine.com/news/binance-says-6-34-billion-hack-job"
+    },
+    {
+      "name": "Cointelegraph",
+      "url": "https://cointelegraph.com/news/binance-fake-job-interviews-compromised-ai-tool-hack"
+    }
+  ],
+  "uz": {
+    "title": "Binance: 6,34 mlrd dollarlik xakerlik hujumi soxta ish suhbatidan boshlangan",
+    "summary": "Binance 29-oktabrdagi hujum haqida ilk ommaviy hisobotini e'lon qildi. Unga ko'ra, o'g'irlik soxta ishga yollashdan boshlangan va birinchi tanga ko'chirilguncha besh oy davom etgan.",
+    "body": [
+      "Binance 29-oktabrdagi hujum bo'yicha birinchi ommaviy hisobotini chiqardi. Zarar 6,34 mlrd dollarni tashkil etgan. Birja ma'lumotiga ko'ra, hammasi soxta ish suhbatidan boshlangan. Xakerlar birorta tangani ko'chirishdan oldin besh oy davomida tizim ichida yurgan. Hisobotni birja bosh direktorlaridan biri Richard Teng va xavfsizlik bo'limi rahbari Jimmy Su taqdim etdi.",
+      "Hujum bir nechta usuldan iborat bo'lgan: zararlangan dasturni yuklab olish, sahnalashtirilgan ishga yollash jarayoni, himoya tizimlaridan yashiringan zararli dastur va ichki sun'iy intellekt vositasi. Xakerlar bu vositani Binance'ning o'z hamyon muhandislariga qarshi ishlatgan. Birja taxminan 2,85 mlrd dollarni muzlatgani yoki ushlab qolganini aytmoqda.",
+      "FBI avvalroq hujumda Shimoliy Koreyaning TraderTraitor guruhini aybladi, Pxenyan esa buni rad etadi. Janubiy Koreya prezidenti Li Je Myung kiberxavfsizlik bo'yicha umumdavlat agentligi kerakligini aytdi. Moliya regulyatori FSC birjalardan o'tkazmalarni kuchliroq nazorat qilish, javob guruhlari va zaxiralarni ko'paytirishni so'radi. Binance asoschisi Changpeng Zhao sun'iy intellekt hujumlarni tezlashtirayotganini aytib, sohada xavfsizlik ittifoqi tuzishga chaqirdi."
+    ],
+    "take": "Bizning ko'plab dasturchi va frilanserlarimiz chet eldan web3 ish izlaydi. Rekruterdan keladigan «test topshirig'i» esa aynan shu hujumda ochilgan eshik bo'lgan. Notanish ish beruvchi dastur yuklab olish yoki kod ishga tushirishni so'rasa, buni faqat hamyon va birja akkauntlari bo'lmagan alohida qurilmada qiling. O'z xavfsizlik jamoasiga ega gigant ham bu tuzoqqa tushgan bo'lsa, oddiy noutbuk uchun xavf yanada katta."
+  },
+  "ru": {
+    "title": "Binance: взлом на $6,34 млрд начался с фейкового собеседования",
+    "summary": "Binance опубликовала первый публичный отчёт об атаке 29 октября: кража началась с поддельного найма на работу и шла пять месяцев, прежде чем хакеры сдвинули хоть одну монету.",
+    "body": [
+      "Binance выпустила первый публичный отчёт об атаке 29 октября, ущерб от которой составил $6,34 млрд. По словам биржи, всё началось с фейкового собеседования, а злоумышленники пять месяцев сидели внутри, прежде чем вывели первую монету. Отчёт представили сооснователь-гендиректор Ричард Тенг и глава безопасности Джимми Су.",
+      "Схема собрана из нескольких приёмов: заражённая программа для скачивания, постановочный процесс найма, вредонос, который обошёл защиту рабочих компьютеров, и внутренний ИИ-инструмент, который хакеры обратили против инженеров, отвечающих за кошельки биржи. Binance говорит, что заморозила или перехватила около $2,85 млрд.",
+      "Ранее ФБР обвинило северокорейскую группу TraderTraitor, Пхеньян это отрицает. Президент Южной Кореи Ли Джэ Мён заявил, что стране нужно общегосударственное ведомство по кибербезопасности, а регулятор FSC попросил биржи усилить контроль переводов, увеличить штат реагирования и резервы. Основатель Binance Чанпэн Чжао сказал, что ИИ ускоряет атаки, и призвал отрасль создать альянс по безопасности."
+    ],
+    "take": "Многие наши разработчики и фрилансеры ищут работу в web3 за рубежом, а «тестовое задание» от рекрутера оказалось ровно той дверью, через которую зашли хакеры. Если незнакомый работодатель просит скачать программу или запустить код, делайте это только на отдельном устройстве без кошельков и входов в биржи. Если на это попался гигант со своей службой безопасности, обычный ноутбук — добыча куда проще."
+  },
+  "en": {
+    "title": "Binance says its $6.34 billion hack began with a fake job interview",
+    "summary": "Binance released its first public account of the October 29 attack: the theft started with a staged hiring process and ran for five months before a single coin moved.",
+    "body": [
+      "Binance has published its first public report on the October 29 attack, which cost $6.34 billion. According to the exchange, it all began with a fake job interview, and the attackers spent five months inside before moving any coins. Co-CEO Richard Teng and security chief Jimmy Su presented the findings at a media briefing.",
+      "The campaign stacked several tricks: a poisoned software download, a staged recruitment process, malware that slipped past endpoint protection, and an internal AI tool the attackers turned against Binance's own wallet engineers. The exchange says it has frozen or intercepted about $2.85 billion.",
+      "The FBI has blamed the North Korean group TraderTraitor, which Pyongyang denies. South Korea's President Lee Jae Myung said the country needs a government-wide cybersecurity agency, and the FSC asked exchanges for tighter transfer monitoring, more response staff and larger reserves. Binance founder Changpeng Zhao said AI is speeding up attacks and called for an industry security alliance."
+    ],
+    "take": "Many of our developers and freelancers look for web3 jobs abroad, and a recruiter's 'test task' was exactly the door used here. If an unknown employer asks you to download a program or run code, do it only on a separate device with no wallets or exchange logins. If a giant with its own security team fell for this, an ordinary laptop is far easier prey."
+  }
+}

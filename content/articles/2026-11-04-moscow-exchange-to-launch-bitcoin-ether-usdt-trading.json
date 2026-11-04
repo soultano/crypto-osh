@@ -1,0 +1,54 @@
+{
+  "slug": "2026-11-04-moscow-exchange-to-launch-bitcoin-ether-usdt-trading",
+  "date": "2026-11-04T13:27:48+05:00",
+  "tags": [
+    "russia",
+    "exchanges",
+    "usdt",
+    "regulation"
+  ],
+  "sources": [
+    {
+      "name": "CoinDesk",
+      "url": "https://www.coindesk.com/markets/2026/11/04/u-s-sanctioned-moscow-exchange-to-list-bitcoin-and-tether-s-usdt-in-december"
+    },
+    {
+      "name": "Bitcoin.com News",
+      "url": "https://news.bitcoin.com/exchanges/moscow-exchange-dec-1-crypto-trading-bitcoin-ether-usdt/"
+    },
+    {
+      "name": "Cointelegraph",
+      "url": "https://cointelegraph.com/news/moscow-exchange-bitcoin-ether-usdt-trading-december"
+    }
+  ],
+  "uz": {
+    "title": "Moskva birjasi 1-dekabrdan bitkoin, ether va USDT savdosini boshlaydi",
+    "summary": "Rossiyaning asosiy birjasi yangi qonun asosida 1-dekabrdan BTC, ETH va USDT savdosini boshlashini tasdiqladi. Malakasiz investorlar uchun yillik xarid limiti bo'ladi.",
+    "body": [
+      "Moskva birjasi 2-noyabr kuni 1-dekabrdan kriptovalyuta savdosini boshlashini e'lon qildi. Bitkoin, ether va USDT bilan savdo qilish mumkin bo'ladi. Birja buni mamlakatdagi birinchi uyushgan raqamli valyuta bozori deb atamoqda, savdo Rossiyaning yangi qonuni asosida yo'lga qo'yiladi.",
+      "Malakali bo'lmagan investorlar uchun yillik xarid limitlari belgilanadi. E'londa savdo infratuzilmasi, hisob-kitob usullari va investorlar uchun cheklovlar tafsilotlari keltirilgan. CoinDesk yozishicha, maqsad — rossiyaliklar chet elda amalga oshirayotgan kripto savdosini mamlakatga qaytarish.",
+      "Bir nozik jihat bor: Moskva birjasi AQSh sanksiyalari ostida, ro'yxatdagi USDT emitenti Tether esa AQSh sanksiya ro'yxatidagi hamyonlarni muzlatib kelgan."
+    ],
+    "take": "Rossiya — eng yaqin hamkorlarimizdan biri, ko'plab yurtdoshlarimiz u yerda ishlaydi. Qo'shnilar ham biz kabi yo'ldan bormoqda: kripto kulrang zonadan limitlar bilan tartibga solingan maydonchaga o'tkazilmoqda, bizda bu NAPP litsenziyasi orqali amalga oshadi. USDT bilan bog'liq nozik jihat esa hammaga eslatma: stablkoin emitenti hamyonni muzlatishi mumkin, buni bilib turib saqlang."
+  },
+  "ru": {
+    "title": "Мосбиржа запустит торги биткоином, эфиром и USDT с 1 декабря",
+    "summary": "Главная биржа России подтвердила старт торгов BTC, ETH и USDT 1 декабря по новому закону. Для неквалифицированных инвесторов будут годовые лимиты на покупку.",
+    "body": [
+      "Московская биржа 2 ноября объявила, что начнёт торговать криптовалютой с 1 декабря. В списке биткоин, эфир и USDT. Биржа называет это первым в стране организованным рынком цифровых валют, торги запускаются по новому российскому закону.",
+      "Для неквалифицированных инвесторов введут годовые лимиты на покупку. В объявлении расписаны торговая инфраструктура, варианты расчётов и ограничения для инвесторов. По данным CoinDesk, цель — вернуть домой криптоторговлю, которую россияне ведут за рубежом.",
+      "Есть тонкий момент: Мосбиржа находится под санкциями США, а Tether, эмитент USDT из того же списка, замораживает кошельки из санкционного списка США."
+    ],
+    "take": "Россия — один из наших ближайших партнёров, там работают многие наши земляки. Соседи идут тем же путём, что и мы: выводят крипту из серой зоны на регулируемую площадку с лимитами, у нас для этого есть лицензии НАПП. А история с USDT — напоминание всем: эмитент стейблкоина может заморозить кошелёк, храните его, понимая этот риск."
+  },
+  "en": {
+    "title": "Moscow Exchange to launch bitcoin, ether and USDT trading on December 1",
+    "summary": "Russia's main exchange confirmed it will start trading BTC, ETH and USDT on December 1 under the country's new law, with annual purchase limits for non-qualified investors.",
+    "body": [
+      "Moscow Exchange announced on November 2 that it will begin crypto trading on December 1, offering bitcoin, ether and USDT. It describes this as Russia's first organized digital currency market, launched under the country's new law.",
+      "Non-qualified investors will face annual purchase limits. The announcement covers the trading infrastructure, settlement options and investor restrictions. According to CoinDesk, the aim is to bring back the crypto trading Russians currently do abroad.",
+      "There is a twist: Moscow Exchange is under US sanctions, while Tether, the issuer of USDT on the list, freezes wallets that appear on the US sanctions list."
+    ],
+    "take": "Russia is one of our closest partners, and many of our people work there. Our neighbours are taking a similar path to ours: moving crypto out of the grey zone onto a regulated venue with limits, which in Uzbekistan happens through NAPP licences. The USDT twist is a reminder for everyone: a stablecoin issuer can freeze a wallet, so hold it knowing that risk."
+  }
+}

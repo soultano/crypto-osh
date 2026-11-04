@@ -1,0 +1,58 @@
+{
+  "slug": "2026-11-04-cftc-approves-perpetual-futures-on-stocks",
+  "date": "2026-11-04T13:27:48+05:00",
+  "tags": [
+    "cftc",
+    "derivatives",
+    "regulation",
+    "usa"
+  ],
+  "sources": [
+    {
+      "name": "Cointelegraph",
+      "url": "https://cointelegraph.com/news/cftc-equity-perpetual-futures-trading-us-exchanges"
+    },
+    {
+      "name": "Decrypt",
+      "url": "https://decrypt.co/382464/cftc-traders-bet-stocks-with-crypto-style-perpetual-futures"
+    },
+    {
+      "name": "The Block",
+      "url": "https://www.theblock.co/news/regulation/2026-11-03-cftc-approves-individual-stock-perpetual-futures-trading-in-us-for-first-time-432422"
+    },
+    {
+      "name": "CoinDesk",
+      "url": "https://www.coindesk.com/policy/2026/11/03/cftc-clears-perpetual-futures-on-stocks-bringing-crypto-trading-model-to-wall-street"
+    }
+  ],
+  "uz": {
+    "title": "AQSh regulyatori aksiyalar bo'yicha kripto uslubidagi perpetual fyuchersga ruxsat berdi",
+    "summary": "CFTC ilk bor alohida aksiyalarga bog'langan perpetual fyuchers savdosiga ruxsat berdi. Citadel Securities va Cboe qo'llab-quvvatlaydigan guruh esa allaqachon sudga murojaat qildi.",
+    "body": [
+      "AQShning hosilaviy moliya vositalari regulyatori CFTC birinchi marta alohida aksiyalarga bog'langan perpetual fyuchers kontraktlariga ruxsat berdi. Ular CFTCda ro'yxatdan o'tgan birjalarda savdo qilinadi. Perpetual — muddati tugamaydigan kontrakt bo'lib, kripto bozorida eng ommabop vositalardan biri.",
+      "CFTC raisi Maykl Selig bu qaror amerikalik treyderlarga offshor va ko'pincha tartibga solinmagan maydonchalar o'rniga nazorat ostidagi muqobil beradi, dedi.",
+      "Biroq janjal ham boshlandi. Citadel Securities va Cboe qo'llab-quvvatlaydigan guruh CFTCni sudga berib, bunday kontraktlar SEC vakolatiga kirishini ta'kidladi. Da'vo Coinbase, Kalshi va Bitnomial kontraktlariga qaratilgan va ularning ro'yxatga kiritilishini to'xtatish uchun shoshilinch choralar so'raydi."
+    ],
+    "take": "Kripto vositalari an'anaviy moliyaga ko'chmoqda va yirik regulyatorlar ularga jiddiy qaramoqda. Lekin perpetual fyuchers odatda leverej bilan ishlaydi, bu esa pulni yo'qotishning eng tez yo'li. O'zbekistonda biz faqat NAPP litsenziyali provayderlardan foydalanamiz va bunday mahsulotlarni taklif qiladigan litsenziyasiz xorijiy platformalarni tavsiya qilmaymiz."
+  },
+  "ru": {
+    "title": "Регулятор США разрешил бессрочные фьючерсы на акции по образцу крипты",
+    "summary": "CFTC впервые разрешила торговать бессрочными фьючерсами на отдельные акции. Группа при поддержке Citadel Securities и Cboe уже подала в суд.",
+    "body": [
+      "Американский регулятор деривативов CFTC впервые одобрил бессрочные (perpetual) фьючерсы на отдельные акции. Торговать ими можно будет на биржах, зарегистрированных в CFTC. Бессрочный контракт не имеет даты экспирации — это один из самых популярных инструментов на крипторынке.",
+      "Глава CFTC Майкл Селиг заявил, что решение даёт американским трейдерам регулируемую альтернативу офшорным и часто никем не контролируемым площадкам.",
+      "Но спор уже начался. Группа, которую поддерживают Citadel Securities и Cboe, подала иск против CFTC, утверждая, что такие контракты должны быть в ведении SEC. Иск направлен против контрактов Coinbase, Kalshi и Bitnomial и требует срочно запретить их листинг."
+    ],
+    "take": "Криптоинструменты перебираются в традиционные финансы, и крупные регуляторы относятся к ним всерьёз. Но бессрочные фьючерсы обычно идут с плечом, а это самый быстрый способ потерять деньги. В Узбекистане мы работаем только с провайдерами с лицензией НАПП и не советуем иностранные площадки без лицензии, которые предлагают такие продукты."
+  },
+  "en": {
+    "title": "US regulator clears crypto-style perpetual futures on individual stocks",
+    "summary": "The CFTC has approved perpetual futures tied to individual stocks for the first time. A group backed by Citadel Securities and Cboe has already sued.",
+    "body": [
+      "The US derivatives regulator CFTC has, for the first time, approved perpetual futures on individual stocks, which can now trade on CFTC-registered exchanges. A perpetual contract has no expiry date and is one of the most popular products in crypto trading.",
+      "CFTC Chair Michael Selig said the move gives American traders a regulated alternative to offshore and often unregulated venues.",
+      "A legal fight has already started. A group backed by Citadel Securities and Cboe sued the CFTC, arguing that such contracts belong under the SEC. The complaint targets contracts from Coinbase, Kalshi and Bitnomial and seeks emergency relief to stop them from being listed."
+    ],
+    "take": "Crypto tools are moving into traditional finance, and major regulators are taking them seriously. But perpetuals usually come with leverage, which is the fastest way to lose money. In Uzbekistan we use only NAPP-licensed providers and don't recommend unlicensed foreign platforms offering these products."
+  }
+}
