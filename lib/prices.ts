@@ -2,7 +2,7 @@
 // Uzbekistan dollar rate. Fetched live on the server and cached for 10
 // minutes; whatever the live sources miss comes from the last snapshot
 // (content/prices-snapshot.json, refreshed with the USDT rates twice a day),
-// so the page only shows a notice when there is no data at all.
+// however old it is: visitors never see an error, only the time of the data.
 
 import snapshotFile from "@/content/prices-snapshot.json";
 import { coins, fetchCbuRate, fetchCoinQuotes, type CoinQuotes } from "./prices-live";
@@ -13,13 +13,10 @@ export type CoinPrice = { symbol: string; name: string; usd: number; uzs: number
 export type Prices = { usdUzs: number; cbuDate: string; coins: CoinPrice[]; fetchedAt: string };
 export type PricesSnapshot = { fetchedAt: string | null; usdUzs: number | null; cbuDate: string; coins: CoinQuotes };
 
-// Older than this, a snapshot is too stale to show as a price.
-const SNAPSHOT_MAX_AGE = 7 * 24 * 3600 * 1000;
-
 export async function getPrices(): Promise<Prices | null> {
   const [cbu, live] = await Promise.allSettled([fetchCbuRate(), fetchCoinQuotes()]);
   const snap = snapshotFile as PricesSnapshot;
-  const snapOk = !!snap.fetchedAt && Date.now() - Date.parse(snap.fetchedAt) < SNAPSHOT_MAX_AGE;
+  const snapOk = !!snap.fetchedAt;
 
   const usdUzs = cbu.status === "fulfilled" ? cbu.value.rate : snapOk ? snap.usdUzs : null;
   const cbuDate = cbu.status === "fulfilled" ? cbu.value.date : snap.cbuDate;

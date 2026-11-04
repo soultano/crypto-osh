@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { notFound } from "next/navigation";
 import { Analytics } from "@/components/Analytics";
+import { CommunityBar } from "@/components/CommunityBar";
 import { CommunityCta } from "@/components/CommunityCta";
 import { Header } from "@/components/Header";
 import { Motion } from "@/components/Motion";
@@ -128,6 +129,7 @@ export default async function LocaleLayout({
         <a href="#main" className="skip">
           Skip to content
         </a>
+        <CommunityBar locale={locale} />
         <Header locale={locale} nav={t.nav} />
         <main id="main">
           {children}

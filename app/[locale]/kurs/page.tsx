@@ -58,7 +58,8 @@ export default async function Kurs({ params }: { params: Promise<{ locale: strin
 
       <section className="section">
         <div className="container">
-          {prices ? (
+          {/* With no data at all the table is left out quietly, without an error. */}
+          {prices && (
             <>
               <p className="muted small">
                 {p.updated}: {updated} · {p.usdRate} {fmtUzs(prices.usdUzs)} {p.currency}
@@ -69,10 +70,6 @@ export default async function Kurs({ params }: { params: Promise<{ locale: strin
                 labels={{ calc: p.calc, amount: p.amount, result: p.result, coin: p.coin, currency: p.currency }}
               />
             </>
-          ) : (
-            <p className="notice" role="note">
-              {p.unavailable}
-            </p>
           )}
 
           <ChannelCta locale={locale} />
