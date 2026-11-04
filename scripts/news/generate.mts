@@ -5,7 +5,7 @@
 // 2. Groups stories that several outlets covered: the more outlets wrote
 //    about it in the last day and a half, the more popular we consider it
 //    (feeds don't publish view counts, so coverage is the proxy).
-// 3. Asks Claude to pick the 3–4 most important ones (at least one about
+// 3. Asks Claude to pick the 3 most important ones (at least one about
 //    Uzbekistan when there is real local news) and write them in
 //    Uzbek, Russian and English in our tone of voice (scripts/news/tone.md),
 //    each with "what it means for Uzbekistan".
@@ -13,7 +13,7 @@
 //    news-new.json for the Telegram step.
 //
 // Run: ANTHROPIC_API_KEY=... node scripts/news/generate.mts
-// Env: NEWS_MIN (default 3), NEWS_MAX (default 4), NEWS_DRY_RUN=1 to only
+// Env: NEWS_MIN (default 3), NEWS_MAX (default 3), NEWS_DRY_RUN=1 to only
 // print the ranked candidates without calling Claude.
 
 import Anthropic from "@anthropic-ai/sdk";
@@ -26,7 +26,7 @@ const tonePath = path.join(root, "scripts", "news", "tone.md");
 const outList = path.join(root, "news-new.json");
 
 const MIN = clampInt(process.env.NEWS_MIN, 3, 1, 10);
-const MAX = clampInt(process.env.NEWS_MAX, 4, MIN, 10);
+const MAX = clampInt(process.env.NEWS_MAX, 3, MIN, 10);
 const WINDOW_HOURS = 36;
 const MODEL = "claude-opus-5-5";
 
@@ -275,7 +275,7 @@ async function write(world: Cluster[], local: Cluster[], recentTitles: string[],
 
   const user = `Today is ${new Date().toISOString().slice(0, 10)}. Below are today's candidate stories, grouped by story, in two lists: world crypto media, and Uzbek news sites (crypto stories only, in Uzbek or Russian). "outlets" is how many different outlets covered it: that is our measure of popularity.
 
-Pick ${MIN}–${MAX} stories that together tell readers what happened in crypto, blockchain and web3 in Uzbekistan and in the world today:
+Pick ${MIN === MAX ? MIN : `${MIN}–${MAX}`} stories that together tell readers what happened in crypto, blockchain and web3 in Uzbekistan and in the world today:
 - If the Uzbekistan list has a real, newsworthy crypto story (regulation, NAPP, licences, exchanges, mining, scams, big local deals), include at least one of them. Skip local items that only mention crypto in passing, ads and repeats.
 - Fill the rest with the most important and most talked-about world stories (prefer more outlets; skip pure price-prediction pieces, paid press releases and minor token promos).
 Write each one in Uzbek (Latin script), Russian and English, using only facts from the candidate texts.

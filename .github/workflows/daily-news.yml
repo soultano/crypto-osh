@@ -1,6 +1,7 @@
-# Writes 3–4 crypto news stories every morning (07:00 Tashkent; GitHub
+# Writes 3 crypto news stories every morning (07:00 Tashkent; GitHub
 # can start scheduled runs late, so this leaves room), commits
-# them to main so Vercel redeploys the site, then posts them to Telegram.
+# them to main so Vercel redeploys the site, then queues them for Telegram
+# and posts the first one (telegram-queue.yml posts the rest during the day).
 # Secrets (repo → Settings → Secrets and variables → Actions):
 #   ANTHROPIC_API_KEY       required
 #   TELEGRAM_BOT_TOKEN      optional, for posting to the channel
@@ -15,7 +16,7 @@ on:
   workflow_dispatch:
     inputs:
       count:
-        description: "How many stories (1–10); empty = the usual 3–4"
+        description: "How many stories (1–10); empty = the usual 3"
         required: false
         default: ""
 
@@ -61,10 +62,26 @@ jobs:
           git push
           echo "pushed=true" >> "$GITHUB_OUTPUT"
 
+      - name: Load Telegram queue
+        if: steps.push.outputs.pushed == 'true'
+        uses: actions/cache/restore@v4
+        with:
+          path: .telegram
+          key: tg-state-${{ github.run_id }}
+          restore-keys: tg-state-
+
       - name: Post to Telegram
+        id: telegram
         if: steps.push.outputs.pushed == 'true'
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_NEWS_CHAT_ID: ${{ secrets.TELEGRAM_NEWS_CHAT_ID }}
           TELEGRAM_NEWS_LANG: ${{ vars.TELEGRAM_NEWS_LANG }}
         run: node scripts/news/telegram.mts
+
+      - name: Save Telegram queue
+        if: always() && steps.telegram.outcome != 'skipped'
+        uses: actions/cache/save@v4
+        with:
+          path: .telegram
+          key: tg-state-${{ github.run_id }}-${{ github.run_attempt }}
