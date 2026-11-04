@@ -3195,3 +3195,68 @@ p {
     padding: 20px;
   }
 }
+
+/* ---------- community strip above the header ---------- */
+
+.community-bar {
+  background: linear-gradient(90deg, var(--lapis-900), var(--lapis-700));
+  color: var(--cream);
+  font-size: 0.9rem;
+  border-bottom: 1px solid rgba(242, 178, 48, 0.3);
+}
+
+.community-bar-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  min-height: 44px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
+.community-bar-text {
+  font-weight: 600;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  min-width: 0;
+}
+
+.community-bar-short {
+  display: none;
+}
+
+.community-bar-btn {
+  flex: none;
+  padding: 0.4em 1em;
+  border-radius: 999px;
+  background: var(--saffron);
+  color: var(--lapis-900);
+  font-weight: 800;
+  font-size: 0.86rem;
+  white-space: nowrap;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.community-bar-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 18px rgba(242, 178, 48, 0.4);
+}
+
+@media (max-width: 640px) {
+  .community-bar-inner {
+    justify-content: space-between;
+    gap: 10px;
+  }
+  .community-bar-long {
+    display: none;
+  }
+  .community-bar-short {
+    display: inline;
+  }
+  .community-bar-btn {
+    font-size: 0.82rem;
+    padding: 0.4em 0.85em;
+  }
+}
