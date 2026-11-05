@@ -470,6 +470,82 @@ export const people: Person[] = [
       },
     },
   },
+  {
+    slug: "samandar-mirniyozov",
+    photo: "/people/samandar-mirniyozov.webp",
+    ogImage: "/people/samandar-mirniyozov-og.jpg",
+    cardTags: [0, 1, 2, 3],
+    links: [
+      { label: "Telegram", url: "https://t.me/MKFOREX_VIP" },
+      { label: "Instagram", url: "https://www.instagram.com/mksamandarfx" },
+      { label: "YouTube", url: "https://youtube.com/@mksamandar" },
+    ],
+    text: {
+      ru: {
+        name: "Самандар Мирниёзов",
+        role: "Трейдер и преподаватель трейдинга на рынках криптовалют и Forex",
+        metaDescription: "Самандар Мирниёзов — трейдер с 2022 года: криптовалюты и Forex, бесплатное обучение трейдингу с нуля, почти 1500 учеников, инвестиции и бизнес.",
+        short:
+          "Самандар Мирниёзов — трейдер, в трейдинге с 2022 года. Начинал с криптовалют, с 2024 года торгует и на Forex. Обучил с нуля почти 1500 человек, сегодня бесплатно учит работе на финансовых рынках и инвестирует.",
+        bio: [
+          "Самандар Мирниёзов — трейдер и преподаватель трейдинга.",
+          "В трейдинге с 2022 года: первые два года работал с криптовалютами, а с 2024 года торгует на рынках Forex и криптовалют.",
+          "Обучил трейдингу с нуля почти 1500 человек.",
+          "Окончил институт в Ташкенте по направлению «Бизнес-менеджмент». Финансы для него семейное дело: вся семья работает в этой сфере.",
+          "Сегодня бесплатно обучает работе на рынках Forex и криптовалют, инвестирует как частный инвестор и параллельно ведёт другие бизнес-проекты.",
+        ],
+        directions: [
+          "Криптотрейдинг",
+          "Forex",
+          "Обучение трейдингу с нуля",
+          "Инвестиции",
+          "Предпринимательство",
+        ],
+      },
+      uz: {
+        name: "Samandar Mirniyozov",
+        role: "Kripto va Forex bozorlarida treyder va treyding o'qituvchisi",
+        metaDescription: "Samandar Mirniyozov — 2022 yildan beri treyder: kriptovalyutalar va Forex, noldan bepul treyding ta'limi, 1500 ga yaqin o'quvchi, investitsiya va biznes.",
+        short:
+          "Samandar Mirniyozov — treyder, 2022 yildan beri treydingda. Kriptovalyutalardan boshlagan, 2024 yildan Forex'da ham savdo qiladi. 1500 ga yaqin odamni noldan o'rgatgan, bugun moliyaviy bozorlar bo'yicha bepul ta'lim beradi va investitsiya qiladi.",
+        bio: [
+          "Samandar Mirniyozov — treyder va treyding o'qituvchisi.",
+          "2022 yildan beri treydingda: dastlabki ikki yil kriptovalyutalar bilan ishlagan, 2024 yildan esa Forex va kripto bozorlarida savdo qiladi.",
+          "1500 ga yaqin odamga treydingni noldan o'rgatgan.",
+          "Toshkentdagi institutni «Biznes menejment» yo'nalishi bo'yicha tamomlagan. Moliya uning uchun oilaviy ish: butun oilasi shu sohada faoliyat yuritadi.",
+          "Bugun Forex va kripto bozorlari bo'yicha bepul ta'lim beradi, xususiy investor sifatida investitsiya qiladi va boshqa biznes loyihalarini ham yuritadi.",
+        ],
+        directions: [
+          "Kripto treyding",
+          "Forex",
+          "Treydingni noldan o'rgatish",
+          "Investitsiyalar",
+          "Tadbirkorlik",
+        ],
+      },
+      en: {
+        name: "Samandar Mirniyozov",
+        role: "Trader and trading educator in crypto and Forex markets",
+        metaDescription: "Samandar Mirniyozov has traded since 2022: crypto and Forex, free trading education for beginners, nearly 1,500 students taught, investing and business.",
+        short:
+          "Samandar Mirniyozov is a trader who has been in trading since 2022. He started with crypto and has also traded Forex since 2024. He has taught nearly 1,500 people from scratch and today offers free education on financial markets and invests.",
+        bio: [
+          "Samandar Mirniyozov is a trader and trading educator.",
+          "He has been trading since 2022: he spent his first two years in crypto, and since 2024 he has traded both Forex and crypto markets.",
+          "He has taught nearly 1,500 people to trade from scratch.",
+          "He graduated from an institute in Tashkent with a degree in business management. Finance is a family affair for him: his whole family works in the field.",
+          "Today he offers free education on Forex and crypto markets, invests as a private investor and runs other businesses alongside.",
+        ],
+        directions: [
+          "Crypto trading",
+          "Forex",
+          "Trading education for beginners",
+          "Investing",
+          "Entrepreneurship",
+        ],
+      },
+    },
+  },
 ];
 
 export function getPerson(slug: string): Person | undefined {
