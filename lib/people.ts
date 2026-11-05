@@ -547,9 +547,9 @@ export const people: Person[] = [
     },
   },
   {
-    slug: "mukhriddin",
-    photo: "/people/mukhriddin.webp",
-    ogImage: "/people/mukhriddin-og.jpg",
+    slug: "mukhiddin",
+    photo: "/people/mukhiddin.webp",
+    ogImage: "/people/mukhiddin-og.jpg",
     cardTags: [0, 1, 4, 5],
     links: [
       { label: "X", url: "https://x.com/mw_logrts" },
@@ -557,9 +557,9 @@ export const people: Person[] = [
     ],
     text: {
       ru: {
-        name: "Мухриддин (MW)",
+        name: "Мухиддин (MW)",
         role: "Специалист в области ZKP, DID и онтологии; исследователь онтологии узбекского языка и компьютерной лингвистики",
-        metaDescription: "Мухриддин (MW) — zero-knowledge proofs, decentralized identifiers и self-sovereign identity; сейчас онтология узбекского языка и компьютерная лингвистика.",
+        metaDescription: "Мухиддин (MW) — zero-knowledge proofs, decentralized identifiers и self-sovereign identity; сейчас онтология узбекского языка и компьютерная лингвистика.",
         short:
           "В 2022–2024 годах MW занимался исследованиями и прикладной работой в области zero-knowledge proofs, decentralized identifiers и рекурсивных алгоритмов. В рамках inDAO_io участвовал в проектах с Verida и PolygonID, связанных с self-sovereign identity и verifiable credentials. В настоящее время работает в области онтологии, семантики, а также онтологии узбекского языка и компьютерной лингвистики.",
         bio: [
@@ -582,9 +582,9 @@ export const people: Person[] = [
         ],
       },
       uz: {
-        name: "Muhriddin (MW)",
+        name: "Muhiddin (MW)",
         role: "ZKP, DID va ontologiya sohasidagi mutaxassis; o'zbek tili ontologiyasi va kompyuter lingvistikasi bo'yicha tadqiqotchi",
-        metaDescription: "Muhriddin (MW) — zero-knowledge proof'lar, decentralized identifiers va self-sovereign identity; hozir o'zbek tili ontologiyasi va kompyuter lingvistikasi.",
+        metaDescription: "Muhiddin (MW) — zero-knowledge proof'lar, decentralized identifiers va self-sovereign identity; hozir o'zbek tili ontologiyasi va kompyuter lingvistikasi.",
         short:
           "MW 2022–2024-yillarda zero-knowledge proof'lar, decentralized identifiers va rekursiv algoritmlar sohasida tadqiqot va amaliy ishlar olib borgan. inDAO_io doirasida Verida va PolygonID bilan self-sovereign identity va verifiable credentials bo'yicha loyihalarda ishtirok etgan. Hozirda ontologiya, semantika hamda o'zbek tili ontologiyasi va kompyuter lingvistikasi yo'nalishlarida ish olib bormoqda.",
         bio: [
@@ -607,9 +607,9 @@ export const people: Person[] = [
         ],
       },
       en: {
-        name: "Mukhriddin (MW)",
+        name: "Mukhiddin (MW)",
         role: "Specialist in ZKP, DID and ontology; researcher in Uzbek language ontology and computational linguistics",
-        metaDescription: "Mukhriddin (MW) works on zero-knowledge proofs, decentralized identifiers and self-sovereign identity; now Uzbek language ontology and computational linguistics.",
+        metaDescription: "Mukhiddin (MW) works on zero-knowledge proofs, decentralized identifiers and self-sovereign identity; now Uzbek language ontology and computational linguistics.",
         short:
           "From 2022 to 2024, MW did research and applied work on zero-knowledge proofs, decentralized identifiers and recursive algorithms. As part of inDAO_io, he took part in projects with Verida and PolygonID on self-sovereign identity and verifiable credentials. He now works on ontology and semantics, as well as Uzbek language ontology and computational linguistics.",
         bio: [
