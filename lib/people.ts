@@ -546,6 +546,93 @@ export const people: Person[] = [
       },
     },
   },
+  {
+    slug: "mukhriddin",
+    photo: "/people/mukhriddin.webp",
+    ogImage: "/people/mukhriddin-og.jpg",
+    cardTags: [0, 1, 4, 5],
+    links: [
+      { label: "X", url: "https://x.com/mw_logrts" },
+      { label: "Semantic Intelligence", url: "https://semantic-intelligence.uz" },
+    ],
+    text: {
+      ru: {
+        name: "Мухриддин (MW)",
+        role: "Специалист в области ZKP, DID и онтологии; исследователь онтологии узбекского языка и компьютерной лингвистики",
+        metaDescription: "Мухриддин (MW) — zero-knowledge proofs, decentralized identifiers и self-sovereign identity; сейчас онтология узбекского языка и компьютерная лингвистика.",
+        short:
+          "В 2022–2024 годах MW занимался исследованиями и прикладной работой в области zero-knowledge proofs, decentralized identifiers и рекурсивных алгоритмов. В рамках inDAO_io участвовал в проектах с Verida и PolygonID, связанных с self-sovereign identity и verifiable credentials. В настоящее время работает в области онтологии, семантики, а также онтологии узбекского языка и компьютерной лингвистики.",
+        bio: [
+          "В 2022–2024 годах MW проводил исследования и прикладную работу в области zero-knowledge proofs (ZKP), decentralized identifiers (DID) и рекурсивных алгоритмов.",
+          "В рамках проекта inDAO_io сотрудничал с Verida, PolygonID и Reclaim Protocol по вопросам self-sovereign identity. Основное внимание уделялось механизмам selective disclosure, verifiable credentials и обеспечению контроля пользователя над своими данными. Работа велась в направлениях образования, здравоохранения и цифровой идентификации. Параллельно изучались рекурсивные алгоритмы и их формальные свойства.",
+          "Текущие направления:",
+          "Онтология и семантика — формализация знаний, процессов и правил в машинно-читаемые структуры.",
+          "Онтология узбекского языка и компьютерная лингвистика — разработка семантических и онтологических моделей узбекского языка и исследование их применения в вычислительных системах.",
+          "Формальные подходы — методы обеспечения устойчивости, аудируемости и семантической согласованности систем.",
+        ],
+        directions: [
+          "Zero-knowledge proofs (ZKP)",
+          "Decentralized identifiers (DID)",
+          "Self-sovereign identity",
+          "Verifiable credentials",
+          "Онтология и семантика",
+          "Онтология узбекского языка",
+          "Компьютерная лингвистика",
+          "Формальные методы",
+        ],
+      },
+      uz: {
+        name: "Muhriddin (MW)",
+        role: "ZKP, DID va ontologiya sohasidagi mutaxassis; o'zbek tili ontologiyasi va kompyuter lingvistikasi bo'yicha tadqiqotchi",
+        metaDescription: "Muhriddin (MW) — zero-knowledge proof'lar, decentralized identifiers va self-sovereign identity; hozir o'zbek tili ontologiyasi va kompyuter lingvistikasi.",
+        short:
+          "MW 2022–2024-yillarda zero-knowledge proof'lar, decentralized identifiers va rekursiv algoritmlar sohasida tadqiqot va amaliy ishlar olib borgan. inDAO_io doirasida Verida va PolygonID bilan self-sovereign identity va verifiable credentials bo'yicha loyihalarda ishtirok etgan. Hozirda ontologiya, semantika hamda o'zbek tili ontologiyasi va kompyuter lingvistikasi yo'nalishlarida ish olib bormoqda.",
+        bio: [
+          "2022–2024-yillarda MW zero-knowledge proof'lar (ZKP), decentralized identifiers (DID) va rekursiv algoritmlar sohasida tadqiqot va amaliy faoliyat yuritgan.",
+          "inDAO_io loyihasi doirasida Verida, PolygonID va Reclaim Protocol bilan hamkorlikda self-sovereign identity yondashuvlarini o'rgangan. Asosiy e'tibor selective disclosure, verifiable credentials va foydalanuvchi ma'lumotlari ustidan nazoratni ta'minlash mexanizmlariga qaratilgan. Ishlar ta'lim, sog'liqni saqlash va raqamli identifikatsiya yo'nalishlarida olib borilgan. Parallel ravishda rekursiv algoritmlar va ularning formal xususiyatlari o'rganilgan.",
+          "Hozirgi tadqiqot yo'nalishlari:",
+          "Ontologiya va semantika: bilimlarni, jarayonlarni va qoidalarni mashina o'qiy oladigan formal tuzilmalarga keltirish.",
+          "O'zbek tili ontologiyasi va kompyuter lingvistikasi: o'zbek tili uchun semantik va ontologik modellarni ishlab chiqish va ularning hisoblash amaliyotida qo'llanilishi.",
+          "Formal yondashuvlar: tizimlarning barqarorligi, audit qilinishi va semantik izchilligini ta'minlash usullari.",
+        ],
+        directions: [
+          "Zero-knowledge proofs (ZKP)",
+          "Decentralized identifiers (DID)",
+          "Self-sovereign identity",
+          "Verifiable credentials",
+          "Ontologiya va semantika",
+          "O'zbek tili ontologiyasi",
+          "Kompyuter lingvistikasi",
+          "Formal yondashuvlar",
+        ],
+      },
+      en: {
+        name: "Mukhriddin (MW)",
+        role: "Specialist in ZKP, DID and ontology; researcher in Uzbek language ontology and computational linguistics",
+        metaDescription: "Mukhriddin (MW) works on zero-knowledge proofs, decentralized identifiers and self-sovereign identity; now Uzbek language ontology and computational linguistics.",
+        short:
+          "From 2022 to 2024, MW did research and applied work on zero-knowledge proofs, decentralized identifiers and recursive algorithms. As part of inDAO_io, he took part in projects with Verida and PolygonID on self-sovereign identity and verifiable credentials. He now works on ontology and semantics, as well as Uzbek language ontology and computational linguistics.",
+        bio: [
+          "From 2022 to 2024, MW did research and applied work on zero-knowledge proofs (ZKP), decentralized identifiers (DID) and recursive algorithms.",
+          "As part of the inDAO_io project, he worked with Verida, PolygonID and Reclaim Protocol on self-sovereign identity. The focus was on selective disclosure, verifiable credentials and mechanisms that give users control over their own data. The work covered education, healthcare and digital identity. In parallel, he studied recursive algorithms and their formal properties.",
+          "Current research areas:",
+          "Ontology and semantics: turning knowledge, processes and rules into formal, machine-readable structures.",
+          "Uzbek language ontology and computational linguistics: building semantic and ontological models of the Uzbek language and studying how they apply in computational systems.",
+          "Formal approaches: methods for keeping systems robust, auditable and semantically consistent.",
+        ],
+        directions: [
+          "Zero-knowledge proofs (ZKP)",
+          "Decentralized identifiers (DID)",
+          "Self-sovereign identity",
+          "Verifiable credentials",
+          "Ontology and semantics",
+          "Uzbek language ontology",
+          "Computational linguistics",
+          "Formal methods",
+        ],
+      },
+    },
+  },
 ];
 
 export function getPerson(slug: string): Person | undefined {
