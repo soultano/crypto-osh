@@ -1,11 +1,10 @@
 // Posts the morning news to the Telegram channel one at a time, spread
 // over the day, each with a link to the article on the site.
 //
-// The daily run (news-new.json present) puts today's stories in a queue and
-// posts the first one right away. The hourly "Telegram queue" workflow then
-// posts the next one when at least TELEGRAM_GAP_HOURS (default 2.5) have
-// passed since the last post. The queue lives in TELEGRAM_STATE (default
-// .telegram/state.json), which the workflows keep in the Actions cache.
+// The daily run passes today's stories in news-new.json: the first goes out
+// right away, then the script sleeps TELEGRAM_GAP_HOURS (default 2.5)
+// before each next one. The workflow job stays alive meanwhile; GitHub's
+// hourly schedules skip too many runs to rely on them.
 //
 // Links carry utm_source=telegram&utm_medium=social&utm_campaign=<channel>,
 // so GA4 shows channel visits under Traffic acquisition.
@@ -13,8 +12,7 @@
 // Env: TELEGRAM_BOT_TOKEN, TELEGRAM_NEWS_CHAT_ID (e.g. @soulweb or -100…),
 // TELEGRAM_NEWS_LANG (uz | ru | en, default uz), SITE_URL (default
 // https://cryptoosh.uz), NEWS_SLUGS (comma-separated slugs, or "latest" for
-// the newest article: posts those right away and leaves the queue alone, for
-// a test run).
+// the newest article: posts those right away, for a test run).
 // Without the token or chat id the step does nothing.
 
 import fs from "node:fs";
@@ -54,23 +52,8 @@ function pickSlugs(): string[] {
   return (wanted ?? "").split(",").map((x) => x.trim()).filter((x) => /^[\w-]+$/.test(x));
 }
 
-type State = { queue: string[]; lastAt: string | null };
-const statePath = path.resolve(root, process.env.TELEGRAM_STATE || ".telegram/state.json");
-const gapHours = Number(process.env.TELEGRAM_GAP_HOURS) > 0 ? Number(process.env.TELEGRAM_GAP_HOURS) : 2.5;
-
-function readState(): State {
-  try {
-    const s = JSON.parse(fs.readFileSync(statePath, "utf8"));
-    return { queue: Array.isArray(s.queue) ? s.queue : [], lastAt: typeof s.lastAt === "string" ? s.lastAt : null };
-  } catch {
-    return { queue: [], lastAt: null };
-  }
-}
-
-function writeState(s: State) {
-  fs.mkdirSync(path.dirname(statePath), { recursive: true });
-  fs.writeFileSync(statePath, `${JSON.stringify(s, null, 2)}\n`);
-}
+const gapEnv = Number(process.env.TELEGRAM_GAP_HOURS);
+const gapHours = process.env.TELEGRAM_GAP_HOURS && gapEnv >= 0 ? gapEnv : 2.5;
 
 function esc(s: string): string {
   return s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
@@ -133,40 +116,25 @@ async function main() {
     return;
   }
 
-  // Test run: post the given articles now, queue untouched.
-  const test = pickSlugs();
+  // Test run: post the given articles now, a few seconds apart.
   if (process.env.NEWS_SLUGS?.trim()) {
-    for (const slug of test) {
+    for (const slug of pickSlugs()) {
       await post(slug, false);
       await new Promise((r) => setTimeout(r, 3000));
     }
     return;
   }
 
-  const state = readState();
   const listPath = path.join(root, "news-new.json");
-  const fresh: string[] = fs.existsSync(listPath) ? JSON.parse(fs.readFileSync(listPath, "utf8")) : [];
-  if (fresh.length) {
-    // New morning: today's stories replace whatever was left from yesterday.
-    state.queue = fresh;
-    state.lastAt = null;
+  const slugs: string[] = fs.existsSync(listPath) ? JSON.parse(fs.readFileSync(listPath, "utf8")) : [];
+  if (!slugs.length) return console.log("No new articles.");
+  for (const [i, slug] of slugs.entries()) {
+    if (i > 0) {
+      console.log(`next post in ${gapHours} h`);
+      await new Promise((r) => setTimeout(r, gapHours * 3_600_000));
+    }
+    await post(slug, i === 0);
   }
-  state.queue = state.queue.filter((slug) => fs.existsSync(path.join(root, "content", "articles", `${slug}.json`)));
-  if (!state.queue.length) {
-    writeState(state);
-    return console.log("Queue is empty.");
-  }
-  const since = state.lastAt ? (Date.now() - Date.parse(state.lastAt)) / 3_600_000 : Infinity;
-  if (since < gapHours) {
-    writeState(state);
-    return console.log(`Last post ${since.toFixed(1)} h ago (gap ${gapHours} h); ${state.queue.length} waiting.`);
-  }
-  const slug = state.queue[0];
-  await post(slug, fresh.length > 0);
-  state.queue.shift();
-  state.lastAt = new Date().toISOString();
-  writeState(state);
-  console.log(`${state.queue.length} left in the queue.`);
 }
 
 main().catch((e) => {
