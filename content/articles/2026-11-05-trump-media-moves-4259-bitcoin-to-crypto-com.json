@@ -1,0 +1,57 @@
+{
+  "slug": "2026-11-05-trump-media-moves-4259-bitcoin-to-crypto-com",
+  "date": "2026-11-05T13:52:12+05:00",
+  "tags": [
+    "bitcoin",
+    "trump",
+    "treasury"
+  ],
+  "sources": [
+    {
+      "name": "CryptoNews",
+      "url": "https://cryptonews.com/news/trump-media-bitcoin-transfer-democrats-crypto-probe/"
+    },
+    {
+      "name": "BeInCrypto",
+      "url": "https://beincrypto.com/trump-media-bitcoin-loan-collateral-transfer/"
+    },
+    {
+      "name": "CoinDesk",
+      "url": "https://www.coindesk.com/markets/2026/11/05/trump-media-moves-usd434-million-in-bitcoin-to-crypto-com-blockchain-data-show"
+    },
+    {
+      "name": "The Defiant",
+      "url": "https://thedefiant.io/converge/tradfi-and-fintech/trump-media-linked-wallets-send-4-259-btc-to-crypto-com"
+    }
+  ],
+  "uz": {
+    "title": "Trump Media 4 259 bitkoinni Crypto.com birjasiga o'tkazdi",
+    "summary": "Donald Trampning media kompaniyasiga tegishli hamyonlardan qariyb 343 million dollarlik 4 259 BTC Crypto.com'ga yuborildi. Bu sotuvmi yoki garovni ko'chirishmi, hali noma'lum.",
+    "body": [
+      "Arkham va Lookonchain ma'lumotlariga ko'ra, Trump Media & Technology Group ikki tranzaksiyada 4 259 BTC'ni Crypto.com'ga o'tkazdi. Summa taxminan 342–343 million dollar. Bu kompaniya 31 iyul holatiga e'lon qilgan bitkoin zaxirasining qariyb 30 foizi.",
+      "Tangalar 1 milliard dollarlik konvertatsiya qilinadigan obligatsiyalar uchun garov deb belgilangan hamyonlardan chiqqan. Kompaniyaning 30 iyun hisobotida 4 260,73 BTC garovga qo'yilgani ko'rsatilgan, ya'ni deyarli shu miqdor. Hamyonlarda atigi 1,3 BTC qoldi. Qarz shartlariga ko'ra, garovni ma'lum shartlar bajarilmaguncha olib bo'lmaydi.",
+      "Vaqt ham e'tiborni tortmoqda: CryptoNews yozishicha, kompaniyani shu oy oxirida 1 milliard dollargacha qarzni qaytarish muddati kutmoqda. Kongressni qo'lga olgan demokratlar esa Tramp oilasining kripto bizneslarini tekshirishga tayyorlanmoqda."
+    ],
+    "take": "Katta hamyon birjaga pul o'tkazsa, darhol 'sotyapti' degan shov-shuv chiqadi, lekin bu har doim ham sotuv emas: bu yerda garovni boshqa joyga ko'chirish ham bo'lishi mumkin. Biz uchun saboq: bunday sarlavhalarga qarab vahima bilan savdo qilmang. Yana bir dars: qarzga bog'langan bitkoin zaxirasi kompaniyani bozor tebranishiga ancha zaif qiladi."
+  },
+  "ru": {
+    "title": "Trump Media перевела 4 259 биткоинов на биржу Crypto.com",
+    "summary": "С кошельков медиакомпании Дональда Трампа на Crypto.com ушло 4 259 BTC, примерно на $343 млн. Продажа это или перекладка залога, пока непонятно.",
+    "body": [
+      "По данным Arkham и Lookonchain, Trump Media & Technology Group двумя транзакциями отправила на Crypto.com 4 259 BTC, это около $342–343 млн. Это примерно 30% биткоин-резерва, который компания раскрывала на 31 июля.",
+      "Монеты ушли с кошельков, помеченных как залог по конвертируемым облигациям на $1 млрд. В отчёте на 30 июня в залоге значились 4 260,73 BTC, то есть почти ровно та же сумма. На кошельках осталось всего 1,3 BTC. По условиям займа забрать залог нельзя, пока не выполнены определённые условия.",
+      "Момент тоже показательный: как пишет CryptoNews, в конце месяца у компании может наступить срок погашения долга до $1 млрд. А демократы, получившие Конгресс, готовят проверки криптобизнеса семьи Трампа."
+    ],
+    "take": "Когда крупный кошелёк переводит монеты на биржу, сразу кричат «сливают», но это не всегда продажа: здесь вполне может быть просто перекладка залога. Наш вывод: не торгуйте на панике по таким заголовкам. И ещё урок: биткоин-резерв, завязанный на долги, делает компанию куда уязвимее к колебаниям рынка."
+  },
+  "en": {
+    "title": "Trump Media moves 4,259 bitcoin to Crypto.com",
+    "summary": "Wallets tied to Donald Trump's media company sent 4,259 BTC, worth about $343 million, to Crypto.com. Whether it is a sale or a collateral shuffle is still unclear.",
+    "body": [
+      "According to Arkham and Lookonchain, Trump Media & Technology Group sent 4,259 BTC to Crypto.com in two transactions, worth roughly $342–343 million. That is about 30% of the bitcoin treasury the company disclosed as of July 31.",
+      "The coins came from wallets labeled as collateral for $1 billion in convertible notes. The company's June 30 filing lists 4,260.73 BTC pledged, almost exactly the same amount. Only about 1.3 BTC is left in those wallets. Under the loan terms, the collateral cannot be withdrawn until certain conditions are met.",
+      "The timing stands out: CryptoNews reports the company faces a potential debt repayment deadline of up to $1 billion later this month, while Democrats, now in control of Congress, are preparing probes into the Trump family's crypto ventures."
+    ],
+    "take": "When a big wallet moves coins to an exchange, people rush to shout 'dump', but it is not always a sale; here it may simply be collateral being moved. Our takeaway: don't trade in a panic off headlines like this. And another lesson: a bitcoin treasury tied to debt makes a company far more exposed to market swings."
+  }
+}

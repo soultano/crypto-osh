@@ -1,0 +1,53 @@
+{
+  "slug": "2026-11-05-morgan-stanley-tokenizes-us-stocks-treasuries-via-dtcc",
+  "date": "2026-11-05T13:52:12+05:00",
+  "tags": [
+    "tokenization",
+    "banks",
+    "rwa"
+  ],
+  "sources": [
+    {
+      "name": "Bitcoin.com News",
+      "url": "https://news.bitcoin.com/finance/morgan-stanley-among-first-adopt-dtcc-tokenization-service/"
+    },
+    {
+      "name": "The Block",
+      "url": "https://www.theblock.co/news/markets/2026-11-04-morgan-stanley-among-first-banks-to-tokenize-us-equities-treasurys-through-dtccs-service-432633"
+    },
+    {
+      "name": "CoinDesk",
+      "url": "https://www.coindesk.com/markets/2026/11/04/morgan-stanley-says-it-is-among-the-first-banks-to-put-u-s-stocks-and-treasuries-on-a-blockchain"
+    }
+  ],
+  "uz": {
+    "title": "Morgan Stanley AQSh aksiyalari va obligatsiyalarini DTCC orqali tokenlashtirdi",
+    "summary": "Morgan Stanley AQSh aksiyalari va davlat obligatsiyalarini DTCC'ning yangi tokenlashtirish xizmati orqali token ko'rinishiga o'tkazganini e'lon qildi. Bank bu xizmatdan birinchilardan bo'lib foydalanganini aytmoqda.",
+    "body": [
+      "Uoll-stritning yirik banki Morgan Stanley 4 noyabr kuni real aktivlarni tokenlashtirgan birinchi yirik moliya institutlaridan biri bo'lganini ma'lum qildi. Bank AQSh aksiyalari va g'aznachilik obligatsiyalarini token shakliga o'tkazgan.",
+      "Buning uchun AQSh qimmatli qog'ozlar tizimining asosiy infratuzilmasi bo'lgan DTCC'ning 28 oktabrda ishga tushgan Tokenization Service (DTS) xizmatidan foydalanildi. Ishga tushirilganda xizmatga 20 ta Uoll-strit kompaniyasi yozilgan. Decrypt ma'lumotiga ko'ra, xizmat qisman Canton Network tarmog'ida ishlaydi.",
+      "Muhim nuqta: tokenlar kecha-kunduz, 24/7 o'tkazilishi mumkin, lekin faqat bitta blokcheyndagi ro'yxatdan o'tgan hamyonlar o'rtasida. Ya'ni bu hamma uchun ochiq DeFi emas, banklarning yopiq tizimi."
+    ],
+    "take": "Blokcheyn asta-sekin an'anaviy moliyaning 'quvurlari'ga aylanmoqda, va bu kriptoning jiddiy texnologiya ekanini yana bir bor ko'rsatadi. Lekin bu tokenlar faqat ro'yxatdan o'tgan hamyonlar orasida yuradi, oddiy odam ularni Telegramdan sotib ololmaydi. Shuning uchun kimdir sizga 'tokenlashtirilgan Morgan Stanley aksiyasi'ni taklif qilsa, ehtiyot bo'ling: bu katta ehtimol bilan firibgarlik."
+  },
+  "ru": {
+    "title": "Morgan Stanley токенизировал американские акции и облигации через DTCC",
+    "summary": "Morgan Stanley сообщил, что перевёл американские акции и гособлигации в токены через новый сервис токенизации DTCC. Банк говорит, что стал одним из первых его пользователей.",
+    "body": [
+      "Крупный банк с Уолл-стрит Morgan Stanley 4 ноября заявил, что стал одним из первых крупных финансовых институтов, токенизировавших реальные активы. Банк перевёл в токены американские акции и казначейские облигации.",
+      "Для этого использовали сервис Tokenization Service (DTS) от DTCC, ключевой инфраструктуры рынка ценных бумаг США. Сервис запустили 28 октября, на старте к нему подключились 20 компаний с Уолл-стрит. По данным Decrypt, он частично работает на сети Canton Network.",
+      "Важная деталь: токены можно переводить круглосуточно, 24/7, но только между зарегистрированными кошельками в одном блокчейне. То есть это не открытый DeFi, а закрытая система для банков."
+    ],
+    "take": "Блокчейн потихоньку становится «трубами» традиционных финансов, и это ещё один знак, что крипта — серьёзная технология. Но эти токены ходят только между зарегистрированными кошельками, простой человек не купит их в Telegram. Поэтому если вам предлагают «токенизированные акции Morgan Stanley», будьте осторожны: скорее всего, это мошенники."
+  },
+  "en": {
+    "title": "Morgan Stanley tokenizes US stocks and Treasurys through DTCC",
+    "summary": "Morgan Stanley says it converted US equities and Treasurys into tokens using DTCC's new tokenization service, making it one of the first banks to do so.",
+    "body": [
+      "Wall Street bank Morgan Stanley said on Nov. 4 that it is among the first major financial institutions to tokenize real-world assets, converting US equities and Treasurys into tokenized form.",
+      "It used the Tokenization Service (DTS) from DTCC, a core piece of US securities market infrastructure. The service launched on Oct. 28 with 20 Wall Street firms signed up. According to Decrypt, it runs partly on the Canton Network.",
+      "A key detail: tokens can move around the clock, 24/7, but only between registered wallets on the same blockchain. So this is not open DeFi, but a closed system for institutions."
+    ],
+    "take": "Blockchain is slowly becoming the plumbing of traditional finance, another sign that crypto is a serious technology. But these tokens only move between registered wallets, so an ordinary person cannot buy them on Telegram. If someone offers you 'tokenized Morgan Stanley shares', be careful: it is most likely a scam."
+  }
+}

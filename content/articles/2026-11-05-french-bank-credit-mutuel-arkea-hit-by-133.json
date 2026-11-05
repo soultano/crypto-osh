@@ -1,0 +1,57 @@
+{
+  "slug": "2026-11-05-french-bank-credit-mutuel-arkea-hit-by-133",
+  "date": "2026-11-05T13:52:12+05:00",
+  "tags": [
+    "hack",
+    "banks",
+    "security"
+  ],
+  "sources": [
+    {
+      "name": "Cointelegraph",
+      "url": "https://cointelegraph.com/news/credit-mutuel-arkea-resumes-operations-133m-crypto-theft"
+    },
+    {
+      "name": "The Block",
+      "url": "https://www.theblock.co/news/business/2026-11-04-french-bank-confirms-cyberattack-434372"
+    },
+    {
+      "name": "Bitcoin Magazine",
+      "url": "https://bitcoinmagazine.com/news/credit-mutuel-arkea-hack-133-million"
+    },
+    {
+      "name": "Decrypt",
+      "url": "https://decrypt.co/382486/zachxbt-names-french-bank-credit-mutuel-arkea-as-alleged-victim-of-133m-crypto-theft"
+    }
+  ],
+  "uz": {
+    "title": "Fransiyaning Crédit Mutuel Arkéa banki kiberhujumni tan oldi: zarar 133 mln dollar atrofida",
+    "summary": "Fransuz banki Crédit Mutuel Arkéa xakerlar uning o'z hisobidan firibgarlik o'tkazmalarini amalga oshirganini tasdiqladi. Tergovchi ZachXBT zararni 133 million dollardan ortiq deb baholadi.",
+    "body": [
+      "Fransiyaning Bretan viloyatida joylashgan Crédit Mutuel Arkéa banki kiberhujum bo'lganini rasman tan oldi. Bank ma'lumotiga ko'ra, hujumchilar tizimga bir xizmat ko'rsatuvchi hamkor kompaniyaning platformasi orqali kirgan va bankning o'z hisobidan firibgarlik o'tkazmalarini qilgan.",
+      "Blokcheyn tergovchisi ZachXBT o'g'irlangan mablag'ni 133 million dollardan ortiq deb hisobladi va uni kripto o'g'irlik bilan bog'ladi. Bank aniq summani aytmadi, lekin The Block ma'lumotiga ko'ra, raqamning tartibi to'g'riligini tasdiqladi. Bank o'z bayonotida kripto haqida umuman gapirmadi va zararni hali hisoblayapti.",
+      "Bank vaziyat nazoratda ekanini, faoliyat tiklanayotganini va mijozlar pullariga zarar yetmaganini aytdi. Ehtiyot chorasi sifatida ayrim operatsiyalar to'xtatildi, natijada ba'zi o'tkazmalar kechikdi."
+    ],
+    "take": "Bu yil xakerlar ko'pincha to'g'ridan-to'g'ri emas, uchinchi tomon xizmatlari orqali kirmoqda: bank ham, birja ham bundan himoyalanmagan. Sizga maslahatimiz oddiy: kriptoni faqat NAPP litsenziyasiga ega provayderlar orqali oling, katta summalarni o'zingiz nazorat qiladigan sovuq hamyonda saqlang va ikki bosqichli himoyani albatta yoqing."
+  },
+  "ru": {
+    "title": "Французский банк Crédit Mutuel Arkéa признал кибератаку: ущерб около $133 млн",
+    "summary": "Французский банк Crédit Mutuel Arkéa подтвердил, что хакеры провели мошеннические переводы с его собственного счёта. Расследователь ZachXBT оценил потери более чем в $133 млн.",
+    "body": [
+      "Банк Crédit Mutuel Arkéa из Бретани официально признал кибератаку. По словам банка, злоумышленники попали в систему через платформу стороннего поставщика услуг и провели мошеннические переводы со счёта самого банка.",
+      "Блокчейн-расследователь ZachXBT оценил украденное более чем в $133 млн и связал это с криптокражей. Точную сумму банк не назвал, но, по данным The Block, подтвердил порядок цифры. В своём заявлении банк про крипту вообще не упомянул и всё ещё подсчитывает ущерб.",
+      "Банк говорит, что ситуация под контролем, работа восстанавливается, а деньги клиентов не пострадали. Часть операций приостановили на всякий случай, поэтому некоторые переводы задержались."
+    ],
+    "take": "В этом году хакеры всё чаще заходят не в лоб, а через подрядчиков, и от этого не застрахованы ни банки, ни биржи. Совет простой: покупайте крипту только у провайдеров с лицензией НАПП, крупные суммы держите на холодном кошельке под своим контролем и обязательно включите двухфакторную защиту."
+  },
+  "en": {
+    "title": "French bank Crédit Mutuel Arkéa confirms cyberattack, losses near $133 million",
+    "summary": "French lender Crédit Mutuel Arkéa confirmed hackers made fraudulent transfers from its own account. On-chain investigator ZachXBT puts the losses above $133 million.",
+    "body": [
+      "Brittany-based Crédit Mutuel Arkéa has officially confirmed a cyberattack. The bank says the attackers got in through a third-party service provider's platform and made fraudulent transfers from the bank's own account.",
+      "On-chain investigator ZachXBT estimated the theft at more than $133 million and tied it to crypto. The bank did not give an exact figure, but according to The Block it confirmed the order of magnitude. Its statement did not mention crypto at all, and it is still assessing the amounts.",
+      "The bank says the incident is under control, operations are resuming and customer assets were not affected. Some transactions were suspended as a precaution, which delayed certain transfers."
+    ],
+    "take": "This year hackers keep coming in through contractors rather than the front door, and neither banks nor exchanges are immune. Our advice is simple: buy crypto only through NAPP-licensed providers in Uzbekistan, keep larger amounts in a cold wallet you control, and always turn on two-factor protection."
+  }
+}
