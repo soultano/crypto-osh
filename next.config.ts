@@ -46,8 +46,16 @@ const nextConfig: NextConfig = {
     remotePatterns: [],
   },
   // The auction page was removed; old links go to the home page.
+  // A profile slug was corrected after publishing; keep the old URL working.
   async redirects() {
-    return [{ source: "/:locale(uz|ru|en)/auction", destination: "/:locale", permanent: true }];
+    return [
+      { source: "/:locale(uz|ru|en)/auction", destination: "/:locale", permanent: true },
+      {
+        source: "/:locale(uz|ru|en)/people/mukhriddin",
+        destination: "/:locale/people/mukhiddin",
+        permanent: true,
+      },
+    ];
   },
   async headers() {
     return [{ source: "/:path*", headers: securityHeaders }];
