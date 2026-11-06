@@ -1,0 +1,61 @@
+{
+  "slug": "2026-11-06-bitcoin-drops-below-76000-ai-stock-selloff",
+  "date": "2026-11-06T13:51:20+05:00",
+  "tags": [
+    "bitcoin",
+    "market",
+    "etf",
+    "liquidations"
+  ],
+  "sources": [
+    {
+      "name": "Cointelegraph",
+      "url": "https://cointelegraph.com/markets/bitcoin-ether-etfs-lose-post-election-gains-erased"
+    },
+    {
+      "name": "The Block",
+      "url": "https://www.theblock.co/news/markets/2026-11-05-bitcoin-erases-post-election-gains-wall-street-selloff-liquidations-435434"
+    },
+    {
+      "name": "CryptoSlate",
+      "url": "https://cryptoslate.com/bitcoin-crashes-below-76000-as-ai-bubble-fears-wipe-2-5-trillion-from-wall-street/"
+    },
+    {
+      "name": "CoinDesk",
+      "url": "https://www.coindesk.com/markets/2026/11/05/bitcoin-crypto-stocks-caught-in-ai-trade-meltdown-but-wintermute-trader-sees-glass-half-full"
+    }
+  ],
+  "uz": {
+    "title": "Bitkoin 76 000 dollardan pastga tushdi: AI aksiyalaridagi qulash kriptoga ham urildi",
+    "summary": "AQSh texnologiya aksiyalaridagi keskin sotuvlar ortidan bitkoin taxminan 6% arzonlab, 76 000 dollardan pastga tushdi. Bozorda 1 milliard dollardan ortiq kaldıraçli pozitsiya yopildi, BTC va ETH ETF'laridan esa 530 million dollar chiqib ketdi.",
+    "body": [
+      "Payshanba kuni bitkoin kun ichida 75 568 dollargacha tushdi, keyin 76 800 dollar atrofiga qaytdi. Bir kun oldin u 80 000 dollardan yuqorida edi. Ether ham taxminan 7% arzonladi. Bu iyundan beri eng katta bir kunlik tushish.",
+      "Sabab kriptoning o'zida emas, Uoll-stritda. Sun'iy intellekt sohasidagi xarajatlar haqida xavotir kuchayib, Nasdaq korreksiya hududiga tushdi. CryptoSlate hisobiga ko'ra, AQSh aksiya bozoridan 2,5 trillion dollar qiymat yo'qoldi.",
+      "Qarzga savdo qilganlar eng ko'p zarar ko'rdi: 1,03 milliard dollarlik pozitsiyalar majburan yopildi. AQShdagi spot bitkoin va ether ETF'laridan bir kunda jami 530 million dollar chiqdi. Shunday bo'lsa-da, CoinDesk kriptoning AI aksiyalariga nisbatan yaxshiroq ushlab turganini ta'kidlaydi.",
+      "Shu bilan AQSh saylovlaridan keyingi o'sish butunlay yo'qqa chiqdi."
+    ],
+    "take": "Bitkoin endi Amerika aksiya bozori bilan bir dasturxonda o'tiradi: Nasdaq tushsa, kripto ham silkinadi. Eng og'ir zarbani yana qarzga savdo qilganlar oldi, shuning uchun kaldıraç bilan o'ynamaslik eng oddiy himoya. P2P'da USDT yoki BTC narxi tez o'zgarayotgan kunlarda shoshilmang va faqat NAPP litsenziyasiga ega provayderlardan foydalaning."
+  },
+  "ru": {
+    "title": "Биткоин упал ниже $76 000: обвал акций ИИ-компаний задел и крипту",
+    "summary": "После резкой распродажи технологических акций в США биткоин подешевел примерно на 6% и ушёл ниже $76 000. На рынке ликвидировали больше $1 млрд позиций с плечом, а из BTC- и ETH-фондов ушло $530 млн.",
+    "body": [
+      "В четверг биткоин опускался до $75 568 внутри дня, потом вернулся к $76 800. Ещё накануне он был выше $80 000. Эфир потерял около 7%. Это самое сильное дневное падение с июня.",
+      "Причина не в самой крипте, а на Уолл-стрит. Страхи вокруг расходов на искусственный интеллект отправили Nasdaq в коррекцию. По подсчётам CryptoSlate, американский фондовый рынок потерял $2,5 трлн капитализации.",
+      "Больше всех пострадали торговцы с плечом: принудительно закрыли позиций на $1,03 млрд. Из спотовых биткоин- и эфир-ETF в США за день вывели в сумме $530 млн. При этом CoinDesk отмечает, что крипта держалась заметно лучше акций ИИ-компаний.",
+      "Весь рост после выборов в США в итоге стёрся."
+    ],
+    "take": "Биткоин теперь сидит за одним дастарханом с американскими акциями: падает Nasdaq, трясёт и крипту. Сильнее всего опять досталось тем, кто торговал в долг, поэтому отказ от плеча остаётся самой простой защитой. В дни, когда курс USDT и BTC на P2P скачет, не торопитесь и работайте только через провайдеров с лицензией НАПП."
+  },
+  "en": {
+    "title": "Bitcoin drops below $76,000 as an AI stock selloff spills into crypto",
+    "summary": "Bitcoin fell about 6% to below $76,000 after a sharp selloff in US tech stocks. More than $1 billion in leveraged positions were liquidated, and bitcoin and ether ETFs lost $530 million.",
+    "body": [
+      "On Thursday bitcoin touched an intraday low of $75,568 before recovering to around $76,800. Just the day before it had traded above $80,000. Ether dropped about 7%. It was bitcoin's biggest one-day fall since June.",
+      "The trigger came from Wall Street rather than crypto itself. Worries about AI spending pushed the Nasdaq into a correction, and CryptoSlate estimates US stocks lost $2.5 trillion in value.",
+      "Leveraged traders took the worst of it, with $1.03 billion in positions forcibly closed. US spot bitcoin and ether ETFs saw combined outflows of $530 million for the day. Still, CoinDesk noted that crypto held up better than AI stocks.",
+      "The move wiped out all the gains made after the US election."
+    ],
+    "take": "Bitcoin now sits at the same table as US stocks: when the Nasdaq falls, crypto shakes too. Once again, people trading with borrowed money got hit hardest, so staying away from leverage is still the simplest protection. On days when USDT and BTC prices on P2P jump around, take your time and use only NAPP-licensed providers."
+  }
+}

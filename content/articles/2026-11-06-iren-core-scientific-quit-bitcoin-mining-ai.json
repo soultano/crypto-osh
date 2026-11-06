@@ -1,0 +1,57 @@
+{
+  "slug": "2026-11-06-iren-core-scientific-quit-bitcoin-mining-ai",
+  "date": "2026-11-06T13:51:20+05:00",
+  "tags": [
+    "mining",
+    "ai",
+    "bitcoin"
+  ],
+  "sources": [
+    {
+      "name": "The Defiant",
+      "url": "https://thedefiant.io/news/tradfi-and-fintech/iren-mining-revenue-falls-58-as-ai-sales-reach-200-million"
+    },
+    {
+      "name": "The Block",
+      "url": "https://www.theblock.co/news/business/2026-11-05-irens-mining-revenue-drops-435783"
+    },
+    {
+      "name": "Cointelegraph",
+      "url": "https://cointelegraph.com/news/core-scientific-to-quit-bitcoin-mining-by-year-end-as-ai-business-surges"
+    },
+    {
+      "name": "Bitcoin Magazine",
+      "url": "https://bitcoinmagazine.com/news/core-scientific-exits-bitcoin-year-end"
+    }
+  ],
+  "uz": {
+    "title": "IREN va Core Scientific bitkoin maynigidan voz kechib, AI ma'lumot markazlariga o'tmoqda",
+    "summary": "Ikki yirik ommaviy kompaniya, IREN va Core Scientific, yil oxirigacha bitkoin maynigini to'xtatishini aytdi. Ularning asosiy daromadi endi sun'iy intellekt uchun hisoblash quvvatidan kelmoqda.",
+    "body": [
+      "IREN'ning choraklik maynig daromadi 58% qisqardi, AI bulut xizmatlaridan tushum esa 182% o'sib, 200 million dollarga yetdi. Kompaniya maynigdan chiqishni dekabrgacha deyarli tugatmoqchi. Yillik 4 milliard dollarlik AI daromadi maqsadi esa 2027 yil boshiga surildi.",
+      "Core Scientific bir paytlar eng yirik maynerlardan biri edi. Endi maynig choraklik daromadining atigi 7,5% ini beradi, uskunalar parki esa deyarli ikki baravar qisqargan. Ma'lumot markazlarida joy va quvvat ijarasidan tushum 215 million dollarni tashkil etdi.",
+      "Kompaniya rahbariyati maynigdan chiqish to'rtinchi chorakda yakunlanishini aytdi. 2027 yilga Core Scientific faqat ma'lumot markazlari bilan ishlaydigan kompaniya sifatida kiradi."
+    ],
+    "take": "Katta o'yinchilar arzon elektr va tayyor binolarini bitkoindan ko'ra AI'ga berishni foydaliroq deb hisoblashmoqda. Bizda maynig haqida o'ylayotganlar uchun bu signal: bu biznes endi elektr narxi va uskuna samaradorligi bo'yicha qattiq hisob-kitobni talab qiladi. Maynig bilan shug'ullanmoqchi bo'lsangiz, raqamlarni yaxshilab hisoblang va faqat qonuniy, NAPP talablari doirasida ishlang."
+  },
+  "ru": {
+    "title": "IREN и Core Scientific уходят из майнинга биткоина в дата-центры для ИИ",
+    "summary": "Две крупные публичные компании, IREN и Core Scientific, к концу года прекращают майнить биткоин. Основные деньги им теперь приносят вычислительные мощности для искусственного интеллекта.",
+    "body": [
+      "У IREN выручка от майнинга за квартал упала на 58%, а доходы от облачных ИИ-услуг выросли на 182%, до $200 млн. Компания хочет в основном закончить переход к декабрю. Цель по годовой ИИ-выручке в $4 млрд сдвинулась на начало 2027 года.",
+      "Core Scientific когда-то был одним из крупнейших майнеров. Теперь майнинг даёт ему лишь 7,5% квартальной выручки, а парк оборудования сократился почти вдвое. Сдача мощностей в дата-центрах принесла $215 млн.",
+      "Руководство компании говорит, что выход из майнинга завершится в четвёртом квартале. В 2027 год Core Scientific войдёт чистым оператором дата-центров."
+    ],
+    "take": "Крупные игроки считают, что дешёвое электричество и готовые здания выгоднее отдать под ИИ, чем под биткоин. Для тех, кто у нас присматривается к майнингу, это сигнал: дело требует жёсткого расчёта по цене электричества и эффективности оборудования. Если решите майнить, сначала тщательно посчитайте и работайте только легально, в рамках требований НАПП."
+  },
+  "en": {
+    "title": "IREN and Core Scientific quit bitcoin mining for AI data centres",
+    "summary": "Two big listed miners, IREN and Core Scientific, say they will stop mining bitcoin by year-end. Most of their money now comes from selling computing power for AI.",
+    "body": [
+      "IREN's quarterly mining revenue fell 58%, while its AI cloud revenue jumped 182% to $200 million. The company aims to largely finish the switch by December, and its $4 billion annual AI revenue target has slipped to early 2027.",
+      "Core Scientific was once one of the biggest miners around. Mining now makes up just 7.5% of its quarterly revenue, and its fleet has been cut nearly in half. Renting out data-centre space and power brought in $215 million.",
+      "Management says the exit from mining will wrap up in the fourth quarter, and Core Scientific will enter 2027 as a pure data-centre operator."
+    ],
+    "take": "Big players now see more value in putting cheap power and ready-made buildings to work for AI than for bitcoin. For anyone in Uzbekistan eyeing mining, that is a signal: the business now comes down to hard maths on electricity prices and equipment efficiency. If you decide to mine, run the numbers carefully and stay legal within NAPP rules."
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "slug": "2026-11-06-tashkent-scam-call-centre-illegal-crypto-trading",
+  "date": "2026-11-06T13:51:20+05:00",
+  "tags": [
+    "uzbekistan",
+    "scam",
+    "p2p",
+    "security"
+  ],
+  "sources": [
+    {
+      "name": "Gazeta.uz",
+      "url": "https://www.gazeta.uz/ru/2026/11/05/call-centre/"
+    }
+  ],
+  "uz": {
+    "title": "Toshkentda firibgar koll-markaz fosh etildi: ichida noqonuniy kripto savdosi ham bor",
+    "summary": "Toshkentning Yakkasaroy tumanidagi xususiy uyda firibgarlik bilan shug'ullangan koll-markaz aniqlandi. U yerda yashagan uch nafar chet ellik qariyb 330 million so'mlik kriptoaktivlarni noqonuniy oldi-sotdi qilishda gumon qilinmoqda.",
+    "body": [
+      "Huquq-tartibot idoralari Yakkasaroy tumanidagi oddiy xususiy uyda firibgar koll-markazni topdi. Bu uyda 23 nafar chet el fuqarosi noqonuniy yashab kelgan.",
+      "Ulardan uch nafari kriptoaktivlarni noqonuniy sotib olish va sotishda gumon qilinmoqda. Savdo hajmi qariyb 330 million so'mni tashkil etgan.",
+      "Tekshiruv vaqtida 21 ta noutbuk, 80 ta mobil telefon va routerlar olib qo'yildi. Bu raqamlarning o'ziyoq ish katta miqyosda yo'lga qo'yilganini ko'rsatadi."
+    ],
+    "take": "Koll-markaz va noqonuniy kripto savdosi ko'pincha bir qozonda qaynaydi: biri qo'ng'iroq qilib aldaydi, ikkinchisi pulni kriptoga aylantiradi. Sizga noma'lum raqamdan \"daromadli investitsiya\" taklif qilishsa, gapni shu yerda to'xtating. Kriptoni faqat NAPP litsenziyasiga ega provayderlar orqali oling va soting, notanish odamlar bilan P2P bitimlar esa sizni ham jinoiy sxemaga sudrab ketishi mumkin."
+  },
+  "ru": {
+    "title": "В Ташкенте накрыли мошеннический колл-центр с нелегальной торговлей криптой",
+    "summary": "В частном доме в Яккасарайском районе Ташкента раскрыли мошеннический колл-центр. Трое иностранцев оттуда подозреваются в незаконной купле-продаже криптоактивов почти на 330 млн сумов.",
+    "body": [
+      "Правоохранители нашли мошеннический колл-центр в обычном частном доме в Яккасарайском районе. Там незаконно жили 23 иностранца.",
+      "Троих из них подозревают в нелегальной покупке и продаже криптоактивов. Объём сделок, по данным следствия, почти 330 млн сумов.",
+      "При обыске изъяли 21 ноутбук, 80 мобильных телефонов и роутеры. По одному этому списку понятно, что работа шла с размахом."
+    ],
+    "take": "Колл-центры и серая торговля криптой часто варятся в одном казане: одни обзванивают и обманывают, другие прогоняют деньги через крипту. Если вам звонят с незнакомого номера и предлагают «выгодные вложения», просто кладите трубку. Покупайте и продавайте крипту только через провайдеров с лицензией НАПП, а случайные P2P-сделки с незнакомцами могут сделать вас частью чужой схемы."
+  },
+  "en": {
+    "title": "Tashkent police uncover a scam call centre tied to illegal crypto trading",
+    "summary": "A fraudulent call centre was found in a private house in Tashkent's Yakkasaray district. Three foreigners living there are suspected of illegally buying and selling crypto worth almost 330 million som.",
+    "body": [
+      "Law enforcement found a scam call centre operating out of an ordinary private house in Yakkasaray district. Twenty-three foreign nationals were living there illegally.",
+      "Three of them are suspected of illegally buying and selling crypto assets, with deals totalling almost 330 million som.",
+      "Officers seized 21 laptops, 80 mobile phones and several routers, which alone shows the operation was running at scale."
+    ],
+    "take": "Scam call centres and grey crypto trading often go hand in hand: one side makes the calls, the other turns the money into crypto. If someone you don't know calls offering a \"great investment\", just hang up. Buy and sell crypto only through NAPP-licensed providers, because random P2P deals with strangers can quietly pull you into someone else's scheme."
+  }
+}
