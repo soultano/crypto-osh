@@ -1,0 +1,58 @@
+{
+  "slug": "2026-11-07-us-treasury-cuts-off-mexc-over-illicit-flows",
+  "date": "2026-11-07T13:08:28+05:00",
+  "tags": [
+    "mexc",
+    "sanctions",
+    "regulation",
+    "exchanges"
+  ],
+  "sources": [
+    {
+      "name": "Bitcoin.com News",
+      "url": "https://news.bitcoin.com/regulation-and-legal/us-treasury-blacklists-mexc-16b-alleged-illicit-crypto-activity/"
+    },
+    {
+      "name": "BeInCrypto",
+      "url": "https://beincrypto.com/us-bans-mexc-16-billion-illicit-transactions/"
+    },
+    {
+      "name": "Bitcoin Magazine",
+      "url": "https://bitcoinmagazine.com/news/fincen-cuts-off-mexc-us-financial-system"
+    },
+    {
+      "name": "Decrypt",
+      "url": "https://decrypt.co/382758/treasury-cuts-off-crypto-exchange-mexc-us-financial-system"
+    }
+  ],
+  "uz": {
+    "title": "AQSH Moliya vazirligi MEXC birjasini moliya tizimidan uzib qo'ydi",
+    "summary": "AQSH Moliya vazirligi qoshidagi FinCEN Amerika moliya tashkilotlariga MEXC Global birjasi bilan har qanday o'tkazmani taqiqladi. Sabab: birja orqali taxminan 16,7 milliard dollarlik shubhali pul o'tgani.",
+    "body": [
+      "AQSH Moliya vazirligining moliyaviy jinoyatlarga qarshi kurash tarmog'i (FinCEN) MEXC Global birjasiga qarshi yakuniy buyruq chiqardi. Amerika banklari va boshqa moliya tashkilotlari bu birjaga pul yubora olmaydi va undan pul qabul qila olmaydi. Taqiq kripto o'tkazmalarga ham tegishli. Bu qadam «Operation Economic Outcast» operatsiyasi doirasida qo'yildi.",
+      "24 sahifalik buyruqqa ko'ra, 2021-yil maydan 2026-yil maygacha MEXC orqali taxminan 16,7 milliard dollarlik shubhali tranzaksiyalar o'tgan. Shundan qariyb 1,5 milliard dollari Rossiyaga qarshi sanksiyalarni chetlab o'tish bilan bog'langan. Vazirlik birjani Eron, Shimoliy Koreya va Rossiya bilan bog'liq noqonuniy pul oqimlarida ayblaydi.",
+      "FinCEN MEXC'ni Rossiya bilan bog'liq noqonuniy moliya bo'yicha «asosiy pul yuvish xavfi» deb topdi. Taqiq buyruq Federal reyestrda e'lon qilingandan 30 kun o'tib kuchga kiradi."
+    ],
+    "take": "Bu yana bir eslatma: litsenziyasiz xorijiy birjada saqlangan pul bir kunda muammoga aylanishi mumkin. Biz sizga kriptoni faqat NAPP litsenziyasiga ega provayderlar orqali sotib olish va sotishni maslahat beramiz. P2P savdoda ham ehtiyot bo'ling: kelib chiqishi shubhali pul hisobingizni muzlatishga sabab bo'lishi mumkin."
+  },
+  "ru": {
+    "title": "Минфин США отрезал биржу MEXC от американской финансовой системы",
+    "summary": "FinCEN при Минфине США запретил американским финансовым компаниям любые переводы с биржей MEXC Global. Причина: через биржу, по данным ведомства, прошло около $16,7 млрд подозрительных денег.",
+    "body": [
+      "Сеть по борьбе с финансовыми преступлениями Минфина США (FinCEN) выпустила окончательный приказ против биржи MEXC Global. Американские банки и другие финансовые организации не смогут отправлять ей деньги или получать их от неё, включая криптопереводы. Это часть операции «Operation Economic Outcast».",
+      "Согласно 24-страничному приказу, с мая 2021 по май 2026 года через MEXC прошло примерно $16,7 млрд подозрительных транзакций. Почти $1,5 млрд из них связаны с обходом санкций против России. Ведомство обвиняет биржу в причастности к незаконным потокам, связанным с Ираном, Северной Кореей и Россией.",
+      "FinCEN признал MEXC «основной угрозой отмывания денег» в связи с российскими незаконными финансами. Запрет начнёт действовать через 30 дней после публикации в Федеральном реестре."
+    ],
+    "take": "Ещё одно напоминание: деньги на иностранной бирже без лицензии могут в один день стать проблемой. Покупаем и продаём крипту только через провайдеров с лицензией НАПП. И на P2P будьте внимательны: деньги сомнительного происхождения могут стоить вам заблокированного счёта."
+  },
+  "en": {
+    "title": "US Treasury cuts crypto exchange MEXC off from the American financial system",
+    "summary": "The US Treasury's FinCEN has barred American financial institutions from any transfers involving MEXC Global, saying about $16.7 billion in suspected illicit funds moved through the exchange.",
+    "body": [
+      "The US Treasury's Financial Crimes Enforcement Network (FinCEN) issued a final order against exchange MEXC Global. US banks and other financial institutions will not be allowed to send money to it or receive money from it, crypto transfers included. The move is part of Operation Economic Outcast.",
+      "According to the 24-page order, roughly $16.7 billion in suspected illicit transactions passed through MEXC between May 2021 and May 2026. Nearly $1.5 billion of that is tied to evading sanctions on Russia. Treasury links the exchange to illicit flows connected to Iran, North Korea and Russia.",
+      "FinCEN named MEXC a primary money laundering concern in connection with Russian illicit finance. The ban takes effect 30 days after the order appears in the Federal Register."
+    ],
+    "take": "Another reminder that money sitting on an unlicensed foreign exchange can become a problem overnight. In Uzbekistan, buy and sell crypto only through providers licensed by NAPP. Be careful on P2P too: funds with a dirty origin can get your account frozen."
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "slug": "2026-11-07-zcash-nu7-upgrade-faster-blocks-frozen-zec",
+  "date": "2026-11-07T13:08:28+05:00",
+  "tags": [
+    "zcash",
+    "upgrade",
+    "privacy",
+    "security"
+  ],
+  "sources": [
+    {
+      "name": "Bitcoin.com News",
+      "url": "https://news.bitcoin.com/blockchain/zcash-rises-upgrade-freezes-16m-zec-security-reserve/"
+    },
+    {
+      "name": "U.Today",
+      "url": "https://u.today/zcash-zec-oi-down-78-as-nu7-upgrade-goes-live"
+    },
+    {
+      "name": "Decrypt",
+      "url": "https://decrypt.co/382692/zcashs-nu7-upgrade-goes-live-recycling-60-of-fees-to-fund-future-block-rewards"
+    },
+    {
+      "name": "Cointelegraph",
+      "url": "https://cointelegraph.com/news/zcash-nu7-upgrade-15m-sprout-funds-unspendable"
+    }
+  ],
+  "uz": {
+    "title": "Zcash NU7 yangilanishi: bloklar tezlashdi, 16 million dollarlik ZEC muzlab qoldi",
+    "summary": "Zcash tarmog'ida NU7 yangilanishi ishga tushdi: blok vaqti 75 soniyadan 25 soniyaga qisqardi va uzoq muddatli xavfsizlik zaxirasi yaratildi. Biroq eski himoyalangan pulda qolgan taxminan 16 million dollarlik ZEC endi ishlatib bo'lmaydigan bo'ldi.",
+    "body": [
+      "Zcash Network Upgrade 7 (NU7) yangilanishini faollashtirdi. Endi yangi blok har 25 soniyada chiqadi, avval bu 75 soniya edi. Umumiy ta'minot chegarasi, ya'ni 21 million ZEC, o'zgarmadi.",
+      "Yangilanish «Network Sustainability Mechanism» degan tizimni olib keldi. Komissiyalarning 60% qayta ishlanib, kelajakdagi blok mukofotlarini moliyalashga yo'naltiriladi. Olib qo'yilgan ZEC 2031-yildan boshlab 21 million chegarasi ichida qayta chiqariladi. Jamoa esa dasturchilar fondi masalasini hali muhokama qilmoqda.",
+      "Salbiy tomoni ham bor: eskirgan himoyalangan pulda (shielded pool) taxminan 16 million dollarlik ZEC qulfda qoldi va unga kirish imkoni yo'q. Yangilanishdan keyin ZEC narxi ko'tarildi, ammo fyuchers bo'yicha ochiq pozitsiyalar hajmi qariyb 7,8% kamaydi."
+    ],
+    "take": "Bu voqeadan oddiy saboq bor: eski hamyonda yoki eskirgan formatda tanga saqlasangiz, tarmoq yangilanishlarini kuzatib boring. Kim o'z vaqtida ko'chirmagan bo'lsa, puli bir kun qulfda qolishi mumkin. Hamyon dasturini yangilab turing va faqat rasmiy manbalardan yuklab oling."
+  },
+  "ru": {
+    "title": "Обновление Zcash NU7: блоки быстрее, но ZEC на $16 млн заморожены",
+    "summary": "В сети Zcash заработало обновление NU7: время блока сократилось с 75 до 25 секунд, появился долгосрочный резерв безопасности. Но около $16 млн в ZEC остались недоступны в устаревшем защищённом пуле.",
+    "body": [
+      "Zcash активировал Network Upgrade 7 (NU7). Теперь новый блок выходит каждые 25 секунд вместо 75. Лимит общего предложения в 21 млн ZEC остался прежним.",
+      "Обновление ввело «Network Sustainability Mechanism»: 60% комиссий перерабатываются и идут на будущие награды за блоки. Изъятые ZEC начнут выпускаться заново с 2031 года, не выходя за предел в 21 млн. При этом сообщество ещё спорит о фонде разработчиков.",
+      "Есть и обратная сторона: примерно $16 млн в ZEC застряли в устаревшем защищённом пуле, и доступа к ним нет. После обновления цена ZEC выросла, а открытый интерес по фьючерсам снизился почти на 7,8%."
+    ],
+    "take": "Урок простой: если храните монеты в старом кошельке или устаревшем формате, следите за обновлениями сети. Кто не перенёс средства вовремя, может однажды обнаружить их запертыми. Обновляйте кошелёк и скачивайте его только из официальных источников."
+  },
+  "en": {
+    "title": "Zcash NU7 upgrade speeds up blocks but leaves $16 million in ZEC frozen",
+    "summary": "Zcash activated its NU7 upgrade, cutting block times from 75 to 25 seconds and setting up a long-term security reserve. About $16 million in ZEC is now stuck in an outdated shielded pool.",
+    "body": [
+      "Zcash has activated Network Upgrade 7 (NU7). New blocks now arrive every 25 seconds instead of 75, while the 21 million ZEC supply cap stays in place.",
+      "The upgrade adds a Network Sustainability Mechanism that recycles 60% of fees to fund future block rewards. Removed ZEC will be reissued from 2031, still within the 21 million cap. The community is meanwhile still debating its developer fund.",
+      "There is a cost: roughly $16 million worth of ZEC is locked in an outdated shielded pool and can no longer be accessed. ZEC's price rose after the upgrade, while futures open interest fell by almost 7.8%."
+    ],
+    "take": "The lesson is simple: if you keep coins in an old wallet or an outdated format, follow network upgrades. Funds that are not moved in time can end up locked for good. Keep your wallet software updated and download it only from official sources."
+  }
+}
