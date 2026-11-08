@@ -1,0 +1,50 @@
+{
+  "slug": "2026-11-08-us-sanctions-canadian-money-firms-iran-crypto",
+  "date": "2026-11-08T13:26:50+05:00",
+  "tags": [
+    "sanctions",
+    "iran",
+    "tron",
+    "regulation"
+  ],
+  "sources": [
+    {
+      "name": "The Defiant",
+      "url": "https://thedefiant.io/converge/regulation/us-sanctions-eight-canadian-money-firms-over-alleged-iran-crypto-links"
+    },
+    {
+      "name": "Cointelegraph",
+      "url": "https://cointelegraph.com/news/us-sanctions-canadian-money-exchange-firms-over-iran-ties"
+    }
+  ],
+  "uz": {
+    "title": "AQSh Eron bilan kripto aloqasi uchun Kanadaning 8 ta valyuta firmasiga sanksiya qo'ydi",
+    "summary": "AQSh Moliya vazirligining OFAC idorasi Eron bilan kripto orqali bog'langanlikda gumon qilingan sakkizta Kanada pul almashtirish firmasini sanksiya ro'yxatiga kiritdi va oltita Tron manzilini ham qora ro'yxatga qo'shdi.",
+    "body": [
+      "Sanksiya ostidagi firmalarning AQShdagi aktivlari muzlatiladi, amerikaliklarga esa ular bilan ishlash umuman taqiqlanadi.",
+      "OFAC ro'yxatiga oltita Tron tarmog'idagi manzil ham kiritildi. Tron – USDT o'tkazmalari uchun eng ko'p ishlatiladigan tarmoqlardan biri.",
+      "Shu bilan birga AQSh Eronning yadro dasturi haqida ma'lumot bergan kishiga 20 million dollargacha mukofot va boshqa davlatga ko'chib o'tishda yordam taklif qilmoqda."
+    ],
+    "take": "Bizda ham ko'pchilik USDT'ni aynan Tron orqali yuboradi va oladi. Sanksiya ro'yxatidagi manzil bilan bog'liq pul sizga kelib qolsa, platformalar uni tekshiruvga olib, muzlatib qo'yishi mumkin. Shuning uchun notanish odamlar bilan P2P qilmang, kriptoni esa faqat NAPP litsenziyasiga ega provayderlar orqali sotib oling va soting."
+  },
+  "ru": {
+    "title": "США ввели санкции против 8 канадских обменников за крипто-связи с Ираном",
+    "summary": "Управление OFAC Минфина США внесло в санкционный список восемь канадских компаний по обмену денег, подозреваемых в крипто-связях с Ираном, а также шесть адресов в сети Tron.",
+    "body": [
+      "Активы этих фирм в зоне действия США замораживаются, а американцам в целом запрещено иметь с ними дела.",
+      "В список OFAC попали и шесть адресов в сети Tron. Это одна из самых популярных сетей для переводов USDT.",
+      "Параллельно США предлагают до 20 млн долларов и возможный переезд в другую страну за информацию об иранской ядерной программе."
+    ],
+    "take": "У нас многие отправляют и получают USDT именно через Tron. Если к вам придут деньги, связанные с адресом из санкционного списка, платформа может задержать их на проверку или заморозить. Поэтому не делайте P2P с незнакомцами, а крипту покупайте и продавайте только через провайдеров с лицензией НАПП."
+  },
+  "en": {
+    "title": "US sanctions eight Canadian money firms over alleged Iran crypto links",
+    "summary": "The US Treasury's OFAC blacklisted eight Canadian money exchange firms suspected of crypto ties to Iran, along with six Tron addresses.",
+    "body": [
+      "The designations freeze the firms' assets under US jurisdiction and generally bar Americans from dealing with them.",
+      "OFAC also listed six addresses on the Tron network, one of the most widely used networks for sending USDT.",
+      "At the same time, the US is offering up to $20 million and possible relocation for information about Iran's nuclear program."
+    ],
+    "take": "Many people here send and receive USDT on Tron. If funds tied to a sanctioned address land in your wallet, a platform can hold them for review or freeze them. So avoid P2P deals with strangers, and buy and sell crypto only through NAPP-licensed providers."
+  }
+}

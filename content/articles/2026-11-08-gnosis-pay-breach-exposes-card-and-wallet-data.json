@@ -1,0 +1,53 @@
+{
+  "slug": "2026-11-08-gnosis-pay-breach-exposes-card-and-wallet-data",
+  "date": "2026-11-08T13:26:50+05:00",
+  "tags": [
+    "security",
+    "data-breach",
+    "crypto-cards"
+  ],
+  "sources": [
+    {
+      "name": "Bitcoin.com News",
+      "url": "https://news.bitcoin.com/security/gnosis-pay-data-breach-exposes-sensitive-customer-records/"
+    },
+    {
+      "name": "CoinDesk",
+      "url": "https://www.coindesk.com/business/2026/11/07/gnosis-pay-breach-exposes-card-numbers-home-addresses-and-linked-crypto-wallets"
+    },
+    {
+      "name": "Cointelegraph",
+      "url": "https://cointelegraph.com/news/gnosis-pay-breach-exposes-card-details-personal-data-crypto-wallet-information"
+    }
+  ],
+  "uz": {
+    "title": "Gnosis Pay'dan ma'lumot sizdi: karta raqamlari, manzillar va hamyonlar ochilib qoldi",
+    "summary": "Kripto karta xizmati Gnosis Pay mijozlar ma'lumotlari sizib chiqqanini tasdiqladi. Kompaniya pullar xavfsiz deydi, ammo shaxsiy ma'lumotlar begona qo'lga tushgan.",
+    "body": [
+      "Gnosis Pay kriptovalyuta bilan bog'langan debet kartalar chiqaradi. 6-noyabr, juma kuni kompaniya eski mijozlar karta tizimiga ruxsatsiz kirish bo'lganini va ma'lumotlar sizib chiqqanini tan oldi.",
+      "Jabrlanganlardan biri uning ismi, uy manzili, karta raqami va akkauntiga ulangan barcha kripto hamyonlari ochilib qolganini aytdi. Ya'ni endi begona odam kimning qayerda yashashini va qaysi hamyonlarda pul borligini bilishi mumkin.",
+      "Kompaniya mijozlar mablag'lari joyida ekanini ta'kidlamoqda. Lekin CoinDesk yozishicha, bunday ma'lumotlar aniq shu odamni nishonga olgan firibgarlik xavfini oshiradi."
+    ],
+    "take": "Pul o'g'irlanmagan bo'lsa ham, ma'lumot sizishi – firibgarlar uchun tayyor ro'yxat. Agar sizga «kartangiz bloklandi» yoki «hamyoningizni tasdiqlang» degan xabar yoki qo'ng'iroq kelsa, havolaga bosmang va seed-iborani hech kimga bermang. Kripto bilan bog'liq servislarga shaxsiy ma'lumot berishdan oldin kim ekanini va qanchalik ishonchli ekanini o'ylab ko'ring."
+  },
+  "ru": {
+    "title": "Утечка в Gnosis Pay: раскрыты номера карт, адреса и криптокошельки",
+    "summary": "Сервис криптокарт Gnosis Pay подтвердил утечку данных клиентов. Компания говорит, что деньги в безопасности, но личная информация попала к посторонним.",
+    "body": [
+      "Gnosis Pay выпускает дебетовые карты, привязанные к криптовалюте. В пятницу, 6 ноября, компания признала, что кто-то получил несанкционированный доступ к её старой системе клиентских карт, и данные утекли.",
+      "Один из пострадавших рассказал, что раскрыты его имя, домашний адрес, номер карты и все криптокошельки, привязанные к аккаунту. То есть посторонний теперь может знать, где человек живёт и в каких кошельках у него деньги.",
+      "Компания настаивает, что средства клиентов на месте. Но, как пишет CoinDesk, такой набор данных повышает риск мошенничества, направленного лично на конкретного человека."
+    ],
+    "take": "Даже если денег не украли, утечка – это готовый список для мошенников. Если вам пишут или звонят с «ваша карта заблокирована» или «подтвердите кошелёк», не переходите по ссылкам и никому не давайте seed-фразу. Прежде чем отдавать личные данные любому криптосервису, подумайте, насколько он надёжен."
+  },
+  "en": {
+    "title": "Gnosis Pay breach exposes card numbers, home addresses and linked wallets",
+    "summary": "Crypto card provider Gnosis Pay confirmed a breach of customer data. The company says funds are safe, but personal details are now in the wrong hands.",
+    "body": [
+      "Gnosis Pay issues debit cards linked to crypto. On Friday, November 6, it confirmed that someone gained unauthorized access to its legacy consumer card system and customer data leaked.",
+      "One affected user said his name, home address, card number and every crypto wallet tied to his account were exposed. In other words, a stranger can now link where a person lives to which wallets hold their money.",
+      "The company insists customer funds remain secure. But as CoinDesk notes, this kind of data makes targeted scams far more likely."
+    ],
+    "take": "Even when no money is stolen, a leak hands scammers a ready-made list. If you get a message or call saying your card is blocked or your wallet needs verifying, don't click links and never share your seed phrase. Before giving personal details to any crypto service, think hard about how much you trust it."
+  }
+}
