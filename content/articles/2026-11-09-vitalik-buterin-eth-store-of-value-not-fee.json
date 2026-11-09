@@ -1,0 +1,57 @@
+{
+  "slug": "2026-11-09-vitalik-buterin-eth-store-of-value-not-fee",
+  "date": "2026-11-09T13:57:23+05:00",
+  "tags": [
+    "ethereum",
+    "vitalik-buterin",
+    "eth"
+  ],
+  "sources": [
+    {
+      "name": "Bitcoin.com News",
+      "url": "https://news.bitcoin.com/crypto-news/ethereum-co-founder-urges-embracing-store-of-value-narrative/"
+    },
+    {
+      "name": "Cointelegraph",
+      "url": "https://cointelegraph.com/magazine/vitaliks-pivots-to-eth-as-a-store-of-value-us-election-weighs-on-crypto-hodlers-digest"
+    },
+    {
+      "name": "U.Today",
+      "url": "https://u.today/vitalik-buterin-declares-ethereum-eth-a-store-of-value-not-fee-burning-token"
+    },
+    {
+      "name": "The Block",
+      "url": "https://www.theblock.co/news/ecosystems/2026-11-08-vitalik-buterin-says-eth-should-be-valued-as-a-store-of-value-not-a-fee-burning-token-436022"
+    }
+  ],
+  "uz": {
+    "title": "Vitalik Buterin: ETH komissiya yoqadigan token emas, qiymat saqlash vositasi",
+    "summary": "Ethereum hammuassisi Vitalik Buterin ETHni qiymat saqlash vositasi sifatida ko'rish kerakligini aytdi. Uning fikricha, «komissiyani yoqish» g'oyasi tarmoqni markazlashgan kompaniyaga aylantirib qo'yadi.",
+    "body": [
+      "Vitalik Buterin Ethereum hozirgi ko'rinishida komissiyalarni yoqib, qiymat yig'adigan tokendan ko'ra qiymat saqlash vositasi sifatida mantiqliroq ekanini aytdi. Bu haqda Bitcoin.com News, Cointelegraph, U.Today va The Block yozdi.",
+      "Uning dalili oddiy: ETH narxi faqat komissiyadan tushadigan daromadga bog'liq bo'lsa, Ethereum yirik korporatsiyadek ishlashi va markazlashmaganlik tamoyillaridan uzoqlashishi kerak bo'ladi. Buterin buni xohlamaydi.",
+      "Fon ham qiziq. O'tgan oy staking ko'paygan sari validator mukofotlarining tobora katta qismini yoqishni taklif qilgan bahsli loyiha qarshiliklardan keyin qaytarib olingan edi. Buterinning yangi pozitsiyasi esa ayrim bitkoin tarafdorlarining g'ashiga tegdi: ular «qiymat saqlash» o'rnini faqat BTCga beradi."
+    ],
+    "take": "Biz uchun bu narx haqidagi gap emas, ETH nima uchun kerakligi haqidagi bahs. Ethereumda pul saqlaydiganlar loyiha yo'nalishini o'zi asoschidan eshitgani yaxshi. Lekin baribir bu – fikr, kafolat emas, qaror qilishda o'z boshingiz bilan o'ylang."
+  },
+  "ru": {
+    "title": "Виталик Бутерин: ETH — средство сбережения, а не токен для сжигания комиссий",
+    "summary": "Сооснователь Ethereum Виталик Бутерин заявил, что ETH стоит оценивать как средство сбережения. По его мнению, модель «сжигания комиссий» толкнула бы сеть к централизации.",
+    "body": [
+      "Виталик Бутерин считает, что Ethereum в нынешнем виде логичнее рассматривать как средство сбережения стоимости, а не как токен, который растёт за счёт сжигания комиссий. Об этом написали Bitcoin.com News, Cointelegraph, U.Today и The Block.",
+      "Его довод такой: чтобы цена ETH держалась только на доходе от комиссий, Ethereum пришлось бы вести себя как крупной корпорации и отойти от своих децентрализованных принципов. Бутерин этого не хочет.",
+      "Контекст тоже важен. В прошлом месяце отозвали спорное предложение сжигать всё большую долю наград валидаторов по мере роста стейкинга — слишком много было возражений. А новая позиция Бутерина задела биткоин-максималистов, которые считают «цифровым золотом» только BTC."
+    ],
+    "take": "Для нас это не про цену, а про спор о том, зачем вообще нужен ETH. Тем, кто держит деньги в Ethereum, полезно услышать направление проекта от самого основателя. Но это мнение, а не гарантия, так что решения принимайте сами и с холодной головой."
+  },
+  "en": {
+    "title": "Vitalik Buterin says ETH is a store of value, not a fee-burning token",
+    "summary": "Ethereum co-founder Vitalik Buterin argued that ETH should be valued as a store of value. In his view, a fee-burning model would push the network toward centralisation.",
+    "body": [
+      "Vitalik Buterin says Ethereum, as it is built today, makes more sense as a store of value than as a token whose value comes from burning fees. Bitcoin.com News, Cointelegraph, U.Today and The Block all covered it.",
+      "His reasoning is simple. If ETH's value had to rest on fee income alone, Ethereum would need to behave like a big corporation and drift away from its decentralised principles. Buterin does not want that.",
+      "The backdrop matters too. Last month a controversial proposal to burn a growing share of validator rewards as more ETH gets staked was withdrawn after pushback. Buterin's new stance has also annoyed some bitcoin maximalists, who see store of value as BTC's job alone."
+    ],
+    "take": "For us this is not about price. It is a debate about what ETH is actually for. If you hold Ethereum, it is useful to hear the project's direction from its founder, but it is an opinion, not a guarantee, so make your own decisions calmly."
+  }
+}

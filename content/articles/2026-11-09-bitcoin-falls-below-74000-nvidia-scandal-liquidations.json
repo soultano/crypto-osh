@@ -1,0 +1,54 @@
+{
+  "slug": "2026-11-09-bitcoin-falls-below-74000-nvidia-scandal-liquidations",
+  "date": "2026-11-09T13:57:23+05:00",
+  "tags": [
+    "bitcoin",
+    "market",
+    "nvidia",
+    "etf"
+  ],
+  "sources": [
+    {
+      "name": "The Block",
+      "url": "https://www.theblock.co/news/defi/2026-11-08-nvidia-perps-slide-jensen-huang-436047"
+    },
+    {
+      "name": "CryptoNews",
+      "url": "https://cryptonews.com/news/why-is-crypto-down-jensen-huang-ai-stocks/"
+    },
+    {
+      "name": "CryptoSlate",
+      "url": "https://cryptoslate.com/nvidias-ceo-an-alleged-romance-and-a-suspected-chinese-spy-congress-wants-answers/"
+    }
+  ],
+  "uz": {
+    "title": "Bitkoin 74 000 dollardan pastga tushdi: Nvidia mojarosi va 1 mlrd dollarlik likvidatsiya",
+    "summary": "Yakshanba kuni bitkoin 15 daqiqada 75 690 dollardan 73 477 dollarga tushdi, likvidatsiyalar 1 mlrd dollardan oshdi. Bozorni Nvidia rahbari atrofidagi josuslik mojarosi tebratdi.",
+    "body": [
+      "AQSh vaqti bilan yakshanba kuni kechqurun bitkoin atigi 15 daqiqada 75 690 dollardan 73 477 dollargacha tushdi. Dam olish kunlari bozor sust bo'lgani uchun zarba kuchli bo'ldi: majburiy yopilgan pozitsiyalar 1 mlrd dollardan oshdi. Sabablar qatorida Nvidia atrofidagi mojaro va Eron bilan muzokaralarning to'xtab qolgani aytilmoqda.",
+      "Mojaro mohiyati: Nvidia direktorlar kengashi bosh direktor Jensen Xuangning razvedka xodimlari Xitoy josusi deb atagan ayol bilan munosabatini tekshirmoqda. Kongress javobni 11-noyabrgacha kutmoqda. Nvidia aksiyalari payshanba kuni 9,3 foizga tushgan, Nasdaq esa korreksiya hududiga kirgan. Hyperliquid'dagi Nvidia perpetual fyucherslari ham arzonlashdi.",
+      "Fon ham og'ir: o'tgan hafta bitkoin ETF'laridan 1,3 mlrd dollar chiqib ketdi – iyun oxiridan beri eng katta haftalik chiqim. Faqat BlackRock'ning IBIT fondidan 1,21 mlrd dollar olingan. Taxminan 28 kunda ETH 18,8 foizga, BTC esa 12,2 foizga tushgan."
+    ],
+    "take": "Kripto endi AI aksiyalari bilan bir qozonda qaynayapti: Uoll-stritda vahima bo'lsa, bizning hamyonimiz ham buni sezadi. Kredit yelkasi bilan savdo qiladiganlar uchun bu yana bir eslatma – sust bozorda 15 daqiqa hammasini kuydirishga yetadi. Shoshilmang, vahimaga berilmang."
+  },
+  "ru": {
+    "title": "Биткоин упал ниже $74 000: скандал с Nvidia и ликвидации на $1 млрд",
+    "summary": "В воскресенье биткоин за 15 минут подешевел с $75 690 до $73 477, ликвидации превысили $1 млрд. Рынок задел шпионский скандал вокруг главы Nvidia.",
+    "body": [
+      "Вечером в воскресенье по времени США биткоин всего за 15 минут упал с $75 690 до $73 477. На тонком рынке выходного дня удар вышел сильным: принудительные закрытия позиций превысили $1 млрд. Среди причин называют скандал вокруг Nvidia и застопорившиеся переговоры с Ираном.",
+      "Суть скандала: совет директоров Nvidia проверяет отношения CEO Дженсена Хуанга с женщиной, которую разведка называет китайской шпионкой. Конгресс ждёт ответа до 11 ноября. В четверг акции Nvidia обвалились на 9,3%, Nasdaq ушёл в коррекцию. Подешевели и бессрочные фьючерсы на Nvidia на Hyperliquid.",
+      "Фон тоже тяжёлый: за прошлую неделю из биткоин-ETF ушло $1,3 млрд — самый большой недельный отток с конца июня. Только из IBIT от BlackRock вывели $1,21 млрд. За примерно 28 дней ETH потерял 18,8%, BTC — 12,2%."
+    ],
+    "take": "Крипта теперь варится в одном казане с акциями ИИ-компаний: паника на Уолл-стрит сразу бьёт и по нашим кошелькам. Тем, кто торгует с плечом, ещё одно напоминание: на тонком рынке 15 минут хватает, чтобы всё сгорело. Без спешки и без паники."
+  },
+  "en": {
+    "title": "Bitcoin slips below $74,000 as Nvidia scandal triggers $1 billion in liquidations",
+    "summary": "On Sunday bitcoin fell from $75,690 to $73,477 in 15 minutes and liquidations topped $1 billion, as a spy scandal around Nvidia's CEO rattled markets.",
+    "body": [
+      "Late on Sunday US time, bitcoin dropped from $75,690 to $73,477 in just 15 minutes. Thin weekend trading made the move sharper, and forced position closures passed $1 billion. The Nvidia scandal and stalled Iran talks are cited among the causes.",
+      "The scandal: Nvidia's board is investigating CEO Jensen Huang's relationship with a woman intelligence officials identified as a Chinese spy. Congress wants answers by November 11. Nvidia shares fell 9.3% on Thursday and the Nasdaq entered a correction. Nvidia perpetual futures on Hyperliquid slid as well.",
+      "The backdrop is heavy too. Bitcoin ETFs lost $1.3 billion last week, the biggest weekly outflow since late June, with $1.21 billion pulled from BlackRock's IBIT alone. Over roughly 28 days, ETH is down 18.8% and BTC 12.2%."
+    ],
+    "take": "Crypto now cooks in the same pot as AI stocks: when Wall Street panics, our wallets feel it too. For anyone trading with leverage, this is another reminder that on a thin market 15 minutes is enough to wipe a position out. Stay calm and don't rush."
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "slug": "2026-11-09-senate-probe-binance-tether-trump-crypto-firms",
+  "date": "2026-11-09T13:57:23+05:00",
+  "tags": [
+    "tether",
+    "binance",
+    "regulation",
+    "usa"
+  ],
+  "sources": [
+    {
+      "name": "CryptoNews",
+      "url": "https://cryptonews.com/news/blumenthal-investigation-binance-tether-trump-crypto/"
+    },
+    {
+      "name": "BeInCrypto",
+      "url": "https://beincrypto.com/senate-probe-binance-tether-trump-firms/"
+    },
+    {
+      "name": "The Defiant",
+      "url": "https://thedefiant.io/news/regulation/blumenthal-sets-jan-4-deadline-for-binance-tether-and-trump-crypto-firms"
+    }
+  ],
+  "uz": {
+    "title": "AQSh senatori Binance, Tether va Tramp kripto kompaniyalaridan hujjat talab qildi",
+    "summary": "Senator Richard Blumental Binance, Tether va Tramp bilan bog'liq ikki kompaniyaga hujjatlarni topshirish uchun 2027-yil 4-yanvargacha muddat berdi.",
+    "body": [
+      "AQSh senatori Richard Blumental 5-noyabr kuni to'rt kompaniyaga xat yubordi: Binance, Tether, World Liberty Financial va TRUMP memkoini ortidagi Fight Fight Fight LLC. Ular 2027-yil 4-yanvargacha hujjatlarni topshirishi kerak. Tergov noqonuniy kripto oqimlari va Tramp ma'muriyati bilan mumkin bo'lgan manfaatlar to'qnashuvini o'rganmoqda.",
+      "Blumental muddat buzilsa, Senatning Doimiy tergov kichik qo'mitasi boshqa majburlov choralarini ko'rib chiqishini ogohlantirdi. Hozir u qo'mitadagi demokratlar ozchiligiga rahbarlik qiladi va yakka o'zi chaqiruv qog'ozi chiqara olmaydi. Ammo yanvarda yangi Kongress yig'ilganda qo'mita raisi bo'lishi kutilmoqda.",
+      "Tergovning sentabrdagi hisobotiga ko'ra, Tether (USDT) stablkoinlar bozori qiymatining taxminan 60 foizini egallaydi."
+    ],
+    "take": "USDT bizda frilanserlar maoshidan tortib P2P savdogacha keng ishlatiladi, shuning uchun Tether atrofidagi har qanday tekshiruvni kuzatib borgan ma'qul. Hozircha bu faqat hujjat so'rovi, ayblov emas. USDTni xavfsiz yo'l bilan, NAPP litsenziyasiga ega provayderlar orqali sotib oling."
+  },
+  "ru": {
+    "title": "Сенатор США требует документы у Binance, Tether и крипто-компаний Трампа",
+    "summary": "Сенатор Ричард Блюменталь дал Binance, Tether и двум компаниям, связанным с Трампом, время до 4 января 2027 года, чтобы передать документы.",
+    "body": [
+      "5 ноября сенатор США Ричард Блюменталь отправил письма четырём компаниям: Binance, Tether, World Liberty Financial и Fight Fight Fight LLC, которая стоит за мемкоином TRUMP. Документы ждут до 4 января 2027 года. Расследование касается возможных незаконных крипто-потоков и конфликта интересов у администрации Трампа.",
+      "Блюменталь предупредил: если сроки сорвут, Постоянный подкомитет Сената по расследованиям рассмотрит другие меры принуждения. Сейчас он возглавляет демократическое меньшинство в подкомитете и не может сам выписывать повестки. Но в январе, когда соберётся новый Конгресс, он должен стать председателем.",
+      "По сентябрьскому докладу расследования, на Tether (USDT) приходится около 60% рыночной стоимости всех стейблкоинов."
+    ],
+    "take": "У нас USDT — это и зарплаты фрилансеров, и P2P, так что за проверками Tether стоит следить. Пока это лишь запрос документов, а не обвинение. Покупайте USDT законно, через провайдеров с лицензией НАПП."
+  },
+  "en": {
+    "title": "US senator demands records from Binance, Tether and Trump-linked crypto firms",
+    "summary": "Senator Richard Blumenthal gave Binance, Tether and two Trump-linked companies until January 4, 2027 to hand over records.",
+    "body": [
+      "On November 5, US Senator Richard Blumenthal sent letters to four companies: Binance, Tether, World Liberty Financial and Fight Fight Fight LLC, the firm behind the TRUMP memecoin. They have until January 4, 2027 to produce records. The probe looks at alleged illicit crypto flows and possible conflicts of interest involving the Trump administration.",
+      "Blumenthal warned that missing the deadline would push the Senate Permanent Subcommittee on Investigations to consider other enforcement options. For now he leads the panel's Democratic minority and cannot issue subpoenas on his own, but he is set to chair it when the new Congress meets in January.",
+      "According to the probe's September staff report, Tether (USDT) makes up about 60% of the total stablecoin market value."
+    ],
+    "take": "In Uzbekistan USDT is used for everything from freelancer pay to P2P trades, so any scrutiny of Tether is worth watching. For now this is a request for documents, not a charge. Buy USDT the legal way, through NAPP-licensed providers."
+  }
+}
