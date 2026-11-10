@@ -1,0 +1,57 @@
+{
+  "slug": "2026-11-10-strategy-buys-1036-bitcoin-holdings-reach-850364",
+  "date": "2026-11-10T14:04:25+05:00",
+  "tags": [
+    "bitcoin",
+    "strategy",
+    "treasury"
+  ],
+  "sources": [
+    {
+      "name": "CryptoNews",
+      "url": "https://cryptonews.com/news/strategy-bitcoin-holdings-btc-strc-tokenization/"
+    },
+    {
+      "name": "Bitcoin Magazine",
+      "url": "https://bitcoinmagazine.com/news/strive-asst-adds-29-bitcoin-holdings-43153"
+    },
+    {
+      "name": "Cointelegraph",
+      "url": "https://cointelegraph.com/news/strategy-buy-1036-bitcoin-holdings-850364-btc"
+    },
+    {
+      "name": "Decrypt",
+      "url": "https://decrypt.co/382820/strategy-buys-82m-in-bitcoin-buys-back-188m-of-strc"
+    }
+  ],
+  "uz": {
+    "title": "Strategy yana 1 036 bitkoin sotib oldi, zaxirasi 850 364 BTC ga yetdi",
+    "summary": "Maykl Seylorning Strategy kompaniyasi o'tgan hafta bitkoinga 81,9 million dollar sarfladi va STRC imtiyozli aksiyalarini 188,3 million dollarga qaytarib sotib oldi.",
+    "body": [
+      "9 noyabrdagi SEC hujjatiga ko'ra, Strategy 2–8 noyabr kunlari 1 036 BTC ni 81,9 million dollarga, o'rtacha 79 012 dollardan sotib olgan. Endi kompaniyada 850 364 BTC bor, umumiy xarajat 64,16 milliard dollar, o'rtacha xarid narxi 75 456 dollar. Bundan tashqari, kompaniyada 4,9 milliard dollarlik dollar aktivlari bor.",
+      "Shu hafta Strategy STRC imtiyozli aksiyalarini 188,3 million dollarga qaytarib sotib oldi. Buning uchun 284 million dollarlik MSTR aksiyalari sotilgan. Bu MSCI indeksdan chiqarilishi mumkin bo'lgan kompaniyalarni e'lon qilishidan bir necha kun oldin bo'ldi.",
+      "Hozir bitkoin Strategy'ning o'rtacha xarid narxidan pastda savdolanmoqda, bu esa kompaniya zaxirasiga bosim qilmoqda. Boshqa bitkoin-g'azna kompaniyasi Strive ham o'tgan hafta 29 BTC ni 2,2 million dollarga, o'rtacha 75 721 dollardan oldi va zaxirasini 43 153 BTC ga yetkazdi."
+    ],
+    "take": "Bu yerda to'g'ridan-to'g'ri o'zbek burchagi yo'q, lekin Strategy bitkoinning eng katta korporativ egasi va uning harakatlari bozor kayfiyatiga ta'sir qiladi. Ko'rinib turibdiki, katta o'yinchilar ham hozir qog'ozda zararda. Ularning xaridi siz uchun signal emas: qaror qabul qilganda o'z imkoniyatingizdan kelib chiqing."
+  },
+  "ru": {
+    "title": "Strategy купила ещё 1 036 биткоинов, запас вырос до 850 364 BTC",
+    "summary": "Компания Майкла Сейлора Strategy потратила на биткоин 81,9 млн долларов за неделю и выкупила свои привилегированные акции STRC на 188,3 млн долларов.",
+    "body": [
+      "Согласно отчёту в SEC от 9 ноября, Strategy со 2 по 8 ноября купила 1 036 BTC за 81,9 млн долларов, в среднем по 79 012 долларов. Теперь у компании 850 364 BTC, всего на них потрачено 64,16 млрд долларов, средняя цена покупки 75 456 долларов. Кроме того, у Strategy 4,9 млрд долларов в долларовых активах.",
+      "На той же неделе компания выкупила привилегированные акции STRC на 188,3 млн долларов. Деньги взяли от продажи акций MSTR на 284 млн долларов. Всё это за несколько дней до того, как MSCI назовёт компании, которые могут исключить из индекса.",
+      "Сейчас биткоин торгуется ниже средней цены покупки Strategy, и это давит на её запас. Другая биткоин-казначейская компания, Strive, за прошлую неделю тоже докупила 29 BTC за 2,2 млн долларов по средней цене 75 721 доллар и довела запас до 43 153 BTC."
+    ],
+    "take": "Прямого узбекского угла тут нет, но Strategy — крупнейший корпоративный держатель биткоина, и её шаги влияют на настроение рынка. Видно, что даже крупные игроки сейчас сидят в бумажном минусе. Их покупки — не сигнал для вас: решения принимайте исходя из своих возможностей."
+  },
+  "en": {
+    "title": "Strategy buys 1,036 more bitcoin, bringing its stash to 850,364 BTC",
+    "summary": "Michael Saylor's Strategy spent $81.9 million on bitcoin last week and $188.3 million buying back its STRC preferred shares.",
+    "body": [
+      "According to a November 9 SEC filing, Strategy bought 1,036 BTC between November 2 and 8 for $81.9 million, at an average of $79,012 per coin. The company now holds 850,364 BTC, bought for a total of $64.16 billion at an average of $75,456. It also holds $4.9 billion in US dollar assets.",
+      "The same week, Strategy repurchased $188.3 million of its STRC preferred shares. It funded the moves by selling $284 million of MSTR stock, just days before MSCI names companies facing removal from its indexes.",
+      "Bitcoin is now trading below Strategy's average purchase price, which puts pressure on its treasury. Another bitcoin treasury firm, Strive, also added 29 BTC last week for $2.2 million at an average of $75,721, bringing its holdings to 43,153 BTC."
+    ],
+    "take": "There is no direct Uzbek angle here, but Strategy is the largest corporate bitcoin holder and its moves shape market mood. Clearly, even the biggest players are sitting on paper losses right now. Their buying is not a signal for you: base your decisions on your own means."
+  }
+}

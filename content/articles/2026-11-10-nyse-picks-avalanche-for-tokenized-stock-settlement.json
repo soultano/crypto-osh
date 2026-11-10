@@ -1,0 +1,58 @@
+{
+  "slug": "2026-11-10-nyse-picks-avalanche-for-tokenized-stock-settlement",
+  "date": "2026-11-10T14:04:25+05:00",
+  "tags": [
+    "avalanche",
+    "nyse",
+    "tokenization",
+    "stablecoins"
+  ],
+  "sources": [
+    {
+      "name": "CryptoNews",
+      "url": "https://cryptonews.com/news/avax-nyse-deal-tokenized-stock-trading/"
+    },
+    {
+      "name": "Cointelegraph",
+      "url": "https://cointelegraph.com/news/avalanche-avax-crypto-nyse-tokenization-deal"
+    },
+    {
+      "name": "Decrypt",
+      "url": "https://decrypt.co/382833/nyse-avalanche-settle-tokenized-stock-platform"
+    },
+    {
+      "name": "The Defiant",
+      "url": "https://thedefiant.io/converge/tradfi-and-fintech/nyse-picks-avalanche-for-tokenized-stock-settlement"
+    }
+  ],
+  "uz": {
+    "title": "NYSE tokenlashgan aksiyalar platformasi uchun Avalanche blokcheynini tanladi",
+    "summary": "Nyu-York fond birjasi rejalashtirilayotgan tokenlashgan qimmatli qog'ozlar platformasida hisob-kitoblar uchun Avalanche blokcheynini tanladi. Shu xabardan keyin AVAX 10% gacha ko'tarildi.",
+    "body": [
+      "Nyu-York fond birjasi (NYSE) yangi tokenlashgan qimmatli qog'ozlar platformasida hisob-kitoblarni Avalanche blokcheynida yuritmoqchi. Ava Labs ma'lumotiga ko'ra, Avalanche NYSE bilan bog'liq maydonchaning kliring kompaniyasi uchun asosiy reyestr texnologiyasi bo'ladi. Maqsad: tokenlashgan aksiyalar savdosi, kliringi va hisob-kitobini kecha-kunduz blokcheynda olib borish.",
+      "Savdoning o'zi NYSE'ning Pillar tizimida qoladi. O'zgaradigani savdodan keyingi jarayon: hisob-kitob bir zumda bo'ladi, hisobni esa stablekoin bilan to'ldirish mumkin bo'ladi. Loyiha hali regulyator ruxsatini kutmoqda.",
+      "Bozor tez javob berdi. Dushanba kuni AVAX 10% gacha qimmatladi, seshanba kuni esa taxminan 8,60 dollarda turdi: bir sutkada +5,2%, eng yuqori nuqta 8,99 dollar. Sutkalik savdo hajmi 537 million dollarga yetdi, bu oldingi kundan qariyb 448% ko'p."
+    ],
+    "take": "Tokenlashgan aksiyalar hozircha AQSh voqeasi, O'zbekistondagi oddiy odam bu maydonchada yaqin orada savdo qilmaydi. Lekin yo'nalish aniq: dunyodagi eng katta birja ochiq blokcheyn va stablekoinlar ustiga qurmoqda. AVAX'ning sakrashi xabarga reaksiya, kafolat emas. Kripto sotib olsangiz, faqat NAPP litsenziyasiga ega provayderlar orqali oling."
+  },
+  "ru": {
+    "title": "NYSE выбрала Avalanche для расчётов на платформе токенизированных акций",
+    "summary": "Нью-Йоркская фондовая биржа выбрала блокчейн Avalanche для расчётов на будущей площадке токенизированных ценных бумаг. На этой новости AVAX вырос до 10%.",
+    "body": [
+      "Нью-Йоркская фондовая биржа (NYSE) планирует новую площадку для токенизированных ценных бумаг, и расчёты на ней пойдут через блокчейн Avalanche. По словам Ava Labs, Avalanche станет основной технологией реестра для клиринговой компании, которая стоит за площадкой, связанной с NYSE. Цель простая: торговать, проводить клиринг и рассчитываться по токенизированным акциям прямо в блокчейне, круглосуточно.",
+      "Сами сделки по-прежнему будет сводить фирменный движок NYSE Pillar. Меняется то, что происходит после сделки: расчёт мгновенный, а пополнять счёт можно стейблкоинами. Проекту ещё нужно одобрение регулятора.",
+      "Рынок отреагировал быстро. В понедельник AVAX прибавлял до 10%, а во вторник стоил около 8,60 доллара: плюс 5,2% за сутки, максимум был 8,99 доллара. Суточный объём торгов дошёл до 537 млн долларов, почти на 448% больше, чем днём раньше."
+    ],
+    "take": "Токенизированные акции пока история американская, и обычный человек в Узбекистане на этой площадке торговать в ближайшее время не будет. Но направление понятно: крупнейшая биржа мира строит на открытом блокчейне и стейблкоинах. Рост AVAX — реакция на новость, а не гарантия. Если покупаете крипту, то только через провайдеров с лицензией НАПП."
+  },
+  "en": {
+    "title": "NYSE picks Avalanche to settle trades on its planned tokenized stock platform",
+    "summary": "The New York Stock Exchange chose the Avalanche blockchain to handle settlement on a planned tokenized securities venue. AVAX rose as much as 10% on the news.",
+    "body": [
+      "The New York Stock Exchange is planning a new venue for tokenized securities, and settlement there will run on Avalanche. According to Ava Labs, Avalanche will be the core ledger technology for the clearing firm behind the NYSE-affiliated venue. The goal is to move trading, clearing and settlement of tokenized shares onchain, around the clock.",
+      "Order matching will stay on NYSE's own Pillar engine. What changes is what happens after a trade: settlement is meant to be instant, and accounts can be funded with stablecoins. The project still needs regulatory approval.",
+      "The market reacted quickly. AVAX gained as much as 10% on Monday and on Tuesday traded around $8.60, up 5.2% in a day after touching $8.99. Daily trading volume reached $537 million, nearly 448% more than the day before."
+    ],
+    "take": "Tokenized stocks are still a US story, and ordinary people in Uzbekistan won't be trading on this venue any time soon. But the direction is clear: the world's biggest stock exchange is building on a public blockchain and stablecoins. The AVAX jump is a reaction to news, not a guarantee. If you buy crypto, do it only through NAPP-licensed providers."
+  }
+}

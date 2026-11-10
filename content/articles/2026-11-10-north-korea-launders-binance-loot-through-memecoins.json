@@ -1,0 +1,58 @@
+{
+  "slug": "2026-11-10-north-korea-launders-binance-loot-through-memecoins",
+  "date": "2026-11-10T14:04:25+05:00",
+  "tags": [
+    "binance",
+    "hack",
+    "north-korea",
+    "memecoins"
+  ],
+  "sources": [
+    {
+      "name": "Cointelegraph",
+      "url": "https://cointelegraph.com/news/north-korean-hackers-memecoins-launder-binance-hack-elliptic"
+    },
+    {
+      "name": "Bitcoin Magazine",
+      "url": "https://bitcoinmagazine.com/news/north-korea-meme-coins-binance-hack"
+    },
+    {
+      "name": "U.Today",
+      "url": "https://u.today/north-korean-hackers-flip-stolen-binance-funds-into-near-meme-coins"
+    },
+    {
+      "name": "The Block",
+      "url": "https://www.theblock.co/news/ecosystems/2026-11-09-binance-hack-launderers-mint-homemade-elon-musk-animal-memecoins-move-stolen-funds-elliptic-436440"
+    }
+  ],
+  "uz": {
+    "title": "Shimoliy Koreya xakerlari Binance pullarini yuvish uchun o'z memkoinlarini chiqarmoqda",
+    "summary": "Elliptic ma'lumotiga ko'ra, Shimoliy Koreya bilan bog'liq xakerlar NEAR tarmog'ida kamida oltita token yaratib, Binance'dan o'g'irlangan pullarni ular orqali o'tkazgan.",
+    "body": [
+      "Blokcheyn tahlili bilan shug'ullanuvchi Elliptic kompaniyasi xabar berishicha, Binance'dan o'g'irlangan pullarni yuvayotganlar endi o'zlari qiymatsiz memkoinlar yaratmoqda. 5–7 noyabr kunlari NEAR tarmog'ida kamida oltita yangi token paydo bo'lgan: FUK, OLCCL, MEILI, MMLI, DABI va SINU. The Block yozishicha, ularning ayrimlari Ilon Mask va hayvonlar nomi bilan bog'liq.",
+      "Sxema shunday: har bir token NEAR bilan alohida likvidlik puliga qo'yilgan. O'g'irlangan NEAR bilan bu tokenlar sotib olingan, keyin ikkinchi hamyonlar to'plami orqali qaytib sotilgan. Natijada pul bir hamyondan boshqasiga to'g'ridan-to'g'ri o'tmaydi va izini kuzatish qiyinlashadi. Shu oltita token orqali taxminan 117 000 NEAR, ya'ni qariyb 430 000 dollar o'tgan.",
+      "Elliptic fikricha, qo'shimcha almashuvlar tergovchilarni sekinlashtiradi, lekin pullar baribir blokcheynda kuzatilib turibdi. Binance'ga qilingan hujumdan ko'rilgan zarar taxminan 6,4 milliard dollar deb baholanmoqda."
+    ],
+    "take": "Bizga saboq: kulgili nomli, likvidlik puli bor yangi memkoin har doim ham loyiha emas, ba'zan bu shunchaki pul yuvish vositasi. Bunday tokenlar ortida hech qanday qiymat yo'q. Notanish yangi tokenlardan uzoqroq yuring va kriptoni faqat NAPP litsenziyasiga ega provayderlar orqali sotib oling."
+  },
+  "ru": {
+    "title": "Хакеры КНДР выпускают свои мемкоины, чтобы отмыть деньги из взлома Binance",
+    "summary": "По данным Elliptic, связанные с Северной Кореей хакеры создали минимум шесть токенов в сети NEAR и прогнали через них украденные у Binance средства.",
+    "body": [
+      "Аналитическая компания Elliptic сообщает: те, кто отмывает деньги после взлома Binance, начали сами выпускать никчёмные мемкоины. С 5 по 7 ноября в сети NEAR появились как минимум шесть новых токенов: FUK, OLCCL, MEILI, MMLI, DABI и SINU. По данным The Block, часть из них отсылает к Илону Маску и животным.",
+      "Схема такая: каждый токен ставят в отдельный пул ликвидности в паре с NEAR. На украденные NEAR покупают эти токены, а потом продают их обратно уже через второй набор кошельков. Так деньги не идут напрямую из кошелька в кошелёк, и след запутывается. Через шесть токенов прошло около 117 000 NEAR, это примерно 430 000 долларов.",
+      "В Elliptic говорят, что лишние обмены тормозят расследование, но средства всё равно видны в блокчейне. Ущерб от взлома Binance оценивается примерно в 6,4 млрд долларов."
+    ],
+    "take": "Урок для нас: свежий мемкоин со смешным названием и пулом ликвидности — не всегда проект, иногда это просто инструмент для отмывания. За такими токенами нет никакой ценности. Держитесь подальше от незнакомых новых токенов и покупайте крипту только у провайдеров с лицензией НАПП."
+  },
+  "en": {
+    "title": "North Korean hackers mint their own memecoins to launder Binance loot",
+    "summary": "Elliptic says launderers linked to North Korea created at least six tokens on NEAR and ran stolen Binance funds through them to blur the trail.",
+    "body": [
+      "Blockchain analytics firm Elliptic says the people laundering money from the Binance hack have started minting their own worthless memecoins. Between November 5 and 7, at least six new tokens appeared on NEAR: FUK, OLCCL, MEILI, MMLI, DABI and SINU. According to The Block, some of them riff on Elon Musk and animals.",
+      "The scheme works like this: each token gets its own liquidity pool paired with NEAR. Stolen NEAR buys the tokens, which are then sold back out through a second set of wallets. That way the money never moves directly from one wallet to another, which makes it harder to follow. About 117,000 NEAR, roughly $430,000, passed through the six tokens.",
+      "Elliptic says the extra swaps slow investigators down, but the funds remain traceable onchain. Losses from the Binance hack are estimated at around $6.4 billion."
+    ],
+    "take": "The lesson for us: a fresh memecoin with a funny name and a liquidity pool is not always a project; sometimes it is just a laundering tool. There is no real value behind tokens like these. Stay away from unknown new tokens and buy crypto only through NAPP-licensed providers."
+  }
+}
