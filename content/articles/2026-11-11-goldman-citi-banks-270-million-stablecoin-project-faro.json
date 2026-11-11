@@ -1,0 +1,57 @@
+{
+  "slug": "2026-11-11-goldman-citi-banks-270-million-stablecoin-project-faro",
+  "date": "2026-11-11T13:43:53+05:00",
+  "tags": [
+    "stablecoin",
+    "banks",
+    "usdt"
+  ],
+  "sources": [
+    {
+      "name": "Cointelegraph",
+      "url": "https://cointelegraph.com/news/banks-270m-project-faro-stablecoin-2027"
+    },
+    {
+      "name": "Decrypt",
+      "url": "https://decrypt.co/382953/goldman-citi-global-banks-270-million-challenge-crypto-stablecoin-giants"
+    },
+    {
+      "name": "The Defiant",
+      "url": "https://thedefiant.io/converge/tradfi-and-fintech/banks-commit-270-million-to-stablecoin-venture-report"
+    },
+    {
+      "name": "CoinDesk",
+      "url": "https://www.coindesk.com/business/2026/11/10/goldman-sachs-citi-among-banks-said-to-commit-usd270-million-to-stablecoin-venture"
+    }
+  ],
+  "uz": {
+    "title": "Goldman Sachs, Citi va BBVA o'z dollar stablecoini uchun 270 million dollar ajratdi",
+    "summary": "Yirik banklar «Project Faro» nomli loyihaga 270 million dollar ajratdi. Ular 2027-yilning birinchi yarmida AQSh dollariga bog'langan stablecoin chiqarmoqchi.",
+    "body": [
+      "Qisqasi: an'anaviy banklar Tether va Circle bilan bevosita raqobatga kirishmoqda. Goldman Sachs, Citigroup va BBVA qo'llab-quvvatlayotgan «Project Faro» loyihasi 270 million dollar mablag' oldi.",
+      "Bu pul emitentning besh yillik faoliyatini qoplashi kerak. Kompaniya AQShda ro'yxatdan o'tkazilishi kutilmoqda, dollar stablecoinini esa 2027-yilning birinchi yarmida ishga tushirish rejalashtirilgan.",
+      "Hozircha bu ma'lumot ommaviy axborot vositalari xabarlariga asoslangan, banklar loyihaning barcha tafsilotlarini rasman e'lon qilmagan."
+    ],
+    "take": "Bizda ko'pchilik frilanserlar haqini USDT'da oladi va jamg'armani ham shunda saqlaydi, shuning uchun Tether'ga jiddiy raqobatchi chiqishi biz uchun ham muhim. Lekin bu hali 2027-yil ishi va Uzbekistonda qachon, qanday mavjud bo'lishi NAPP litsenziyasiga ega provayderlarga bog'liq. Hozircha shunchaki kuzatib boramiz, shoshilishga hojat yo'q."
+  },
+  "ru": {
+    "title": "Goldman Sachs, Citi и BBVA выделили $270 млн на свой долларовый стейблкоин",
+    "summary": "Крупные банки вложили $270 млн в проект под названием Project Faro. Они планируют выпустить стейблкоин, привязанный к доллару США, в первой половине 2027 года.",
+    "body": [
+      "Коротко: традиционные банки собираются напрямую конкурировать с Tether и Circle. Проект Project Faro, за которым стоят Goldman Sachs, Citigroup и BBVA, получил $270 млн.",
+      "Этих денег должно хватить на пять лет работы эмитента. Компанию, как ожидается, зарегистрируют в США, а запуск долларового стейблкоина намечен на первую половину 2027 года.",
+      "Пока информация основана на сообщениях СМИ, все детали проекта банки официально не раскрывали."
+    ],
+    "take": "У нас многие фрилансеры получают оплату в USDT и держат в нём сбережения, так что серьёзный конкурент Tether касается и нас. Но это история 2027 года, и будет ли такой стейблкоин доступен в Узбекистане, зависит от провайдеров с лицензией НАПП. Пока просто наблюдаем, спешить некуда."
+  },
+  "en": {
+    "title": "Goldman Sachs, Citi and BBVA commit $270 million to their own dollar stablecoin",
+    "summary": "Major banks have put $270 million into a venture called Project Faro. They plan to launch a US dollar stablecoin in the first half of 2027.",
+    "body": [
+      "In short: traditional banks are moving to compete head-on with Tether and Circle. Project Faro, backed by Goldman Sachs, Citigroup and BBVA, has secured $270 million.",
+      "The money is meant to cover five years of the issuer's operations. The company is expected to be incorporated in the US, with the dollar stablecoin targeted for the first half of 2027.",
+      "For now the details come from media reports; the banks have not officially laid out the full plan."
+    ],
+    "take": "Many freelancers here get paid in USDT and keep their savings in it, so a serious rival to Tether matters to us too. But this is a 2027 story, and whether such a coin becomes available in Uzbekistan will depend on NAPP-licensed providers. For now we simply watch; there is no rush."
+  }
+}

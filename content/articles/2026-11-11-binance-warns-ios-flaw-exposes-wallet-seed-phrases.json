@@ -1,0 +1,57 @@
+{
+  "slug": "2026-11-11-binance-warns-ios-flaw-exposes-wallet-seed-phrases",
+  "date": "2026-11-11T13:43:53+05:00",
+  "tags": [
+    "security",
+    "iphone",
+    "wallets"
+  ],
+  "sources": [
+    {
+      "name": "Bitcoin Magazine",
+      "url": "https://bitcoinmagazine.com/news/binance-warns-ios-flaw-wallet-seed-phrases"
+    },
+    {
+      "name": "Decrypt",
+      "url": "https://decrypt.co/382928/binance-warns-of-apple-ios-flaw-that-could-expose-iphone-users-private-keys"
+    },
+    {
+      "name": "CryptoNews",
+      "url": "https://cryptonews.com/news/binance-ios-worse-query-iphone-duo-18pro-security-flaw/"
+    },
+    {
+      "name": "Cointelegraph",
+      "url": "https://cointelegraph.com/news/binance-warns-ios-flaw-could-expose-crypto-wallet-keys"
+    }
+  ],
+  "uz": {
+    "title": "iPhone'dagi zaiflik hamyonlarning seed-iboralarini oshkor qilishi mumkin",
+    "summary": "Binance iOS'da «worse_query» nomli zaiflik borligini ogohlantirdi: zararli ilova boshqa ilovalar fayllarini, jumladan seed-iboralar va maxfiy kalitlarni o'qishi mumkin. Apple bu muammoni hali ochiq tasdiqlamagan.",
+    "body": [
+      "Qisqasi: iPhone'da kripto hamyon ishlatayotgan bo'lsangiz, ehtiyot bo'ling. Binance ogohlantirishicha, iOS 26.7.1, 27.0.1 va 27.2 versiyalaridagi zaiflik zararli ilovaga boshqa ilovalarning mahalliy fayllarini o'qish imkonini beradi.",
+      "Xavf ostida seed-iboralar, maxfiy kalitlar va login ma'lumotlari bor. Binance bu muammo faqat ularning ilovasiga emas, butun iOS tizimiga tegishli ekanini ta'kidladi.",
+      "Zaiflik haqida tadqiqotchi Apple'ning so'nggi xavfsizlik yangilanishidan bir necha kun oldin ma'lumot e'lon qilgan. Apple uni ochiq tasdiqlamagan va yangi yangilanishlar muammoni hal qilgan-qilmagani noma'lum. Binance ishonchsiz manbalardan o'rnatilgan ilovalarni darhol o'chirishni maslahat berdi."
+    ],
+    "take": "Bizda iPhone'ga rasmiy bo'lmagan yo'llar bilan o'rnatilgan «buzilgan» ilovalar kam emas, aynan ular hozir eng katta xavf. Ishonchsiz ilovalarni o'chiring, seed-iborani telefondagi eslatma yoki skrinshotda saqlamang. Katta summalarni telefondan tashqarida, masalan, apparat hamyonda saqlash xotirjamroq."
+  },
+  "ru": {
+    "title": "Уязвимость в iPhone может раскрыть сид-фразы криптокошельков",
+    "summary": "Binance предупредила об уязвимости worse_query в iOS: вредоносное приложение может читать файлы других приложений, включая сид-фразы и приватные ключи. Apple проблему публично не подтвердила.",
+    "body": [
+      "Коротко: если вы держите криптокошелёк на iPhone, сейчас стоит быть осторожнее. По словам Binance, уязвимость в iOS 26.7.1, 27.0.1 и 27.2 позволяет вредоносному приложению читать локальные файлы других приложений.",
+      "Под угрозой сид-фразы, приватные ключи и данные для входа. Binance подчеркнула, что проблема на уровне самой iOS и касается не только её приложения.",
+      "Исследователь опубликовал данные об уязвимости за несколько дней до последнего обновления безопасности Apple. Apple её публично не подтвердила, и неясно, закрывают ли новые обновления эту дыру. Binance посоветовала сразу удалить приложения, установленные из ненадёжных источников."
+    ],
+    "take": "У нас немало людей ставят на iPhone «взломанные» приложения в обход App Store, и именно они сейчас главный риск. Удалите сомнительные приложения и не храните сид-фразу в заметках или на скриншотах. Крупные суммы спокойнее держать вне телефона, например на аппаратном кошельке."
+  },
+  "en": {
+    "title": "iPhone flaw could expose crypto wallet seed phrases, Binance warns",
+    "summary": "Binance warned of an iOS vulnerability called worse_query that lets malicious apps read other apps' files, including seed phrases and private keys. Apple has not publicly confirmed the issue.",
+    "body": [
+      "In short: if you keep a crypto wallet on an iPhone, be careful right now. According to Binance, a flaw in iOS 26.7.1, 27.0.1 and 27.2 lets a malicious app read local files stored by other apps.",
+      "Seed phrases, private keys and login details are all at risk. Binance stressed that this is an iOS-level problem, not something limited to its own app.",
+      "A researcher published details of the bug a few days before Apple's latest security update. Apple has not confirmed it publicly, and it is unclear whether the newest updates fix it. Binance told users to delete any apps installed from untrusted sources straight away."
+    ],
+    "take": "Plenty of people here install cracked apps on their iPhones outside the App Store, and those are exactly the biggest risk now. Remove anything dubious and never keep your seed phrase in notes or screenshots. Larger amounts are safer off the phone, for example on a hardware wallet."
+  }
+}
