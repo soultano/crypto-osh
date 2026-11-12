@@ -1,0 +1,58 @@
+{
+  "slug": "2026-11-12-bitcoin-etfs-lose-1-44-billion-in-five",
+  "date": "2026-11-12T14:05:23+05:00",
+  "tags": [
+    "bitcoin",
+    "etf",
+    "stablecoins",
+    "market"
+  ],
+  "sources": [
+    {
+      "name": "CryptoNews",
+      "url": "https://cryptonews.com/news/bitcoin-etf-outflow-crypto-bull-trap/"
+    },
+    {
+      "name": "BeInCrypto",
+      "url": "https://beincrypto.com/blackrock-bitcoin-etf-outflows-five-days/"
+    },
+    {
+      "name": "Decrypt",
+      "url": "https://decrypt.co/383094/stablecoin-drain-etf-outflows-bitcoin-running-empty"
+    },
+    {
+      "name": "Bitcoin.com News",
+      "url": "https://news.bitcoin.com/price-predictions/bitcoin-running-empty-price-bets-hedges-shift-glassnode/"
+    }
+  ],
+  "uz": {
+    "title": "Bitkoin ETF'laridan besh kunda 1,44 milliard dollar chiqib ketdi",
+    "summary": "AQShdagi spot bitkoin ETF'lari ketma-ket besh kun mablag' yo'qotdi: 5–11-noyabr kunlari 1,44 milliard dollar chiqib ketdi. Bitkoin 73 500 dollar atrofida turibdi.",
+    "body": [
+      "AQShdagi spot bitkoin fondlaridan pul chiqishi beshinchi kunga cho'zildi. Farside Investors ma'lumotiga ko'ra, 5–11-noyabr oralig'ida fondlardan jami taxminan 1,44 milliard dollar chiqib ketgan. Faqat chorshanba kuni 299,8 million dollar chiqdi.",
+      "Chiqimning qariyb to'rtdan uch qismi BlackRock'ning IBIT fondiga to'g'ri keladi. Shu hafta dushanbadan beri chiqqan taxminan 596 million dollarning deyarli hammasi IBIT'dan bo'lgan. Ya'ni bozor eng barqaror xaridorlaridan birini vaqtincha yo'qotmoqda.",
+      "Bitkoin 4-noyabr kuni qisqa muddatga 80 000 dollarga chiqqan, ammo ertasiga keskin pastga qaytdi. Hozir u 73 500 dollar atrofida, 75 000 dollardan yuqoriga chiqa olmayapti. Decrypt yozishicha, so'nggi 30 kunda stablkoinlar hajmi 14,2 milliard dollarga qisqargan, bu 2022-yil iyunidan beri eng tez pasayish. Glassnode ham kapital bozordan chiqib ketayotgani, optsion treyderlari esa pasayishdan sug'urtalanayotganini qayd etdi."
+    ],
+    "take": "Bu raqamlar katta pullar hozircha ehtiyotkor ekanini ko'rsatadi, lekin bu narx qayerga borishini aytmaydi. Sizga maslahatimiz bitta: shoshilmang va bozor shovqiniga qarab qaror qilmang. Kripto sotib olsangiz yoki sotsangiz, faqat NAPP litsenziyasiga ega provayderlar orqali qiling."
+  },
+  "ru": {
+    "title": "Биткоин-ETF потеряли $1,44 млрд за пять дней подряд",
+    "summary": "Из спотовых биткоин-ETF в США пятый день подряд выводят деньги: с 5 по 11 ноября ушло $1,44 млрд. Биткоин держится около $73 500.",
+    "body": [
+      "Отток из спотовых биткоин-фондов в США длится уже пятый день. По данным Farside Investors, с 5 по 11 ноября из фондов вывели около $1,44 млрд. Только в среду ушло $299,8 млн.",
+      "Почти три четверти оттока пришлись на фонд BlackRock IBIT. Из примерно $596 млн, выведенных с понедельника, почти всё ушло именно из IBIT. Получается, рынок временно лишился одного из самых стабильных покупателей.",
+      "4 ноября биткоин ненадолго поднялся до $80 000, но уже на следующий день резко развернулся. Сейчас он около $73 500 и не может вернуться выше $75 000. По данным Decrypt, за 30 дней объём стейблкоинов сократился на $14,2 млрд, это самое быстрое сжатие с июня 2022 года. Glassnode тоже отмечает, что капитал уходит с рынка, а трейдеры опционов страхуются от падения."
+    ],
+    "take": "Цифры говорят о том, что крупные деньги пока осторожничают, но куда пойдёт цена, они не говорят. Совет у нас простой: не торопитесь и не принимайте решений на эмоциях базара. Покупаете или продаёте крипту — только через провайдеров с лицензией НАПП."
+  },
+  "en": {
+    "title": "Bitcoin ETFs bleed $1.44 billion over five straight days",
+    "summary": "US spot bitcoin ETFs saw net outflows for a fifth day in a row, losing $1.44 billion between November 5 and 11. Bitcoin trades near $73,500.",
+    "body": [
+      "Money keeps leaving US spot bitcoin funds, now for five days running. According to Farside Investors, about $1.44 billion left the funds between November 5 and 11, including $299.8 million on Wednesday alone.",
+      "Roughly three-quarters of the outflow came from BlackRock's IBIT. Of the roughly $596 million withdrawn since Monday, nearly all came from that one fund, which means the market has temporarily lost one of its steadiest buyers.",
+      "Bitcoin briefly got back to $80,000 on November 4 but reversed sharply the next day. It now sits around $73,500 and is struggling to retake $75,000. Decrypt reports stablecoin supply shrank by $14.2 billion over 30 days, the fastest drop since June 2022, while Glassnode says capital keeps leaving and options traders are hedging against further falls."
+    ],
+    "take": "These numbers show big money is being cautious for now, but they don't tell us where the price goes next. Our advice is simple: don't rush and don't trade on market noise. If you buy or sell crypto, do it only through NAPP-licensed providers."
+  }
+}

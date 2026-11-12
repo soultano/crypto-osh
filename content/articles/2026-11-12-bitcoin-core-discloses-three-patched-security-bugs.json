@@ -1,0 +1,58 @@
+{
+  "slug": "2026-11-12-bitcoin-core-discloses-three-patched-security-bugs",
+  "date": "2026-11-12T14:05:23+05:00",
+  "tags": [
+    "bitcoin",
+    "security",
+    "mining",
+    "nodes"
+  ],
+  "sources": [
+    {
+      "name": "CoinDesk",
+      "url": "https://www.coindesk.com/tech/2026/11/12/bitcoin-core-reveals-bug-that-made-thousands-of-nodes-trust-any-stranger-on-tor"
+    },
+    {
+      "name": "Bitcoin.com News",
+      "url": "https://news.bitcoin.com/security/bitcoin-core-discloses-high-severity-security-bug-halt-mining-nodes/"
+    },
+    {
+      "name": "Decrypt",
+      "url": "https://decrypt.co/383044/bitcoin-core-patches-bug-could-have-stalled-btc-mining"
+    },
+    {
+      "name": "U.Today",
+      "url": "https://u.today/bitcoin-core-breaks-silence-on-three-patched-security-vulnerabilities"
+    }
+  ],
+  "uz": {
+    "title": "Bitcoin Core uchta yopilgan zaiflikni oshkor qildi, biri maynerlarni to'xtatishi mumkin edi",
+    "summary": "Bitcoin Core dasturchilari 2025-yil oktyabrida tuzatilgan uchta xatoni ochiqladi. Eng jiddiysi maynerning yangi blok yaratishini to'xtatib qo'yishi mumkin edi.",
+    "body": [
+      "Bitcoin Core 10-noyabr kuni uchta xavfsizlik zaifligi haqida ma'lumot e'lon qildi. Ularning hammasi 2025-yil oktyabrida tuzatilgan, lekin texnik tafsilotlar shu paytgacha sir saqlangan.",
+      "Eng jiddiysi yuqori xavfli deb baholangan: u maynerni kimdir dasturni qayta ishga tushirmaguncha yangi blok ishlab chiqarishdan to'xtatib qo'yishi mumkin edi. Ikkinchi xato bloklarni qayta ishlashga taalluqli.",
+      "Uchinchi xato Tor tarmog'i bilan bog'liq: u minglab tugunlarni (node) Tor orqali ulangan har qanday notanish ishtirokchiga ishonadigan qilib qo'ygan. Muhimi, xatolarning hech biri tangalarni o'g'irlashga imkon bermagan, gap xizmatni ishdan chiqarish va maxfiylik haqida."
+    ],
+    "take": "Agar siz mayning bilan shug'ullansangiz yoki o'z bitkoin tuguningizni yuritsangiz, dasturni yangilab turing: eski versiyalar shunday xatolarga ochiq qoladi. Oddiy egalar uchun yaxshi xabar shuki, bu zaifliklar orqali tangalar o'g'irlanmagan. Bitkoinning ochiq kodi va uni tekshirayotgan dasturchilar aynan shunday ishlaydi."
+  },
+  "ru": {
+    "title": "Bitcoin Core раскрыл три закрытые уязвимости, одна могла остановить майнеров",
+    "summary": "Разработчики Bitcoin Core рассказали о трёх ошибках, исправленных ещё в октябре 2025 года. Самая серьёзная могла помешать майнеру создавать новые блоки.",
+    "body": [
+      "10 ноября Bitcoin Core раскрыл данные о трёх уязвимостях. Все они были исправлены в октябре 2025 года, но технические детали до сих пор держали в секрете.",
+      "Самую серьёзную оценили как высокоопасную: она могла остановить майнера, и он не производил бы новые блоки, пока его не перезапустят вручную. Вторая ошибка касалась обработки блоков.",
+      "Третья связана с сетью Tor: из-за неё тысячи узлов доверяли любому незнакомцу, подключившемуся через Tor. Важно, что ни одна из ошибок не позволяла украсть монеты — речь об отказе в обслуживании и приватности."
+    ],
+    "take": "Если вы майните или держите свой биткоин-узел, обновляйте софт: старые версии остаются открытыми для таких ошибок. Для обычных держателей хорошая новость в том, что монеты через эти дыры украсть было нельзя. Так и работает открытый код биткоина: ошибки находят, тихо чинят и потом честно рассказывают."
+  },
+  "en": {
+    "title": "Bitcoin Core reveals three patched bugs, one could have stalled miners",
+    "summary": "Bitcoin Core developers disclosed three flaws fixed back in October 2025. The most serious could stop a miner from producing new blocks.",
+    "body": [
+      "On November 10, Bitcoin Core published details of three security vulnerabilities. All were patched in October 2025, but the technical details had been kept confidential until now.",
+      "The most serious was rated high severity: it could stop a miner from building new blocks until someone restarted it. A second flaw affected block processing.",
+      "The third involved Tor and made thousands of nodes trust any stranger connecting over Tor. None of the bugs allowed coins to be stolen; they were about denial of service and privacy."
+    ],
+    "take": "If you mine or run your own bitcoin node, keep your software updated, because outdated versions stay exposed to bugs like these. For regular holders, the good news is no coins could be stolen through these flaws. This is how bitcoin's open code is meant to work: bugs get found, quietly fixed, and then disclosed."
+  }
+}

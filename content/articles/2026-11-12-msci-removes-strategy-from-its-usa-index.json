@@ -1,0 +1,58 @@
+{
+  "slug": "2026-11-12-msci-removes-strategy-from-its-usa-index",
+  "date": "2026-11-12T14:05:23+05:00",
+  "tags": [
+    "strategy",
+    "msci",
+    "bitcoin",
+    "stocks"
+  ],
+  "sources": [
+    {
+      "name": "CoinDesk",
+      "url": "https://www.coindesk.com/markets/2026/11/12/msci-is-dropping-strategy-from-its-index-and-the-exclusion-could-hit-its-bitcoin-buying-machine"
+    },
+    {
+      "name": "Bitcoin.com News",
+      "url": "https://news.bitcoin.com/featured/strategy-loses-msci-index-spot-as-bitcoin-bet-faces-new-test/"
+    },
+    {
+      "name": "Bitcoin Magazine",
+      "url": "https://bitcoinmagazine.com/markets/msci-removes-strategy-mstr-usa-index"
+    },
+    {
+      "name": "The Block",
+      "url": "https://www.theblock.co/news/markets/2026-11-11-strategy-metaplanet-lose-msci-index-membership-november-reshuffle-438437"
+    }
+  ],
+  "uz": {
+    "title": "MSCI eng katta korporativ bitkoin egasi Strategy'ni indeksidan chiqaradi",
+    "summary": "MSCI Strategy kompaniyasini 30-noyabrdan MSCI USA indeksidan chiqarishini tasdiqladi. Indeks fondlari uning aksiyalarini sotishga majbur bo'ladi.",
+    "body": [
+      "Indeks provayderi MSCI Strategy'ni (MSTR) 30-noyabr savdolari yopilishi bilan MSCI USA indeksidan chiqaradi. Sabab: yangi tekshiruv kompaniyani \"faoliyat yuritmaydigan emitent\" deb tasnifladi, chunki uning biznesi asosan aktiv saqlashga qurilgan. Shu bilan Strategy kengroq MSCI World va ACWI indekslaridan ham chiqadi.",
+      "Xuddi shu noyabr ko'rib chiqishida Yaponiyaning Metaplanet kompaniyasi MSCI Japan Small Cap indeksidan, uran saqlovchi Yellow Cake esa Buyuk Britaniya indeksidan chiqarildi.",
+      "Strategy MSCI qoidalariga qarshi chiqqan va bunday qaror MSCI'ning neytral provayder sifatidagi obro'siga zarar yetkazishini aytgan edi. Ba'zi tahlilchilar fikricha, indeksdan chiqish kompaniyaning yangi bitkoin sotib olish imkoniyatini qiyinlashtirishi mumkin."
+    ],
+    "take": "Bu yangilik bitkoin egasi bo'lgan kompaniya aksiyasi bilan bitkoinning o'zi bir narsa emasligini yana eslatadi: aksiyaga indekslar, fondlar va ularning qoidalari ta'sir qiladi. Biz uchun xulosa: nimaga pul tikayotganingizni aniq tushuning. Bitkoinning o'zini esa O'zbekistonda faqat NAPP litsenziyali provayderlar orqali olish mumkin."
+  },
+  "ru": {
+    "title": "MSCI исключает Strategy, крупнейшего корпоративного держателя биткоина, из индекса",
+    "summary": "MSCI подтвердил, что с 30 ноября Strategy выйдет из индекса MSCI USA. Индексным фондам придётся продать её акции.",
+    "body": [
+      "Индексный провайдер MSCI исключит Strategy (MSTR) из индекса MSCI USA по итогам торгов 30 ноября. Причина: новый фильтр отнёс компанию к «неоперационным эмитентам», ведь её бизнес в основном строится на хранении активов. Вместе с этим Strategy выпадает и из более широких индексов MSCI World и ACWI.",
+      "В рамках того же ноябрьского пересмотра японская Metaplanet покидает индекс MSCI Japan Small Cap, а держатель урана Yellow Cake — британский индекс MSCI.",
+      "Strategy выступала против правил MSCI и заявляла, что такое исключение навредит репутации MSCI как нейтрального провайдера. Часть аналитиков считает, что выход из индекса может осложнить компании дальнейшие покупки биткоина."
+    ],
+    "take": "Эта история ещё раз напоминает: акция компании с биткоином на балансе и сам биткоин — не одно и то же. На акцию влияют индексы, фонды и их правила. Наш вывод: понимайте, во что именно вкладываетесь, а сам биткоин в Узбекистане покупайте только через провайдеров с лицензией НАПП."
+  },
+  "en": {
+    "title": "MSCI drops Strategy, the largest corporate bitcoin holder, from its index",
+    "summary": "MSCI confirmed Strategy will leave the MSCI USA Index after the close on November 30, forcing index funds to sell its shares.",
+    "body": [
+      "Index provider MSCI will remove Strategy (MSTR) from the MSCI USA Index as of the close on November 30. A new screen classified the company as a non-operating issuer, since its business centres on holding assets. The move also takes Strategy out of the broader MSCI World and ACWI indexes.",
+      "The same November review removes Japan's Metaplanet from the MSCI Japan Small Cap Index and uranium holder Yellow Cake from an MSCI UK index.",
+      "Strategy had fought MSCI's rules, arguing that excluding it would damage MSCI's reputation as a neutral index provider. Some analysts say losing the index spot could make it harder for the company to keep buying bitcoin."
+    ],
+    "take": "This is a reminder that a stock in a bitcoin-holding company is not the same as bitcoin: index rules and fund flows move the share price too. Know exactly what you are putting money into. In Uzbekistan, bitcoin itself should only be bought through NAPP-licensed providers."
+  }
+}
