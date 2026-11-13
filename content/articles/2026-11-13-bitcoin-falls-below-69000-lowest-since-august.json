@@ -1,0 +1,57 @@
+{
+  "slug": "2026-11-13-bitcoin-falls-below-69000-lowest-since-august",
+  "date": "2026-11-13T14:00:05+05:00",
+  "tags": [
+    "bitcoin",
+    "market",
+    "liquidations"
+  ],
+  "sources": [
+    {
+      "name": "The Block",
+      "url": "https://www.theblock.co/news/markets/2026-11-13-bitcoin-tumbles-below-69000-439643"
+    },
+    {
+      "name": "The Defiant",
+      "url": "https://thedefiant.io/news/markets/bitcoin-breaks-below-69-000-as-selloff-sets-new-lows"
+    },
+    {
+      "name": "CoinDesk",
+      "url": "https://www.coindesk.com/markets/2026/11/13/bitcoin-dips-below-usd70-000-as-selloff-gathers-pace"
+    },
+    {
+      "name": "CryptoSlate",
+      "url": "https://cryptoslate.com/bitcoin-and-ethereum-sink-to-3-month-lows-but-a-bigger-crypto-selloff-may-be-ahead/"
+    }
+  ],
+  "uz": {
+    "title": "Bitkoin 69 000 dollardan pastga tushdi: avgustdan beri eng past daraja",
+    "summary": "Juma kuni kriptobozordagi sotuvlar kuchaydi: bitkoin 69 000 dollardan pastga tushdi, efir esa 2 000 dollardan arzonladi. Bir necha soat ichida yuzlab million dollarlik pozitsiyalar likvidatsiya qilindi.",
+    "body": [
+      "Bitkoin 69 000 dollardan pastga tushdi, Bitcoin.com News ma'lumotiga ko'ra eng past nuqta taxminan 67 500 dollar bo'ldi. Noyabrdagi pasayish 11 foizdan oshdi. Efir 2 000 dollardan arzonladi, Coinbase'da ETH, XRP va SOL to'rt haftalik minimumga tushdi.",
+      "Sabablar: Jensen Xuangning Nvidia rahbarligidan ketishi bozorni silkitdi, AQSh Federal zaxira tizimi bilan bog'liq xavotirlar ham bor. Dollar indeksi 19 oylik cho'qqiga chiqdi, AQShning 10 yillik obligatsiyalari daromadi 5 foizdan yuqori. BeInCrypto yozishicha, juma kuni chiqadigan ishlab chiqaruvchi narxlari ma'lumoti Fed stavkasini yarim punktga oshirish haqidagi taxminlarni kuchaytirishi mumkin.",
+      "The Block hisobiga ko'ra, to'rt soatda 798 mln dollarlik pozitsiya yopildi, shundan 718,5 mln dollari o'sishga tikilgan pozitsiyalar edi. Bitcoin.com umumiy likvidatsiyalarni 1,6 mlrd dollar deb baholadi. CryptoSlate ma'lumotiga ko'ra, oktyabrdan beri bozor 550 mlrd dollar qiymatini yo'qotdi."
+    ],
+    "take": "Mahalliy platformalarda bitkoinning so'mdagi narxi jahon bozoriga ergashadi, shuning uchun bu pasayish bizda ham seziladi. Eng ko'p zarar ko'rganlar qarz mablag' bilan o'sishga tikkanlar bo'ldi. Biz narx bo'yicha bashorat qilmaymiz, lekin kripto sotib olsangiz, faqat NAPP litsenziyasiga ega provayderlar orqali va yo'qotishga tayyor bo'lgan pulingiz bilan qiling."
+  },
+  "ru": {
+    "title": "Биткоин упал ниже $69 000 — минимум с августа",
+    "summary": "В пятницу распродажа на криптобазаре усилилась: биткоин опустился ниже $69 000, эфир — ниже $2 000. За несколько часов ликвидировали позиций на сотни миллионов долларов.",
+    "body": [
+      "Биткоин пробил $69 000, а по данным Bitcoin.com News, минимум дошёл примерно до $67 500. Падение за ноябрь превысило 11%. Эфир ушёл ниже $2 000, а ETH, XRP и SOL на Coinbase опустились к четырёхнедельным минимумам.",
+      "Причины: рынки трясёт после ухода Дженсена Хуанга с поста главы Nvidia, плюс нервы вокруг ФРС. Индекс доллара поднялся до максимума за 19 месяцев, доходность 10-летних облигаций США держится выше 5%. Как пишет BeInCrypto, пятничные данные по ценам производителей в США могут усилить ставки на повышение ставки ФРС сразу на полпункта.",
+      "По подсчётам The Block, за четыре часа ликвидировали позиций на $798 млн, из них $718,5 млн — ставки на рост. Bitcoin.com оценивает общий объём ликвидаций в $1,6 млрд. По данным CryptoSlate, с октября рынок потерял $550 млрд капитализации."
+    ],
+    "take": "Цена биткоина в сумах на местных площадках идёт за мировым рынком, так что это падение чувствуется и у нас. Больше всех пострадали те, кто ставил на рост с плечом, то есть на заёмные деньги. Прогнозов от себя не даём, но если покупаете крипту, то только через провайдеров с лицензией НАПП и на сумму, которую готовы потерять."
+  },
+  "en": {
+    "title": "Bitcoin falls below $69,000, its lowest level since August",
+    "summary": "The crypto selloff deepened on Friday as bitcoin dropped below $69,000 and ether fell under $2,000. Hundreds of millions of dollars in positions were liquidated within hours.",
+    "body": [
+      "Bitcoin broke below $69,000, and Bitcoin.com News reported a low of about $67,500. Its November losses now exceed 11%. Ether fell below $2,000, while ETH, XRP and SOL hit four-week lows on Coinbase.",
+      "The drivers: markets are still rattled by Jensen Huang's exit as Nvidia CEO, and there are worries around the Fed. The dollar index reached a 19-month high and the 10-year US Treasury yield is holding above 5%. BeInCrypto notes that Friday's US producer price data could add to bets on a half-point Fed rate hike.",
+      "The Block counted $798 million in liquidations over four hours, $718.5 million of them bets on higher prices. Bitcoin.com put total liquidations at $1.6 billion. According to CryptoSlate, the market has lost $550 billion in value since October."
+    ],
+    "take": "The bitcoin price in som on local platforms follows the global market, so this drop is felt here too. The biggest losers were traders betting on a rise with borrowed money. We make no price calls, but if you buy crypto, do it only through NAPP-licensed providers and only with money you can afford to lose."
+  }
+}

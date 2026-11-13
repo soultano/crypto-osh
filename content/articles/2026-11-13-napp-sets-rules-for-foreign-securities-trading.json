@@ -1,0 +1,46 @@
+{
+  "slug": "2026-11-13-napp-sets-rules-for-foreign-securities-trading",
+  "date": "2026-11-13T14:00:05+05:00",
+  "tags": [
+    "napp",
+    "regulation",
+    "uzbekistan",
+    "securities"
+  ],
+  "sources": [
+    {
+      "name": "Spot.uz",
+      "url": "https://www.spot.uz/ru/2026/11/13/securities-registry/"
+    }
+  ],
+  "uz": {
+    "title": "NAPP O'zbekistonda xorijiy aksiya, obligatsiya va ETF savdosi qoidalarini tasdiqladi",
+    "summary": "Istiqbolli loyihalar milliy agentligi (NAPP) regulyatorlik “qum qutisi” doirasida xorijiy qimmatli qog'ozlar savdosi tartibini tasdiqladi. Savdoda faqat malakali investorlar qatnashadi, ruxsat etilgan qog'ozlar ro'yxatini esa agentlik tuzadi.",
+    "body": [
+      "O'zbekistonda kriptobozorni nazorat qiluvchi NAPP xorijiy aksiyalar, obligatsiyalar va ETF bilan savdo qilish tartibini tasdiqladi. Bu savdo agentlikning regulyatorlik “qum qutisi” ichida ishlaydi va unda faqat malakali investorlar qatnasha oladi.",
+      "NAPP mamlakatda qaysi xorijiy qimmatli qog'ozlar bilan savdo qilish mumkinligi ro'yxatini tuzadi. Muomaladagi bunday aktivlar hajmini agentlik Markaziy bank bilan kelishgan holda tasdiqlaydi.",
+      "Yangilik kriptovalyuta haqida emas, an'anaviy qimmatli qog'ozlar haqida. Lekin uni kripto bilan shug'ullanadigan o'sha regulyator chiqargani uchun biz uchun muhim."
+    ],
+    "take": "NAPPning vakolati kriptodan kengayib bormoqda: kripto provayderlarga litsenziya beradigan agentlik endi qaysi xorijiy aksiya va ETF ichki bozorga chiqishini ham hal qiladi. Hozircha bu faqat malakali investorlar uchun, oddiy foydalanuvchilar darhol kirish imkonini kutmasin. Agar sizga rasmiy ro'yxatdan tashqari “xorijiy aksiyalar” taklif qilishsa, ehtiyot bo'ling."
+  },
+  "ru": {
+    "title": "НАПП утвердило правила торговли иностранными акциями, облигациями и ETF в Узбекистане",
+    "summary": "Национальное агентство перспективных проектов (НАПП) утвердило порядок торговли иностранными ценными бумагами в рамках регуляторной песочницы. Участвуют только квалифицированные инвесторы, а список разрешённых бумаг составит само агентство.",
+    "body": [
+      "НАПП, которое у нас регулирует криптовалютный рынок, утвердило порядок торговли иностранными акциями, облигациями и ETF. Торговля идёт внутри регуляторной песочницы агентства, и допускаются к ней только квалифицированные инвесторы.",
+      "Агентство составит список иностранных ценных бумаг, которыми можно торговать в стране. Объём таких активов в обращении НАПП будет утверждать по согласованию с Центробанком.",
+      "Речь не о криптовалюте, а о классических ценных бумагах. Но решение принял тот же регулятор, что отвечает за крипту, поэтому для нас это важный сигнал."
+    ],
+    "take": "Роль НАПП выходит за рамки крипты: агентство, которое выдаёт лицензии криптопровайдерам, теперь решает и то, какие иностранные акции и ETF попадут на наш рынок. Пока это только для квалифицированных инвесторов, так что обычным пользователям быстрого доступа ждать не стоит. Если вам предлагают «иностранные акции» мимо официального списка, будьте осторожны."
+  },
+  "en": {
+    "title": "NAPP sets rules for trading foreign stocks, bonds and ETFs in Uzbekistan",
+    "summary": "Uzbekistan's National Agency for Perspective Projects (NAPP) has approved rules for trading foreign securities inside its regulatory sandbox. Only qualified investors can take part, and the agency will keep the list of allowed securities.",
+    "body": [
+      "NAPP, the agency that oversees crypto in Uzbekistan, has approved a procedure for trading foreign shares, bonds and ETFs. It runs inside NAPP's regulatory sandbox, and only qualified investors are allowed in.",
+      "The agency will draw up a list of foreign securities that can be traded in the country. The volume of these assets in circulation will be approved by NAPP in agreement with the Central Bank.",
+      "This is about traditional securities, not cryptocurrency. But it comes from the same regulator that handles crypto, which is why we are watching it."
+    ],
+    "take": "NAPP's role is growing beyond crypto: the agency that licenses crypto providers now also decides which foreign stocks and ETFs reach our market. For now it is only for qualified investors, so ordinary users should not expect access right away. If someone offers you foreign stocks outside the official list, be careful."
+  }
+}

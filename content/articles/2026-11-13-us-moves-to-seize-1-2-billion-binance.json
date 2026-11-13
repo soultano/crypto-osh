@@ -1,0 +1,58 @@
+{
+  "slug": "2026-11-13-us-moves-to-seize-1-2-billion-binance",
+  "date": "2026-11-13T14:00:05+05:00",
+  "tags": [
+    "binance",
+    "hack",
+    "north-korea",
+    "security"
+  ],
+  "sources": [
+    {
+      "name": "BeInCrypto",
+      "url": "https://beincrypto.com/doj-1-2-billion-binance-hack-north-korea/"
+    },
+    {
+      "name": "Bitcoin Magazine",
+      "url": "https://bitcoinmagazine.com/news/doj-north-korea-binance-1-2-billion-seize"
+    },
+    {
+      "name": "CoinDesk",
+      "url": "https://www.coindesk.com/policy/2026/11/12/north-korea-s-binance-hack-faces-u-s-crackdown-as-doj-targets-usd1-2-billion-in-stolen-crypto"
+    },
+    {
+      "name": "The Block",
+      "url": "https://www.theblock.co/news/business/2026-11-12-doj-seize-1-2-billion-binance-hack-north-korea-facestealer-439065"
+    }
+  ],
+  "uz": {
+    "title": "AQSh Shimoliy Koreya xakerlari Binance'dan o'g'irlagan 1,2 mlrd dollarni musodara qilmoqchi",
+    "summary": "AQSh Adliya vazirligi Binance'dan o'g'irlangan 1,2 mlrd dollardan ortiq kriptoni musodara qilish yoki muzlatib turish uchun sud ruxsatini oldi. Shu bilan birga FaceStealer nomli deepfake firibgarlik sxemasi infratuzilmasi yo'q qilindi.",
+    "body": [
+      "AQSh Adliya vazirligi 12-noyabrda e'lon qilishicha, sud unga Binance'dan o'g'irlangan 1,2 mlrd dollardan ortiq kriptoni musodara qilish yoki cheklash huquqini berdi. FBI 29-oktyabrdagi hujumni Shimoliy Koreya harbiylarining TraderTraitor guruhiga bog'laydi. Vazirlik ma'lumotiga ko'ra, 6 mlrd dollardan ortiq aktiv o'g'irlangan, Binance esa 6,34 mlrd dollarlik zararni qoplagan.",
+      "Davlat va xususiy sektor birgalikda 2,7 mlrd dollardan ortiq mablag'ni muzlatdi, rasmiylar fikricha bu o'g'irlanganning taxminan yarmi. 1,2 mlrd dollarlik sud qarori shu muzlatilgan summaning bir qismini qamraydi va umumiy o'ljaning beshdan biriga ham yetmaydi. BeInCrypto yozishicha, blokcheyn ma'lumotlari xakerlar qo'lida hali milliardlab dollar borligini ko'rsatmoqda.",
+      "Bundan tashqari, Adliya vazirligi Shimoliy Koreyaning FaceStealer deepfake sxemasi infratuzilmasini yo'q qildi. Bu sxema orqali 400 mln dollargacha kripto o'g'irlangan."
+    ],
+    "take": "Blokcheyn shaffof bo'lgani uchun hatto katta o'g'irliklarni ham qisman kuzatib, muzlatish mumkin. Lekin FaceStealer kabi sxemalar xavfni yaxshi ko'rsatadi: videoqo'ng'iroqdagi tanish yuz soxta bo'lishi mumkin. Hech kimga seed-frazangizni bermang, so'rov bilan fayl o'rnatmang va suhbatdoshni boshqa kanal orqali tekshiring."
+  },
+  "ru": {
+    "title": "США хотят изъять $1,2 млрд, украденных северокорейскими хакерами у Binance",
+    "summary": "Минюст США получил разрешение суда изъять или заморозить более $1,2 млрд криптовалюты, похищенной у Binance. Заодно ведомство ликвидировало инфраструктуру дипфейк-схемы FaceStealer.",
+    "body": [
+      "12 ноября Минюст США сообщил, что суд разрешил ему изъять или ограничить более $1,2 млрд в крипте, украденной у Binance. ФБР связывает атаку 29 октября с северокорейской военной группой TraderTraitor. По данным ведомства, похищено активов более чем на $6 млрд, а Binance покрыла ущерб на $6,34 млрд.",
+      "Государство и частные компании вместе заморозили больше $2,7 млрд — по словам чиновников, это примерно половина украденного. Судебный приказ на $1,2 млрд касается части этой суммы и составляет меньше пятой доли всей добычи. Как пишет BeInCrypto, данные блокчейна показывают, что у хакеров под рукой ещё миллиарды.",
+      "Кроме того, Минюст отключил инфраструктуру северокорейской дипфейк-схемы FaceStealer, через которую украли до $400 млн в крипте."
+    ],
+    "take": "Блокчейн прозрачный, поэтому даже огромные кражи можно частично отследить и заморозить. Но история с FaceStealer напоминает: знакомое лицо в видеозвонке может оказаться подделкой. Никому не давайте сид-фразу, не устанавливайте файлы по просьбе собеседника и проверяйте человека через другой канал связи."
+  },
+  "en": {
+    "title": "US moves to seize $1.2 billion stolen from Binance by North Korean hackers",
+    "summary": "The US Justice Department won court approval to seize or restrain more than $1.2 billion in crypto stolen from Binance. It also took down the infrastructure behind a North Korean deepfake scheme called FaceStealer.",
+    "body": [
+      "On November 12 the US Justice Department said a court had given it authority to seize or restrain more than $1.2 billion in crypto taken from Binance. The FBI blames the October 29 attack on a North Korean military unit it calls TraderTraitor. The department says more than $6 billion in assets was stolen; Binance has covered $6.34 billion in losses.",
+      "Government and private-sector efforts have frozen more than $2.7 billion, which officials say is about half of the haul. The $1.2 billion order covers part of that frozen pool and is less than a fifth of the total. BeInCrypto reports that on-chain data shows billions more still within the hackers' reach.",
+      "The department also took down infrastructure used in FaceStealer, a North Korean deepfake scheme used to steal as much as $400 million in crypto."
+    ],
+    "take": "Because blockchains are transparent, even huge thefts can be partly traced and frozen. But FaceStealer is a reminder that a familiar face on a video call can be fake. Never share your seed phrase, do not install files because someone asks, and verify people through a separate channel."
+  }
+}
