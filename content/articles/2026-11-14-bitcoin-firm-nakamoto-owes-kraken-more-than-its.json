@@ -1,0 +1,54 @@
+{
+  "slug": "2026-11-14-bitcoin-firm-nakamoto-owes-kraken-more-than-its",
+  "date": "2026-11-14T13:27:01+05:00",
+  "tags": [
+    "bitcoin",
+    "kraken",
+    "debt",
+    "treasury"
+  ],
+  "sources": [
+    {
+      "name": "U.Today",
+      "url": "https://u.today/nakamoto-sells-more-bitcoin-btc"
+    },
+    {
+      "name": "The Defiant",
+      "url": "https://thedefiant.io/news/markets/nakamoto-delays-kraken-debt-as-bitcoin-collateral-falls"
+    },
+    {
+      "name": "CoinDesk",
+      "url": "https://www.coindesk.com/markets/2026/11/13/bitcoin-firm-nakamoto-owes-kraken-usd165-million-more-than-its-entire-market-value"
+    }
+  ],
+  "uz": {
+    "title": "Nakamoto kompaniyasi Krakenga o'z bozor qiymatidan ham ko'p qarzdor",
+    "summary": "David Bailey kompaniyasi Nakamoto Kraken birjasiga 165 mln dollar qarzdor. Bu summa kompaniyaning butun bozor qiymatidan ko'p, chunki bitkoin garovdagi tangalar sotib olingan narxdan ancha past.",
+    "body": [
+      "Nakamotoning bitkoinlarining taxminan 70 foizi Krakenda garovda turibdi. Bu tangalar har biri taxminan 118 000 dollardan sotib olingan, hozir esa bitkoin 69 000 dollardan past.",
+      "Kompaniya yana 184 BTC sotdi, zaxirasida 4 283 BTC qoldi. U Krakenga to'lanadigan 60 mln USDTlik to'lovni 2027-yilga surdi va himoya derivativlari uchun imtiyoz oldi. Biroq garov shartlariga ko'ra, tangalar baribir muddatidan oldin sotib yuborilishi mumkin.",
+      "Uchinchi chorakda bitkoin opsionlaridan 5,8 mln dollar zarar ko'rilgani sababli operatsion daromad manfiyga tushdi. Shu bilan birga, bitkoin qiymatining qog'ozdagi o'sishi 85,5 mln dollar foyda ko'rsatdi. Bozor ochilishidan oldin aksiyalar 6 foizga tushdi."
+    ],
+    "take": "Bu tushayotgan bozorda kripto garovi ostida qarz olish qanday ishlashining yaqqol misoli. Narx tushganda garov qiymati ham kichrayadi va tangalar eng yomon paytda sotib yuborilishi mumkin. Kimdir sizga bitkoin garovi evaziga USDT qarz yoki marjali savdo taklif qilsa, avval shu voqeani eslang. Bizda faqat NAPP litsenziyasiga ega provayderlar bilan ishlang."
+  },
+  "ru": {
+    "title": "Биткоин-компания Nakamoto должна Kraken больше, чем стоит сама",
+    "summary": "Компания Nakamoto Дэвида Бейли должна бирже Kraken $165 млн. Это больше всей её рыночной стоимости: биткоин сейчас намного дешевле цены, по которой покупались заложенные монеты.",
+    "body": [
+      "Около 70% биткоинов Nakamoto лежат в залоге у Kraken. Монеты покупались примерно по $118 000 за штуку, а сейчас биткоин стоит меньше $69 000.",
+      "Компания продала ещё 184 BTC, в запасе осталось 4 283 BTC. Платёж Kraken на 60 млн USDT она перенесла на 2027 год и получила зачёт за защитные деривативы. Но условия залога всё равно позволяют продать её монеты досрочно.",
+      "В третьем квартале убыток $5,8 млн на опционах на биткоин увёл операционную выручку в минус. При этом бумажный рост стоимости биткоина дал $85,5 млн прибыли. До открытия торгов акции упали на 6%."
+    ],
+    "take": "Это наглядный пример того, как работает кредит под крипту на падающем рынке. Когда цена падает, залог тает, и монеты могут продать в самый неудачный момент. Если вам предлагают займ в USDT под залог биткоина или торговлю с плечом, сначала вспомните эту историю. У нас работайте только с провайдерами, у которых есть лицензия НАПП."
+  },
+  "en": {
+    "title": "Bitcoin firm Nakamoto owes Kraken $165 million, more than it is worth",
+    "summary": "David Bailey's Nakamoto owes Kraken $165 million, more than its entire market value, as bitcoin trades far below the price it paid for the coins it pledged.",
+    "body": [
+      "About 70% of Nakamoto's bitcoin is pledged as collateral with Kraken. Those coins were bought at roughly $118,000 each, while bitcoin now trades under $69,000.",
+      "The company sold another 184 BTC, leaving 4,283 BTC in its treasury. It pushed a 60 million USDT payment to Kraken into 2027 and got credit for protective derivatives, but the collateral terms still allow its coins to be liquidated early.",
+      "In the third quarter, a $5.8 million loss on bitcoin options pushed operating revenue below zero, even though paper gains on bitcoin produced an $85.5 million profit. Shares fell 6% before the market opened."
+    ],
+    "take": "This is a textbook case of what borrowing against crypto looks like in a falling market. When the price drops, the collateral shrinks and the coins can be sold at the worst possible moment. If anyone offers you a USDT loan backed by bitcoin, or leveraged trading, remember this story first. At home, deal only with providers licensed by NAPP."
+  }
+}

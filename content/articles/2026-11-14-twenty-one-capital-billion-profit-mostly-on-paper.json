@@ -1,0 +1,58 @@
+{
+  "slug": "2026-11-14-twenty-one-capital-billion-profit-mostly-on-paper",
+  "date": "2026-11-14T13:27:01+05:00",
+  "tags": [
+    "bitcoin",
+    "tether",
+    "earnings",
+    "treasury"
+  ],
+  "sources": [
+    {
+      "name": "Bitcoin.com News",
+      "url": "https://news.bitcoin.com/finance/twenty-one-capital-bitcoin-gains-first-profitable-quarter-1-09b/"
+    },
+    {
+      "name": "BeInCrypto",
+      "url": "https://beincrypto.com/twenty-one-capital-bitcoin-profit-gone/"
+    },
+    {
+      "name": "The Block",
+      "url": "https://www.theblock.co/news/business/2026-11-13-tether-backed-twenty-one-capital-reports-1-09-billion-q3-net-income-on-bitcoin-gains-439711"
+    },
+    {
+      "name": "Decrypt",
+      "url": "https://decrypt.co/383204/why-msci-removing-bitcoin-treasury-strategy-stock-indexes"
+    }
+  ],
+  "uz": {
+    "title": "Twenty One Capital 1,09 mlrd dollar foyda ko'rsatdi, lekin u asosan qog'ozda",
+    "summary": "Tether qo'llab-quvvatlaydigan Twenty One Capital uchinchi chorakda 1,087 mlrd dollar sof foyda e'lon qildi. Bu foyda deyarli butunlay bitkoin qimmatlashgani hisobiga yuzaga kelgan, asosiy faoliyat esa 4,8 mln dollar zarar keltirgan.",
+    "body": [
+      "Texasdagi bu kompaniyada 43 514 BTC bor. Sentyabr oxirida bitta bitkoin taxminan 83 700 dollar turgan. AQSh buxgalteriya qoidalariga ko'ra, narx o'sishi zaxira qiymatini 1,093 mlrd dollarga oshirgan va bu foyda sifatida yozilgan. Buning uchun tangalarni sotish shart bo'lmagan.",
+      "Kompaniyaning haqiqiy biznesi esa 4,8 mln dollar operatsion zarar bilan yopilgan. Milliardlik sarlavhaga qaramay, kompaniya aksiyalari arzonlagan.",
+      "Bozor bu foydaning katta qismini allaqachon yeb qo'ydi. 30-sentyabrdan beri bitkoin arzonlashdi. BeInCrypto hisobiga ko'ra, o'sha foydaning qariyb 60 foizi yo'qolgan."
+    ],
+    "take": "Hammamiz uchun oddiy saboq: qayd etilmagan foyda bu ekrandagi raqam, xolos. Ko'pchiligimiz ham portfelimizni eng yuqori narx bo'yicha hisoblaymiz, keyin bozor tushib ketadi. Jamg'armangizni sanaganda eng yaxshi kunga emas, bugungi qiymatga qarang."
+  },
+  "ru": {
+    "title": "Twenty One Capital показала $1,09 млрд прибыли, но в основном на бумаге",
+    "summary": "Компания Twenty One Capital, за которой стоит Tether, отчиталась о чистой прибыли $1,087 млрд за третий квартал. Почти вся прибыль появилась за счёт роста цены биткоина, а основной бизнес принёс операционный убыток $4,8 млн.",
+    "body": [
+      "У техасской компании 43 514 BTC. В конце сентября биткоин стоил около $83 700, и по американским правилам учёта рост цены добавил запасу $1,093 млрд. Эту сумму записали в прибыль, хотя ни одной монеты не продали.",
+      "Сам бизнес при этом ушёл в операционный убыток на $4,8 млн. Несмотря на громкую цифру прибыли, акции компании подешевели.",
+      "Рынок уже съел большую часть этих денег. С 30 сентября биткоин упал, и, по подсчётам BeInCrypto, около 60% той прибыли уже нет."
+    ],
+    "take": "Простой урок для всех: пока прибыль не зафиксирована, это просто цифра на экране. Многие из нас тоже считают портфель по самой высокой цене, а потом рынок разворачивается. Когда считаете свои сбережения, смотрите на сегодняшнюю стоимость, а не на лучший день."
+  },
+  "en": {
+    "title": "Twenty One Capital posts $1.09 billion profit, but most of it is on paper",
+    "summary": "Tether-backed Twenty One Capital reported $1.087 billion in third-quarter net income, almost all of it from the rising value of its bitcoin, while its core operations lost $4.8 million.",
+    "body": [
+      "The Texas company holds 43,514 BTC. At the end of September one bitcoin was worth about $83,700, and under US accounting rules that rise lifted the holdings by $1.093 billion. It counted as profit even though no coins were sold.",
+      "The actual business ran a $4.8 million operating loss. Despite the billion-dollar headline, the company's shares fell.",
+      "The market has already taken back much of the gain. Bitcoin has dropped since September 30, and BeInCrypto estimates that about 60% of that profit is already gone."
+    ],
+    "take": "A simple lesson for all of us: a profit you haven't locked in is just a number on a screen. Many of us also value our portfolio at the peak price, and then the market turns. When you count your savings, look at what they are worth today, not on their best day."
+  }
+}

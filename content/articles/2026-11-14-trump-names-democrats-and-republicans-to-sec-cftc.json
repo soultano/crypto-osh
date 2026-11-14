@@ -1,0 +1,58 @@
+{
+  "slug": "2026-11-14-trump-names-democrats-and-republicans-to-sec-cftc",
+  "date": "2026-11-14T13:27:01+05:00",
+  "tags": [
+    "regulation",
+    "usa",
+    "sec",
+    "cftc"
+  ],
+  "sources": [
+    {
+      "name": "Decrypt",
+      "url": "https://decrypt.co/383260/trump-first-democratic-picks-sec-cftc-could-reshape-crypto"
+    },
+    {
+      "name": "The Block",
+      "url": "https://www.theblock.co/news/regulation/2026-11-12-white-house-crypto-picks-sec-cftc-439175"
+    },
+    {
+      "name": "Cointelegraph",
+      "url": "https://cointelegraph.com/news/trump-nominates-hester-peirce-successor-among-sec-cftc-picks"
+    },
+    {
+      "name": "CoinDesk",
+      "url": "https://www.coindesk.com/policy/2026/11/12/u-s-president-names-cftc-sec-nominees-for-first-time-in-a-year"
+    }
+  ],
+  "uz": {
+    "title": "Tramp SEC va CFTC uchun to'rt nomzod ko'rsatdi, ular orasida ilk bor demokratlar ham bor",
+    "summary": "AQSh prezidenti Donald Tramp SEC va CFTCga ikkitadan komissar nomzodini taqdim etdi. Bu bir yil ichidagi ilk nomzodlar. Shuningdek, Tramp bu ikki idora uchun birinchi marta demokrat nomzodlarni ko'rsatdi.",
+    "body": [
+      "Ro'yxat teng bo'lingan: ikki respublikachi va ikki demokrat. Nomzodlar orasida SEC komissari Hester Peirce o'rniga keladigan shaxs, CFTCning sobiq komissari va CLARITY Act ustida ishlagan ikki kishi bor.",
+      "CLARITY Act Kongressda barbod bo'lganidan beri AQShda kripto siyosatini aynan shu ikki komissiya belgilab kelmoqda. Endi ulardagi bo'sh o'rinlar to'ldiriladi.",
+      "Kripto sanoati bu xabarni ijobiy qabul qildi. Crypto Council for Innovation vakili Ji Kim fikricha, ikki partiyali tarkib bozorni himoya qiladigan va yangiliklarga yo'l ochadigan barqaror qoidalarni ishlab chiqishi mumkin."
+    ],
+    "take": "Bu yangilik biz uchun uzoqda bo'lsa ham, ahamiyatsiz emas. SEC va CFTC ETF, steyblkoinlar va Amerika birjalari bo'yicha qaror qabul qiladi. Bu qarorlar butun bozorga, jumladan biz so'mda ko'radigan bitkoin narxiga ham ta'sir qiladi. Bizda esa qoidalarni NAPP belgilaydi, shuning uchun kriptoni faqat litsenziyali provayderlar orqali sotib oling."
+  },
+  "ru": {
+    "title": "Трамп выдвинул четырёх кандидатов в SEC и CFTC, впервые среди них есть демократы",
+    "summary": "Президент США Дональд Трамп выдвинул по два кандидата в комиссары SEC и CFTC. Это первые выдвижения за год и первые демократы, которых Трамп предложил в эти ведомства.",
+    "body": [
+      "Список поделен поровну: два республиканца и два демократа. Среди кандидатов есть преемник комиссара SEC Хестер Пирс, бывший комиссар CFTC и два человека, которые работали над CLARITY Act.",
+      "С тех пор как CLARITY Act провалился в Конгрессе, крипторегулирование в США фактически определяют именно эти две комиссии. Теперь пустующие места в них будут заполнены.",
+      "Индустрия восприняла новость хорошо. Джи Ким из Crypto Council for Innovation считает, что двухпартийный состав может выработать устойчивые правила, которые и рынок защитят, и не задушат новые идеи."
+    ],
+    "take": "Для нас это далёкая новость, но не пустая. SEC и CFTC решают судьбу ETF, стейблкоинов и американских бирж, а это двигает весь рынок, включая курс биткоина, который мы видим в сумах. У нас же правила устанавливает НАПП, поэтому крипту покупайте и продавайте только через лицензированных провайдеров."
+  },
+  "en": {
+    "title": "Trump names four SEC and CFTC nominees, including his first Democrats",
+    "summary": "US President Donald Trump has nominated two commissioners each to the SEC and the CFTC. These are the first picks for either agency in a year and Trump's first Democratic nominees to them.",
+    "body": [
+      "The slate is split evenly: two Republicans and two Democrats. It includes a successor to SEC commissioner Hester Peirce, a former CFTC commissioner and two people who worked on the CLARITY Act.",
+      "Since the CLARITY Act collapsed in Congress, these two commissions have effectively set US crypto policy. The nominations would fill their empty seats.",
+      "The industry welcomed the move. Ji Kim of the Crypto Council for Innovation said a bipartisan lineup could produce lasting rules that protect markets and still leave room for innovation."
+    ],
+    "take": "This is distant news for us, but it still matters. The SEC and CFTC decide on ETFs, stablecoins and US exchanges, and those decisions move the whole market, including the bitcoin price we see in som. At home the rules come from NAPP, so buy and sell crypto only through licensed providers."
+  }
+}
