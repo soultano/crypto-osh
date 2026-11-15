@@ -1,0 +1,47 @@
+{
+  "slug": "2026-11-15-coinone-and-unocoin-exchanges-report-data-breaches",
+  "date": "2026-11-15T13:44:33+05:00",
+  "tags": [
+    "security",
+    "exchanges",
+    "data-breach",
+    "phishing"
+  ],
+  "sources": [
+    {
+      "name": "Cointelegraph",
+      "url": "https://cointelegraph.com/news/coinone-data-breach-phishing-identity-theft-customer-information"
+    },
+    {
+      "name": "Bitcoin.com News",
+      "url": "https://news.bitcoin.com/featured/unocoin-admits-200k-crypto-loss-warns-of-customer-data-breach/"
+    }
+  ],
+  "uz": {
+    "title": "Coinone va Unocoin birjalarida mijozlar ma’lumotlari sizib chiqdi",
+    "summary": "Janubiy Koreyaning Coinone va Hindistonning Unocoin birjalari mijozlar ma’lumotlari sizib chiqqanini tan oldi. Unocoin’dan qariyb 200 ming dollarlik kripto o‘g‘irlangan.",
+    "body": [
+      "Coinone mijozlarini fishing va shaxsini o‘g‘irlash xavfi haqida ogohlantirdi. Birjaning aytishicha, parollar, bank hisob raqamlari, shaxsiy identifikatsiya raqamlari va kripto hamyon manzillari sizib chiqqan bo‘lishi mumkin.",
+      "Unocoin 14-noyabrda hujumchilar uchta buzilgan issiq hamyondan taxminan 200 000 dollarlik kriptoni o‘g‘irlaganini tasdiqladi. Avval birja hech qanday mablag‘ yo‘qolmaganini aytgan edi. Unocoin mijozlarning maxfiy ma’lumotlari ham sizib chiqqan bo‘lishi mumkinligini tan oldi."
+    ],
+    "take": "Ma’lumotlar sizib chiqqandan keyin odatda firibgarlar ishga tushadi: ‘birjadan’ deb qo‘ng‘iroq, SMS va soxta xatlar keladi. Hech kimga seed-frazangizni, parolingizni yoki SMS-kodlarni bermang, kim deb tanishtirmasin. Parollarni har xil qiling, ikki bosqichli himoyani yoqing va kriptoni faqat NAPP litsenziyasiga ega provayderlar orqali sotib oling."
+  },
+  "ru": {
+    "title": "Утечки данных на биржах Coinone и Unocoin: под угрозой пароли и номера счетов",
+    "summary": "Южнокорейская Coinone и индийская Unocoin признали утечку данных клиентов. У Unocoin к тому же украли около $200 тысяч в крипте.",
+    "body": [
+      "Coinone предупредила клиентов о риске фишинга и кражи личности. По словам биржи, наружу могли попасть пароли, номера банковских счетов, национальные идентификационные номера и адреса криптокошельков.",
+      "Unocoin 14 ноября подтвердила, что злоумышленники вывели примерно $200 000 в крипте из трёх взломанных горячих кошельков. До этого биржа уверяла, что средства не пострадали. Unocoin также признала, что могли утечь конфиденциальные данные клиентов."
+    ],
+    "take": "После утечек обычно оживляются мошенники: звонки, SMS и письма «от биржи». Никому не сообщайте сид-фразу, пароли и коды из SMS, как бы собеседник ни представился. Используйте разные пароли, включите двухфакторную защиту и покупайте крипту только у провайдеров с лицензией НАПП."
+  },
+  "en": {
+    "title": "Coinone and Unocoin exchanges report customer data breaches",
+    "summary": "South Korea's Coinone and India's Unocoin have admitted customer data breaches, and Unocoin also lost about $200,000 in crypto.",
+    "body": [
+      "Coinone warned customers about phishing and identity theft. The exchange said exposed data may include passwords, bank account numbers, national ID numbers and crypto wallet addresses.",
+      "Unocoin confirmed on November 14 that attackers took about $200,000 in crypto from three compromised hot wallets, reversing its earlier claim that no funds were lost. It also admitted that sensitive customer information may have been exposed."
+    ],
+    "take": "Data leaks are usually followed by a wave of scam calls, texts and emails pretending to come from the exchange. Never share your seed phrase, passwords or SMS codes with anyone, whoever they claim to be. Use different passwords, turn on two-factor protection, and buy crypto only through NAPP-licensed providers."
+  }
+}

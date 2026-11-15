@@ -1,0 +1,61 @@
+{
+  "slug": "2026-11-15-bitcoin-drops-below-63000-as-liquidations-hit-2",
+  "date": "2026-11-15T13:44:33+05:00",
+  "tags": [
+    "bitcoin",
+    "markets",
+    "etf",
+    "liquidations"
+  ],
+  "sources": [
+    {
+      "name": "The Defiant",
+      "url": "https://thedefiant.io/news/markets/bitcoin-hits-four-month-low-as-etf-outflows-persist"
+    },
+    {
+      "name": "CoinDesk",
+      "url": "https://www.coindesk.com/markets/2026/11/14/bitcoin-drifts-back-to-usd65-000-deep-value-zone-says-analyst"
+    },
+    {
+      "name": "Bitcoin Magazine",
+      "url": "https://bitcoinmagazine.com/markets/bitcoin-price-crashes-13-percent-65600"
+    },
+    {
+      "name": "BeInCrypto",
+      "url": "https://beincrypto.com/xrp-etf-outflows-8-month-high/"
+    }
+  ],
+  "uz": {
+    "title": "Bitcoin 63 000 dollardan pastga tushdi, 2 mlrd dollarlik pozitsiyalar yopildi",
+    "summary": "Bitcoin dam olish kunlari 63 000 dollardan pastga tushib, taxminan uch oydagi eng past darajaga yetdi. Bir haftada narx qariyb 14% tushdi.",
+    "body": [
+      "Coinbase va Bitstamp birjalarida bitcoin 63 000 dollardan pastga tushgani qayd etildi. Bir hafta oldin, 7-noyabrda, u taxminan 75 750 dollar turgan edi. Bitcoin Magazine hisobicha, haftalik yo‘qotish 14% atrofida.",
+      "CoinGlass ma’lumotiga ko‘ra, birjalarda 2,05 mlrd dollarlik kreditli pozitsiyalar majburan yopildi, ularning deyarli hammasi o‘sishga tikilgan edi. Faqat Binance’da bu summa 800 mln dollarga yaqin. The Defiant hisobicha, kripto bozori o‘n kunda 571 mlrd dollar yo‘qotdi.",
+      "Bosim bir nechta tomondan keldi: AQShdagi spot bitcoin ETF’lardan yetti kunda 1,91 mlrd dollar chiqib ketdi, dollar kuchaydi, bozor dekabrda Fed stavkasi oshishini to‘liq kutyapti. Nvidia rahbari Jensen Huang iste’foga chiqqach, AI aksiyalari ham tushdi. XRP Coinbase’da 89 sentgacha tushdi, bu 2024-yil noyabridan beri eng past daraja.",
+      "Tahlilchi Jeyms Chek (CoinDesk) buni taslim bo‘lishning to‘rtinchi to‘lqini deb atadi: uning so‘zlariga ko‘ra, odamlar uch oy oldin sotib olmaganiga afsuslangan narxda endi sotyapti."
+    ],
+    "take": "Biz narx bashorat qilmaymiz, lekin bu hafta kreditli savdo qanchalik tez tugashini yana ko‘rsatdi. Jamg‘armasini BTC’da saqlayotganlar uchun so‘mdagi qiymat ham tushdi. USDT’da maosh oladigan frilanserlarga bitcoin narxi to‘g‘ridan-to‘g‘ri ta’sir qilmaydi. Yo‘qotishga tayyor bo‘lmagan pul bilan kreditli savdo qilmang, kriptoni esa faqat NAPP litsenziyasiga ega provayderlar orqali oling."
+  },
+  "ru": {
+    "title": "Биткоин упал ниже $63 000, ликвидации превысили $2 млрд",
+    "summary": "На выходных биткоин опустился ниже $63 000, это минимум примерно за три месяца. За неделю цена потеряла около 14%.",
+    "body": [
+      "Пробой ниже $63 000 зафиксировали Coinbase и Bitstamp. Неделей раньше, 7 ноября, биткоин стоил около $75 750. По подсчётам Bitcoin Magazine, недельное падение около 14%.",
+      "По данным CoinGlass, на биржах ликвидировали позиций на $2,05 млрд, почти все это ставки на рост. Только на Binance сумма приблизилась к $800 млн. По оценке The Defiant, за десять дней крипторынок потерял $571 млрд.",
+      "Давление пришло с разных сторон: из американских спотовых биткоин-ETF за семь торговых сессий ушло $1,91 млрд, доллар укрепился, а рынок полностью заложил повышение ставки ФРС в декабре. После отставки главы Nvidia Дженсена Хуанга подешевели и акции ИИ-компаний. XRP на Coinbase упал до 89 центов, это минимум с ноября 2024 года.",
+      "Аналитик Джеймс Чек (CoinDesk) назвал происходящее четвёртой волной капитуляции: по его словам, люди продают по цене, по которой три месяца назад сами хотели бы купить."
+    ],
+    "take": "Прогнозов мы не даём, но эта неделя снова показала, как быстро заканчивается торговля с плечом. У тех, кто держит сбережения в BTC, упала и стоимость в сумах. Фрилансеров с зарплатой в USDT цена биткоина напрямую не задевает. Не торгуйте с плечом на деньги, которые не готовы потерять, и покупайте крипту только у провайдеров с лицензией НАПП."
+  },
+  "en": {
+    "title": "Bitcoin drops below $63,000 as $2 billion in bullish bets are wiped out",
+    "summary": "Bitcoin fell below $63,000 over the weekend, its lowest level in about three months, after losing roughly 14% in a week.",
+    "body": [
+      "Coinbase and Bitstamp both recorded the drop below $63,000. A week earlier, on November 7, bitcoin was trading near $75,750. Bitcoin Magazine put the weekly loss at around 14%.",
+      "CoinGlass counted $2.05 billion in liquidations across exchanges, almost all of them bets on rising prices. Binance alone accounted for nearly $800 million. The Defiant estimates the crypto market lost $571 billion in ten days.",
+      "Pressure came from several sides. US spot bitcoin ETFs lost $1.91 billion over seven sessions, the dollar strengthened, and markets have fully priced in a December Fed rate hike. AI stocks also sold off after Nvidia CEO Jensen Huang resigned. XRP fell to 89 cents on Coinbase, its lowest since November 2024.",
+      "Analyst James Check, quoted by CoinDesk, called it a fourth wave of capitulation. In his view, holders are now selling at prices they wish they had bought at three months ago."
+    ],
+    "take": "We don't make price calls, but this week showed again how fast leveraged trading can end. Anyone keeping savings in BTC has also seen its value in som drop. Freelancers paid in USDT are not directly hit by bitcoin's price. Don't trade with leverage using money you can't afford to lose, and buy crypto only through NAPP-licensed providers."
+  }
+}
