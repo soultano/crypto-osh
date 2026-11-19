@@ -1,26 +1,26 @@
 {
-  "updatedAt": "2026-11-19T11:04:39.098Z",
+  "updatedAt": "2026-11-19T21:07:54.523Z",
   "quotes": {
     "voluto": {
       "buy": 12148,
       "sell": 11920,
       "fee": 0.5,
       "source": "voluto.uz/api/rate-setting",
-      "at": "2026-11-19T11:04:39.098Z"
+      "at": "2026-11-19T21:07:54.523Z"
     },
     "asterium": {
-      "buy": 12311.4,
-      "sell": 11980.36,
+      "buy": 12270.6,
+      "sell": 11971.64,
       "fee": null,
       "source": "shop-rates.asterium.dev",
-      "at": "2026-11-18T21:03:01.856Z"
+      "at": "2026-11-19T21:07:54.523Z"
     },
     "tcrypto": {
       "buy": 12620,
       "sell": 11920,
       "fee": null,
       "source": "api.tcrypto.uz/api/v1/info/calc",
-      "at": "2026-11-19T11:04:39.098Z"
+      "at": "2026-11-19T21:07:54.523Z"
     }
   }
 }
