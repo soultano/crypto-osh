@@ -6,7 +6,7 @@ const uz = {
   nav: "Yangiliklar",
   kicker: "Kripto yangiliklar",
   title: "Kripto, blokcheyn va web3 yangiliklari",
-  lead: "Har kuni O'zbekiston va dunyodagi eng muhim 3–4 ta kripto yangilik. Qisqa, tushunarli va o'zbekistonlik ko'zi bilan: bu biz uchun nima degani.",
+  lead: "Har kuni O'zbekiston va Markaziy Osiyodagi eng muhim kripto yangiliklar. Qisqa, tushunarli va o'zbekistonlik ko'zi bilan: bu biz uchun nima degani.",
   metaTitle: "Kripto yangiliklar bugun — bitcoin, blokcheyn, web3",
   metaDescription:
     "Bugungi eng muhim kripto yangiliklar o'zbek tilida: bitcoin, ethereum, blokcheyn va web3. Har bir yangilikda — O'zbekiston uchun bu nima degani.",
@@ -37,7 +37,7 @@ const ru: typeof uz = {
   nav: "Новости",
   kicker: "Крипто-новости",
   title: "Новости крипты, блокчейна и web3",
-  lead: "Каждый день 3–4 главные крипто-новости Узбекистана и мира. Коротко, понятно и глазами узбекистанца: что это значит для нас.",
+  lead: "Каждый день главные крипто-новости Узбекистана и Центральной Азии. Коротко, понятно и глазами узбекистанца: что это значит для нас.",
   metaTitle: "Крипто-новости сегодня — биткоин, блокчейн, web3",
   metaDescription:
     "Главные крипто-новости дня: биткоин, эфир, блокчейн и web3. В каждой новости — что это значит для Узбекистана.",
@@ -68,7 +68,7 @@ const en: typeof uz = {
   nav: "News",
   kicker: "Crypto news",
   title: "Crypto, blockchain and web3 news",
-  lead: "Every day, the 3–4 top crypto stories from Uzbekistan and the world. Short, clear and seen from Uzbekistan: what it means for us.",
+  lead: "Every day, the top crypto stories from Uzbekistan and Central Asia. Short, clear and seen from Uzbekistan: what it means for us.",
   metaTitle: "Crypto news today — bitcoin, blockchain, web3",
   metaDescription:
     "Today's top crypto news: bitcoin, ether, blockchain and web3. Every story explains what it means for Uzbekistan.",
