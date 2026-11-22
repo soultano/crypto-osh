@@ -1,4 +1,5 @@
-# Writes 3 crypto news stories every morning (07:00 Tashkent; GitHub
+# Writes up to 3 crypto news stories about Uzbekistan (sometimes Central
+# Asia, never world news) every morning (07:00 Tashkent; GitHub
 # can start scheduled runs late, so this leaves room), commits
 # them to main so Vercel redeploys the site, then posts them to Telegram one
 # at a time, 2.5 hours apart (the job stays alive for about 5 hours).
@@ -16,7 +17,7 @@ on:
   workflow_dispatch:
     inputs:
       count:
-        description: "How many stories (1–10); empty = the usual 3"
+        description: "How many stories (1–10); empty = 1–3, as many as the day has"
         required: false
         default: ""
 

@@ -1,19 +1,24 @@
 // Daily crypto news for the «Yangiliklar» tab.
 //
-// 1. Reads RSS feeds of the biggest international crypto outlets, plus
-//    Uzbek news sites filtered down to crypto stories.
+// Editorial policy (Nov 2026): Uzbekistan first, sometimes Central Asia
+// (Kazakhstan, Kyrgyzstan, Tajikistan, Turkmenistan). No world news: our
+// readers don't read it.
+//
+// 1. Reads RSS of Uzbek and Central Asian news sites and keeps only crypto
+//    stories. International crypto outlets are read too, but only items
+//    that mention Uzbekistan or Central Asia are kept.
 // 2. Groups stories that several outlets covered: the more outlets wrote
 //    about it in the last day and a half, the more popular we consider it
 //    (feeds don't publish view counts, so coverage is the proxy).
-// 3. Asks Claude to pick the 3 most important ones (at least one about
-//    Uzbekistan when there is real local news) and write them in
-//    Uzbek, Russian and English in our tone of voice (scripts/news/tone.md),
-//    each with "what it means for Uzbekistan".
+// 3. Asks Claude to pick up to 3 real stories, Uzbekistan first, and write
+//    them in Uzbek, Russian and English in our tone of voice
+//    (scripts/news/tone.md). On a quiet day it writes fewer or none: no
+//    filler from the rest of the world.
 // 4. Writes content/articles/<slug>.json and lists the new slugs in
 //    news-new.json for the Telegram step.
 //
 // Run: ANTHROPIC_API_KEY=... node scripts/news/generate.mts
-// Env: NEWS_MIN (default 3), NEWS_MAX (default 3), NEWS_DRY_RUN=1 to only
+// Env: NEWS_MIN (default 1), NEWS_MAX (default 3), NEWS_DRY_RUN=1 to only
 // print the ranked candidates without calling Claude.
 
 import Anthropic from "@anthropic-ai/sdk";
@@ -25,11 +30,12 @@ const articlesDir = path.join(root, "content", "articles");
 const tonePath = path.join(root, "scripts", "news", "tone.md");
 const outList = path.join(root, "news-new.json");
 
-const MIN = clampInt(process.env.NEWS_MIN, 3, 1, 10);
+const MIN = clampInt(process.env.NEWS_MIN, 1, 1, 10);
 const MAX = clampInt(process.env.NEWS_MAX, 3, MIN, 10);
 const WINDOW_HOURS = 36;
 const MODEL = "claude-opus-5-5";
 
+// International crypto media: only items about Uzbekistan / Central Asia.
 const feeds: { name: string; url: string }[] = [
   { name: "CoinDesk", url: "https://www.coindesk.com/arc/outboundfeeds/rss/" },
   { name: "Cointelegraph", url: "https://cointelegraph.com/rss" },
@@ -55,6 +61,20 @@ const localFeeds: { name: string; url: string }[] = [
   { name: "Podrobno.uz", url: "https://podrobno.uz/rss/" },
   { name: "UzDaily", url: "https://www.uzdaily.uz/ru/rss/" },
 ];
+
+// Central Asian sites: everything they publish, so only crypto stories are
+// kept. A feed that fails is skipped and named in the log.
+const regionFeeds: { name: string; url: string }[] = [
+  { name: "The Times of Central Asia", url: "https://timesca.com/feed/" },
+  { name: "Tengrinews", url: "https://tengrinews.kz/news.rss" },
+  { name: "Kursiv", url: "https://kz.kursiv.media/feed/" },
+  { name: "24.kg", url: "https://24.kg/rss/" },
+  { name: "Kaktus.media", url: "https://kaktus.media/rss.xml" },
+  { name: "Asia-Plus", url: "https://asiaplustj.info/ru/rss" },
+];
+
+const uzWords = /uzbek|o'zbek|o‘zbek|узбек|tashkent|toshkent|ташкент|samarkand|samarqand|самарканд|bukhara|buxoro|бухар|fergana|farg'ona|ферган|namangan|наманган|andijan|andijon|андижан|napp|напп|perspektiv loyihalar|перспективных проектов/i;
+const regionWords = /kazakh|qazaq|казах|astana|астан|almaty|алмат|kyrgyz|кыргыз|киргиз|bishkek|бишкек|tajik|тадж|dushanbe|душанбе|turkmen|туркмен|central asia|центральн[а-я]* ази|aifc|мфца/i;
 
 const cryptoWords =
   /kripto|крипт|crypto|bitcoin|биткоин|bitkoin|blokche[iy]n|блокчейн|blockchain|napp|напп|perspektiv loyihalar|перспективных проектов|майнинг|mayning|mining|stablecoin|стейблкоин|usdt|tether|web3|токен|token|nft|цифров[а-я]* актив|raqamli aktiv/i;
@@ -184,6 +204,14 @@ function isCrypto(it: FeedItem): boolean {
   return cryptoWords.test(`${it.title} ${it.text.slice(0, 400)}`);
 }
 
+function aboutUz(it: FeedItem): boolean {
+  return uzWords.test(`${it.title} ${it.text.slice(0, 600)}`);
+}
+
+function aboutRegion(it: FeedItem): boolean {
+  return aboutUz(it) || regionWords.test(`${it.title} ${it.text.slice(0, 600)}`);
+}
+
 // ---------- existing articles ----------
 
 type Article = {
@@ -268,16 +296,18 @@ function describe(candidates: Cluster[]): string {
     .join("\n\n");
 }
 
-async function write(world: Cluster[], local: Cluster[], recentTitles: string[], tone: string): Promise<Out> {
+async function write(local: Cluster[], region: Cluster[], recentTitles: string[], tone: string): Promise<Out> {
   const client = new Anthropic();
 
-  const system = `You write the daily crypto news for Crypto Osh (cryptoosh.uz), a community of crypto people in Uzbekistan. Follow this tone of voice guide exactly; it is written in Russian by the founder:\n\n${tone}`;
+  const system = `You write the daily crypto news for Crypto Osh (cryptoosh.uz), a community of crypto people in Uzbekistan. Our readers want news about Uzbekistan, and sometimes about our Central Asian neighbours. World crypto news is not our topic. Follow this tone of voice guide exactly; it is written in Russian by the founder:\n\n${tone}`;
 
-  const user = `Today is ${new Date().toISOString().slice(0, 10)}. Below are today's candidate stories, grouped by story, in two lists: world crypto media, and Uzbek news sites (crypto stories only, in Uzbek or Russian). "outlets" is how many different outlets covered it: that is our measure of popularity.
+  const user = `Today is ${new Date().toISOString().slice(0, 10)}. Below are today's candidate stories, grouped by story, in two lists: Uzbekistan, and Central Asia (Kazakhstan, Kyrgyzstan, Tajikistan, Turkmenistan). "outlets" is how many different outlets covered it: that is our measure of popularity.
 
-Pick ${MIN === MAX ? MIN : `${MIN}–${MAX}`} stories that together tell readers what happened in crypto, blockchain and web3 in Uzbekistan and in the world today:
-- If the Uzbekistan list has a real, newsworthy crypto story (regulation, NAPP, licences, exchanges, mining, scams, big local deals), include at least one of them. Skip local items that only mention crypto in passing, ads and repeats.
-- Fill the rest with the most important and most talked-about world stories (prefer more outlets; skip pure price-prediction pieces, paid press releases and minor token promos).
+Pick up to ${MAX} real crypto, blockchain or web3 stories, at least ${MIN} if there are that many worth writing:
+- Uzbekistan first: regulation, NAPP, licences, exchanges, P2P, mining, scams and arrests, taxes, banks and cards, big local deals.
+- Add a Central Asia story only if it is genuinely newsworthy, or useful for people in Uzbekistan to know (what neighbours allow, ban or build).
+- Never write about world crypto news, prices or companies unless the story itself is about Uzbekistan or Central Asia.
+- Skip items that only mention crypto in passing, ads, paid press releases and repeats. On a quiet day write fewer stories rather than filler.
 Write each one in Uzbek (Latin script), Russian and English, using only facts from the candidate texts.
 
 Do not repeat these stories we already published recently:
@@ -287,9 +317,9 @@ Uzbekistan candidates:
 
 ${describe(local) || "(none today)"}
 
-World candidates:
+Central Asia candidates:
 
-${describe(world)}`;
+${describe(region) || "(none today)"}`;
 
   const stream = client.beta.messages.stream({
     model: MODEL,
@@ -337,29 +367,39 @@ async function main() {
 
   const since = Date.now() - WINDOW_HOURS * 3.6e6;
   const fresh = (it: FeedItem) => it.date >= since && it.date <= Date.now() + 3.6e6 && !usedLinks.has(it.link);
-  const items = (await Promise.all(feeds.map(readFeed))).flat().filter(fresh);
-  const localItems = (await Promise.all(localFeeds.map(readFeed))).flat().filter((it) => fresh(it) && isCrypto(it));
-  const ranked = cluster(items).slice(0, 25);
-  // Local stories get their own ids so they never collide with world ones.
-  const local = cluster(localItems)
-    .slice(0, 10)
+  // World crypto media: only what they write about Uzbekistan / Central Asia.
+  const worldItems = (await Promise.all(feeds.map(readFeed))).flat().filter((it) => fresh(it) && aboutRegion(it));
+  const uzSites = (await Promise.all(localFeeds.map(readFeed))).flat().filter((it) => fresh(it) && isCrypto(it));
+  const caSites = (await Promise.all(regionFeeds.map(readFeed))).flat().filter((it) => fresh(it) && isCrypto(it));
+  const all = [...uzSites, ...caSites, ...worldItems];
+  // Uzbek sites write about Uzbekistan by default; others count only if the story names it.
+  const localItems = all.filter((it) => uzSites.includes(it) || aboutUz(it));
+  const regionItems = all.filter((it) => !localItems.includes(it));
+  const local = cluster(localItems).slice(0, 12);
+  // Region stories get their own ids so they never collide with local ones.
+  const region = cluster(regionItems)
+    .slice(0, 8)
     .map((c) => ({ ...c, id: c.id + 1000 }));
   console.log(`\nUzbekistan: ${localItems.length} crypto items`);
   for (const c of local) console.log(`  #${c.id} [${c.sources.size} outlets] ${c.items[0].title}`);
-  console.log(`\n${items.length} fresh items, top stories:`);
-  for (const c of ranked.slice(0, 10)) console.log(`  #${c.id} [${c.sources.size} outlets] ${c.items[0].title}`);
-  if (ranked.length < MIN) throw new Error("Too few fresh stories in the feeds; nothing published.");
+  console.log(`\nCentral Asia: ${regionItems.length} crypto items`);
+  for (const c of region) console.log(`  #${c.id} [${c.sources.size} outlets] ${c.items[0].title}`);
+  if (local.length + region.length === 0) {
+    console.log("No Uzbekistan or Central Asia crypto stories today; nothing published.");
+    fs.writeFileSync(outList, "[]");
+    return;
+  }
   if (process.env.NEWS_DRY_RUN === "1") return;
 
   const tone = fs.readFileSync(tonePath, "utf8");
-  const out = await write(ranked, local, recentTitles, tone);
+  const out = await write(local, region, recentTitles, tone);
   const { day, iso } = tashkentDate();
   fs.mkdirSync(articlesDir, { recursive: true });
   const taken = new Set(old.map((a) => a.slug));
   const created: string[] = [];
 
   for (const a of out.articles.slice(0, MAX)) {
-    const c = [...ranked, ...local].find((x) => x.id === a.cluster_id);
+    const c = [...local, ...region].find((x) => x.id === a.cluster_id);
     if (!c || !validText(a.uz) || !validText(a.ru) || !validText(a.en)) {
       console.warn(`skipped malformed article for #${a.cluster_id}`);
       continue;
@@ -387,7 +427,7 @@ async function main() {
     console.log(`+ ${slug}`);
   }
 
-  if (created.length < MIN) console.warn(`Only ${created.length} articles written (wanted ${MIN}–${MAX}).`);
+  if (created.length < MIN) console.log(`${created.length} articles written today (quiet day).`);
   fs.writeFileSync(outList, JSON.stringify(created));
 }
 
