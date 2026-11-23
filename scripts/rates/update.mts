@@ -7,8 +7,8 @@
 //
 //   Voluto   voluto.uz/api/rate-setting   (Central Bank rate + published spreads)
 //   tcrypto  api.tcrypto.uz info/calc     (quote for 100 USDT)
-//   Unexpay  api.unexpay.uz make-calc     (quote for 100 USDT; its flat 10 000
-//            placeholder is rejected by the Central Bank sanity band)
+//   Unexpay  the daily rate post in its public Telegram channel
+//            (t.me/s/unexpayment, no bot or key; scripts/rates/unex.mts)
 //   Asterium shop-rates.asterium.dev (office rates, Basic auth from the
 //            ASTERIUM_API_USER / ASTERIUM_API_PASS secrets); without them,
 //            only the fee from asterium.uz/ru/crypto-exchange
@@ -21,6 +21,7 @@
 
 import fs from "node:fs";
 import path from "node:path";
+import { UNEX_CHANNEL, latestRate } from "./unex.mts";
 
 type Quote = { buy: number | null; sell: number | null; fee: number | null; at: string; source: string };
 type RatesFile = { updatedAt: string | null; quotes: Record<string, Quote> };
@@ -69,7 +70,9 @@ async function setBandFromCbu() {
   throw new Error("no Central Bank rate to check quotes against");
 }
 
-type Source = () => Promise<Omit<Quote, "at">>;
+// A source may give the time its rate was published (a channel post);
+// otherwise the quote is stamped with this run's time.
+type Source = () => Promise<Omit<Quote, "at"> & { at?: string }>;
 
 const sources: Record<string, Source> = {
   // Voluto's site computes its rates in the browser from this settings record:
@@ -103,15 +106,16 @@ const sources: Record<string, Source> = {
     return { buy: await calc("BUY"), sell: await calc("SELL"), fee: null, source: "api.tcrypto.uz/api/v1/info/calc" };
   },
 
-  // Unexpay's landing calculator: rate for 100 USDT, no fee on the site.
+  // Unexpay posts its office rate once a day in its Telegram channel. The
+  // quote keeps the post's time, so the site counts it for that Tashkent day
+  // only (lib/usdt.ts isFresh). Its landing calculator API answered a flat
+  // 10 000 placeholder, so it is no longer used.
   async unexpay() {
-    const calc = async (operation: "BUY" | "SELL") => {
-      const r = (await http(`https://api.unexpay.uz/public/make-calc?operation=${operation}&source=WEB&usdt_amount=100`, {
-        headers: { origin: "https://unexpay.uz" },
-      })) as Record<string, unknown>;
-      return pickRate(r, `unexpay ${operation}`);
-    };
-    return { buy: await calc("BUY"), sell: await calc("SELL"), fee: null, source: "api.unexpay.uz/public/make-calc" };
+    const res = await fetch(`https://t.me/s/${UNEX_CHANNEL}`, { headers: { "user-agent": UA }, signal: AbortSignal.timeout(15000) });
+    if (!res.ok) throw new Error(`unexpay: t.me HTTP ${res.status}`);
+    const r = latestRate(await res.text());
+    if (!r) throw new Error("unexpay: no rate post on t.me/s/" + UNEX_CHANNEL);
+    return { buy: r.buy, sell: r.sell, fee: null, at: r.at, source: `t.me/${r.post}` };
   },
 
   // Asterium's shop (office) rates API. Without the credentials, only the
@@ -136,8 +140,8 @@ const sources: Record<string, Source> = {
 
 // Asterium answers a list of tiers by amount ("count"); the smallest tier is
 // what an ordinary customer gets. buy = UZS→USDT, sell = USDT→UZS. The fee
-// is not read from here: its USD→USDT markup (1.008 = 0.8%) is not the fee
-// Asterium charges, so the row shows the 0.6% from usdt-providers.json.
+// is not read from here: the row shows the cash-dollar fee range Asterium
+// names itself (fee/feeMax in usdt-providers.json).
 type AsteriumRates = { data?: { operation: string; from: string; to: string; count: number; rate: number }[] };
 
 function asteriumQuote(r: AsteriumRates) {
@@ -148,23 +152,6 @@ function asteriumQuote(r: AsteriumRates) {
   };
   const cents = (n: number) => Math.round(n * 100) / 100;
   return { buy: cents(tier("buy", "UZS", "USDT")), sell: cents(tier("sell", "USDT", "UZS")), fee: null };
-}
-
-// The first plausible numeric field called rate/rate_amount/price/course.
-function pickRate(obj: Record<string, unknown>, label: string): number {
-  const found: number[] = [];
-  const walk = (o: unknown) => {
-    if (!o || typeof o !== "object") return;
-    for (const [k, v] of Object.entries(o)) {
-      if (/^(rate|rate_amount|price|course|exchange_?rate)$/i.test(k)) {
-        const n = typeof v === "string" ? Number(v.replace(/\s/g, "").replace(",", ".")) : v;
-        if (plausible(n)) found.push(n as number);
-      } else walk(v);
-    }
-  };
-  walk(obj);
-  if (!found.length) throw new Error(`${label}: no rate in ${JSON.stringify(obj).slice(0, 300)}`);
-  return found[0];
 }
 
 async function main() {
@@ -186,7 +173,7 @@ async function main() {
         const was = prev.quotes[id];
         // A fee-only source (Asterium) must not wipe a rate entered by hand.
         if (q.buy === null && q.sell === null && was?.source === "manual") next.quotes[id] = { ...was, fee: q.fee };
-        else next.quotes[id] = { ...q, at: now };
+        else next.quotes[id] = { ...q, at: q.at ?? now };
         console.log(`${id}: buy ${q.buy ?? "—"} · sell ${q.sell ?? "—"} · fee ${q.fee ?? "—"}`);
       } catch (e) {
         failed.push(id);

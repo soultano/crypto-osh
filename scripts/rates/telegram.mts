@@ -32,10 +32,11 @@ function som(n: number | null | undefined): string {
 
 export function buildPost(providers: Provider[], file: { updatedAt: string | null; quotes: Record<string, Quote> }): string | null {
   if (!file.updatedAt) return null;
-  // Today's quotes only: from this run, or checked earlier the same Tashkent
-  // day (rates entered by hand). A quote kept from an earlier day is not posted.
+  // Today's quotes only: from this run, or given earlier the same Tashkent
+  // day (rates entered by hand, a service's Telegram post). A quote kept
+  // from an earlier day is not posted.
   const day = (iso: string) => new Intl.DateTimeFormat("en-CA", { timeZone: "Asia/Tashkent" }).format(new Date(iso));
-  const today = (q?: Quote) => (q && (q.at === file.updatedAt || (q.source === "manual" && day(q.at) === day(file.updatedAt!))) ? q : undefined);
+  const today = (q?: Quote) => (q && (q.at === file.updatedAt || ((q.source === "manual" || q.source?.startsWith("t.me/")) && day(q.at) === day(file.updatedAt!))) ? q : undefined);
   const rows = providers.map((p) => ({ p, q: today(file.quotes[p.id]) }));
   const pick = (key: "buy" | "sell", better: (a: number, b: number) => boolean) => {
     const live = rows.filter((r) => r.q?.[key] != null);

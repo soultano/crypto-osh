@@ -21,6 +21,13 @@
       "fee": null,
       "source": "api.tcrypto.uz/api/v1/info/calc",
       "at": "2026-11-22T20:05:56.514Z"
+    },
+    "unexpay": {
+      "buy": 12120,
+      "sell": 11990,
+      "fee": null,
+      "source": "t.me/unexpayment/90",
+      "at": "2026-11-23T04:36:59.000Z"
     }
   }
 }
