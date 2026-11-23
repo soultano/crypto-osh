@@ -4,7 +4,7 @@ import type { Locale } from "@/lib/i18n";
 import { site } from "@/lib/site";
 import { ShareBar } from "./ShareBar";
 import { storyText } from "@/content/story";
-import { best, fmtDay, fmtSom, fmtTime, rateRows, rates, type Row } from "@/lib/usdt";
+import { best, fmtDay, fmtFee, fmtSom, fmtTime, rateRows, rates, type Row } from "@/lib/usdt";
 
 // USDT/UZS rates at Uzbek exchangers, light card. The partner (a paid
 // placement) comes first in a frame; every other row looks the same.
@@ -48,7 +48,7 @@ function Offices({ row, locale, t }: { row: Row; locale: Locale; t: (typeof usdt
       {row.offline.map((o) => (
         <a key={o.map} href={`https://yandex.uz/maps/?text=${encodeURIComponent(o.map)}`} target="_blank" rel="noopener">
           <span aria-hidden="true">📍</span> {o[locale]}
-          <small>{o.hours[locale]}</small>
+          {o.hours && <small>{o.hours[locale]}</small>}
         </a>
       ))}
       {q?.buy == null && <small className="usdt-office-rate">{t.rateInOffice}</small>}
@@ -88,8 +88,7 @@ export function UsdtRates({ locale }: { locale: Locale }) {
     );
   };
 
-  const feeText = (row: Row) =>
-    row.fee != null ? `${row.fee.toLocaleString(locale === "en" ? "en-US" : "ru-RU")}%` : null;
+  const feeText = (row: Row) => fmtFee(row, locale);
   const fee = (row: Row) => {
     const f = feeText(row);
     return f ? <span className="usdt-fee">{f}</span> : <span className="usdt-dash">—</span>;

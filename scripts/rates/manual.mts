@@ -54,7 +54,7 @@ async function main() {
   const now = new Date().toISOString();
   for (const [id, raw] of entered) {
     const { buy, sell } = parse(id, raw, band);
-    // Keep a fee the morning run read from the service's page (Asterium's 0.6%).
+    // Keep a fee the morning run read from the service's page (Voluto's, for one).
     file.quotes[id] = { buy, sell, fee: file.quotes[id]?.fee ?? null, at: now, source: "manual" };
     console.log(`${id}: buy ${buy} · sell ${sell}`);
   }

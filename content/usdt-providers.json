@@ -62,7 +62,8 @@
         }
       }
     ],
-    "fee": 0.6
+    "fee": 0.7,
+    "feeMax": 0.8
   },
   {
     "id": "tcrypto",
@@ -87,6 +88,14 @@
     "url": "https://unexpay.uz/",
     "mark": "U",
     "bg": "#d8262f",
-    "fg": "#ffffff"
+    "fg": "#ffffff",
+    "offline": [
+      {
+        "ru": "7-й проезд Абдуллы Каххара, 3",
+        "uz": "7-Abdulla Qahhor dovoni, 3-uy",
+        "en": "3, 7th Abdulla Qahhor Lane",
+        "map": "Ташкент, 7-й проезд Абдуллы Каххара, 3"
+      }
+    ]
   }
 ]

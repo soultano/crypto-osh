@@ -12,12 +12,13 @@ export type ProviderId = "binance" | "voluto" | "asterium" | "tcrypto" | "walt" 
 // Shared with the morning script and the Telegram post. Badges are a letter
 // on the exchanger's colour, not its logo.
 // An office in Tashkent where the exchange is done in person, with cash.
-export type Office = { ru: string; uz: string; en: string; map: string; hours: { ru: string; uz: string; en: string } };
+export type Office = { ru: string; uz: string; en: string; map: string; hours?: { ru: string; uz: string; en: string } };
 
 // fee: a published cash-dollar fee (%) to show when the morning run could not read it.
+// feeMax: when the service names a range (Asterium: "0,7–0,8%"), its upper end; fee is the lower.
 // logo: a square image in /public shown in the badge instead of the mark letter.
 // partner: a paid placement, shown first in the table in a frame and marked as a partner.
-export type Provider = { id: ProviderId; name: string; note?: string; url: string; mark: string; logo?: string; bg: string; fg: string; offline?: Office[]; fee?: number; partner?: boolean };
+export type Provider = { id: ProviderId; name: string; note?: string; url: string; mark: string; logo?: string; bg: string; fg: string; offline?: Office[]; fee?: number; feeMax?: number; partner?: boolean };
 
 export const providers = providerList as Provider[];
 
@@ -31,22 +32,34 @@ export const rates = data as RatesFile;
 // a margin for a late morning run. After that its cell links to the site.
 const FRESH_MS = 26 * 3600_000;
 
-// A rate entered by hand (scripts/rates/manual.mts) holds for the Tashkent
-// day it was entered on: the next morning someone has to check it again.
+// A rate entered by hand (scripts/rates/manual.mts) or read from a service's
+// daily Telegram post (Unexpay, source "t.me/…") holds for the Tashkent day
+// it was given on: the next day it has to be checked again.
 const day = (t: number) => new Intl.DateTimeFormat("en-CA", { timeZone: "Asia/Tashkent" }).format(t);
+
+export const dayOnly = (quote: Pick<Quote, "source">) => quote.source === "manual" || quote.source?.startsWith("t.me/");
 
 export function isFresh(quote: Quote, now = Date.now()): boolean {
   const at = Date.parse(quote.at);
-  return quote.source === "manual" ? day(at) === day(now) : now - at < FRESH_MS;
+  return dayOnly(quote) ? day(at) === day(now) : now - at < FRESH_MS;
 }
 
 export type Row = Omit<Provider, "fee"> & { quote: Quote | null; fresh: boolean; fee: number | null };
+
+// The fee as the table writes it: "0,5%" or a range "0,7–0,8%".
+export function fmtFee(row: Pick<Row, "fee" | "feeMax">, locale: string): string | null {
+  if (row.fee == null) return null;
+  const f = (n: number) => n.toLocaleString(locale === "en" ? "en-US" : "ru-RU");
+  return row.feeMax != null && row.feeMax > row.fee ? `${f(row.fee)}–${f(row.feeMax)}%` : `${f(row.fee)}%`;
+}
 
 export function rateRows(file: RatesFile = rates, now = Date.now()): Row[] {
   return providers.map((p) => {
     const quote = file.quotes[p.id] ?? null;
     const fresh = !!quote && isFresh(quote, now);
-    return { ...p, quote, fresh, fee: fresh && quote?.fee != null ? quote.fee : (p.fee ?? null) };
+    // A fee read by today's run wins over the stored one, range and all.
+    if (fresh && quote?.fee != null) return { ...p, quote, fresh, fee: quote.fee, feeMax: undefined };
+    return { ...p, quote, fresh, fee: p.fee ?? null };
   });
 }
 
