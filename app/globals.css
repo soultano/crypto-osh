@@ -2101,6 +2101,16 @@ p {
   line-height: 1.2;
 }
 
+/* A rate from the service's last channel post, not today's */
+.usdt-val-dated small {
+  display: block;
+  margin-top: 2px;
+  font-size: 0.7rem;
+  font-weight: 500;
+  color: var(--muted, #6b7280);
+  white-space: normal;
+}
+
 /* The partner row: first in the table, in a green frame */
 .usdt-table tr.usdt-featured > * {
   background: var(--u-best-bg);
