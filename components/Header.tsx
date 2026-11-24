@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
+import { communityPage } from "@/content/community-page";
 import { newsText } from "@/content/news";
 import { locales, localeLabels, type Locale, type Dictionary } from "@/lib/i18n";
 import { ThemeToggle } from "./ThemeToggle";
@@ -12,9 +13,10 @@ export function Header({ locale, nav }: { locale: Locale; nav: Dictionary["nav"]
   const [open, setOpen] = useState(false);
   const rest = pathname.split("/").slice(2).join("/");
 
-  const links = [
+  const links: { href: string; label: string; className?: string }[] = [
     { href: `/${locale}/news`, label: newsText[locale].nav },
     { href: `/${locale}/kurs`, label: newsText[locale].pricesNav },
+    { href: `/${locale}/community`, label: communityPage[locale].nav, className: "nav-community" },
     { href: `/${locale}/about`, label: nav.about },
     { href: `/${locale}/business`, label: nav.business },
     { href: `/${locale}/people`, label: nav.people },
@@ -36,6 +38,7 @@ export function Header({ locale, nav }: { locale: Locale; nav: Dictionary["nav"]
             <Link
               key={l.href}
               href={l.href}
+              className={l.className}
               aria-current={pathname === l.href ? "page" : l.href !== `/${locale}` && pathname.startsWith(`${l.href}/`) ? "true" : undefined}
               onClick={() => setOpen(false)}
             >

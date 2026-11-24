@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { communityText } from "@/content/community";
 import type { Locale } from "@/lib/i18n";
 import { site } from "@/lib/site";
@@ -42,6 +43,9 @@ export function CommunityCta({ locale }: { locale: Locale }) {
             {c.button}
           </a>
           <p className="community-note">{c.note}</p>
+          <Link className="link-arrow community-more" href={`/${locale}/community`}>
+            {c.more} →
+          </Link>
         </div>
       </div>
     </section>

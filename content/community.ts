@@ -21,6 +21,8 @@ type CommunityText = {
   bar: string;
   barShort: string;
   barButton: string;
+  // Link from the block to the /community page.
+  more: string;
 };
 
 const uz: CommunityText = {
@@ -49,9 +51,10 @@ const uz: CommunityText = {
   priceNote: "≈ 1 $, bir piyola choy narxida",
   button: "Hamjamiyatga qo'shilish",
   note: "To'lov va guruhga kirish Telegram'dagi taps.uz boti orqali.",
-  bar: "Har oqshom 20:00 da ekspert va kriptanlar davrasi",
-  barShort: "Hamjamiyat",
-  barButton: "Qo'shilish · 12 000 so'm/oy",
+  bar: "Ekspertlar bilan Telegram guruh: har oqshom blokcheyn loyihalarini tahlil qilamiz",
+  barShort: "Ekspertlar guruhi",
+  barButton: "Batafsil · 12 000 so'm/oy",
+  more: "Guruhda nima bo'lishini batafsil ko'rish",
 };
 
 const ru: CommunityText = {
@@ -80,9 +83,10 @@ const ru: CommunityText = {
   priceNote: "≈ 1 $, как чашка чая в чайхане",
   button: "Вступить в комьюнити",
   note: "Оплата и вход в группу через бота taps.uz в Telegram.",
-  bar: "Платное комьюнити Crypto Osh: эксперт каждый вечер в 20:00",
-  barShort: "Комьюнити",
-  barButton: "Вступить · 12 000 сум/мес",
+  bar: "Telegram-группа с экспертами: каждый вечер разбираем блокчейн-проекты",
+  barShort: "Эксперты",
+  barButton: "Подробнее · 12 000 сум/мес",
+  more: "Подробнее, что происходит в группе",
 };
 
 const en: CommunityText = {
@@ -111,9 +115,10 @@ const en: CommunityText = {
   priceNote: "≈ $1, the price of a cup of tea",
   button: "Join the community",
   note: "Payment and access to the group go through the taps.uz bot on Telegram.",
-  bar: "Crypto Osh community: an expert every evening at 20:00",
-  barShort: "Community",
-  barButton: "Join · 12,000 UZS/mo",
+  bar: "Telegram group with experts: we review blockchain projects every evening",
+  barShort: "Expert group",
+  barButton: "Learn more · 12,000 UZS/mo",
+  more: "See what happens in the group",
 };
 
 export const communityText: Record<Locale, CommunityText> = { uz, ru, en };
