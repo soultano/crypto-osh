@@ -44,7 +44,12 @@ export function isFresh(quote: Quote, now = Date.now()): boolean {
   return dayOnly(quote) ? day(at) === day(now) : now - at < FRESH_MS;
 }
 
-export type Row = Omit<Provider, "fee"> & { quote: Quote | null; fresh: boolean; fee: number | null };
+// dated: a rate from a service's Telegram post that is not today's (Unexpay
+// does not post every day). It stays on the site for up to a week with the
+// post's date next to it, and is never counted as the best offer.
+const DATED_MS = 7 * 24 * 3600_000;
+
+export type Row = Omit<Provider, "fee"> & { quote: Quote | null; fresh: boolean; dated: boolean; fee: number | null };
 
 // The fee as the table writes it: "0,5%" or a range "0,7–0,8%".
 export function fmtFee(row: Pick<Row, "fee" | "feeMax">, locale: string): string | null {
@@ -57,9 +62,10 @@ export function rateRows(file: RatesFile = rates, now = Date.now()): Row[] {
   return providers.map((p) => {
     const quote = file.quotes[p.id] ?? null;
     const fresh = !!quote && isFresh(quote, now);
+    const dated = !fresh && !!quote?.source?.startsWith("t.me/") && now - Date.parse(quote.at) < DATED_MS;
     // A fee read by today's run wins over the stored one, range and all.
-    if (fresh && quote?.fee != null) return { ...p, quote, fresh, fee: quote.fee, feeMax: undefined };
-    return { ...p, quote, fresh, fee: p.fee ?? null };
+    if (fresh && quote?.fee != null) return { ...p, quote, fresh, dated, fee: quote.fee, feeMax: undefined };
+    return { ...p, quote, fresh, dated, fee: p.fee ?? null };
   });
 }
 

@@ -30,11 +30,15 @@ function Badge({ row }: { row: Row }) {
   );
 }
 
+// 23.11, Tashkent time: short enough for the narrow mobile columns.
+const shortDay = (iso: string) =>
+  new Intl.DateTimeFormat("ru-RU", { day: "2-digit", month: "2-digit", timeZone: "Asia/Tashkent" }).format(new Date(iso));
+
 // Offline shops: the offices in Tashkent, each linked to the map.
 function Offices({ row, locale, t }: { row: Row; locale: Locale; t: (typeof usdtText)[Locale] }) {
   if (!row.offline?.length) return <span className="usdt-online">{t.onlineOnly}</span>;
   // The service's own published rate is its office rate (Voluto: "по курсу дня").
-  const q = row.fresh ? row.quote : null;
+  const q = row.fresh || row.dated ? row.quote : null;
   return (
     <span className="usdt-offices">
       {q?.buy != null && q.sell != null && (
@@ -42,7 +46,7 @@ function Offices({ row, locale, t }: { row: Row; locale: Locale; t: (typeof usdt
           <strong>
             {fmtSom(q.buy)} / {fmtSom(q.sell)}
           </strong>
-          <small>{t.officeRateLabel}</small>
+          <small>{row.dated && q ? `${t.postedOn} ${fmtDay(q.at, locale)}` : t.officeRateLabel}</small>
         </span>
       )}
       {row.offline.map((o) => (
@@ -80,6 +84,14 @@ export function UsdtRates({ locale }: { locale: Locale }) {
   const cell = (row: Row, key: "buy" | "sell") => {
     const v = row.quote?.[key];
     if (row.fresh && v != null) return <span className="usdt-val">{fmtSom(v)}</span>;
+    // The last rate the service posted, not today's: shown with its date.
+    if (row.dated && v != null)
+      return (
+        <span className="usdt-val usdt-val-dated">
+          {fmtSom(v)}
+          <small>{t.asOf.replace("{d}", shortDay(row.quote!.at))}</small>
+        </span>
+      );
     // Not verified today: never a guess, a link to check it at the source.
     return (
       <a className="usdt-check" href={row.url} target="_blank" rel="sponsored noopener">
