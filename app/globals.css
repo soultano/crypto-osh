@@ -3270,3 +3270,397 @@ p {
     padding: 0.4em 0.85em;
   }
 }
+
+/* ---------- /community: the paid Telegram expert group ---------- */
+
+/* The page pitches the group itself, so the block every page ends with is hidden here. */
+main:has(.cm-page) > #community {
+  display: none;
+}
+
+.cm-trust {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 18px;
+  margin: 1.2rem 0 0;
+  padding: 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.cm-trust li::before {
+  content: "✓ ";
+  color: var(--teal);
+  font-weight: 800;
+}
+
+/* Telegram-like sample chat in the hero. */
+.cm-chat {
+  --chat-bg: #eef3f9;
+  --bubble: #ffffff;
+  --bubble-expert: #fff6df;
+  margin: 0;
+  width: 100%;
+  max-width: 460px;
+  justify-self: center;
+  border-radius: var(--radius);
+  border: 1px solid var(--line);
+  background: var(--surface);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+
+:root[data-theme="dark"] .cm-chat {
+  --chat-bg: rgba(7, 18, 43, 0.55);
+  --bubble: rgba(255, 255, 255, 0.07);
+  --bubble-expert: rgba(242, 178, 48, 0.14);
+}
+
+.cm-chat-head {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 18px;
+  border-bottom: 1px solid var(--hairline);
+}
+
+.cm-chat-head b {
+  display: block;
+  font-size: 0.98rem;
+}
+
+.cm-chat-head small {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--muted);
+  font-size: 0.8rem;
+}
+
+.cm-online {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #2fbf86;
+}
+
+.cm-chat-avatar {
+  flex: none;
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: conic-gradient(var(--turquoise), var(--majolica), var(--pomegranate), var(--saffron), var(--turquoise));
+  color: #fff;
+  font-weight: 800;
+}
+
+.cm-chat-tag {
+  margin-left: auto;
+  padding: 3px 10px;
+  border-radius: 999px;
+  background: var(--fill-strong);
+  color: var(--muted);
+  font-size: 0.72rem;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.cm-chat-body {
+  display: grid;
+  gap: 10px;
+  padding: 18px;
+  background: var(--chat-bg);
+}
+
+.cm-msg {
+  max-width: 88%;
+  padding: 10px 14px 8px;
+  border-radius: 16px 16px 16px 4px;
+  background: var(--bubble);
+  box-shadow: 0 1px 1px rgba(15, 26, 51, 0.06);
+}
+
+.cm-msg.is-expert {
+  justify-self: end;
+  border-radius: 16px 16px 4px 16px;
+  background: var(--bubble-expert);
+  border: 1px solid rgba(242, 178, 48, 0.35);
+}
+
+.cm-msg b {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.82rem;
+  color: var(--teal);
+}
+
+.cm-msg.is-expert b {
+  color: var(--gold);
+}
+
+.cm-badge {
+  font-size: 0.72rem;
+}
+
+.cm-msg p {
+  margin: 4px 0 2px;
+  font-size: 0.92rem;
+  line-height: 1.45;
+}
+
+.cm-msg time {
+  display: block;
+  text-align: right;
+  color: var(--muted);
+  font-size: 0.72rem;
+}
+
+.cm-chat-caption {
+  margin: 0;
+  padding: 12px 18px;
+  color: var(--muted);
+  font-size: 0.85rem;
+  text-align: center;
+  border-top: 1px solid var(--hairline);
+}
+
+.cm-grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.cm-icon {
+  display: grid;
+  place-items: center;
+  width: 52px;
+  height: 52px;
+  margin-bottom: 1rem;
+  border-radius: 16px;
+  background: rgba(242, 178, 48, 0.14);
+  font-size: 1.5rem;
+}
+
+.cm-pain .cm-icon {
+  background: rgba(200, 64, 47, 0.1);
+}
+
+.cm-grid-3 h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1.12rem;
+}
+
+.cm-mid-cta {
+  margin-top: 40px;
+}
+
+.cm-experts {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+  gap: 48px;
+  align-items: start;
+}
+
+.cm-experts .section-head {
+  text-align: left;
+  margin-bottom: 28px;
+}
+
+.cm-experts .section-head .lead {
+  margin-left: 0;
+}
+
+.cm-experts .divider {
+  margin-left: 0;
+}
+
+.cm-people {
+  list-style: none;
+  margin: 0 0 20px;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.cm-people a {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 12px;
+  border-radius: 16px;
+  border: 1px solid var(--line);
+  background: var(--card-bg);
+  color: var(--text);
+  height: 100%;
+  transition: border-color 0.15s ease;
+}
+
+.cm-people a:hover {
+  border-color: var(--saffron);
+}
+
+.cm-person-photo {
+  flex: none;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  overflow: hidden;
+  background: var(--fill-strong);
+}
+
+.cm-person-photo :is(img, svg) {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cm-people b {
+  display: block;
+  font-size: 0.95rem;
+  line-height: 1.25;
+}
+
+.cm-people small {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  color: var(--muted);
+  font-size: 0.8rem;
+  line-height: 1.35;
+}
+
+.cm-price {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 32px;
+  align-items: center;
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.cm-math {
+  display: grid;
+  gap: 14px;
+}
+
+.cm-stat {
+  display: flex;
+  align-items: baseline;
+  gap: 14px;
+  padding: 20px 24px;
+  border-radius: 18px;
+  border: 1px dashed var(--saffron);
+  background: rgba(242, 178, 48, 0.07);
+}
+
+.cm-stat strong {
+  flex: none;
+  min-width: 5.2em;
+  font-size: 1.6rem;
+  color: var(--gold);
+  font-variant-numeric: tabular-nums;
+}
+
+.cm-stat span {
+  color: var(--muted);
+  font-weight: 600;
+}
+
+.cm-included {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 10px;
+}
+
+.cm-included li {
+  display: flex;
+  gap: 10px;
+}
+
+.cm-included li::before {
+  content: "✓";
+  flex: none;
+  color: var(--teal);
+  font-weight: 800;
+}
+
+.cm-steps {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.cm-disclaimer {
+  margin: 18px auto 0;
+  max-width: 560px;
+  color: var(--muted);
+  font-size: 0.82rem;
+}
+
+@media (max-width: 1000px) {
+  .cm-grid-3 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 900px) {
+  .cm-experts,
+  .cm-price {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+}
+
+@media (max-width: 640px) {
+  .cm-grid-3,
+  .cm-steps,
+  .cm-people {
+    grid-template-columns: 1fr;
+  }
+  .cm-stat {
+    flex-direction: column;
+    gap: 4px;
+  }
+  .cm-chat-body {
+    padding: 14px;
+  }
+}
+
+/* The nav link to the community page stands out a little. */
+.nav a.nav-community:not(.btn)::after {
+  content: "";
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  margin-left: 6px;
+  vertical-align: 0.35em;
+  border-radius: 50%;
+  background: var(--saffron);
+}
+
+.community-bar-text {
+  color: inherit;
+}
+
+.community-more {
+  display: block;
+  margin-top: 12px;
+  text-align: center;
+  font-size: 0.92rem;
+}
+
+/* With the Community link the Uzbek nav is ~25px wider; tighten it until it folds. */
+@media (min-width: 1181px) and (max-width: 1320px) {
+  .nav {
+    gap: 16px;
+  }
+}
