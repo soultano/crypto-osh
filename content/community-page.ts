@@ -160,8 +160,8 @@ const ru: CommunityPage = {
     },
   ],
 
-  expertsTitle: "Блокчейн-эксперты рядом с нами",
-  expertsIntro: "Специалисты, разработчики и предприниматели, которые развивают блокчейн в Узбекистане и делятся опытом с комьюнити.",
+  expertsTitle: "Эксперты группы",
+  expertsIntro: "Специалисты, разработчики и предприниматели, которые развивают блокчейн в Узбекистане. Они выступают в группе, разбирают проекты и отвечают на вопросы участников.",
   expertsLink: "Все люди блокчейна",
   weekTitle: "Расписание экспертов, каждый день в 20:00",
 
@@ -205,7 +205,7 @@ const ru: CommunityPage = {
     },
     {
       q: "Как оплатить?",
-      a: "Через бота taps.uz прямо в Telegram, в сумах. После оплаты бот открывает доступ в группу.",
+      a: "Через бота taps.uz прямо в Telegram, в сумах. Сразу после оплаты бот сам открывает доступ в группу.",
     },
     {
       q: "Можно ли рассказать о своём проекте?",
@@ -319,8 +319,8 @@ const uz: CommunityPage = {
     },
   ],
 
-  expertsTitle: "Yonimizdagi blokcheyn ekspertlari",
-  expertsIntro: "O'zbekistonda blokcheynni rivojlantirayotgan va tajribasini hamjamiyat bilan bo'lishayotgan mutaxassislar, dasturchilar va tadbirkorlar.",
+  expertsTitle: "Guruh ekspertlari",
+  expertsIntro: "O'zbekistonda blokcheynni rivojlantirayotgan mutaxassislar, dasturchilar va tadbirkorlar. Ular guruhda chiqish qiladi, loyihalarni tahlil qiladi va a'zolarning savollariga javob beradi.",
   expertsLink: "Barcha blokcheyn odamlari",
   weekTitle: "Ekspertlar jadvali, har kuni 20:00 da",
 
@@ -364,7 +364,7 @@ const uz: CommunityPage = {
     },
     {
       q: "Qanday to'lanadi?",
-      a: "Telegram'da taps.uz boti orqali, so'mda. To'lovdan keyin bot guruhga kirishni ochadi.",
+      a: "Telegram'da taps.uz boti orqali, so'mda. To'lovdan so'ng bot darhol o'zi guruhga kirishni ochadi.",
     },
     {
       q: "O'z loyiham haqida gapirsam bo'ladimi?",
@@ -478,8 +478,8 @@ const en: CommunityPage = {
     },
   ],
 
-  expertsTitle: "Blockchain experts around us",
-  expertsIntro: "Specialists, developers and entrepreneurs who build blockchain in Uzbekistan and share their experience with the community.",
+  expertsTitle: "The group's experts",
+  expertsIntro: "Specialists, developers and entrepreneurs who build blockchain in Uzbekistan. They speak in the group, review projects and answer members' questions.",
   expertsLink: "All blockchain people",
   weekTitle: "Expert schedule, every day at 20:00",
 
@@ -523,7 +523,7 @@ const en: CommunityPage = {
     },
     {
       q: "How do I pay?",
-      a: "Through the taps.uz bot right in Telegram, in UZS. After payment the bot opens access to the group.",
+      a: "Through the taps.uz bot right in Telegram, in UZS. Right after payment the bot opens access to the group automatically.",
     },
     {
       q: "Can I talk about my own project?",
