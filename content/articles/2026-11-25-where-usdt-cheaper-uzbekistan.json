@@ -1,0 +1,51 @@
+{
+  "slug": "2026-11-25-where-usdt-cheaper-uzbekistan",
+  "date": "2026-11-25T12:00:00+05:00",
+  "tags": ["uzbekistan", "usdt", "kurs"],
+  "sources": [
+    { "name": "O'zbekiston Respublikasi Markaziy banki", "url": "https://cbu.uz/" },
+    { "name": "Voluto", "url": "https://voluto.uz/ru" },
+    { "name": "Asterium", "url": "https://asterium.uz" },
+    { "name": "Tcrypto", "url": "https://tcrypto.uz" },
+    { "name": "Unexpay", "url": "https://t.me/unexpayment/92" }
+  ],
+  "uz": {
+    "title": "USDT qayerda arzon: 1000 USDT uchun farq 515 ming so'mgacha",
+    "summary": "Toshkentdagi to'rtta kripto-servisning bugungi USDT kursini solishtirdik. Bir xil 1000 USDT ni sotib olish bir joyda 12,12 mln so'm, boshqasida 12,64 mln so'm turadi. Sotishda esa farq ancha kichik.",
+    "body": [
+      "Crypto Osh har kuni kripto-servislarning USDT kursini ularning o'z saytlari va kanallaridan yig'adi. 25-noyabr ertalabgi holat bo'yicha Markaziy bank dollar kursi 11 990,54 so'm. USDT esa servislarda 12 120 dan 12 635 so'mgacha sotilmoqda, ya'ni rasmiy dollardan 1–5% qimmat.",
+      "Sotib olish (1 USDT narxi): Unexpay 12 120 so'm, Voluto 12 171 so'm (servis 0,5% komissiya ko'rsatadi), Asterium 12 291 so'm (naqd to'lovda komissiya 0,7–0,8%), Tcrypto 12 635 so'm. Unexpay kursi uning Telegram-kanalidan olingan, 24-noyabrdagi e'londan.",
+      "1000 USDT misolida: Unexpay'da 12,12 mln so'm, Voluto'da 12,17 mln so'm (komissiya bilan taxminan 12,23 mln), Asterium'da 12,29 mln so'm, Tcrypto'da 12,64 mln so'm. Eng arzon va eng qimmat joy o'rtasidagi farq 515 ming so'm.",
+      "Sotish (1 USDT uchun beriladigan pul): Asterium 11 990,54 so'm, Unexpay 11 990 so'm, Voluto 11 943 so'm, Tcrypto 11 920 so'm. 1000 USDT sotganda farq atigi 70 ming so'm atrofida.",
+      "Spred, ya'ni sotib olish va sotish narxi orasidagi farq, servisning haqiqiy \"narxini\" ko'rsatadi. Unexpay'da 130 so'm (1,1%), Voluto'da 228 so'm (1,9%), Asterium'da 300 so'm (2,5%), Tcrypto'da 715 so'm (6%). Spred qancha kichik bo'lsa, USDT'ni sotib olib keyin qayta sotish shuncha arzonga tushadi.",
+      "O'tgan hafta kurslar deyarli o'zgarmadi: Asterium 12 296 dan 12 291 so'mga, Voluto 12 173 dan 12 171 so'mga tushdi, Tcrypto esa 12 620 dan 12 635 so'mga ko'tarildi. Kurslar kun davomida o'zgaradi, bugungi raqamlar \"Kurs\" sahifasida har kuni yangilanadi."
+    ],
+    "take": "Faqat kursga qaramang: komissiya, to'lov usuli (karta yoki naqd) va pulni qancha tez olishingiz ham muhim. Kichik summa uchun farq sezilmaydi, lekin 1000 USDT dan boshlab yarim million so'mgacha tejash mumkin. Bitimdan oldin servisning o'zida yakuniy summani tekshiring va faqat NAPP litsenziyasiga ega provayderlar bilan ishlang. Asterium — Crypto Osh hamkori."
+  },
+  "ru": {
+    "title": "Где дешевле купить USDT: на 1000 USDT разница до 515 тысяч сумов",
+    "summary": "Сравнили сегодняшний курс USDT в четырёх криптосервисах Ташкента. Одни и те же 1000 USDT стоят в одном месте 12,12 млн сумов, в другом 12,64 млн. При продаже разница гораздо меньше.",
+    "body": [
+      "Crypto Osh каждый день собирает курс USDT в криптосервисах с их собственных сайтов и каналов. На утро 25 ноября курс доллара ЦБ — 11 990,54 сума. А USDT в сервисах продают от 12 120 до 12 635 сумов, то есть на 1–5% дороже официального доллара.",
+      "Покупка (цена 1 USDT): Unexpay 12 120 сумов, Voluto 12 171 сум (сервис указывает комиссию 0,5%), Asterium 12 291 сум (при оплате наличными комиссия 0,7–0,8%), Tcrypto 12 635 сумов. Курс Unexpay взят из его Telegram-канала, из объявления от 24 ноября.",
+      "На примере 1000 USDT: в Unexpay это 12,12 млн сумов, в Voluto 12,17 млн (с комиссией около 12,23 млн), в Asterium 12,29 млн, в Tcrypto 12,64 млн. Разница между самым дешёвым и самым дорогим местом — 515 тысяч сумов.",
+      "Продажа (сколько дают за 1 USDT): Asterium 11 990,54 сума, Unexpay 11 990, Voluto 11 943, Tcrypto 11 920. Если продаёте 1000 USDT, разница всего около 70 тысяч сумов.",
+      "Спред, то есть разница между ценой покупки и продажи, показывает настоящую «цену» сервиса. У Unexpay это 130 сумов (1,1%), у Voluto 228 (1,9%), у Asterium 300 (2,5%), у Tcrypto 715 (6%). Чем меньше спред, тем дешевле обойдётся купить USDT и потом продать его обратно.",
+      "За неделю курсы почти не изменились: Asterium снизил цену с 12 296 до 12 291 сума, Voluto с 12 173 до 12 171, а Tcrypto поднял с 12 620 до 12 635. Курс меняется в течение дня, свежие цифры каждый день на странице «Курс»."
+    ],
+    "take": "Смотрите не только на курс: важны комиссия, способ оплаты (карта или наличные) и как быстро вы получите деньги. На маленькой сумме разница незаметна, а начиная с 1000 USDT можно сэкономить до полумиллиона сумов. Перед сделкой проверяйте итоговую сумму у самого сервиса и работайте только с провайдерами с лицензией НАПП. Asterium — партнёр Crypto Osh."
+  },
+  "en": {
+    "title": "Where USDT is cheaper in Uzbekistan: up to 515,000 som difference on 1,000 USDT",
+    "summary": "We compared today's USDT rate at four crypto services in Tashkent. The same 1,000 USDT costs 12.12 million som in one place and 12.64 million in another. When selling, the gap is much smaller.",
+    "body": [
+      "Every day Crypto Osh collects USDT rates from crypto services' own websites and channels. As of the morning of 25 November, the Central Bank dollar rate is 11,990.54 som. Services sell USDT for 12,120 to 12,635 som, that is 1–5% above the official dollar.",
+      "Buying (price of 1 USDT): Unexpay 12,120 som, Voluto 12,171 som (the service lists a 0.5% fee), Asterium 12,291 som (0.7–0.8% fee for cash payment), Tcrypto 12,635 som. The Unexpay rate comes from its Telegram channel, from a post on 24 November.",
+      "For 1,000 USDT: 12.12 million som at Unexpay, 12.17 million at Voluto (about 12.23 million with the fee), 12.29 million at Asterium, 12.64 million at Tcrypto. The gap between the cheapest and the most expensive place is 515,000 som.",
+      "Selling (what you get for 1 USDT): Asterium 11,990.54 som, Unexpay 11,990, Voluto 11,943, Tcrypto 11,920. On 1,000 USDT the difference is only about 70,000 som.",
+      "The spread, the gap between the buy and sell price, shows the real cost of a service. It is 130 som (1.1%) at Unexpay, 228 (1.9%) at Voluto, 300 (2.5%) at Asterium and 715 (6%) at Tcrypto. The smaller the spread, the cheaper it is to buy USDT and later sell it back.",
+      "Rates barely moved over the week: Asterium went from 12,296 to 12,291 som, Voluto from 12,173 to 12,171, while Tcrypto rose from 12,620 to 12,635. Rates change during the day; fresh numbers are on the Rates page every day."
+    ],
+    "take": "Look beyond the rate: the fee, the payment method (card or cash) and how fast you get your money matter too. On a small amount the gap is barely noticeable, but from 1,000 USDT up you can save up to half a million som. Before a deal, check the final amount with the service itself and only use providers licensed by NAPP. Asterium is a Crypto Osh partner."
+  }
+}
