@@ -10,7 +10,8 @@ import { allNews } from "@/lib/news";
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
   const n = newsText[locale as Locale] ?? newsText.uz;
-  return customPageMetadata({ locale, path: "/news", title: n.metaTitle, description: n.metaDescription });
+  const meta = customPageMetadata({ locale, path: "/news", title: n.metaTitle, description: n.metaDescription });
+  return { ...meta, alternates: { ...meta.alternates, types: { "application/rss+xml": `/${locale}/news/rss.xml` } } };
 }
 
 export default async function News({ params }: { params: Promise<{ locale: string }> }) {
