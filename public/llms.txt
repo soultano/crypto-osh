@@ -21,6 +21,7 @@
 - [Home (Uzbek)](https://cryptoosh.uz/uz): Community hub, milestones, and announcements in Uzbek.
 - [Home (Russian)](https://cryptoosh.uz/ru): Community hub in Russian.
 - [Home (English)](https://cryptoosh.uz/en): Community hub in English.
+- [Crypto News (Uzbek / Russian / English)](https://cryptoosh.uz/uz/news): Daily crypto news about Uzbekistan and Central Asia, each story with what it means for Uzbekistan. RSS: https://cryptoosh.uz/uz/news/rss.xml, https://cryptoosh.uz/ru/news/rss.xml, https://cryptoosh.uz/en/news/rss.xml
 - [USDT Rates & Providers](https://cryptoosh.uz/uz/kurs): Real-time monitor of licensed crypto exchanges, depository rates, and legal OTC providers in Uzbekistan.
 - [Blockchain People](https://cryptoosh.uz/uz/people): Directory of leading Web3 founders, developers, traders, and specialists developing blockchain in Uzbekistan.
 - [Video Library](https://cryptoosh.uz/uz/videos): Video coverage of real-world gatherings in Tashkent (BEK), Samarkand, Fergana, and Khorezm (Urgench 120-attendee record).

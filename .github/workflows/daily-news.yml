@@ -63,6 +63,10 @@ jobs:
           git push
           echo "pushed=true" >> "$GITHUB_OUTPUT"
 
+      - name: Ping Yandex and Bing (IndexNow)
+        if: steps.push.outputs.pushed == 'true'
+        run: node scripts/news/indexnow.mts
+
       - name: Post to Telegram
         if: steps.push.outputs.pushed == 'true'
         env:
